@@ -1,0 +1,86 @@
+html, body, table
+{
+    color: #000;
+    padding: 4px 4px;
+    margin: 0px 0px 0 0px;
+    text-align: left;
+    font-family: Arial, Lucida, sans-serif;
+    font-size: 10pt;
+}
+
+#container
+{
+    margin: 10px;
+    font-size: 14pt;
+    text-decoration:none;
+}
+
+div.refnamediv p
+{
+    font-size: 12pt;
+    margin: 20px;
+}
+
+div.funcsynopsis
+{
+    font-family: monospace;
+}
+
+div.informaltable table
+{
+    border-width: 1px;
+    border-style: dotted;
+    border-collapse: collapse;
+    background-color: #F0F0F0;
+}
+
+div.informaltable th
+{
+    border-width: 2px;
+    padding: 4px;
+}
+
+div.informaltable td
+{
+    border-width: 2px;
+    padding: 4px;
+}
+
+code
+{
+    font-weight: bold;
+}
+
+span.citerefentry
+{
+    font-family: monospace;
+    font-weight: bold;
+}
+
+table.sample
+{
+    width: 100%;
+    text-align: left;
+    border-width: 1px;
+    border-spacing: 5px;
+    border-style: dotted;
+    border-color: black;
+    border-collapse: separate;
+    background-color: #F0F0F0;
+    font-family: sans-serif;
+}
+
+table.sample th
+{
+    border-width: 1px;
+    padding: 1px;
+    border-style: none;
+    font-size: 16pt;
+}
+
+table.sample td
+{
+    border-width: 1px;
+    padding: 1px;
+    border-style: none;
+}

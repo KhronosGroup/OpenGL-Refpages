@@ -1,0 +1,15 @@
+</div>
+</div>
+
+
+<div id="footer">
+    <ul id="footer-menu">
+    <li><a href="/about/contact/">Contact Us</a></li>
+    <li><a href="/about/">About Us</a></li>
+    <li><a href="/legal/">Legal Notices</a></li>
+    <li><a href="/legal/trademarks/">Trademark Usage</a></li>
+    </ul>
+    <p class="small-print">OpenGL and OpenGL ES are registered trademarks of <a href="http://www.sgi.com">SGI</a>, used by permission.</p>
+    <p class="small-print">Copyright &copy;2014-2017 The Khronos Group. All rights reserved.</p>
+    <p class="small-print">The Khronos Group managed by <a href="http://www.goldstandardgroup.com/">Gold Standard Group</a> and website maintained by <a href="http://outofcontrol.ca/">Out of Control</a> </p>
+</div>

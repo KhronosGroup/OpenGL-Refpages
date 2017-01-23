@@ -1,0 +1,85 @@
+<!DOCTYPE refentry [ <!ENTITY % mathent SYSTEM "math.ent"> %mathent; ]>
+
+<!-- Converted by db4-upgrade version 1.1 -->
+
+<refentry xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="gl_BoundingBox">
+    <info>
+        <copyright>
+            <year>2015</year>
+            <holder>Khronos Group</holder>
+        </copyright>
+    </info>
+    <refmeta>
+        <refentrytitle>gl_BoundingBox</refentrytitle>
+        <manvolnum>3G</manvolnum>
+    </refmeta>
+    <refnamediv>
+        <refname>gl_BoundingBox</refname>
+        <refpurpose>contains the bounding box primitives generated from the output patch</refpurpose>
+    </refnamediv>
+    <refsynopsisdiv>
+        <title>Declaration</title>
+        <fieldsynopsis>
+            <modifier>patch out mediump</modifier>
+            <type>vec4</type>
+            <varname>gl_BoundingBox[2]</varname>
+        </fieldsynopsis>
+    </refsynopsisdiv>
+    <refsect1 xml:id="description"><title>Description</title>
+        <para>
+            <varname>gl_BoundingBox[]</varname> is an array of two vec4 values that should be used instead of the value of
+            <constant>GL_PRIMITIVE_BOUNDING_BOX</constant> as the primitive bounding box (see 
+            <citerefentry><refentrytitle>glPrimitiveBoundingBox</refentrytitle></citerefentry>) for primitives generated 
+            from the output patch. <varname>gl_BoundingBox[]</varname> is
+            consumed by the tessellation primitive generator, and is not available as an
+            input to the tessellation evaluation shader.
+        </para>
+    </refsect1>
+    <refsect1 xml:id="notes"><title>Notes</title>
+        <para>
+            If tessellation is active, each invocation of the tessellation control
+            shader may re-specify the bounding box by writing to the built-in
+            <varname>gl_BoundingBox[]</varname> variable. If the shader statically assigns a value to
+            any part of this variable, then <varname>gl_BoundingBox[]</varname> is used instead of
+            the parameters to <function>glPrimitiveBoundingBox</function>.
+            If the shader contains a static assignment
+            to <varname>gl_BoundingBox[]</varname> and there is an execution path through the shader
+            that does not write all components of <varname>gl_BoundingBox[]</varname>, the value of
+            unwritten components and corresponding bounding box coordinates is undefined
+            for executions of the shader that take that path.
+        </para>
+        <para>
+            If the tessellation control shader re-specifies the bounding box, the re-specified 
+            value is used for primitives generated from the output patch by
+            the primitive generator, any primitives emitted by the geometry shader
+            invocations for those generated primitives, and any primitives further
+            introduced during clipping.
+        </para>
+    </refsect1>
+    <refsect1 xml:id="versions"><title>Version Support</title>
+        <informaltable>
+            <tgroup cols="5" align="left">
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="varhead.xml" xpointer="xpointer(/*/*)"/>
+                <tbody>
+                    <row>
+                        <entry>gl_BoundingBox[]</entry>
+                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(/*/*[@role='es32']/*)"/>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+    </refsect1>
+    <refsect1 xml:id="seealso"><title>See Also</title>
+        <para>
+            <citerefentry><refentrytitle>glPrimitiveBoundingBox</refentrytitle></citerefentry>
+        </para>
+    </refsect1>
+    <refsect1 xml:id="Copyright"><title>Copyright</title>
+        <para>
+            Copyright <trademark class="copyright"/> 2015 Khronos Group.
+            This material may be distributed subject to the terms and conditions set forth in
+            the Open Publication License, v 1.0, 8 June 1999.
+            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://opencontent.org/openpub/">http://opencontent.org/openpub/</link>.
+        </para>
+    </refsect1>
+</refentry>

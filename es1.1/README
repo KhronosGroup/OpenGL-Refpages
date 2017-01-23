@@ -1,0 +1,9 @@
+OpenGL ES 1.1 reference pages, currently visible on the Khronos website
+under
+
+    http://www.khronos.org/opengles/sdk/1.1/docs/man/
+
+    xhtml/ - directory containing man page source in Docbook V4.3 +
+             MathML 1.1 XML.
+    xhtml/xhtml/ - directory containing processed XHTML from Docbook
+                   source.

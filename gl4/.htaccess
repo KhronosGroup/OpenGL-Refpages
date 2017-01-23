@@ -1,0 +1,15 @@
+RewriteEngine on
+
+# Avoid redirect loops
+RewriteCond %{ENV:REDIRECT_STATUS} 200
+RewriteRule ^ - [L]
+
+# Send queries on the old XHTML Transitional man page links to the
+# cached copies if IE <= 8 is being used.
+RewriteCond %{HTTP_USER_AGENT} MSIE\ [5678]\. [NC]
+RewriteRule ^xhtml/(.*)\.xml https://www.opengl.org/sdk/docs/man4/docbook4/xhtml/$1.xml [L,R=301]
+
+# Send the same queries to the current HTML5 pages for other browsers
+RewriteRule ^xhtml/(.*)\.xml https://www.opengl.org/sdk/docs/man4/html/$1.xhtml [L,R=301]
+
+RewriteRule ^html/glEndQuery.xhtml https://www.opengl.org/sdk/docs/man4/html/glBeginQuery.xhtml [L,R=301]

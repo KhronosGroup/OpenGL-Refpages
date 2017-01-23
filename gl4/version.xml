@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns="http://docbook.org/ns/docbook" version="5.0">
+    <!-- Element sets are selected with XInclude from the row elements below
+         using the role attribute to obtain table elements for the "Version
+         Support" sections of the GLSL man pages. The role element is based
+         on the GLSL version (role=12 means GLSL 1.20, etc.)
+         It is similar but not identical to apiversion.xml for API pages. -->
+    <row role="11">
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+    </row>
+    <row role="12">
+        <entry>-</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+    </row>
+    <row role="13">
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+    </row>
+    <row role="14">
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+    </row>
+    <row role="15">
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+    </row>
+    <row role="33">
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+    </row>
+    <row role="40">
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+    </row>
+    <row role="41">
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+    </row>
+    <row role="42">
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+    </row>
+    <row role="43">
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+    </row>
+    <row role="44">
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+    </row>
+    <row role="45">
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>&#x2714;</entry>
+    </row>
+</root>

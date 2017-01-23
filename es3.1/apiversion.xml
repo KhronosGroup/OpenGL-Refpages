@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns="http://docbook.org/ns/docbook" version="5.0">
+    <!-- Element sets are selected with XInclude from the row elements below
+         using the role attribute to obtain table elements for the "API
+         Version Support" sections of the man pages. -->
+    <row role="es20">
+       <entry>&#x2714;</entry>
+       <entry>&#x2714;</entry>
+       <entry>&#x2714;</entry>
+    </row>
+    <row role="es30">
+       <entry>-</entry>
+       <entry>&#x2714;</entry>
+       <entry>&#x2714;</entry>
+    </row>
+    <row role="es31">
+       <entry>-</entry>
+       <entry>-</entry>
+       <entry>&#x2714;</entry>
+    </row>
+</root>

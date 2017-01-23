@@ -1,0 +1,68 @@
+<!DOCTYPE refentry [ <!ENTITY % mathent SYSTEM "math.ent"> %mathent; ]>
+
+<!-- Converted by db4-upgrade version 1.1 -->
+
+<refentry xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="barrier">
+    <info>
+        <copyright>
+            <year>2011-2014</year>
+            <holder>Khronos Group</holder>
+        </copyright>
+    </info>
+    <refmeta>
+        <refentrytitle>barrier</refentrytitle>
+        <manvolnum>3G</manvolnum>
+    </refmeta>
+    <refnamediv>
+        <refname>barrier</refname>
+        <refpurpose>synchronize execution of multiple shader invocations</refpurpose>
+    </refnamediv>
+    <refsynopsisdiv>
+        <title>Declaration</title>
+        <funcsynopsis>
+            <funcprototype>
+                <funcdef>void <function>barrier</function></funcdef>
+                <paramdef>void</paramdef>
+            </funcprototype>
+        </funcsynopsis>
+    </refsynopsisdiv>
+    <refsect1 xml:id="description"><title>Description</title>
+        <para>
+            <emphasis>Available only in the Compute Shader</emphasis>, <function>barrier</function> provides
+            a partially defined order of execution between shader invocations. For any given static instance of
+            <function>barrier</function> in a compute shader, all invocations within a single work group must 
+            enter it before any are allowed to continue beyond it.
+            This ensures that values written by one invocation prior to a given static instance
+            of <function>barrier</function> can be safely read by other invocations after their call to the same static
+            instance of <function>barrier</function>. Because invocations may execute in undefined order between these
+            <function>barrier</function> calls, the values of any shared variable will be undefined in a number of cases.
+        </para>
+        <para>
+            <function>barrier</function> may be placed anywhere in a compute shader, except within any control flow or
+            after a return statement in the function <code>main()</code>.
+        </para>
+    </refsect1>
+    <refsect1 xml:id="versions">
+        <title>Version Support</title>
+        <informaltable>
+            <tgroup cols="4" align="left">
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="funchead.xml" xpointer="xpointer(/*/*)"/>
+                <tbody>
+                    <row>
+                        <entry><function>barrier</function></entry>
+                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(/*/*[@role='es31']/*)"/>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+    </refsect1>
+    <!-- See Also -->
+    <refsect1 xml:id="Copyright"><title>Copyright</title>
+        <para>
+            Copyright <trademark class="copyright"/> 2011-2014 Khronos Group. 
+            This material may be distributed subject to the terms and conditions set forth in 
+            the Open Publication License, v 1.0, 8 June 1999.
+            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://opencontent.org/openpub/">http://opencontent.org/openpub/</link>.
+        </para>
+    </refsect1>
+</refentry>

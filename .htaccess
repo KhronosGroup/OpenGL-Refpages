@@ -1,0 +1,12 @@
+RewriteEngine on
+
+# Avoid redirect loops
+RewriteCond %{ENV:REDIRECT_STATUS} 200
+RewriteRule ^ - [L]
+
+# Redirect queries against the old GLSL-specific directory (e.g. cached
+# links) to the ES 3.1 HTML5 pages.
+RewriteRule ^manglsl/xhtml/(.*)\.xml https://www.khronos.org/opengles/sdk/docs/man31/html/$1.xhtml [L,R=301]
+
+# Renamed 'man' to 'man2' directory
+RewriteRule ^man/(.*) https://www.khronos.org/opengles/sdk/docs/man2/$1 [L,R=301]

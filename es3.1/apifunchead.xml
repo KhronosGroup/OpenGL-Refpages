@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<funchead xmlns="http://docbook.org/ns/docbook" version="5.0">
+    <!-- Table header for OpenGL ES API entry point Version Support section.
+         All these elements are included within a
+            <tgroup cols="4" align="left">
+         element, followed by per-variable <tbody> support rows -->
+    <colspec colwidth="1.1*" />
+    <colspec colwidth="1*" align="center" colname="firstvers" />
+    <colspec colwidth="1*" align="center"/>
+    <colspec colwidth="1*" align="center" colname="lastvers" />
+    <spanspec spanname="allvers" namest="firstvers" nameend="lastvers" />
+    <thead>
+        <row>
+            <entry rowsep="0">
+                <!-- Until morerows= is fixed WRT cell borders, do this --> 
+            </entry>
+            <entry spanname="allvers">
+                <emphasis role="bold">OpenGL ES API Version</emphasis>
+            </entry>
+        </row>
+        <row>
+            <entry>
+                <emphasis role="bold">Function Name</emphasis>
+            </entry>
+            <entry>
+                <emphasis role="bold">2.0</emphasis>
+            </entry>
+            <entry>
+                <emphasis role="bold">3.0</emphasis>
+            </entry>
+            <entry>
+                <emphasis role="bold">3.1</emphasis>
+            </entry>
+        </row>
+    </thead>
+</funchead>

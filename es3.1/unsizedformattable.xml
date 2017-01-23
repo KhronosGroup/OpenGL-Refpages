@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table xmlns="http://docbook.org/ns/docbook" version="5.0">
+<title>Unsized Internal Formats</title>
+<tgroup cols="5" align="left">
+    <colspec/>
+    <colspec/>
+    <colspec/>
+    <colspec/>
+    <colspec/>
+    <thead>
+        <row>
+            <entry>
+                <emphasis role="bold">Unsized Internal Format</emphasis>
+            </entry>
+            <entry>
+                <emphasis role="bold">Format</emphasis>
+            </entry>
+            <entry>
+                <emphasis role="bold">Type</emphasis>
+            </entry>
+            <entry>
+                <emphasis role="bold">RGBA and Luminance Values</emphasis>
+            </entry>
+            <entry>
+                <emphasis role="bold">Internal Components</emphasis>
+            </entry>
+        </row>
+    </thead>
+    <tbody>
+        <row>
+            <entry><constant>GL_RGB</constant></entry>
+            <entry><constant>GL_RGB</constant></entry>
+            <entry><constant>GL_UNSIGNED_BYTE</constant>,
+                   <constant>GL_UNSIGNED_SHORT_5_6_5</constant></entry>
+            <entry>Red, Green, Blue</entry>
+            <entry>R, G, B</entry>
+        </row>
+        <row>
+            <entry><constant>GL_RGBA</constant></entry>
+            <entry><constant>GL_RGBA</constant></entry>
+            <entry><constant>GL_UNSIGNED_BYTE</constant>,
+                   <constant>GL_UNSIGNED_SHORT_4_4_4_4</constant>,
+                   <constant>GL_UNSIGNED_SHORT_5_5_5_1</constant></entry>
+            <entry>Red, Green, Blue, Alpha</entry>
+            <entry>R, G, B, A</entry>
+        </row>
+        <row>
+            <entry><constant>GL_LUMINANCE_ALPHA</constant></entry>
+            <entry><constant>GL_LUMINANCE_ALPHA</constant></entry>
+            <entry><constant>GL_UNSIGNED_BYTE</constant></entry>
+            <entry>Luminance, Alpha</entry>
+            <entry>L, A</entry>
+        </row>
+        <row>
+            <entry><constant>GL_LUMINANCE</constant></entry>
+            <entry><constant>GL_LUMINANCE</constant></entry>
+            <entry><constant>GL_UNSIGNED_BYTE</constant></entry>
+            <entry>Luminance</entry>
+            <entry>L</entry>
+        </row>
+        <row>
+            <entry><constant>GL_ALPHA</constant></entry>
+            <entry><constant>GL_ALPHA</constant></entry>
+            <entry><constant>GL_UNSIGNED_BYTE</constant></entry>
+            <entry>Alpha</entry>
+            <entry>A</entry>
+        </row>
+    </tbody>
+</tgroup>
+</table>
