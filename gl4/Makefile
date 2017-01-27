@@ -15,8 +15,8 @@
 # XML validation tool
 JING = jing
 
-default:
-	cd html ; make
+default clean:
+	cd html ; $(MAKE) $@
 
 XIFILES = baseformattable.xml \
 	  compressedformattable.xml \

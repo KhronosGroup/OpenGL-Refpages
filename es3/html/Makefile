@@ -13,8 +13,8 @@
 # limitations under the License.
 
 # XSLT processor - other possibilities like Saxon exist
-XSLT    = xsltproc --nonet
-SED     = sed
+XSLT	= xsltproc --nonet
+SED	= sed
 
 # Location of locally customized stylesheet, which imports
 # the Docbook modular stylesheets, and specifically the
@@ -39,7 +39,7 @@ API32XML = \
     glDrawRangeElementsBaseVertex.xhtml \
     glGetGraphicsResetStatus.xhtml \
     glFramebufferTexture.xhtml \
-        glMinSampleShading.xhtml \
+	glMinSampleShading.xhtml \
     glObjectLabel.xhtml \
     glObjectPtrLabel.xhtml \
     glPatchParameteri.xhtml \
@@ -433,32 +433,32 @@ GLSL32XML = \
     EmitVertex.xhtml \
     EndPrimitive.xhtml \
     fma.xhtml \
-        gl_BoundingBox.xhtml \
-        gl_Layer.xhtml \
-        gl_InvocationID.xhtml \
+    gl_BoundingBox.xhtml \
+    gl_Layer.xhtml \
+    gl_InvocationID.xhtml \
     gl_NumSamples.xhtml \
     gl_PatchVerticesIn.xhtml \
     gl_PrimitiveID.xhtml \
     gl_PrimitiveIDIn.xhtml \
-        gl_SampleID.xhtml \
-        gl_SampleMask.xhtml \
-        gl_SampleMaskIn.xhtml \
-        gl_SamplePosition.xhtml \
-        gl_TessCoord.xhtml \
-        gl_TessLevelInner.xhtml \
-        gl_TessLevelOuter.xhtml \
-        imageAtomicAdd.xhtml \
-        imageAtomicAnd.xhtml \
-        imageAtomicCompSwap.xhtml \
-        imageAtomicExchange.xhtml \
-        imageAtomicMax.xhtml \
-        imageAtomicMin.xhtml \
-        imageAtomicOr.xhtml \
-        imageAtomicXor.xhtml \
-        interpolateAtCentroid.xhtml \
-        interpolateAtOffset.xhtml \
-        interpolateAtSample.xhtml \
-        textureGatherOffsets.xhtml
+    gl_SampleID.xhtml \
+    gl_SampleMask.xhtml \
+    gl_SampleMaskIn.xhtml \
+    gl_SamplePosition.xhtml \
+    gl_TessCoord.xhtml \
+    gl_TessLevelInner.xhtml \
+    gl_TessLevelOuter.xhtml \
+    imageAtomicAdd.xhtml \
+    imageAtomicAnd.xhtml \
+    imageAtomicCompSwap.xhtml \
+    imageAtomicExchange.xhtml \
+    imageAtomicMax.xhtml \
+    imageAtomicMin.xhtml \
+    imageAtomicOr.xhtml \
+    imageAtomicXor.xhtml \
+    interpolateAtCentroid.xhtml \
+    interpolateAtOffset.xhtml \
+    interpolateAtSample.xhtml \
+    textureGatherOffsets.xhtml
 
 
 GLSLXML = \
@@ -481,7 +481,7 @@ GLSLXML = \
 XML    = $(APIXML) $(GLSLXML)
 
 # Generate just a few files, for testing
-#XML    = abs.xhtml gl_Position.xhtml glActiveShaderProgram.xhtml
+#XML	= abs.xhtml gl_Position.xhtml glActiveShaderProgram.xhtml
 
 default: $(XML) indices
 
@@ -516,12 +516,12 @@ glMapBufferRange.xhtml \
 $(GLSLXML): $(GLSLXIFILES)
 
 $(XML): %.xhtml: ../%.xml $(DB2XHTML)
-        $(XSLT) --xinclude --noout $(DB2XHTML) $<
+	$(XSLT) --xinclude --noout $(DB2XHTML) $<
 
 indices: Makefile makeindex.py $(XML)
-        ./makeindex.py . .. index.php indexflat.php
+	./makeindex.py . .. index.php indexflat.php
 
 clean:
-        $(RM) $(XML) index.php indexflat.php
+	$(RM) $(XML) index.php indexflat.php
 
 clobber: clean

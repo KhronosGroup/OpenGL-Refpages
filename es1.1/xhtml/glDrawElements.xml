@@ -1,154 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
-                            "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
-<refentry xml:base="" id="glDrawElements">
-    <refmeta>
-        <refmetainfo>
-            <copyright>
-                <year>2003-2004</year>
-                <holder>Silicon Graphics, Inc.</holder>
-            </copyright>
-        </refmetainfo>
-        <refentrytitle>glDrawElements</refentrytitle>
-        <manvolnum>3G</manvolnum>
-    </refmeta>
-
-    <refnamediv>
-        <refname>glDrawElements</refname>
-        <refpurpose>render primitives from array data</refpurpose>
-    </refnamediv>
-
-    <refsynopsisdiv>
-        <title>C Specification</title>
-
-        <funcsynopsis>
-            <funcprototype>
-                <funcdef>void <function>glDrawElements</function></funcdef>
-                <paramdef>GLenum <parameter>mode</parameter></paramdef>
-                <paramdef>GLsizei <parameter>count</parameter></paramdef>
-                <paramdef>GLenum <parameter>type</parameter></paramdef>
-                <paramdef>const GLvoid * <parameter>indices</parameter></paramdef>
-            </funcprototype>
-        </funcsynopsis>
-    </refsynopsisdiv>
-
-    <refsect1 id="parameters"><title>Parameters</title>
-
-        <variablelist>
-            <varlistentry>
-                <term>
-                    <parameter>mode</parameter>
-                </term>
-
-                <listitem>
-                    <para>Specifies what kind of primitives to render.
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd"><!-- saved from url=(0013)about:internet -->
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glDrawElements</title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /></head><body><div class="refentry"><a id="glDrawElements"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glDrawElements — render primitives from array data</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">void <strong class="fsfunc">glDrawElements</strong>(</code></td><td>GLenum <var class="pdparam">mode</var>, </td></tr><tr><td> </td><td>GLsizei <var class="pdparam">count</var>, </td></tr><tr><td> </td><td>GLenum <var class="pdparam">type</var>, </td></tr><tr><td> </td><td>const GLvoid * <var class="pdparam">indices</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">
+                    <em class="parameter"><code>mode</code></em>
+                </span></dt><dd><p>Specifies what kind of primitives to render.
                     Symbolic constants
-                    <constant>GL_POINTS</constant>,
-                    <constant>GL_LINE_STRIP</constant>,
-                    <constant>GL_LINE_LOOP</constant>,
-                    <constant>GL_LINES</constant>,
-                    <constant>GL_TRIANGLE_STRIP</constant>,
-                    <constant>GL_TRIANGLE_FAN</constant>, and
-                    <constant>GL_TRIANGLES</constant> are accepted.</para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <parameter>count</parameter>
-                </term>
-
-                <listitem>
-                    <para>Specifies the number of elements to be rendered.</para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <parameter>type</parameter>
-                </term>
-
-                <listitem>
-                    <para>Specifies the type of the values in
-                    <parameter>indices</parameter>. Must be either
-                    <constant>GL_UNSIGNED_BYTE</constant> or
-                    <constant>GL_UNSIGNED_SHORT</constant>.</para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <parameter>indices</parameter>
-                </term>
-
-                <listitem>
-                    <para>Specifies a pointer to the location where the
-                    indices are stored.</para>
-                </listitem>
-            </varlistentry>
-        </variablelist>
-
-
-    </refsect1>
-
-    <refsect1 id="description"><title>Description</title>
-
-        <para>
-        <function>glDrawElements</function>
+                    <code class="constant">GL_POINTS</code>,
+                    <code class="constant">GL_LINE_STRIP</code>,
+                    <code class="constant">GL_LINE_LOOP</code>,
+                    <code class="constant">GL_LINES</code>,
+                    <code class="constant">GL_TRIANGLE_STRIP</code>,
+                    <code class="constant">GL_TRIANGLE_FAN</code>, and
+                    <code class="constant">GL_TRIANGLES</code> are accepted.</p></dd><dt><span class="term">
+                    <em class="parameter"><code>count</code></em>
+                </span></dt><dd><p>Specifies the number of elements to be rendered.</p></dd><dt><span class="term">
+                    <em class="parameter"><code>type</code></em>
+                </span></dt><dd><p>Specifies the type of the values in
+                    <em class="parameter"><code>indices</code></em>. Must be either
+                    <code class="constant">GL_UNSIGNED_BYTE</code> or
+                    <code class="constant">GL_UNSIGNED_SHORT</code>.</p></dd><dt><span class="term">
+                    <em class="parameter"><code>indices</code></em>
+                </span></dt><dd><p>Specifies a pointer to the location where the
+                    indices are stored.</p></dd></dl></div></div><div class="refsect1"><a id="description"></a><h2>Description</h2><p>
+        <code class="function">glDrawElements</code>
 
         specifies multiple geometric primitives with very few
         subroutine calls. You can prespecify separate arrays of
         vertices, normals, colors, and texture coordinates and use them
         to construct a sequence of primitives with a single call to
-        <function>glDrawElements</function>.</para>
-
-        <para>When <function>glDrawElements</function> is called, it uses
-        <parameter>count</parameter> sequential indices from
-        <parameter>indices</parameter>
+        <code class="function">glDrawElements</code>.</p><p>When <code class="function">glDrawElements</code> is called, it uses
+        <em class="parameter"><code>count</code></em> sequential indices from
+        <em class="parameter"><code>indices</code></em>
         to lookup elements in enabled arrays to construct a sequence of
         geometric primitives.
-        <parameter>mode</parameter>
+        <em class="parameter"><code>mode</code></em>
         specifies what kind of primitives are constructed, and how the
         array elements construct these primitives. If
-        <constant>GL_VERTEX_ARRAY</constant>
-        is not enabled, no geometric primitives are constructed.</para>
-        <para>Vertex attributes that are modified by
-        <function>glDrawElements</function> have an unspecified value after
-        <function>glDrawElements</function>
-        returns. For example, if <constant>GL_COLOR_ARRAY</constant>
+        <code class="constant">GL_VERTEX_ARRAY</code>
+        is not enabled, no geometric primitives are constructed.</p><p>Vertex attributes that are modified by
+        <code class="function">glDrawElements</code> have an unspecified value after
+        <code class="function">glDrawElements</code>
+        returns. For example, if <code class="constant">GL_COLOR_ARRAY</code>
         is enabled, the value of the current color is undefined after
-        <function>glDrawElements</function>
+        <code class="function">glDrawElements</code>
         executes. Attributes that aren't modified maintain their
-        previous values.</para>
-    </refsect1>
-
-    <refsect1 id="errors"><title>Errors</title>
-
-        <para><constant>GL_INVALID_ENUM</constant> is generated if
-        <parameter>mode</parameter> is not an accepted value.</para>
-
-        <para><constant>GL_INVALID_ENUM</constant> is generated if
-        <parameter>type</parameter> is not an accepted value.</para>
-
-        <para><constant>GL_INVALID_VALUE</constant> is generated if
-        <parameter>count</parameter> is negative.</para>
-    </refsect1>
-
-    <refsect1 id="seealso"><title>See Also</title>
-
-        <para>
-        <citerefentry><refentrytitle>glClientActiveTexture</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glColorPointer</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glNormalPointer</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glTexCoordPointer</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glVertexPointer</refentrytitle></citerefentry> </para> </refsect1>
-    <refsect1 id="copyright"><title>Copyright</title>
-        <para>
-            Copyright <trademark class="copyright"></trademark> 2003-2004
+        previous values.</p></div><div class="refsect1"><a id="errors"></a><h2>Errors</h2><p><code class="constant">GL_INVALID_ENUM</code> is generated if
+        <em class="parameter"><code>mode</code></em> is not an accepted value.</p><p><code class="constant">GL_INVALID_ENUM</code> is generated if
+        <em class="parameter"><code>type</code></em> is not an accepted value.</p><p><code class="constant">GL_INVALID_VALUE</code> is generated if
+        <em class="parameter"><code>count</code></em> is negative.</p></div><div class="refsect1"><a id="seealso"></a><h2>See Also</h2><p>
+        <a class="citerefentry" href="glClientActiveTexture.xml"><span class="citerefentry"><span class="refentrytitle">glClientActiveTexture</span></span></a>,
+        <a class="citerefentry" href="glColorPointer.xml"><span class="citerefentry"><span class="refentrytitle">glColorPointer</span></span></a>,
+        <a class="citerefentry" href="glDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span></a>,
+        <a class="citerefentry" href="glNormalPointer.xml"><span class="citerefentry"><span class="refentrytitle">glNormalPointer</span></span></a>,
+        <a class="citerefentry" href="glTexCoordPointer.xml"><span class="citerefentry"><span class="refentrytitle">glTexCoordPointer</span></span></a>,
+        <a class="citerefentry" href="glVertexPointer.xml"><span class="citerefentry"><span class="refentrytitle">glVertexPointer</span></span></a> </p></div><div class="refsect1"><a id="copyright"></a><h2>Copyright</h2><p>
+            Copyright <span class="trademark"></span>© 2003-2004
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see
-            <ulink url="http://oss.sgi.com/projects/FreeB/">http://oss.sgi.com/projects/FreeB/</ulink>.
-        </para>
-    </refsect1>
-</refentry>
+            <a class="ulink" href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
+        </p></div></div></body></html>

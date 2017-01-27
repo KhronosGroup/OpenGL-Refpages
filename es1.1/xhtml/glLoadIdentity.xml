@@ -1,45 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
-			    "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
-<refentry xml:base="" id="glLoadIdentity">
-    <refmeta>
-	<refmetainfo>
-	    <copyright>
-		<year>2003-2004</year>
-		<holder>Silicon Graphics, Inc.</holder>
-	    </copyright>
-	</refmetainfo>
-	<refentrytitle>glLoadIdentity</refentrytitle>
-	<manvolnum>3G</manvolnum>
-    </refmeta>
-
-    <refnamediv>
-	<refname>glLoadIdentity</refname>
-	<refpurpose>replace the current matrix with the identity
-	matrix</refpurpose>
-    </refnamediv>
-
-    <refsynopsisdiv>
-	<title>C Specification</title>
-
-	<funcsynopsis>
-	    <funcprototype>
-		<funcdef>void <function>glLoadIdentity</function></funcdef>
-		<void/>
-	    </funcprototype>
-	</funcsynopsis>
-    </refsynopsisdiv>
-
-    <refsect1 id="description"><title>Description</title>
-
-	<para>
-	<function>glLoadIdentity</function>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd"><!-- saved from url=(0013)about:internet -->
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glLoadIdentity</title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /></head><body><div class="refentry"><a id="glLoadIdentity"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glLoadIdentity — replace the current matrix with the identity
+	matrix</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">void <strong class="fsfunc">glLoadIdentity</strong>(</code></td><td><code>void)</code>;</td><td> </td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1"><a id="description"></a><h2>Description</h2><p>
+	<code class="function">glLoadIdentity</code>
 	replaces the current matrix with the identity matrix. It is
 	semantically equivalent to calling
-	<citerefentry><refentrytitle>glLoadMatrix</refentrytitle></citerefentry>
-	with the identity matrix</para>
-
-	<informalequation><mml:math>
+	<a class="citerefentry" href="glLoadMatrix.xml"><span class="citerefentry"><span class="refentrytitle">glLoadMatrix</span></span></a>
+	with the identity matrix</p><div class="informalequation"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
 	    <mml:mrow>
 		<mml:mo>(</mml:mo>
 		<mml:mtable class="matrix">
@@ -70,41 +37,22 @@
 		</mml:mtable>
 		<mml:mo>)</mml:mo>
 	    </mml:mrow>
-	</mml:math></informalequation>
-
-	<para>but in some cases it is more efficient.</para>
-    </refsect1>
-
-    <refsect1 id="associatedgets"><title>Associated Gets</title>
-        <para>
-            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_MATRIX_MODE</constant>
-        </para>
-        <para>
-            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_MODELVIEW_MATRIX</constant>
-        </para>
-        <para>
-            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PROJECTION_MATRIX</constant>
-        </para>
-        <para>
-            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_TEXTURE_MATRIX</constant>
-        </para>
-    </refsect1>
-
-    <refsect1 id="seealso"><title>See Also</title>
-
-	<para>
-	<citerefentry><refentrytitle>glLoadMatrix</refentrytitle></citerefentry>,
-	<citerefentry><refentrytitle>glMatrixMode</refentrytitle></citerefentry>,
-	<citerefentry><refentrytitle>glMultMatrix</refentrytitle></citerefentry>,
-	<citerefentry><refentrytitle>glPushMatrix</refentrytitle></citerefentry>
-	</para>
-    </refsect1>
-    <refsect1 id="copyright"><title>Copyright</title>
-	<para>
-	    Copyright <trademark class="copyright"></trademark> 2003-2004
+	</mml:math></div><p>but in some cases it is more efficient.</p></div><div class="refsect1"><a id="associatedgets"></a><h2>Associated Gets</h2><p>
+            <a class="citerefentry" href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MATRIX_MODE</code>
+        </p><p>
+            <a class="citerefentry" href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MODELVIEW_MATRIX</code>
+        </p><p>
+            <a class="citerefentry" href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PROJECTION_MATRIX</code>
+        </p><p>
+            <a class="citerefentry" href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_TEXTURE_MATRIX</code>
+        </p></div><div class="refsect1"><a id="seealso"></a><h2>See Also</h2><p>
+	<a class="citerefentry" href="glLoadMatrix.xml"><span class="citerefentry"><span class="refentrytitle">glLoadMatrix</span></span></a>,
+	<a class="citerefentry" href="glMatrixMode.xml"><span class="citerefentry"><span class="refentrytitle">glMatrixMode</span></span></a>,
+	<a class="citerefentry" href="glMultMatrix.xml"><span class="citerefentry"><span class="refentrytitle">glMultMatrix</span></span></a>,
+	<a class="citerefentry" href="glPushMatrix.xml"><span class="citerefentry"><span class="refentrytitle">glPushMatrix</span></span></a>
+	</p></div><div class="refsect1"><a id="copyright"></a><h2>Copyright</h2><p>
+	    Copyright <span class="trademark"></span>© 2003-2004
 	    Silicon Graphics, Inc. This document is licensed under the SGI
 	    Free Software B License. For details, see
-	    <ulink url="http://oss.sgi.com/projects/FreeB/">http://oss.sgi.com/projects/FreeB/</ulink>.
-	</para>
-    </refsect1>
-</refentry>
+	    <a class="ulink" href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
+	</p></div></div></body></html>

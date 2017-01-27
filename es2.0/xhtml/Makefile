@@ -13,8 +13,8 @@
 # limitations under the License.
 
 # XSLT processor - other possibilities like Saxon exist
-XSLT    = xsltproc --nonet
-SED     = sed
+XSLT	= xsltproc --nonet
+SED	= sed
 
 # Location of locally customized stylesheet, which imports
 # the Docbook modular stylesheets, and specifically the
@@ -25,10 +25,10 @@ DB2XHTML = opengl-man.xsl
 .PHONY: man html pdf tex
 
 %.xml: ../%.xml opengl-man.xsl
-        $(XSLT) --xinclude -o $@.tmp $(DB2XHTML) $<
-        $(SED) 's/<?xml-stylesheet/\n<!-- saved from url=(0013)about:internet -->\n<?xml-stylesheet/g' $@.tmp | \
-            $(SED) 's#http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd#xhtml1-transitional.dtd#g' > $@
-        $(RM) $@.tmp
+	$(XSLT) --xinclude -o $@.tmp $(DB2XHTML) $<
+	$(SED) 's/<?xml-stylesheet/\n<!-- saved from url=(0013)about:internet -->\n<?xml-stylesheet/g' $@.tmp | \
+	    $(SED) 's#http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd#xhtml1-transitional.dtd#g' > $@
+	$(RM) $@.tmp
 
 # XML man page source and XHTML targets
 XML = \
@@ -143,10 +143,7 @@ XML = \
 default: $(XML)
 
 clean:
-        $(RM) $(TEX_FILES) *.log *.aux *.toc *.dvi *.out
-
-clobber: clean
-        $(RM) $(XML) $(PDF_FILES)
+	$(RM) $(XML) $(TEX_FILES) *.log *.aux *.toc *.dvi *.out
 
 index.html: makeindex.pl
-        makeindex.pl . .. > index.html
+	makeindex.pl . .. > index.html

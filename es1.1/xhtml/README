@@ -1,6 +1,0 @@
-Branch of ES 1.1 man pages to be brought up to date for publication.
-This includes a framed HTML frontend based on the work Benj Lipchak did
-for the desktop OpenGL reference pages in its SDK (www.opengl.org/sdk/),
-but considerably stripped down (since we have no SDK content other than
-the reference pages, yet), and converted from PHP to pure HTML so it can
-be browsed out of Subversion or in a local disk copy.

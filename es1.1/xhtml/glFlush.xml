@@ -1,74 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
-                            "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
-<refentry xml:base="" id="glFlush">
-    <refmeta>
-        <refmetainfo>
-            <copyright>
-                <year>2003-2004</year>
-                <holder>Silicon Graphics, Inc.</holder>
-            </copyright>
-        </refmetainfo>
-        <refentrytitle>glFlush</refentrytitle>
-        <manvolnum>3G</manvolnum>
-    </refmeta>
-
-    <refnamediv>
-        <refname>glFlush</refname>
-        <refpurpose>force execution of GL commands in finite time</refpurpose>
-    </refnamediv>
-
-    <refsynopsisdiv>
-        <title>C Specification</title>
-
-        <funcsynopsis>
-            <funcprototype>
-                <funcdef>void <function>glFlush</function></funcdef>
-                <void/>
-            </funcprototype>
-        </funcsynopsis>
-    </refsynopsisdiv>
-
-    <refsect1 id="description"><title>Description</title>
-
-        <para>Different GL implementations may buffer commands in
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd"><!-- saved from url=(0013)about:internet -->
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glFlush</title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /></head><body><div class="refentry"><a id="glFlush"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glFlush — force execution of GL commands in finite time</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">void <strong class="fsfunc">glFlush</strong>(</code></td><td><code>void)</code>;</td><td> </td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1"><a id="description"></a><h2>Description</h2><p>Different GL implementations may buffer commands in
         several different locations, including the GL client, the GL
         server, and the graphics accelerator.
-        <function>glFlush</function> empties all of these buffers,
+        <code class="function">glFlush</code> empties all of these buffers,
         causing all issued commands to be executed as quickly as they
         are accepted by the actual rendering engine. Though this
         execution may not be completed in any particular time period, it
-        does complete in finite time.</para>
-  
-        <para>Because any GL program might be on an implementation that
+        does complete in finite time.</p><p>Because any GL program might be on an implementation that
         buffers commands, all programs should call
-        <function>glFlush</function> whenever they count on having all
+        <code class="function">glFlush</code> whenever they count on having all
         of their previously issued commands completed. For example, call
-        <function>glFlush</function> before waiting for user input that
-        depends on the generated image.</para>
-    </refsect1>
-
-    <refsect1 id="notes"><title>Notes</title>
-
-        <para>
-            <function>glFlush</function>
+        <code class="function">glFlush</code> before waiting for user input that
+        depends on the generated image.</p></div><div class="refsect1"><a id="notes"></a><h2>Notes</h2><p>
+            <code class="function">glFlush</code>
             can return at any time. It does not wait until the execution of
             all previously issued GL commands is complete.
-        </para>
-    </refsect1>
-
-    <refsect1 id="seealso"><title>See Also</title>
-
-        <para>
-            <citerefentry><refentrytitle>glFinish</refentrytitle></citerefentry>
-        </para>
-    </refsect1>
-    <refsect1 id="copyright"><title>Copyright</title>
-        <para>
-            Copyright <trademark class="copyright"></trademark> 2003-2004
+        </p></div><div class="refsect1"><a id="seealso"></a><h2>See Also</h2><p>
+            <a class="citerefentry" href="glFinish.xml"><span class="citerefentry"><span class="refentrytitle">glFinish</span></span></a>
+        </p></div><div class="refsect1"><a id="copyright"></a><h2>Copyright</h2><p>
+            Copyright <span class="trademark"></span>© 2003-2004
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see
-            <ulink url="http://oss.sgi.com/projects/FreeB/">http://oss.sgi.com/projects/FreeB/</ulink>.
-        </para>
-    </refsect1>
-</refentry>
+            <a class="ulink" href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
+        </p></div></div></body></html>

@@ -13,8 +13,8 @@
 # limitations under the License.
 
 # XSLT processor - other possibilities like Saxon exist
-XSLT    = xsltproc --nonet
-SED     = sed
+XSLT	= xsltproc --nonet
+SED	= sed
 
 # Location of locally customized stylesheet, which imports
 # the Docbook modular stylesheets, and specifically the
@@ -442,12 +442,12 @@ glRenderbufferStorage.xhtml glRenderbufferStorageMultisample.xhtml \
 $(GLSLXML): $(GLSLXIFILES)
 
 $(XML): %.xhtml: ../%.xml $(DB2XHTML)
-        $(XSLT) --xinclude --noout $(DB2XHTML) $<
+	$(XSLT) --xinclude --noout $(DB2XHTML) $<
 
 indices: Makefile makeindex.py $(XML)
-        ./makeindex.py . .. index.php indexflat.php
+	./makeindex.py . .. index.php indexflat.php
 
 clean:
-        $(RM) $(XML) index.php indexflat.php
+	$(RM) $(XML) index.php indexflat.php
 
 clobber: clean

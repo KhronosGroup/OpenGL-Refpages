@@ -1,275 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
-                            "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
-<refentry xml:base="" id="glPointParameter">
-    <refmeta>
-        <refmetainfo>
-            <copyright>
-                <year>2003-2004</year>
-                <holder>Silicon Graphics, Inc.</holder>
-            </copyright>
-        </refmetainfo>
-        <refentrytitle>glPointParameter</refentrytitle>
-        <manvolnum>3G</manvolnum>
-    </refmeta>
-
-    <refnamediv>
-        <refdescriptor>glPointParameter</refdescriptor>
-        <refname>glPointParameterf</refname>
-        <refname>glPointParameterx</refname>
-        <refname>glPointParameterfv</refname>
-        <refname>glPointParameterxv</refname>
-        <refpurpose>specify parameters for point rasterization</refpurpose>
-    </refnamediv>
-
-    <refsynopsisdiv>
-        <title>C Specification</title>
-
-        <funcsynopsis>
-            <funcprototype>
-                <funcdef>void <function>glPointParameterf</function></funcdef>
-                <paramdef>GLenum <parameter>pname</parameter></paramdef>
-                <paramdef>GLfloat <parameter>param</parameter></paramdef>
-            </funcprototype>
-            <funcprototype>
-                <funcdef>void <function>glPointParameterx</function></funcdef>
-                <paramdef>GLenum <parameter>pname</parameter></paramdef>
-                <paramdef>GLfixed <parameter>param</parameter></paramdef>
-            </funcprototype>
-        </funcsynopsis>
-    </refsynopsisdiv>
-
-    <refsect1 id="parameters"><title>Parameters</title>
-
-        <variablelist>
-
-            <varlistentry>
-                <term>
-                    <parameter>pname</parameter>
-                </term>
-                <listitem>
-                    <para>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd"><!-- saved from url=(0013)about:internet -->
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glPointParameter</title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /></head><body><div class="refentry"><a id="glPointParameter"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glPointParameter — specify parameters for point rasterization</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">void <strong class="fsfunc">glPointParameterf</strong>(</code></td><td>GLenum <var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLfloat <var class="pdparam">param</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">void <strong class="fsfunc">glPointParameterx</strong>(</code></td><td>GLenum <var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLfixed <var class="pdparam">param</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">
+                    <em class="parameter"><code>pname</code></em>
+                </span></dt><dd><p>
                     Specifies the single-valued parameter to be updated.
                     Can be either
-                    <constant>GL_POINT_SIZE_MIN</constant>,
-                    <constant>GL_POINT_SIZE_MAX</constant>, or
-                    <constant>GL_POINT_FADE_THRESHOLD_SIZE</constant>.
-                    </para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <parameter>param</parameter>
-                </term>
-                <listitem>
-                    <para>
+                    <code class="constant">GL_POINT_SIZE_MIN</code>,
+                    <code class="constant">GL_POINT_SIZE_MAX</code>, or
+                    <code class="constant">GL_POINT_FADE_THRESHOLD_SIZE</code>.
+                    </p></dd><dt><span class="term">
+                    <em class="parameter"><code>param</code></em>
+                </span></dt><dd><p>
                     Specifies the value that the parameter will be set to.
-                    </para>
-                </listitem>
-            </varlistentry>
-
-        </variablelist>
-    </refsect1>
-
-    <refsynopsisdiv>
-        <title>C Specification</title>
-
-        <funcsynopsis>
-            <funcprototype>
-                <funcdef>void <function>glPointParameterfv</function></funcdef>
-                <paramdef>GLenum <parameter>pname</parameter></paramdef>
-                <paramdef>const GLfloat * <parameter>params</parameter></paramdef>
-            </funcprototype>
-            <funcprototype>
-                <funcdef>void <function>glPointParameterxv</function></funcdef>
-                <paramdef>GLenum <parameter>pname</parameter></paramdef>
-                <paramdef>const GLfixed * <parameter>params</parameter></paramdef>
-            </funcprototype>
-        </funcsynopsis>
-    </refsynopsisdiv>
-
-    <refsect1 id="parameters2"><title>Parameters</title>
-
-        <variablelist>
-
-            <varlistentry>
-                <term>
-                    <parameter>pname</parameter>
-                </term>
-                <listitem>
-                    <para>
+                    </p></dd></dl></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">void <strong class="fsfunc">glPointParameterfv</strong>(</code></td><td>GLenum <var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>const GLfloat * <var class="pdparam">params</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">void <strong class="fsfunc">glPointParameterxv</strong>(</code></td><td>GLenum <var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>const GLfixed * <var class="pdparam">params</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1"><a id="parameters2"></a><h2>Parameters</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">
+                    <em class="parameter"><code>pname</code></em>
+                </span></dt><dd><p>
                     Specifies the parameter to be updated.
                     Can be either
-                    <constant>GL_POINT_SIZE_MIN</constant>,
-                    <constant>GL_POINT_SIZE_MAX</constant>,
-                    <constant>GL_POINT_FADE_THRESHOLD_SIZE</constant>, or
-                    <constant>GL_POINT_DISTANCE_ATTENUATION</constant>.
-                    </para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <parameter>params</parameter>
-                </term>
-                <listitem>
-                    <para>
+                    <code class="constant">GL_POINT_SIZE_MIN</code>,
+                    <code class="constant">GL_POINT_SIZE_MAX</code>,
+                    <code class="constant">GL_POINT_FADE_THRESHOLD_SIZE</code>, or
+                    <code class="constant">GL_POINT_DISTANCE_ATTENUATION</code>.
+                    </p></dd><dt><span class="term">
+                    <em class="parameter"><code>params</code></em>
+                </span></dt><dd><p>
                     Specifies a pointer to the value or values that
-                    <parameter>pname</parameter>
+                    <em class="parameter"><code>pname</code></em>
                     will be set to.
-                    </para>
-                </listitem>
-            </varlistentry>
-
-        </variablelist>
-    </refsect1>
-
-    <refsect1 id="description"><title>Description</title>
-
-        <para>
-        <function>glPointParameter</function>
+                    </p></dd></dl></div></div><div class="refsect1"><a id="description"></a><h2>Description</h2><p>
+        <code class="function">glPointParameter</code>
         assigns values to point parameters.
-        </para>
-
-        <para>
-        <function>glPointParameter</function>
+        </p><p>
+        <code class="function">glPointParameter</code>
         takes two arguments.
-        <parameter>pname</parameter>,
+        <em class="parameter"><code>pname</code></em>,
         specifies which of several parameters will be modified.
-        <parameter>params</parameter>,
+        <em class="parameter"><code>params</code></em>,
         specifies what value or values will be assigned to the
         specified parameter.
-        </para>
-
-        <para>
+        </p><p>
         The parameters that can be specified using
-        <function>glPointParameter</function>,
+        <code class="function">glPointParameter</code>,
         and their interpretations are as follows:
-        </para>
-
-        <variablelist>
-
-            <varlistentry>
-                <term>
-                    <constant>GL_POINT_SIZE_MIN</constant>
-                </term>
-                <listitem>
-                    <para>
-                    <parameter>param</parameter> specifies,
-                    or <parameter>params</parameter>
+        </p><div class="variablelist"><dl class="variablelist"><dt><span class="term">
+                    <code class="constant">GL_POINT_SIZE_MIN</code>
+                </span></dt><dd><p>
+                    <em class="parameter"><code>param</code></em> specifies,
+                    or <em class="parameter"><code>params</code></em>
                     points to the lower bound to which
                     the derived point size is clamped.
-                    </para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <constant>GL_POINT_SIZE_MAX</constant>
-                </term>
-                <listitem>
-                    <para>
-                    <parameter>param</parameter> specifies,
-                    or <parameter>params</parameter>
+                    </p></dd><dt><span class="term">
+                    <code class="constant">GL_POINT_SIZE_MAX</code>
+                </span></dt><dd><p>
+                    <em class="parameter"><code>param</code></em> specifies,
+                    or <em class="parameter"><code>params</code></em>
                     points to the upper bound to which
                     the derived point size is clamped.
-                    </para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <constant>GL_POINT_FADE_THRESHOLD_SIZE</constant>
-                </term>
-                <listitem>
-                    <para>
-                    <parameter>param</parameter> specifies,
-                    or <parameter>params</parameter>
+                    </p></dd><dt><span class="term">
+                    <code class="constant">GL_POINT_FADE_THRESHOLD_SIZE</code>
+                </span></dt><dd><p>
+                    <em class="parameter"><code>param</code></em> specifies,
+                    or <em class="parameter"><code>params</code></em>
                     points to the point fade threshold.
-                    </para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <constant>GL_POINT_DISTANCE_ATTENUATION</constant>
-                </term>
-                <listitem>
-                    <para>
-                    <parameter>params</parameter>
+                    </p></dd><dt><span class="term">
+                    <code class="constant">GL_POINT_DISTANCE_ATTENUATION</code>
+                </span></dt><dd><p>
+                    <em class="parameter"><code>params</code></em>
                     points to the distance attenuation function coefficients
-                    <constant>a</constant>,
-                    <constant>b</constant>, and
-                    <constant>c</constant>.
-                    </para>
-                </listitem>
-            </varlistentry>
-
-        </variablelist>
-    </refsect1>
-
-    <refsect1 id="notes"><title>Notes</title>
-
-        <para>
+                    <code class="constant">a</code>,
+                    <code class="constant">b</code>, and
+                    <code class="constant">c</code>.
+                    </p></dd></dl></div></div><div class="refsect1"><a id="notes"></a><h2>Notes</h2><p>
         If the point size lower bound is greater than the upper bound,
         then the point size after clamping is undefined.
-        </para>
-    </refsect1>
-
-    <refsect1 id="errors"><title>Errors</title>
-
-        <para>
-            <constant>GL_INVALID_ENUM</constant> is generated if
-            <parameter>pname</parameter>
+        </p></div><div class="refsect1"><a id="errors"></a><h2>Errors</h2><p>
+            <code class="constant">GL_INVALID_ENUM</code> is generated if
+            <em class="parameter"><code>pname</code></em>
             is not an accepted value.
-        </para>
-
-        <para>
-            <constant>GL_INVALID_VALUE</constant> is generated
+        </p><p>
+            <code class="constant">GL_INVALID_VALUE</code> is generated
             if assigned values for
-            <constant>GL_POINT_SIZE_MIN</constant>,
-            <constant>GL_POINT_SIZE_MAX</constant>, or
-            <constant>GL_POINT_FADE_THRESHOLD_SIZE</constant>
-            are less then <constant>zero</constant>.
-        </para>
-
-    </refsect1>
-
-    <refsect1 id="associatedgets"><title>Associated Gets</title>
-
-        <para>
-        <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>
-        with argument <constant>GL_POINT_DISTANCE_ATTENUATION</constant></para>
-
-        <para>
-        <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>
-        with argument <constant>GL_POINT_FADE_THRESHOLD_SIZE</constant></para>
-
-        <para>
-        <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>
-        with argument <constant>GL_POINT_SIZE_MAX</constant></para>
-
-        <para>
-        <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>
-        with argument <constant>GL_POINT_SIZE_MIN</constant></para>
-    </refsect1>
-
-    <refsect1 id="seealso"><title>See Also</title>
-
-        <para>
-            <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glLight</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glLightModel</refentrytitle></citerefentry>
-        </para>
-    </refsect1>
-    <refsect1 id="copyright"><title>Copyright</title>
-        <para>
-            Copyright <trademark class="copyright"></trademark> 2003-2004
+            <code class="constant">GL_POINT_SIZE_MIN</code>,
+            <code class="constant">GL_POINT_SIZE_MAX</code>, or
+            <code class="constant">GL_POINT_FADE_THRESHOLD_SIZE</code>
+            are less then <code class="constant">zero</code>.
+        </p></div><div class="refsect1"><a id="associatedgets"></a><h2>Associated Gets</h2><p>
+        <a class="citerefentry" href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>
+        with argument <code class="constant">GL_POINT_DISTANCE_ATTENUATION</code></p><p>
+        <a class="citerefentry" href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>
+        with argument <code class="constant">GL_POINT_FADE_THRESHOLD_SIZE</code></p><p>
+        <a class="citerefentry" href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>
+        with argument <code class="constant">GL_POINT_SIZE_MAX</code></p><p>
+        <a class="citerefentry" href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>
+        with argument <code class="constant">GL_POINT_SIZE_MIN</code></p></div><div class="refsect1"><a id="seealso"></a><h2>See Also</h2><p>
+            <a class="citerefentry" href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>,
+            <a class="citerefentry" href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>,
+            <a class="citerefentry" href="glLight.xml"><span class="citerefentry"><span class="refentrytitle">glLight</span></span></a>,
+            <a class="citerefentry" href="glLightModel.xml"><span class="citerefentry"><span class="refentrytitle">glLightModel</span></span></a>
+        </p></div><div class="refsect1"><a id="copyright"></a><h2>Copyright</h2><p>
+            Copyright <span class="trademark"></span>© 2003-2004
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see
-            <ulink url="http://oss.sgi.com/projects/FreeB/">http://oss.sgi.com/projects/FreeB/</ulink>.
-        </para>
-    </refsect1>
-</refentry>
+            <a class="ulink" href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
+        </p></div></div></body></html>

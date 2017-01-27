@@ -1,358 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
-                            "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
-<refentry xml:base="" id="glIsEnabled">
-    <refmeta>
-        <refmetainfo>
-            <copyright>
-                <year>2003-2004</year>
-                <holder>Silicon Graphics, Inc.</holder>
-            </copyright>
-        </refmetainfo>
-        <refentrytitle>glIsEnabled</refentrytitle>
-        <manvolnum>3G</manvolnum>
-    </refmeta>
-
-    <refnamediv>
-        <refdescriptor>glIsEnabled</refdescriptor>
-        <refname>glIsEnabled</refname>
-        <refpurpose>test whether a capability is enabled</refpurpose>
-    </refnamediv>
-
-    <refsynopsisdiv>
-        <title>C Specification</title>
-
-        <funcsynopsis>
-            <funcprototype>
-                <funcdef>GLboolean <function>glIsEnabled</function></funcdef>
-                <paramdef>GLenum <parameter>cap</parameter></paramdef>
-            </funcprototype>
-        </funcsynopsis>
-
-    </refsynopsisdiv>
-
-    <refsect1 id="parameters"><title>Parameters</title>
-
-        <variablelist>
-
-            <varlistentry>
-                <term>
-                    <parameter>cap</parameter>
-                </term>
-                <listitem>
-                    <para>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd"><!-- saved from url=(0013)about:internet -->
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glIsEnabled</title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /></head><body><div class="refentry"><a id="glIsEnabled"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glIsEnabled — test whether a capability is enabled</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">GLboolean <strong class="fsfunc">glIsEnabled</strong>(</code></td><td>GLenum <var class="pdparam">cap</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">
+                    <em class="parameter"><code>cap</code></em>
+                </span></dt><dd><p>
                     Specifies a symbolic constant indicating a GL capability.
-                    </para>
-                </listitem>
-            </varlistentry>
-
-        </variablelist>
-    </refsect1>
-
-    <refsect1 id="description"><title>Description</title>
-
-        <para>
-        <function>glIsEnabled</function>
-        returns <constant>GL_TRUE</constant> if cap is an enabled
-        capability and returns <constant>GL_FALSE</constant> otherwise.
-        </para>
-
-        <para>
-        The following capabilities are accepted for <parameter>cap</parameter>:
-        </para>
-
-        <informaltable frame="none">
-            <tgroup cols="3" align="left">
-                <colspec colname="c1" align="left"/>
-                <colspec colname="c2" align="left"/>
-                <colspec colname="c3" align="left"/>
-                <thead>
-                    <row>
-                        <entry><constant>Constant</constant></entry>
-                        <entry></entry>
-                        <entry><constant>See function:</constant></entry>
-                    </row>
-                    <row>
-                    <entry></entry>
-                    <entry></entry>
-                    <entry></entry>
-                    </row>
-                </thead>
-
-                <tbody>
-
-                    <row rowsep="1">
-                        <entry><constant>GL_ALPHA_TEST</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glAlphaFunc</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1">
-                        <entry><constant>GL_BLEND</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glBlendFunc</refentrytitle></citerefentry>,
-                        <citerefentry><refentrytitle>glLogicOp</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1">
-                        <entry>
-                        <constant>GL_CLIP_PLANE<inlineequation><mml:math><mml:mi>i</mml:mi></mml:math></inlineequation>
-                        </constant>
-                        </entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glClipPlane</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1">
-                        <entry><constant>GL_COLOR_ARRAY</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glColorPointer</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1">
-                        <entry><constant>GL_COLOR_LOGIC_OP</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glLogicOp</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1">
-                        <entry><constant>GL_COLOR_MATERIAL</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glMaterial</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1">
-                        <entry><constant>GL_CULL_FACE</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glCullFace</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1">
-                        <entry><constant>GL_DEPTH_TEST</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glDepthFunc</refentrytitle></citerefentry>,
-                        <citerefentry><refentrytitle>glDepthRange</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1">
-                        <entry><constant>GL_DITHER</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1">
-                        <entry><constant>GL_FOG</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glFog</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1">
-                        <entry>
-                        <constant>GL_LIGHT<inlineequation><mml:math><mml:mi>i</mml:mi></mml:math></inlineequation>
-                        </constant>
-                        </entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glLight</refentrytitle></citerefentry>,
-                        <citerefentry><refentrytitle>glLightModel</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1">
-                        <entry><constant>GL_LIGHTING</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glLight</refentrytitle></citerefentry>,
-                        <citerefentry><refentrytitle>glLightModel</refentrytitle></citerefentry>,
-                        <citerefentry><refentrytitle>glMaterial</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1">
-                        <entry><constant>GL_LINE_SMOOTH</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glLineWidth</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1" revision="OES_matrix_palette">
-                        <entry><constant>GL_MATRIX_INDEX_ARRAY_OES</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glEnableClientState</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1" revision="OES_matrix_palette">
-                        <entry><constant>GL_MATRIX_PALETTE_OES</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glMatrixMode</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1">
-                        <entry><constant>GL_MULTISAMPLE</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1">
-                        <entry><constant>GL_NORMAL_ARRAY</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glNormalPointer</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1">
-                        <entry><constant>GL_NORMALIZE</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glNormal</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1" revision="es1.1">
-                        <entry><constant>GL_POINT_SIZE_ARRAY_OES</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glEnableClientState</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1">
-                        <entry><constant>GL_POINT_SMOOTH</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glPointSize</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1">
-                        <entry><constant>GL_POINT_SPRITE_OES</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glTexEnv</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1">
-                        <entry><constant>GL_POLYGON_OFFSET_FILL</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glPolygonOffset</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1">
-                        <entry><constant>GL_RESCALE_NORMAL</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glNormal</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1">
-                        <entry><constant>GL_SAMPLE_ALPHA_TO_COVERAGE</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glSampleCoverage</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1">
-                        <entry><constant>GL_SAMPLE_ALPHA_TO_ONE</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glSampleCoverage</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1">
-                        <entry><constant>GL_SAMPLE_COVERAGE</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glSampleCoverage</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1">
-                        <entry><constant>GL_SCISSOR_TEST</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glScissor</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1">
-                        <entry><constant>GL_STENCIL_TEST</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glStencilFunc</refentrytitle></citerefentry>,
-                        <citerefentry><refentrytitle>glStencilOp</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1">
-                        <entry><constant>GL_TEXTURE_2D</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1">
-                        <entry><constant>GL_TEXTURE_COORD_ARRAY</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glTexCoordPointer</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1">
-                        <entry><constant>GL_VERTEX_ARRAY</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glVertexPointer</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row rowsep="1" revision="OES_matrix_palette">
-                        <entry><constant>GL_WEIGHT_ARRAY_OES</constant></entry>
-                        <entry></entry>
-                        <entry>
-                        <citerefentry><refentrytitle>glEnableClientState</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-
-                </tbody>
-            </tgroup>
-        </informaltable>
-
-    </refsect1>
-
-    <refsect1 id="notes"><title>Notes</title>
-
-        <para>
+                    </p></dd></dl></div></div><div class="refsect1"><a id="description"></a><h2>Description</h2><p>
+        <code class="function">glIsEnabled</code>
+        returns <code class="constant">GL_TRUE</code> if cap is an enabled
+        capability and returns <code class="constant">GL_FALSE</code> otherwise.
+        </p><p>
+        The following capabilities are accepted for <em class="parameter"><code>cap</code></em>:
+        </p><div class="informaltable"><table border="0"><colgroup><col align="left" class="c1" /><col align="left" class="c2" /><col align="left" class="c3" /></colgroup><thead><tr><th align="left"><code class="constant">Constant</code></th><th align="left"> </th><th align="left"><code class="constant">See function:</code></th></tr><tr><th align="left"> </th><th align="left"> </th><th align="left"> </th></tr></thead><tbody><tr><td align="left"><code class="constant">GL_ALPHA_TEST</code></td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glAlphaFunc.xml"><span class="citerefentry"><span class="refentrytitle">glAlphaFunc</span></span></a>
+                        </td></tr><tr><td align="left"><code class="constant">GL_BLEND</code></td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glBlendFunc.xml"><span class="citerefentry"><span class="refentrytitle">glBlendFunc</span></span></a>,
+                        <a class="citerefentry" href="glLogicOp.xml"><span class="citerefentry"><span class="refentrytitle">glLogicOp</span></span></a>
+                        </td></tr><tr><td align="left">
+                        <code class="constant">GL_CLIP_PLANE<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi>i</mml:mi></mml:math>
+                        </code>
+                        </td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glClipPlane.xml"><span class="citerefentry"><span class="refentrytitle">glClipPlane</span></span></a>
+                        </td></tr><tr><td align="left"><code class="constant">GL_COLOR_ARRAY</code></td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glColorPointer.xml"><span class="citerefentry"><span class="refentrytitle">glColorPointer</span></span></a>
+                        </td></tr><tr><td align="left"><code class="constant">GL_COLOR_LOGIC_OP</code></td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glLogicOp.xml"><span class="citerefentry"><span class="refentrytitle">glLogicOp</span></span></a>
+                        </td></tr><tr><td align="left"><code class="constant">GL_COLOR_MATERIAL</code></td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glMaterial.xml"><span class="citerefentry"><span class="refentrytitle">glMaterial</span></span></a>
+                        </td></tr><tr><td align="left"><code class="constant">GL_CULL_FACE</code></td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glCullFace.xml"><span class="citerefentry"><span class="refentrytitle">glCullFace</span></span></a>
+                        </td></tr><tr><td align="left"><code class="constant">GL_DEPTH_TEST</code></td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glDepthFunc.xml"><span class="citerefentry"><span class="refentrytitle">glDepthFunc</span></span></a>,
+                        <a class="citerefentry" href="glDepthRange.xml"><span class="citerefentry"><span class="refentrytitle">glDepthRange</span></span></a>
+                        </td></tr><tr><td align="left"><code class="constant">GL_DITHER</code></td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>
+                        </td></tr><tr><td align="left"><code class="constant">GL_FOG</code></td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glFog.xml"><span class="citerefentry"><span class="refentrytitle">glFog</span></span></a>
+                        </td></tr><tr><td align="left">
+                        <code class="constant">GL_LIGHT<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi>i</mml:mi></mml:math>
+                        </code>
+                        </td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glLight.xml"><span class="citerefentry"><span class="refentrytitle">glLight</span></span></a>,
+                        <a class="citerefentry" href="glLightModel.xml"><span class="citerefentry"><span class="refentrytitle">glLightModel</span></span></a>
+                        </td></tr><tr><td align="left"><code class="constant">GL_LIGHTING</code></td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glLight.xml"><span class="citerefentry"><span class="refentrytitle">glLight</span></span></a>,
+                        <a class="citerefentry" href="glLightModel.xml"><span class="citerefentry"><span class="refentrytitle">glLightModel</span></span></a>,
+                        <a class="citerefentry" href="glMaterial.xml"><span class="citerefentry"><span class="refentrytitle">glMaterial</span></span></a>
+                        </td></tr><tr><td align="left"><code class="constant">GL_LINE_SMOOTH</code></td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glLineWidth.xml"><span class="citerefentry"><span class="refentrytitle">glLineWidth</span></span></a>
+                        </td></tr><tr><td align="left"><code class="constant">GL_MULTISAMPLE</code></td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>
+                        </td></tr><tr><td align="left"><code class="constant">GL_NORMAL_ARRAY</code></td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glNormalPointer.xml"><span class="citerefentry"><span class="refentrytitle">glNormalPointer</span></span></a>
+                        </td></tr><tr><td align="left"><code class="constant">GL_NORMALIZE</code></td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glNormal.xml"><span class="citerefentry"><span class="refentrytitle">glNormal</span></span></a>
+                        </td></tr><tr><td align="left"><code class="constant">GL_POINT_SIZE_ARRAY_OES</code></td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glEnableClientState.xml"><span class="citerefentry"><span class="refentrytitle">glEnableClientState</span></span></a>
+                        </td></tr><tr><td align="left"><code class="constant">GL_POINT_SMOOTH</code></td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glPointSize.xml"><span class="citerefentry"><span class="refentrytitle">glPointSize</span></span></a>
+                        </td></tr><tr><td align="left"><code class="constant">GL_POINT_SPRITE_OES</code></td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glTexEnv.xml"><span class="citerefentry"><span class="refentrytitle">glTexEnv</span></span></a>
+                        </td></tr><tr><td align="left"><code class="constant">GL_POLYGON_OFFSET_FILL</code></td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glPolygonOffset.xml"><span class="citerefentry"><span class="refentrytitle">glPolygonOffset</span></span></a>
+                        </td></tr><tr><td align="left"><code class="constant">GL_RESCALE_NORMAL</code></td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glNormal.xml"><span class="citerefentry"><span class="refentrytitle">glNormal</span></span></a>
+                        </td></tr><tr><td align="left"><code class="constant">GL_SAMPLE_ALPHA_TO_COVERAGE</code></td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glSampleCoverage.xml"><span class="citerefentry"><span class="refentrytitle">glSampleCoverage</span></span></a>
+                        </td></tr><tr><td align="left"><code class="constant">GL_SAMPLE_ALPHA_TO_ONE</code></td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glSampleCoverage.xml"><span class="citerefentry"><span class="refentrytitle">glSampleCoverage</span></span></a>
+                        </td></tr><tr><td align="left"><code class="constant">GL_SAMPLE_COVERAGE</code></td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glSampleCoverage.xml"><span class="citerefentry"><span class="refentrytitle">glSampleCoverage</span></span></a>
+                        </td></tr><tr><td align="left"><code class="constant">GL_SCISSOR_TEST</code></td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glScissor.xml"><span class="citerefentry"><span class="refentrytitle">glScissor</span></span></a>
+                        </td></tr><tr><td align="left"><code class="constant">GL_STENCIL_TEST</code></td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glStencilFunc.xml"><span class="citerefentry"><span class="refentrytitle">glStencilFunc</span></span></a>,
+                        <a class="citerefentry" href="glStencilOp.xml"><span class="citerefentry"><span class="refentrytitle">glStencilOp</span></span></a>
+                        </td></tr><tr><td align="left"><code class="constant">GL_TEXTURE_2D</code></td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a>
+                        </td></tr><tr><td align="left"><code class="constant">GL_TEXTURE_COORD_ARRAY</code></td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glTexCoordPointer.xml"><span class="citerefentry"><span class="refentrytitle">glTexCoordPointer</span></span></a>
+                        </td></tr><tr><td align="left"><code class="constant">GL_VERTEX_ARRAY</code></td><td align="left"> </td><td align="left">
+                        <a class="citerefentry" href="glVertexPointer.xml"><span class="citerefentry"><span class="refentrytitle">glVertexPointer</span></span></a>
+                        </td></tr></tbody></table></div></div><div class="refsect1"><a id="notes"></a><h2>Notes</h2><p>
         If an error is generated,
-        <function>glIsEnabled</function> returns 0.
-        </para>
-    </refsect1>
-
-    <refsect1 id="errors"><title>Errors</title>
-        <para>
-        <constant>GL_INVALID_ENUM</constant> is generated if
-        <parameter>cap</parameter> is not an accepted value.
-        </para>
-    </refsect1>
-
-    <refsect1 id="seealso"><title>See Also</title>
-
-        <para>
-        <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glEnableClientState</refentrytitle></citerefentry>
-        </para>
-    </refsect1>
-
-    <refsect1 id="copyright"><title>Copyright</title>
-        <para>
-            Copyright <trademark class="copyright"></trademark> 2003-2004
+        <code class="function">glIsEnabled</code> returns 0.
+        </p></div><div class="refsect1"><a id="errors"></a><h2>Errors</h2><p>
+        <code class="constant">GL_INVALID_ENUM</code> is generated if
+        <em class="parameter"><code>cap</code></em> is not an accepted value.
+        </p></div><div class="refsect1"><a id="seealso"></a><h2>See Also</h2><p>
+        <a class="citerefentry" href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>,
+        <a class="citerefentry" href="glEnableClientState.xml"><span class="citerefentry"><span class="refentrytitle">glEnableClientState</span></span></a>
+        </p></div><div class="refsect1"><a id="copyright"></a><h2>Copyright</h2><p>
+            Copyright <span class="trademark"></span>© 2003-2004
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see
-            <ulink url="http://oss.sgi.com/projects/FreeB/">http://oss.sgi.com/projects/FreeB/</ulink>.
-        </para>
-    </refsect1>
-</refentry>
+            <a class="ulink" href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
+        </p></div></div></body></html>

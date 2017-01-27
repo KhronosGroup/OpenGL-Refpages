@@ -1,160 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
-                            "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
-<refentry xml:base="" id="glNormalPointer">
-    <refmeta>
-        <refmetainfo>
-            <copyright>
-                <year>2003-2004</year>
-                <holder>Silicon Graphics, Inc.</holder>
-            </copyright>
-        </refmetainfo>
-        <refentrytitle>glNormalPointer</refentrytitle>
-        <manvolnum>3G</manvolnum>
-    </refmeta>
-
-    <refnamediv>
-        <refname>glNormalPointer</refname>
-        <refpurpose>define an array of normals</refpurpose>
-    </refnamediv>
-
-    <refsynopsisdiv>
-        <title>C Specification</title>
-
-        <funcsynopsis>
-            <funcprototype>
-                <funcdef>void <function>glNormalPointer</function></funcdef>
-                <paramdef>GLenum <parameter>type</parameter></paramdef>
-                <paramdef>GLsizei <parameter>stride</parameter></paramdef>
-                <paramdef>const GLvoid * <parameter>pointer</parameter></paramdef>
-            </funcprototype>
-        </funcsynopsis>
-    </refsynopsisdiv>
-
-    <refsect1 id="parameters"><title>Parameters</title>
-
-        <variablelist>
-            <varlistentry>
-                <term>
-                    <parameter>type</parameter>
-                </term>
-
-                <listitem>
-                    <para>Specifies the data type of each coordinate in the
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd"><!-- saved from url=(0013)about:internet -->
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glNormalPointer</title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /></head><body><div class="refentry"><a id="glNormalPointer"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glNormalPointer — define an array of normals</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">void <strong class="fsfunc">glNormalPointer</strong>(</code></td><td>GLenum <var class="pdparam">type</var>, </td></tr><tr><td> </td><td>GLsizei <var class="pdparam">stride</var>, </td></tr><tr><td> </td><td>const GLvoid * <var class="pdparam">pointer</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">
+                    <em class="parameter"><code>type</code></em>
+                </span></dt><dd><p>Specifies the data type of each coordinate in the
                     array. Symbolic constants
-                    <constant>GL_BYTE</constant>,
-                    <constant>GL_SHORT</constant>, and
-                    <constant>GL_FIXED</constant> are accepted.
+                    <code class="constant">GL_BYTE</code>,
+                    <code class="constant">GL_SHORT</code>, and
+                    <code class="constant">GL_FIXED</code> are accepted.
                     However, the initial value is
-                    <constant>GL_FLOAT</constant>.</para>
-
-                    <para>
+                    <code class="constant">GL_FLOAT</code>.</p><p>
                         The common profile accepts the symbolic constant
-                        <constant>GL_FLOAT</constant> as well.
-                    </para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <parameter>stride</parameter>
-                </term>
-
-                <listitem>
-                    <para>Specifies the byte offset between consecutive
-                    normals. If <parameter>stride</parameter>
+                        <code class="constant">GL_FLOAT</code> as well.
+                    </p></dd><dt><span class="term">
+                    <em class="parameter"><code>stride</code></em>
+                </span></dt><dd><p>Specifies the byte offset between consecutive
+                    normals. If <em class="parameter"><code>stride</code></em>
                     is 0, the normals are understood to be
                     tightly packed in the array. The initial value is
-                    0.</para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <parameter>pointer</parameter>
-                </term>
-
-                <listitem>
-                    <para>Specifies a pointer to the first coordinate of the
-                    first normal in the array. The initial value is 0.</para>
-                </listitem>
-            </varlistentry>
-        </variablelist>
-    </refsect1>
-
-    <refsect1 id="description"><title>Description</title>
-
-        <para><function>glNormalPointer</function>
+                    0.</p></dd><dt><span class="term">
+                    <em class="parameter"><code>pointer</code></em>
+                </span></dt><dd><p>Specifies a pointer to the first coordinate of the
+                    first normal in the array. The initial value is 0.</p></dd></dl></div></div><div class="refsect1"><a id="description"></a><h2>Description</h2><p><code class="function">glNormalPointer</code>
         specifies the location and data of an array of normals to use
-        when rendering.  <parameter>type</parameter>
+        when rendering.  <em class="parameter"><code>type</code></em>
         specifies the data type of the normal coordinates and
-        <parameter>stride</parameter>
+        <em class="parameter"><code>stride</code></em>
         gives the byte stride from one normal to the next, allowing
         vertices and attributes to be packed into a single array or
         stored in separate arrays. (Single-array storage may be more
         efficient on some implementations.) When a normal array is
         specified,
-        <parameter>type</parameter> ,
-        <parameter>stride</parameter> , and
-        <parameter>pointer</parameter>
-        are saved as client-side state.</para>
-
-        <para>
+        <em class="parameter"><code>type</code></em> ,
+        <em class="parameter"><code>stride</code></em> , and
+        <em class="parameter"><code>pointer</code></em>
+        are saved as client-side state.</p><p>
         If the normal array is enabled, it is used when
-        <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry> or
-        <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>
+        <a class="citerefentry" href="glDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span></a> or
+        <a class="citerefentry" href="glDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a>
         is called.
         To enable and disable the normal array, call
-        <citerefentry><refentrytitle>glEnableClientState</refentrytitle></citerefentry>
+        <a class="citerefentry" href="glEnableClientState.xml"><span class="citerefentry"><span class="refentrytitle">glEnableClientState</span></span></a>
         and
-        <citerefentry><refentrytitle>glDisableClientState</refentrytitle></citerefentry>
-        with the argument <constant>GL_NORMAL_ARRAY</constant>.
+        <a class="citerefentry" href="glDisableClientState.xml"><span class="citerefentry"><span class="refentrytitle">glDisableClientState</span></span></a>
+        with the argument <code class="constant">GL_NORMAL_ARRAY</code>.
         The normal array is initially disabled and isn't accessed when
-        <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry> or
-        <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>
-        is called.</para>
-
-        <para>Use
-        <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>
+        <a class="citerefentry" href="glDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span></a> or
+        <a class="citerefentry" href="glDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a>
+        is called.</p><p>Use
+        <a class="citerefentry" href="glDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span></a>
         to construct a sequence of primitives (all of the same type)
         from prespecified vertex and vertex attribute arrays. Use
-        <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>
+        <a class="citerefentry" href="glDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a>
         to construct a sequence of primitives by indexing vertices and
-        vertex attributes.</para>
-    </refsect1>
-
-    <refsect1 id="notes"><title>Notes</title>
-
-        <para><function>glNormalPointer</function>
-        is typically implemented on the client side.</para>
-    </refsect1>
-
-    <refsect1 id="errors"><title>Errors</title>
-
-        <para><constant>GL_INVALID_ENUM</constant> is generated if
-        <parameter>type</parameter> is not an accepted value.</para>
-
-        <para><constant>GL_INVALID_VALUE</constant> is generated if
-        <parameter>stride</parameter> is negative.</para>
-    </refsect1>
-
-    <refsect1 id="seealso"><title>See Also</title>
-
-        <para>
-        <citerefentry><refentrytitle>glColorPointer</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glTexCoordPointer</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glVertexPointer</refentrytitle></citerefentry>
-        </para>
-    </refsect1>
-    <refsect1 id="copyright"><title>Copyright</title>
-        <para>
-            Copyright <trademark class="copyright"></trademark> 2003-2004
+        vertex attributes.</p></div><div class="refsect1"><a id="notes"></a><h2>Notes</h2><p><code class="function">glNormalPointer</code>
+        is typically implemented on the client side.</p></div><div class="refsect1"><a id="errors"></a><h2>Errors</h2><p><code class="constant">GL_INVALID_ENUM</code> is generated if
+        <em class="parameter"><code>type</code></em> is not an accepted value.</p><p><code class="constant">GL_INVALID_VALUE</code> is generated if
+        <em class="parameter"><code>stride</code></em> is negative.</p></div><div class="refsect1"><a id="seealso"></a><h2>See Also</h2><p>
+        <a class="citerefentry" href="glColorPointer.xml"><span class="citerefentry"><span class="refentrytitle">glColorPointer</span></span></a>,
+        <a class="citerefentry" href="glDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span></a>,
+        <a class="citerefentry" href="glDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a>,
+        <a class="citerefentry" href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>,
+        <a class="citerefentry" href="glTexCoordPointer.xml"><span class="citerefentry"><span class="refentrytitle">glTexCoordPointer</span></span></a>,
+        <a class="citerefentry" href="glVertexPointer.xml"><span class="citerefentry"><span class="refentrytitle">glVertexPointer</span></span></a>
+        </p></div><div class="refsect1"><a id="copyright"></a><h2>Copyright</h2><p>
+            Copyright <span class="trademark"></span>© 2003-2004
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see
-            <ulink url="http://oss.sgi.com/projects/FreeB/">http://oss.sgi.com/projects/FreeB/</ulink>.
-        </para>
-    </refsect1>
-</refentry>
+            <a class="ulink" href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
+        </p></div></div></body></html>

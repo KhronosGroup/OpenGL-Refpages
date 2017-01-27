@@ -13,8 +13,8 @@
 # limitations under the License.
 
 # XSLT processor - other possibilities like Saxon exist
-XSLT    = xsltproc --nonet
-SED     = sed
+XSLT	= xsltproc --nonet
+SED	= sed
 
 # Location of locally customized stylesheet, which imports
 # the Docbook modular stylesheets, and specifically the
@@ -507,7 +507,7 @@ UNMODIFIEDXML = \
 
 MODIFIEDXML = \
 
-APIXML  = $(GL4XML) $(GL41XML) $(GL42XML) $(GL43XML) $(GL44XML) $(GL45XML) $(MODIFIEDFORGL4XML) $(UNMODIFIEDXML)
+APIXML	= $(GL4XML) $(GL41XML) $(GL42XML) $(GL43XML) $(GL44XML) $(GL45XML) $(MODIFIEDFORGL4XML) $(UNMODIFIEDXML)
 
 ############################ GLSL pages ############################
 
@@ -798,12 +798,12 @@ $(GLSLXML): $(GLSLXIFILES)
 # OLINKARGS = --stringparam collect.xref.targets "only"
 
 $(XML): %.xhtml: ../%.xml $(DB2XHTML)
-        $(XSLT) $(OLINKARGS) --xinclude --noout $(DB2XHTML) $<
+	$(XSLT) $(OLINKARGS) --xinclude --noout $(DB2XHTML) $<
 
 indices: Makefile makeindex.py $(XML)
-        ./makeindex.py . .. index.php indexflat.php
+	./makeindex.py . .. index.php indexflat.php
 
 clean:
-        $(RM) $(XML) index.php indexflat.php
+	$(RM) $(XML) index.php indexflat.php
 
 clobber: clean

@@ -1,215 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
-                            "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
-<refentry xml:base="" id="glEnableClientState">
-    <refmeta>
-        <refmetainfo>
-            <copyright>
-                <year>2003-2004</year>
-                <holder>Silicon Graphics, Inc.</holder>
-            </copyright>
-        </refmetainfo>
-        <refentrytitle>glEnableClientState</refentrytitle>
-        <manvolnum>3G</manvolnum>
-    </refmeta>
-
-    <refnamediv>
-        <refdescriptor>glEnableClientState</refdescriptor>
-        <refname>glEnableClientState</refname>
-        <refname>glDisableClientState</refname>
-        <refpurpose>enable or disable client-side capability</refpurpose>
-    </refnamediv>
-
-    <refsynopsisdiv>
-        <title>C Specification</title>
-
-        <funcsynopsis>
-            <funcprototype>
-                <funcdef>void <function>glEnableClientState</function></funcdef>
-                <paramdef>GLenum <parameter>array</parameter></paramdef>
-            </funcprototype>
-            <funcprototype>
-                <funcdef>void <function>glDisableClientState</function></funcdef>
-                <paramdef>GLenum <parameter>array</parameter></paramdef>
-            </funcprototype>
-        </funcsynopsis>
-    </refsynopsisdiv>
-
-    <refsect1 id="parameters"><title>Parameters</title>
-
-        <variablelist>
-            <varlistentry>
-                <term>
-                    <parameter>array</parameter>
-                </term>
-
-                <listitem>
-                    <para>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd"><!-- saved from url=(0013)about:internet -->
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glEnableClientState</title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /></head><body><div class="refentry"><a id="glEnableClientState"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glEnableClientState — enable or disable client-side capability</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">void <strong class="fsfunc">glEnableClientState</strong>(</code></td><td>GLenum <var class="pdparam">array</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">void <strong class="fsfunc">glDisableClientState</strong>(</code></td><td>GLenum <var class="pdparam">array</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">
+                    <em class="parameter"><code>array</code></em>
+                </span></dt><dd><p>
                     Specifies the capability to enable or disable.
                     Symbolic constants
-                    <constant>GL_COLOR_ARRAY</constant>,
-                    <constant revision="OES_matrix_palette">GL_MATRIX_INDEX_ARRAY_OES</constant><phrase revision="OES_matrix_palette">,</phrase>
-                    <constant>GL_NORMAL_ARRAY</constant>,
-                    <constant revision="es1.1">GL_POINT_SIZE_ARRAY_OES</constant><phrase revision="es1.1">,</phrase>
-                    <constant>GL_TEXTURE_COORD_ARRAY</constant>,<phrase revision="not-OES_matrix_palette"> and</phrase>
-                    <constant>GL_VERTEX_ARRAY</constant><phrase revision="OES_matrix_palette">, and</phrase>
-                    <constant revision="OES_matrix_palette">GL_WEIGHT_ARRAY_OES</constant>
+                    <code class="constant">GL_COLOR_ARRAY</code>,
+                    
+                    <code class="constant">GL_NORMAL_ARRAY</code>,
+                    <code class="constant">GL_POINT_SIZE_ARRAY_OES</code><span class="phrase">,</span>
+                    <code class="constant">GL_TEXTURE_COORD_ARRAY</code>,<span class="phrase"> and</span>
+                    <code class="constant">GL_VERTEX_ARRAY</code>
+                    
                     are accepted.
-                    </para>
-                </listitem>
-            </varlistentry>
-        </variablelist>
-    </refsect1>
-
-    <refsect1 id="description"><title>Description</title>
-
-        <para>
-        <function>glEnableClientState</function> and
-        <function>glDisableClientState</function>
+                    </p></dd></dl></div></div><div class="refsect1"><a id="description"></a><h2>Description</h2><p>
+        <code class="function">glEnableClientState</code> and
+        <code class="function">glDisableClientState</code>
         enable or disable individual client-side capabilities. By
         default, all client-side capabilities are disabled. Both
-        <function>glEnableClientState</function> and
-        <function>glDisableClientState</function>
-        take a single argument, <parameter>array</parameter>,
-        which can assume one of the following values:</para>
-
-        <variablelist>
-
-            <varlistentry>
-                <term>
-                    <constant>GL_COLOR_ARRAY</constant>
-                </term>
-                <listitem>
-                    <para>If enabled, the color array is enabled for writing
+        <code class="function">glEnableClientState</code> and
+        <code class="function">glDisableClientState</code>
+        take a single argument, <em class="parameter"><code>array</code></em>,
+        which can assume one of the following values:</p><div class="variablelist"><dl class="variablelist"><dt><span class="term">
+                    <code class="constant">GL_COLOR_ARRAY</code>
+                </span></dt><dd><p>If enabled, the color array is enabled for writing
                     and used during rendering when
-                    <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>, or
-                    <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry> is called. See
-                    <citerefentry><refentrytitle>glColorPointer</refentrytitle></citerefentry>.</para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry revision="OES_matrix_palette">
-                <term>
-                    <constant>GL_MATRIX_INDEX_ARRAY_OES</constant>
-                </term>
-                <listitem>
-                    <para>
-                    If enabled, the matrix index array is enabled.
-                    See <citerefentry><refentrytitle>glMatrixIndexPointer</refentrytitle></citerefentry>
-                    </para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <constant>GL_NORMAL_ARRAY</constant>
-                </term>
-                <listitem>
-                    <para>If enabled, the normal array is enabled for writing
+                    <a class="citerefentry" href="glDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span></a>, or
+                    <a class="citerefentry" href="glDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a> is called. See
+                    <a class="citerefentry" href="glColorPointer.xml"><span class="citerefentry"><span class="refentrytitle">glColorPointer</span></span></a>.</p></dd><dt><span class="term">
+                    <code class="constant">GL_NORMAL_ARRAY</code>
+                </span></dt><dd><p>If enabled, the normal array is enabled for writing
                     and used during rendering when
-                    <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>, or
-                    <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry> is called. See
-                    <citerefentry><refentrytitle>glNormalPointer</refentrytitle></citerefentry>.</para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry revision="es1.1">
-                <term>
-                    <constant>GL_POINT_SIZE_ARRAY_OES</constant>
-                </term>
-                <listitem>
-                    <para>
+                    <a class="citerefentry" href="glDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span></a>, or
+                    <a class="citerefentry" href="glDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a> is called. See
+                    <a class="citerefentry" href="glNormalPointer.xml"><span class="citerefentry"><span class="refentrytitle">glNormalPointer</span></span></a>.</p></dd><dt><span class="term">
+                    <code class="constant">GL_POINT_SIZE_ARRAY_OES</code>
+                </span></dt><dd><p>
                     If enabled, the point size array controls the sizes used
                     to render points and point sprites. In this case the point
-                    size defined by <citerefentry><refentrytitle>glPointSize</refentrytitle></citerefentry>
+                    size defined by <a class="citerefentry" href="glPointSize.xml"><span class="citerefentry"><span class="refentrytitle">glPointSize</span></span></a>
                     is ignored.
                     The point sizes supplied in the point size arrays will be
                     the sizes used to render both points and point sprites.
-                    See <citerefentry><refentrytitle>glPointSize</refentrytitle></citerefentry>
-                    </para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <constant>GL_TEXTURE_COORD_ARRAY</constant>
-                </term>
-                <listitem>
-                    <para>If enabled, the texture coordinate array is enabled
+                    See <a class="citerefentry" href="glPointSize.xml"><span class="citerefentry"><span class="refentrytitle">glPointSize</span></span></a>
+                    </p></dd><dt><span class="term">
+                    <code class="constant">GL_TEXTURE_COORD_ARRAY</code>
+                </span></dt><dd><p>If enabled, the texture coordinate array is enabled
                     for writing and used during rendering when
-                    <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>, or
-                    <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry> is called. See
-                    <citerefentry><refentrytitle>glTexCoordPointer</refentrytitle></citerefentry>.</para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <constant>GL_VERTEX_ARRAY</constant>
-                </term>
-                <listitem>
-                    <para>If enabled, the vertex array is enabled for writing
+                    <a class="citerefentry" href="glDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span></a>, or
+                    <a class="citerefentry" href="glDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a> is called. See
+                    <a class="citerefentry" href="glTexCoordPointer.xml"><span class="citerefentry"><span class="refentrytitle">glTexCoordPointer</span></span></a>.</p></dd><dt><span class="term">
+                    <code class="constant">GL_VERTEX_ARRAY</code>
+                </span></dt><dd><p>If enabled, the vertex array is enabled for writing
                     and used during rendering when
-                    <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>, or
-                    <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry> is called. See
-                    <citerefentry><refentrytitle>glVertexPointer</refentrytitle></citerefentry>.</para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry revision="OES_matrix_palette">
-                <term>
-                    <constant>GL_WEIGHT_ARRAY_OES</constant>
-                </term>
-                <listitem>
-                    <para>
-                    If enabled, the weight array is enabled.
-                    See <citerefentry><refentrytitle>glWeightPointer</refentrytitle></citerefentry>
-                    </para>
-                </listitem>
-            </varlistentry>
-
-        </variablelist>
-    </refsect1>
-
-    <refsect1 id="notes"><title>Notes</title>
-
-        <para>Enabling and disabling
-        <constant>GL_TEXTURE_COORD_ARRAY</constant>
+                    <a class="citerefentry" href="glDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span></a>, or
+                    <a class="citerefentry" href="glDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a> is called. See
+                    <a class="citerefentry" href="glVertexPointer.xml"><span class="citerefentry"><span class="refentrytitle">glVertexPointer</span></span></a>.</p></dd></dl></div></div><div class="refsect1"><a id="notes"></a><h2>Notes</h2><p>Enabling and disabling
+        <code class="constant">GL_TEXTURE_COORD_ARRAY</code>
         affects the active client texture unit. The active client
         texture unit is controlled with
-        <citerefentry><refentrytitle>glClientActiveTexture</refentrytitle></citerefentry>.</para>
-    </refsect1>
-
-    <refsect1 id="errors"><title>Errors</title>
-
-        <para><constant>GL_INVALID_ENUM</constant> is generated if
-        <parameter>array</parameter> is not an accepted value.</para>
-    </refsect1>
-
-    <refsect1 id="associatedgets"><title>Associated Gets</title>
-        <para>
-            <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry>
-        </para>
-    </refsect1>
-    <refsect1 id="seealso"><title>See Also</title>
-
-        <para>
-        <citerefentry><refentrytitle>glClientActiveTexture</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glColorPointer</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glNormalPointer</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glTexCoordPointer</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glVertexPointer</refentrytitle></citerefentry>
-        </para>
-    </refsect1>
-    <refsect1 id="copyright"><title>Copyright</title>
-        <para>
-            Copyright <trademark class="copyright"></trademark> 2003-2004
+        <a class="citerefentry" href="glClientActiveTexture.xml"><span class="citerefentry"><span class="refentrytitle">glClientActiveTexture</span></span></a>.</p></div><div class="refsect1"><a id="errors"></a><h2>Errors</h2><p><code class="constant">GL_INVALID_ENUM</code> is generated if
+        <em class="parameter"><code>array</code></em> is not an accepted value.</p></div><div class="refsect1"><a id="associatedgets"></a><h2>Associated Gets</h2><p>
+            <a class="citerefentry" href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a>
+        </p></div><div class="refsect1"><a id="seealso"></a><h2>See Also</h2><p>
+        <a class="citerefentry" href="glClientActiveTexture.xml"><span class="citerefentry"><span class="refentrytitle">glClientActiveTexture</span></span></a>,
+        <a class="citerefentry" href="glColorPointer.xml"><span class="citerefentry"><span class="refentrytitle">glColorPointer</span></span></a>,
+        <a class="citerefentry" href="glDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span></a>,
+        <a class="citerefentry" href="glDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a>,
+        <a class="citerefentry" href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>,
+        <a class="citerefentry" href="glNormalPointer.xml"><span class="citerefentry"><span class="refentrytitle">glNormalPointer</span></span></a>,
+        <a class="citerefentry" href="glTexCoordPointer.xml"><span class="citerefentry"><span class="refentrytitle">glTexCoordPointer</span></span></a>,
+        <a class="citerefentry" href="glVertexPointer.xml"><span class="citerefentry"><span class="refentrytitle">glVertexPointer</span></span></a>
+        </p></div><div class="refsect1"><a id="copyright"></a><h2>Copyright</h2><p>
+            Copyright <span class="trademark"></span>© 2003-2004
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see
-            <ulink url="http://oss.sgi.com/projects/FreeB/">http://oss.sgi.com/projects/FreeB/</ulink>.
-        </para>
-    </refsect1>
-</refentry>
+            <a class="ulink" href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
+        </p></div></div></body></html>

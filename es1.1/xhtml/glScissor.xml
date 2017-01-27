@@ -1,114 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
-                            "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
-<refentry xml:base="" id="glScissor">
-    <refmeta>
-        <refmetainfo>
-            <copyright>
-                <year>2003-2004</year>
-                <holder>Silicon Graphics, Inc.</holder>
-            </copyright>
-        </refmetainfo>
-        <refentrytitle>glScissor</refentrytitle>
-        <manvolnum>3G</manvolnum>
-    </refmeta>
-
-    <refnamediv>
-        <refname>glScissor</refname>
-        <refpurpose>define the scissor box</refpurpose>
-    </refnamediv>
-
-    <refsynopsisdiv>
-        <title>C Specification</title>
-
-        <funcsynopsis>
-            <funcprototype>
-                <funcdef>void <function>glScissor</function></funcdef>
-                <paramdef>GLint <parameter>x</parameter></paramdef>
-                <paramdef>GLint <parameter>y</parameter></paramdef>
-                <paramdef>GLsizei <parameter>width</parameter></paramdef>
-                <paramdef>GLsizei <parameter>height</parameter></paramdef>
-            </funcprototype>
-        </funcsynopsis>
-    </refsynopsisdiv>
-
-    <refsect1 id="parameters"><title>Parameters</title>
-
-        <variablelist>
-            <varlistentry>
-                <term>
-                <parameter>x</parameter>, <parameter>y</parameter>
-                </term>
-
-                <listitem>
-                    <para>Specify the lower left corner of the scissor box, in pixels.
-                    The initial value is (0, 0).</para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                <parameter>width</parameter>, <parameter>height</parameter>
-                </term>
-
-                <listitem>
-                    <para>Specify the width and height of the scissor box.
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd"><!-- saved from url=(0013)about:internet -->
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glScissor</title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /></head><body><div class="refentry"><a id="glScissor"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glScissor — define the scissor box</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">void <strong class="fsfunc">glScissor</strong>(</code></td><td>GLint <var class="pdparam">x</var>, </td></tr><tr><td> </td><td>GLint <var class="pdparam">y</var>, </td></tr><tr><td> </td><td>GLsizei <var class="pdparam">width</var>, </td></tr><tr><td> </td><td>GLsizei <var class="pdparam">height</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">
+                <em class="parameter"><code>x</code></em>, <em class="parameter"><code>y</code></em>
+                </span></dt><dd><p>Specify the lower left corner of the scissor box, in pixels.
+                    The initial value is (0, 0).</p></dd><dt><span class="term">
+                <em class="parameter"><code>width</code></em>, <em class="parameter"><code>height</code></em>
+                </span></dt><dd><p>Specify the width and height of the scissor box.
                     When a GL context is first attached to a surface (e.g. window),
-                    <parameter>width</parameter> and <parameter>height</parameter>
-                    are set to the dimensions of that surface.</para>
-                </listitem>
-            </varlistentry>
-        </variablelist>
-    </refsect1>
-
-    <refsect1 id="description"><title>Description</title>
-
-        <para>
-        <function>glScissor</function>
+                    <em class="parameter"><code>width</code></em> and <em class="parameter"><code>height</code></em>
+                    are set to the dimensions of that surface.</p></dd></dl></div></div><div class="refsect1"><a id="description"></a><h2>Description</h2><p>
+        <code class="function">glScissor</code>
         defines a rectangle, called the scissor box, in window
         coordinates. The first two arguments,
-        <parameter>x</parameter> and
-        <parameter>y</parameter>, specify the lower left corner of the box.
-        <parameter>width</parameter> and <parameter>height</parameter>
-        specify the width and height of the box.</para>
-
-        <para>To enable and disable the scissor test, call
-        <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry> and
-        <citerefentry><refentrytitle>glDisable</refentrytitle></citerefentry>
-        with argument <constant>GL_SCISSOR_TEST</constant>.
+        <em class="parameter"><code>x</code></em> and
+        <em class="parameter"><code>y</code></em>, specify the lower left corner of the box.
+        <em class="parameter"><code>width</code></em> and <em class="parameter"><code>height</code></em>
+        specify the width and height of the box.</p><p>To enable and disable the scissor test, call
+        <a class="citerefentry" href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a> and
+        <a class="citerefentry" href="glDisable.xml"><span class="citerefentry"><span class="refentrytitle">glDisable</span></span></a>
+        with argument <code class="constant">GL_SCISSOR_TEST</code>.
         The scissor test is initially disabled. While scissor test is enabled,
         only pixels that lie within the scissor box can be modified by
         drawing commands. Window coordinates have integer values at the
         shared corners of frame buffer pixels.
-        <function>glScissor</function>(0, 0, 1, 1)
+        <code class="function">glScissor</code>(0, 0, 1, 1)
         allows modification of only the lower left pixel in the window,
-        and <function>glScissor</function>(0, 0, 0, 0)
-        doesn't allow modification of any pixels in the window.</para>
-
-        <para>When the scissor test is disabled, it is as though the
-        scissor box includes the entire window.</para>
-    </refsect1>
-
-    <refsect1 id="errors"><title>Errors</title>
-
-        <para><constant>GL_INVALID_VALUE</constant> is generated if either
-        <parameter>width</parameter> or <parameter>height</parameter>
-        is negative.</para>
-    </refsect1>
-
-    <refsect1 id="seealso"><title>See Also</title>
-
-        <para>
-            <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glViewport</refentrytitle></citerefentry>
-        </para>
-    </refsect1>
-    <refsect1 id="copyright"><title>Copyright</title>
-        <para>
-            Copyright <trademark class="copyright"></trademark> 2003-2004
+        and <code class="function">glScissor</code>(0, 0, 0, 0)
+        doesn't allow modification of any pixels in the window.</p><p>When the scissor test is disabled, it is as though the
+        scissor box includes the entire window.</p></div><div class="refsect1"><a id="errors"></a><h2>Errors</h2><p><code class="constant">GL_INVALID_VALUE</code> is generated if either
+        <em class="parameter"><code>width</code></em> or <em class="parameter"><code>height</code></em>
+        is negative.</p></div><div class="refsect1"><a id="seealso"></a><h2>See Also</h2><p>
+            <a class="citerefentry" href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>,
+            <a class="citerefentry" href="glViewport.xml"><span class="citerefentry"><span class="refentrytitle">glViewport</span></span></a>
+        </p></div><div class="refsect1"><a id="copyright"></a><h2>Copyright</h2><p>
+            Copyright <span class="trademark"></span>© 2003-2004
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see
-            <ulink url="http://oss.sgi.com/projects/FreeB/">http://oss.sgi.com/projects/FreeB/</ulink>.
-        </para>
-    </refsect1>
-</refentry>
+            <a class="ulink" href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
+        </p></div></div></body></html>

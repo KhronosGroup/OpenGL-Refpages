@@ -1,79 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
-                            "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
-<refentry xml:base="" id="glPolygonOffset">
-    <refmeta>
-        <refmetainfo>
-            <copyright>
-                <year>2003-2004</year>
-                <holder>Silicon Graphics, Inc.</holder>
-            </copyright>
-        </refmetainfo>
-        <refentrytitle>glPolygonOffset</refentrytitle>
-        <manvolnum>3G</manvolnum>
-    </refmeta>
-
-    <refnamediv>
-        <refdescriptor>glPolygonOffset</refdescriptor>
-        <refname>glPolygonOffset</refname>
-        <refname>glPolygonOffsetx</refname>
-        <refpurpose>set the scale and units used to calculate depth
-        values</refpurpose>
-    </refnamediv>
-
-    <refsynopsisdiv>
-        <title>C Specification</title>
-
-        <funcsynopsis>
-            <funcprototype>
-                <funcdef>void <function>glPolygonOffset</function></funcdef>
-                <paramdef>GLfloat <parameter>factor</parameter></paramdef>
-                <paramdef>GLfloat <parameter>units</parameter></paramdef>
-            </funcprototype>
-            <funcprototype>
-                <funcdef>void <function>glPolygonOffsetx</function></funcdef>
-                <paramdef>GLfixed <parameter>factor</parameter></paramdef>
-                <paramdef>GLfixed <parameter>units</parameter></paramdef>
-            </funcprototype>
-        </funcsynopsis>
-    </refsynopsisdiv>
-
-    <refsect1 id="parameters"><title>Parameters</title>
-
-        <variablelist>
-            <varlistentry>
-                <term>
-                    <parameter>factor</parameter>
-                </term>
-
-                <listitem>
-                    <para>Specifies a scale factor that is used to create a
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd"><!-- saved from url=(0013)about:internet -->
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glPolygonOffset</title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /></head><body><div class="refentry"><a id="glPolygonOffset"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glPolygonOffset — set the scale and units used to calculate depth
+        values</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">void <strong class="fsfunc">glPolygonOffset</strong>(</code></td><td>GLfloat <var class="pdparam">factor</var>, </td></tr><tr><td> </td><td>GLfloat <var class="pdparam">units</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">void <strong class="fsfunc">glPolygonOffsetx</strong>(</code></td><td>GLfixed <var class="pdparam">factor</var>, </td></tr><tr><td> </td><td>GLfixed <var class="pdparam">units</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">
+                    <em class="parameter"><code>factor</code></em>
+                </span></dt><dd><p>Specifies a scale factor that is used to create a
                     variable depth offset for each polygon. The initial value
-                    is 0.</para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <parameter>units</parameter>
-                </term>
-
-                <listitem>
-                    <para>Is multiplied by an implementation-specific value
-                    to create a constant depth offset. The initial value is 0.</para>
-                </listitem>
-            </varlistentry>
-        </variablelist>
-    </refsect1>
-
-    <refsect1 id="description"><title>Description</title>
-
-        <para>When <constant>GL_POLYGON_OFFSET_FILL</constant>
-        is enabled, each fragment's <parameter>depth</parameter>
+                    is 0.</p></dd><dt><span class="term">
+                    <em class="parameter"><code>units</code></em>
+                </span></dt><dd><p>Is multiplied by an implementation-specific value
+                    to create a constant depth offset. The initial value is 0.</p></dd></dl></div></div><div class="refsect1"><a id="description"></a><h2>Description</h2><p>When <code class="constant">GL_POLYGON_OFFSET_FILL</code>
+        is enabled, each fragment's <em class="parameter"><code>depth</code></em>
         value will be offset after it is interpolated from the
-        <parameter>depth</parameter>
+        <em class="parameter"><code>depth</code></em>
         values of the appropriate vertices. The value of the offset is
-        <inlineequation><mml:math>
+        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
             <mml:mi>m</mml:mi>
             <mml:mo>*</mml:mo>
             <mml:mi>factor</mml:mi>
@@ -81,33 +21,21 @@
             <mml:mi>r</mml:mi>
             <mml:mo>*</mml:mo>
             <mml:mi>units</mml:mi>
-        </mml:math></inlineequation>,
-        where <replaceable>m</replaceable>
+        </mml:math>,
+        where <em class="replaceable"><code>m</code></em>
         is a measurement of the change in depth relative to the screen
-        area of the polygon, and <replaceable>r</replaceable>
+        area of the polygon, and <em class="replaceable"><code>r</code></em>
         is the smallest value that is guaranteed to produce a
         resolvable offset for a given implementation. The offset is
         added before the depth test is performed and before the value
-        is written into the depth buffer.</para>
-
-        <para>
-        <function>glPolygonOffset</function>
-        is useful for for applying decals to surfaces.</para>
-    </refsect1>
-
-    <refsect1 id="seealso"><title>See Also</title>
-
-        <para>
-        <citerefentry><refentrytitle>glDepthFunc</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>
-        </para>
-    </refsect1>
-    <refsect1 id="copyright"><title>Copyright</title>
-        <para>
-            Copyright <trademark class="copyright"></trademark> 2003-2004
+        is written into the depth buffer.</p><p>
+        <code class="function">glPolygonOffset</code>
+        is useful for for applying decals to surfaces.</p></div><div class="refsect1"><a id="seealso"></a><h2>See Also</h2><p>
+        <a class="citerefentry" href="glDepthFunc.xml"><span class="citerefentry"><span class="refentrytitle">glDepthFunc</span></span></a>,
+        <a class="citerefentry" href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>
+        </p></div><div class="refsect1"><a id="copyright"></a><h2>Copyright</h2><p>
+            Copyright <span class="trademark"></span>© 2003-2004
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see
-            <ulink url="http://oss.sgi.com/projects/FreeB/">http://oss.sgi.com/projects/FreeB/</ulink>.
-        </para>
-    </refsect1>
-</refentry>
+            <a class="ulink" href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
+        </p></div></div></body></html>

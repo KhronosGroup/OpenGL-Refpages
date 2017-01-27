@@ -1,237 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
-                            "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
-<refentry xml:base="" id="glAlphaFunc">
-    <refmeta>
-        <refmetainfo>
-            <copyright>
-                <year>2003-2004</year>
-                <holder>Silicon Graphics, Inc.</holder>
-            </copyright>
-        </refmetainfo>
-        <refentrytitle>glAlphaFunc</refentrytitle>
-        <manvolnum>3G</manvolnum>
-    </refmeta>
-
-    <refnamediv>
-        <refdescriptor>glAlphaFunc</refdescriptor>
-        <refname>glAlphaFunc</refname>
-        <refname>glAlphaFuncx</refname>
-        <refpurpose>specify the alpha test function</refpurpose>
-    </refnamediv>
-
-    <refsynopsisdiv>
-        <title>C Specification</title>
-
-        <funcsynopsis>
-            <funcprototype>
-                <funcdef>void <function>glAlphaFunc</function></funcdef>
-                <paramdef>GLenum <parameter>func</parameter></paramdef>
-                <paramdef>GLclampf <parameter>ref</parameter></paramdef>
-            </funcprototype>
-            <funcprototype>
-                <funcdef>void <function>glAlphaFuncx</function></funcdef>
-                <paramdef>GLenum <parameter>func</parameter></paramdef>
-                <paramdef>GLclampx <parameter>ref</parameter></paramdef>
-            </funcprototype>
-        </funcsynopsis>
-    </refsynopsisdiv>
-
-    <refsect1 id="parameters"><title>Parameters</title>
-
-        <variablelist>
-            <varlistentry>
-                <term>
-                    <parameter>func</parameter>
-                </term>
-
-                <listitem>
-                    <para>Specifies the alpha comparison function. Symbolic
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd"><!-- saved from url=(0013)about:internet -->
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glAlphaFunc</title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /></head><body><div class="refentry"><a id="glAlphaFunc"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glAlphaFunc — specify the alpha test function</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">void <strong class="fsfunc">glAlphaFunc</strong>(</code></td><td>GLenum <var class="pdparam">func</var>, </td></tr><tr><td> </td><td>GLclampf <var class="pdparam">ref</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">void <strong class="fsfunc">glAlphaFuncx</strong>(</code></td><td>GLenum <var class="pdparam">func</var>, </td></tr><tr><td> </td><td>GLclampx <var class="pdparam">ref</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">
+                    <em class="parameter"><code>func</code></em>
+                </span></dt><dd><p>Specifies the alpha comparison function. Symbolic
                     constants
-                    <constant>GL_NEVER</constant>,
-                    <constant>GL_LESS</constant>,
-                    <constant>GL_EQUAL</constant>,
-                    <constant>GL_LEQUAL</constant>,
-                    <constant>GL_GREATER</constant>,
-                    <constant>GL_NOTEQUAL</constant>,
-                    <constant>GL_GEQUAL</constant>, and
-                    <constant>GL_ALWAYS</constant>
+                    <code class="constant">GL_NEVER</code>,
+                    <code class="constant">GL_LESS</code>,
+                    <code class="constant">GL_EQUAL</code>,
+                    <code class="constant">GL_LEQUAL</code>,
+                    <code class="constant">GL_GREATER</code>,
+                    <code class="constant">GL_NOTEQUAL</code>,
+                    <code class="constant">GL_GEQUAL</code>, and
+                    <code class="constant">GL_ALWAYS</code>
                     are accepted. The initial value is
-                    <constant>GL_ALWAYS</constant>.
-                    </para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <parameter>ref</parameter>
-                </term>
-
-                <listitem>
-                    <para>Specifies the reference value that incoming alpha
+                    <code class="constant">GL_ALWAYS</code>.
+                    </p></dd><dt><span class="term">
+                    <em class="parameter"><code>ref</code></em>
+                </span></dt><dd><p>Specifies the reference value that incoming alpha
                         values are compared to. This value is clamped to the
                         range [0, 1], where 0 represents the lowest possible
                         alpha value and 1 the highest possible value. The initial
                         reference value is 0.
-                    </para>
-                </listitem>
-            </varlistentry>
-        </variablelist>
-    </refsect1>
-
-    <refsect1 id="description"><title>Description</title>
-
-        <para>The alpha test discards fragments depending on the
+                    </p></dd></dl></div></div><div class="refsect1"><a id="description"></a><h2>Description</h2><p>The alpha test discards fragments depending on the
             outcome of a comparison between an incoming fragment's alpha
             value and a constant reference value.
-            <function>glAlphaFunc</function>
+            <code class="function">glAlphaFunc</code>
             specifies the reference value and the comparison function. The
             comparison is performed only if alpha testing is enabled.
             To enable and disable alpha testing, call
-            <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry> and
-            <citerefentry><refentrytitle>glDisable</refentrytitle></citerefentry>
-            with argument <constant>GL_ALPHA_TEST</constant>.
+            <a class="citerefentry" href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a> and
+            <a class="citerefentry" href="glDisable.xml"><span class="citerefentry"><span class="refentrytitle">glDisable</span></span></a>
+            with argument <code class="constant">GL_ALPHA_TEST</code>.
             Alpha testing is initially disabled. When disabled, it is as if the comparison 
             always passes.
 
-        </para>
-
-        <para>
-            <parameter>func</parameter> and <parameter>ref</parameter>
+        </p><p>
+            <em class="parameter"><code>func</code></em> and <em class="parameter"><code>ref</code></em>
             specify the conditions under which the pixel is drawn. The
-            incoming alpha value is compared to <parameter>ref</parameter>
-            using the function specified by <parameter>func</parameter>.
+            incoming alpha value is compared to <em class="parameter"><code>ref</code></em>
+            using the function specified by <em class="parameter"><code>func</code></em>.
 
             If the value passes the comparison, the incoming fragment is
             drawn if it also passes subsequent stencil and depth buffer
             tests. If the value fails the comparison, no change is made to
             the frame buffer at that pixel location. The comparison
             functions are as follows:
-        </para>
-
-        <variablelist>
-            <varlistentry>
-                <term>
-                    <constant>GL_NEVER</constant>
-                </term>
-
-                <listitem>
-                    <para>Never passes.</para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <constant>GL_LESS</constant>
-                </term>
-
-                <listitem>
-                    <para>Passes if the incoming alpha value is less than the
-                    reference value.</para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <constant>GL_EQUAL</constant>
-                </term>
-
-                <listitem>
-                    <para>Passes if the incoming alpha value is equal to the
-                    reference value.</para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <constant>GL_LEQUAL</constant>
-                </term>
-
-                <listitem>
-                    <para>Passes if the incoming alpha value is less than or
-                    equal to the reference value.</para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <constant>GL_GREATER</constant>
-                </term>
-
-                <listitem>
-                    <para>Passes if the incoming alpha value is greater than
-                    the reference value.</para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <constant>GL_NOTEQUAL</constant>
-                </term>
-
-                <listitem>
-                    <para>Passes if the incoming alpha value is not equal to
-                    the reference value.</para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <constant>GL_GEQUAL</constant>
-                </term>
-
-                <listitem>
-                    <para>Passes if the incoming alpha value is greater than
-                    or equal to the reference value.</para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <constant>GL_ALWAYS</constant>
-                </term>
-
-                <listitem>
-                    <para>Always passes (initial value).</para>
-                </listitem>
-            </varlistentry>
-        </variablelist>
-
-        <para>
-            <function>glAlphaFunc</function>
+        </p><div class="variablelist"><dl class="variablelist"><dt><span class="term">
+                    <code class="constant">GL_NEVER</code>
+                </span></dt><dd><p>Never passes.</p></dd><dt><span class="term">
+                    <code class="constant">GL_LESS</code>
+                </span></dt><dd><p>Passes if the incoming alpha value is less than the
+                    reference value.</p></dd><dt><span class="term">
+                    <code class="constant">GL_EQUAL</code>
+                </span></dt><dd><p>Passes if the incoming alpha value is equal to the
+                    reference value.</p></dd><dt><span class="term">
+                    <code class="constant">GL_LEQUAL</code>
+                </span></dt><dd><p>Passes if the incoming alpha value is less than or
+                    equal to the reference value.</p></dd><dt><span class="term">
+                    <code class="constant">GL_GREATER</code>
+                </span></dt><dd><p>Passes if the incoming alpha value is greater than
+                    the reference value.</p></dd><dt><span class="term">
+                    <code class="constant">GL_NOTEQUAL</code>
+                </span></dt><dd><p>Passes if the incoming alpha value is not equal to
+                    the reference value.</p></dd><dt><span class="term">
+                    <code class="constant">GL_GEQUAL</code>
+                </span></dt><dd><p>Passes if the incoming alpha value is greater than
+                    or equal to the reference value.</p></dd><dt><span class="term">
+                    <code class="constant">GL_ALWAYS</code>
+                </span></dt><dd><p>Always passes (initial value).</p></dd></dl></div><p>
+            <code class="function">glAlphaFunc</code>
             operates on all pixel write operations, including those
             resulting from the scan conversion of points, lines, and
             polygons.
-            <function>glAlphaFunc</function>
+            <code class="function">glAlphaFunc</code>
             does not affect
-            <citerefentry><refentrytitle>glClear</refentrytitle></citerefentry>.
-        </para>
-    </refsect1>
-
-    <refsect1 id="errors"><title>Errors</title>
-
-        <para>
-            <constant>GL_INVALID_ENUM</constant> is generated if
-            <parameter>func</parameter> is not an accepted value.
-        </para>
-    </refsect1>
-
-    <refsect1 id="seealso"><title>See Also</title>
-
-        <para>
-            <citerefentry><refentrytitle>glBlendFunc</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glClear</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glDepthFunc</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glStencilFunc</refentrytitle></citerefentry>
-        </para>
-    </refsect1>
-    <refsect1 id="copyright"><title>Copyright</title>
-        <para>
-            Copyright <trademark class="copyright"></trademark> 2003-2004
+            <a class="citerefentry" href="glClear.xml"><span class="citerefentry"><span class="refentrytitle">glClear</span></span></a>.
+        </p></div><div class="refsect1"><a id="errors"></a><h2>Errors</h2><p>
+            <code class="constant">GL_INVALID_ENUM</code> is generated if
+            <em class="parameter"><code>func</code></em> is not an accepted value.
+        </p></div><div class="refsect1"><a id="seealso"></a><h2>See Also</h2><p>
+            <a class="citerefentry" href="glBlendFunc.xml"><span class="citerefentry"><span class="refentrytitle">glBlendFunc</span></span></a>,
+            <a class="citerefentry" href="glClear.xml"><span class="citerefentry"><span class="refentrytitle">glClear</span></span></a>,
+            <a class="citerefentry" href="glDepthFunc.xml"><span class="citerefentry"><span class="refentrytitle">glDepthFunc</span></span></a>,
+            <a class="citerefentry" href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>,
+            <a class="citerefentry" href="glStencilFunc.xml"><span class="citerefentry"><span class="refentrytitle">glStencilFunc</span></span></a>
+        </p></div><div class="refsect1"><a id="copyright"></a><h2>Copyright</h2><p>
+            Copyright <span class="trademark"></span>© 2003-2004
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see
-            <ulink url="http://oss.sgi.com/projects/FreeB/">http://oss.sgi.com/projects/FreeB/</ulink>.
-        </para>
-    </refsect1>
-</refentry>
+            <a class="ulink" href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
+        </p></div></div></body></html>

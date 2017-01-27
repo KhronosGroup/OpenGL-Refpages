@@ -25,10 +25,10 @@
             normals, however, are returned with a linear mapping that maps 1.0 to
             the most positive representable integer value
             and 
-            <span style="color: red">&lt;mml:math&gt;
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
-                <span style="color: red">&lt;mml:mn&gt;-1.0&lt;/mml:mn&gt;</span>
-            &lt;/mml:math&gt;</span>
+                <mml:mn>-1.0</mml:mn>
+            </mml:math>
             to the most negative representable integer value.
             If <code class="function">glGetFloatv</code> is called,
             boolean values are returned as <code class="constant">GL_TRUE</code> or <code class="constant">GL_FALSE</code>,
@@ -107,10 +107,10 @@
                         are linearly mapped from the internal floating-point representation such
                         that 1.0 returns the most positive representable integer value,
                         and 
-                        <span style="color: red">&lt;mml:math&gt;
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
-                            <span style="color: red">&lt;mml:mn&gt;-1.0&lt;/mml:mn&gt;</span>
-                        &lt;/mml:math&gt;</span>
+                            <mml:mn>-1.0</mml:mn>
+                        </mml:math>
                         returns the most negative representable integer
                         value. The initial value is (0, 0, 0, 0).
                         See <a class="citerefentry" href="glClearColor.xml"><span class="citerefentry"><span class="refentrytitle">glClearColor</span></span></a>.
@@ -150,10 +150,10 @@
                         are linearly mapped from the internal floating-point representation such
                         that 1.0 returns the most positive representable integer value,
                         and 
-                        <span style="color: red">&lt;mml:math&gt;
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
-                            <span style="color: red">&lt;mml:mn&gt;-1.0&lt;/mml:mn&gt;</span>
-                        &lt;/mml:math&gt;</span>
+                            <mml:mn>-1.0</mml:mn>
+                        </mml:math>
                         returns the most negative representable integer
                         value. The initial value is 1.
                         See <a class="citerefentry" href="glClearDepthf.xml"><span class="citerefentry"><span class="refentrytitle">glClearDepthf</span></span></a>.
@@ -170,10 +170,10 @@
                         are linearly mapped from the internal floating-point representation such
                         that 1.0 returns the most positive representable integer value,
                         and 
-                        <span style="color: red">&lt;mml:math&gt;
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
-                            <span style="color: red">&lt;mml:mn&gt;-1.0&lt;/mml:mn&gt;</span>
-                        &lt;/mml:math&gt;</span>
+                            <mml:mn>-1.0</mml:mn>
+                        </mml:math>
                         returns the most negative representable integer
                         value. The initial value is (0, 1).
                         See <a class="citerefentry" href="glDepthRangef.xml"><span class="citerefentry"><span class="refentrytitle">glDepthRangef</span></span></a>.
@@ -361,15 +361,15 @@
                     </p></dd><dt><span class="term"><code class="constant">GL_SCISSOR_BOX</code></span></dt><dd><p>
                         <em class="parameter"><code>params</code></em> returns four values:
                         the 
-                        <span style="color: red">&lt;mml:math&gt;<span style="color: red">&lt;mml:mi&gt;x&lt;/mml:mi&gt;</span>&lt;/mml:math&gt;</span>
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">x</mml:mi></mml:math>
                         and 
-                        <span style="color: red">&lt;mml:math&gt;<span style="color: red">&lt;mml:mi&gt;y&lt;/mml:mi&gt;</span>&lt;/mml:math&gt;</span>
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">y</mml:mi></mml:math>
                         window coordinates of the scissor box,
                         followed by its width and height.
                         Initially the 
-                        <span style="color: red">&lt;mml:math&gt;<span style="color: red">&lt;mml:mi&gt;x&lt;/mml:mi&gt;</span>&lt;/mml:math&gt;</span>
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">x</mml:mi></mml:math>
                         and 
-                        <span style="color: red">&lt;mml:math&gt;<span style="color: red">&lt;mml:mi&gt;y&lt;/mml:mi&gt;</span>&lt;/mml:math&gt;</span>
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">y</mml:mi></mml:math>
                         window coordinates are both 0 and the
                         width and height are set to the size of the window.
                         See <a class="citerefentry" href="glScissor.xml"><span class="citerefentry"><span class="refentrytitle">glScissor</span></span></a>.
@@ -507,15 +507,15 @@
                     </p></dd><dt><span class="term"><code class="constant">GL_VIEWPORT</code></span></dt><dd><p>
                         <em class="parameter"><code>params</code></em> returns four values:
                         the 
-                        <span style="color: red">&lt;mml:math&gt;<span style="color: red">&lt;mml:mi&gt;x&lt;/mml:mi&gt;</span>&lt;/mml:math&gt;</span>
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">x</mml:mi></mml:math>
                         and 
-                        <span style="color: red">&lt;mml:math&gt;<span style="color: red">&lt;mml:mi&gt;y&lt;/mml:mi&gt;</span>&lt;/mml:math&gt;</span>
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">y</mml:mi></mml:math>
                         window coordinates of the viewport,
                         followed by its width and height.
                         Initially the 
-                        <span style="color: red">&lt;mml:math&gt;<span style="color: red">&lt;mml:mi&gt;x&lt;/mml:mi&gt;</span>&lt;/mml:math&gt;</span>
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">x</mml:mi></mml:math>
                         and 
-                        <span style="color: red">&lt;mml:math&gt;<span style="color: red">&lt;mml:mi&gt;y&lt;/mml:mi&gt;</span>&lt;/mml:math&gt;</span>
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">y</mml:mi></mml:math>
                         window coordinates are both set to 0,
                         and the width and height are set to the width and height of the window into
                         which the GL will do its rendering.

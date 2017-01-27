@@ -1,251 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
-                            "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
-<refentry xml:base="" id="glCopyTexSubImage2D">
-    <refmeta>
-        <refmetainfo>
-            <copyright>
-                <year>2003-2004</year>
-                <holder>Silicon Graphics, Inc.</holder>
-            </copyright>
-        </refmetainfo>
-        <refentrytitle>glCopyTexSubImage2D</refentrytitle>
-        <manvolnum>3G</manvolnum>
-    </refmeta>
-
-    <refnamediv>
-        <refname>glCopyTexSubImage2D</refname>
-        <refpurpose>specify a two-dimensional texture subimage with pixels from the color buffer</refpurpose>
-    </refnamediv>
-
-    <refsynopsisdiv>
-        <title>C Specification</title>
-
-        <funcsynopsis>
-            <funcprototype>
-                <funcdef>void <function>glCopyTexSubImage2D</function></funcdef>
-                <paramdef>GLenum <parameter>target</parameter></paramdef>
-                <paramdef>GLint <parameter>level</parameter></paramdef>
-                <paramdef>GLint <parameter>xoffset</parameter></paramdef>
-                <paramdef>GLint <parameter>yoffset</parameter></paramdef>
-                <paramdef>GLint <parameter>x</parameter></paramdef>
-                <paramdef>GLint <parameter>y</parameter></paramdef>
-                <paramdef>GLsizei <parameter>width</parameter></paramdef>
-                <paramdef>GLsizei <parameter>height</parameter></paramdef>
-            </funcprototype>
-        </funcsynopsis>
-    </refsynopsisdiv>
-
-    <refsect1 id="parameters"><title>Parameters</title>
-
-        <variablelist>
-            <varlistentry>
-                <term>
-                    <parameter>target</parameter>
-                </term>
-
-                <listitem>
-                    <para>Specifies the target texture. Must be
-                    <constant>GL_TEXTURE_2D</constant>.</para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <parameter>level</parameter>
-                </term>
-
-                <listitem>
-                    <para>Specifies the level-of-detail number. Level 0 is
-                    the base image level. Level <parameter>n</parameter>
-                    is the <parameter>n</parameter>th mipmap reduction image.</para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <parameter>xoffset</parameter>
-                </term>
-
-                <listitem>
-                    <para>Specifies a texel offset in the x direction within
-                    the texture array.</para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <parameter>yoffset</parameter>
-                </term>
-
-                <listitem>
-                    <para>Specifies a texel offset in the y direction within
-                    the texture array.</para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                <parameter>x</parameter>, <parameter>y</parameter>
-                </term>
-
-                <listitem>
-                    <para>Specify the window coordinates of the lower left
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd"><!-- saved from url=(0013)about:internet -->
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glCopyTexSubImage2D</title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /></head><body><div class="refentry"><a id="glCopyTexSubImage2D"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glCopyTexSubImage2D — specify a two-dimensional texture subimage with pixels from the color buffer</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">void <strong class="fsfunc">glCopyTexSubImage2D</strong>(</code></td><td>GLenum <var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLint <var class="pdparam">level</var>, </td></tr><tr><td> </td><td>GLint <var class="pdparam">xoffset</var>, </td></tr><tr><td> </td><td>GLint <var class="pdparam">yoffset</var>, </td></tr><tr><td> </td><td>GLint <var class="pdparam">x</var>, </td></tr><tr><td> </td><td>GLint <var class="pdparam">y</var>, </td></tr><tr><td> </td><td>GLsizei <var class="pdparam">width</var>, </td></tr><tr><td> </td><td>GLsizei <var class="pdparam">height</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">
+                    <em class="parameter"><code>target</code></em>
+                </span></dt><dd><p>Specifies the target texture. Must be
+                    <code class="constant">GL_TEXTURE_2D</code>.</p></dd><dt><span class="term">
+                    <em class="parameter"><code>level</code></em>
+                </span></dt><dd><p>Specifies the level-of-detail number. Level 0 is
+                    the base image level. Level <em class="parameter"><code>n</code></em>
+                    is the <em class="parameter"><code>n</code></em>th mipmap reduction image.</p></dd><dt><span class="term">
+                    <em class="parameter"><code>xoffset</code></em>
+                </span></dt><dd><p>Specifies a texel offset in the x direction within
+                    the texture array.</p></dd><dt><span class="term">
+                    <em class="parameter"><code>yoffset</code></em>
+                </span></dt><dd><p>Specifies a texel offset in the y direction within
+                    the texture array.</p></dd><dt><span class="term">
+                <em class="parameter"><code>x</code></em>, <em class="parameter"><code>y</code></em>
+                </span></dt><dd><p>Specify the window coordinates of the lower left
                     corner of the rectangular region of pixels to be
-                    copied.</para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <parameter>width</parameter>
-                </term>
-
-                <listitem>
-                    <para>Specifies the width of the texture subimage.</para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <parameter>height</parameter>
-                </term>
-
-                <listitem>
-                    <para>Specifies the height of the texture subimage.</para>
-                </listitem>
-            </varlistentry>
-        </variablelist>
-    </refsect1>
-
-    <refsect1 id="description"><title>Description</title>
-
-        <para><function>glCopyTexSubImage2D</function>
+                    copied.</p></dd><dt><span class="term">
+                    <em class="parameter"><code>width</code></em>
+                </span></dt><dd><p>Specifies the width of the texture subimage.</p></dd><dt><span class="term">
+                    <em class="parameter"><code>height</code></em>
+                </span></dt><dd><p>Specifies the height of the texture subimage.</p></dd></dl></div></div><div class="refsect1"><a id="description"></a><h2>Description</h2><p><code class="function">glCopyTexSubImage2D</code>
         replaces a rectangular portion of a two-dimensional texture
         image with pixels from the color buffer.
-        </para>
-
-        <para>The screen-aligned pixel rectangle with lower left corner at (
-        <parameter>x</parameter>, <parameter>y</parameter>) and with width
-        <parameter>width</parameter> and height
-        <parameter>height</parameter>
+        </p><p>The screen-aligned pixel rectangle with lower left corner at (
+        <em class="parameter"><code>x</code></em>, <em class="parameter"><code>y</code></em>) and with width
+        <em class="parameter"><code>width</code></em> and height
+        <em class="parameter"><code>height</code></em>
         replaces the portion of the texture array with x indices
-        <parameter>xoffset</parameter> through
-        <inlineequation><mml:math>
+        <em class="parameter"><code>xoffset</code></em> through
+        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
             <mml:mi>xoffset</mml:mi><mml:mo>+</mml:mo><mml:mi>width</mml:mi><mml:mo>-</mml:mo><mml:mn>1</mml:mn>
-        </mml:math></inlineequation>,
+        </mml:math>,
         inclusive, and y indices
-        <parameter>yoffset</parameter> through
-        <inlineequation><mml:math>
+        <em class="parameter"><code>yoffset</code></em> through
+        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
             <mml:mi>yoffset</mml:mi><mml:mo>+</mml:mo><mml:mi>height</mml:mi><mml:mo>-</mml:mo><mml:mn>1</mml:mn>
-        </mml:math></inlineequation>,
+        </mml:math>,
         inclusive, at the mipmap level specified by
-        <parameter>level</parameter>.</para>
-
-        <para>The pixels in the rectangle are processed the same way
+        <em class="parameter"><code>level</code></em>.</p><p>The pixels in the rectangle are processed the same way
         as with
-        <citerefentry><refentrytitle>glCopyTexImage2D</refentrytitle></citerefentry>.
-        </para>
-
-        <para><function>glCopyTexSubImage2D</function> requires
+        <a class="citerefentry" href="glCopyTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage2D</span></span></a>.
+        </p><p><code class="function">glCopyTexSubImage2D</code> requires
         that the internal format of the currently bound texture is such that
         color buffer components can be dropped during conversion to the
         internal format, but new components cannot be added. For example,
-        an <constant>GL_RGB</constant> color buffer can be used to create
-        <constant>GL_LUMINANCE</constant> or <constant>GL_RGB</constant>
-        textures, but not <constant>GL_ALPHA</constant>,
-        <constant>GL_LUMINANCE_ALPHA</constant> or <constant>GL_RGBA</constant>
-        textures.</para>
-
-        <para>The destination rectangle in the texture array may not
+        an <code class="constant">GL_RGB</code> color buffer can be used to create
+        <code class="constant">GL_LUMINANCE</code> or <code class="constant">GL_RGB</code>
+        textures, but not <code class="constant">GL_ALPHA</code>,
+        <code class="constant">GL_LUMINANCE_ALPHA</code> or <code class="constant">GL_RGBA</code>
+        textures.</p><p>The destination rectangle in the texture array may not
         include any texels outside the texture array as it was
         originally specified. It is not an error to specify a
         subtexture with zero width or height, but such a specification
-        has no effect.</para>
-
-        <para>If any of the pixels within the specified rectangle of
+        has no effect.</p><p>If any of the pixels within the specified rectangle of
         the current color buffer are outside the read window associated
         with the current rendering context, then the values obtained
-        for those pixels are undefined.</para>
-
-        <para>No change is made to the
-        <parameter>internalformat</parameter>,
-        <parameter>width</parameter>,
-        <parameter>height</parameter>, or
-        <parameter>border</parameter>
+        for those pixels are undefined.</p><p>No change is made to the
+        <em class="parameter"><code>internalformat</code></em>,
+        <em class="parameter"><code>width</code></em>,
+        <em class="parameter"><code>height</code></em>, or
+        <em class="parameter"><code>border</code></em>
         parameters of the specified texture array or to texel values
-        outside the specified subregion.</para>
-    </refsect1>
-
-    <refsect1 id="errors"><title>Errors</title>
-
-        <para><constant>GL_INVALID_ENUM</constant> is generated if
-        <parameter>target</parameter> is not
-        <constant>GL_TEXTURE_2D</constant>.</para>
-
-        <para><constant>GL_INVALID_OPERATION</constant> is generated if
+        outside the specified subregion.</p></div><div class="refsect1"><a id="errors"></a><h2>Errors</h2><p><code class="constant">GL_INVALID_ENUM</code> is generated if
+        <em class="parameter"><code>target</code></em> is not
+        <code class="constant">GL_TEXTURE_2D</code>.</p><p><code class="constant">GL_INVALID_OPERATION</code> is generated if
         the texture array has not been defined by a previous
-        <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>
+        <a class="citerefentry" href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a>
         or
-        <citerefentry><refentrytitle>glCopyTexImage2D</refentrytitle></citerefentry>
+        <a class="citerefentry" href="glCopyTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage2D</span></span></a>
         operation or if the internal format of the currently bound texture
-        is not compatible with the color buffer format.</para>
-
-        <para><constant>GL_INVALID_VALUE</constant> is generated if
-        <parameter>level</parameter> is less than 0.</para>
-
-        <para><constant>GL_INVALID_VALUE</constant> may be generated if
-        <parameter>level</parameter> is greater than
-        <inlineequation><mml:math>
+        is not compatible with the color buffer format.</p><p><code class="constant">GL_INVALID_VALUE</code> is generated if
+        <em class="parameter"><code>level</code></em> is less than 0.</p><p><code class="constant">GL_INVALID_VALUE</code> may be generated if
+        <em class="parameter"><code>level</code></em> is greater than
+        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
             <mml:msub><mml:mo>log</mml:mo><mml:mn>2</mml:mn></mml:msub><mml:mi>max</mml:mi>
-        </mml:math></inlineequation>, where
-        <replaceable>max</replaceable> is the returned value of
-        <constant>GL_MAX_TEXTURE_SIZE</constant>.</para>
-
-        <para><constant>GL_INVALID_VALUE</constant> is generated if
-        <inlineequation><mml:math>
+        </mml:math>, where
+        <em class="replaceable"><code>max</code></em> is the returned value of
+        <code class="constant">GL_MAX_TEXTURE_SIZE</code>.</p><p><code class="constant">GL_INVALID_VALUE</code> is generated if
+        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
             <mml:mi>xoffset</mml:mi><mml:mo>&lt;</mml:mo>0
-        </mml:math></inlineequation>,
-        <inlineequation><mml:math>
+        </mml:math>,
+        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
             <mml:mi>xoffset</mml:mi><mml:mo>+</mml:mo><mml:mi>width</mml:mi><mml:mo>&gt;</mml:mo>
             <mml:mi>w</mml:mi>
-        </mml:math></inlineequation>,
-        <inlineequation><mml:math>
+        </mml:math>,
+        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
             <mml:mi>yoffset</mml:mi><mml:mo>&lt;</mml:mo>0
-        </mml:math></inlineequation>, or
-        <inlineequation><mml:math>
+        </mml:math>, or
+        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
             <mml:mi>yoffset</mml:mi><mml:mo>+</mml:mo><mml:mi>height</mml:mi><mml:mo>&gt;</mml:mo>
             <mml:mi>h</mml:mi>
-        </mml:math></inlineequation>, where
-        <replaceable>w</replaceable> is the texture width and
-        <replaceable>h</replaceable> is the texture height.</para>
-    </refsect1>
-
-    <refsect1 id="associatedgets"><title>Associated Gets</title>
-
-        <para>
-        <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>
-        with argument <constant>GL_MAX_TEXTURE_SIZE</constant></para>
-    </refsect1>
-
-    <refsect1 id="seealso"><title>See Also</title>
-
-        <para>
-        <citerefentry><refentrytitle>glCompressedTexSubImage2D</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glCopyTexImage2D</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glTexEnv</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glTexParameter</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glTexSubImage2D</refentrytitle></citerefentry>
-        </para>
-    </refsect1>
-    <refsect1 id="copyright"><title>Copyright</title>
-        <para>
-            Copyright <trademark class="copyright"></trademark> 2003-2004
+        </mml:math>, where
+        <em class="replaceable"><code>w</code></em> is the texture width and
+        <em class="replaceable"><code>h</code></em> is the texture height.</p></div><div class="refsect1"><a id="associatedgets"></a><h2>Associated Gets</h2><p>
+        <a class="citerefentry" href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>
+        with argument <code class="constant">GL_MAX_TEXTURE_SIZE</code></p></div><div class="refsect1"><a id="seealso"></a><h2>See Also</h2><p>
+        <a class="citerefentry" href="glCompressedTexSubImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glCompressedTexSubImage2D</span></span></a>,
+        <a class="citerefentry" href="glCopyTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage2D</span></span></a>,
+        <a class="citerefentry" href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>,
+        <a class="citerefentry" href="glTexEnv.xml"><span class="citerefentry"><span class="refentrytitle">glTexEnv</span></span></a>,
+        <a class="citerefentry" href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a>,
+        <a class="citerefentry" href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a>,
+        <a class="citerefentry" href="glTexSubImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span></a>
+        </p></div><div class="refsect1"><a id="copyright"></a><h2>Copyright</h2><p>
+            Copyright <span class="trademark"></span>© 2003-2004
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see
-            <ulink url="http://oss.sgi.com/projects/FreeB/">http://oss.sgi.com/projects/FreeB/</ulink>.
-        </para>
-    </refsect1>
-</refentry>
+            <a class="ulink" href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
+        </p></div></div></body></html>

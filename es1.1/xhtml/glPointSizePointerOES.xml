@@ -1,188 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
-                            "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
-<refentry xml:base="" id="glPointSizePointerOES">
-    <refmeta>
-        <refmetainfo>
-            <copyright>
-                <year>2003-2004</year>
-                <holder>Silicon Graphics, Inc.</holder>
-            </copyright>
-        </refmetainfo>
-        <refentrytitle>glPointSizePointerOES</refentrytitle>
-        <manvolnum>3G</manvolnum>
-    </refmeta>
-
-    <refnamediv>
-        <refdescriptor>glPointSizePointerOES</refdescriptor>
-        <refname>glPointSizePointerOES</refname>
-        <refpurpose>define an array of point sizes</refpurpose>
-    </refnamediv>
-
-    <refsynopsisdiv>
-        <title>C Specification</title>
-
-        <funcsynopsis>
-            <funcprototype>
-                <funcdef>void <function>glPointSizePointerOES</function></funcdef>
-                <paramdef>GLenum <parameter>type</parameter></paramdef>
-                <paramdef>GLsizei <parameter>stride</parameter></paramdef>
-                <paramdef>const GLvoid * <parameter>pointer</parameter></paramdef>
-            </funcprototype>
-        </funcsynopsis>
-    </refsynopsisdiv>
-
-    <refsect1 id="parameters"><title>Parameters</title>
-
-        <variablelist>
-            <varlistentry>
-                <term>
-                    <parameter>type</parameter>
-                </term>
-                <listitem>
-                    <para>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd"><!-- saved from url=(0013)about:internet -->
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glPointSizePointerOES</title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /></head><body><div class="refentry"><a id="glPointSizePointerOES"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glPointSizePointerOES — define an array of point sizes</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">void <strong class="fsfunc">glPointSizePointerOES</strong>(</code></td><td>GLenum <var class="pdparam">type</var>, </td></tr><tr><td> </td><td>GLsizei <var class="pdparam">stride</var>, </td></tr><tr><td> </td><td>const GLvoid * <var class="pdparam">pointer</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term">
+                    <em class="parameter"><code>type</code></em>
+                </span></dt><dd><p>
                     Specifies the data type of each point size in the
                     array. Symbolic constant
-                    <constant>GL_FIXED</constant> is accepted.
+                    <code class="constant">GL_FIXED</code> is accepted.
                     However, the common profile also accepts the symbolic constant
-                    <constant>GL_FLOAT</constant>.
+                    <code class="constant">GL_FLOAT</code>.
                     The initial value is
-                    <constant>GL_FIXED</constant> for the common lite profile,
-                    or <constant>GL_FLOAT</constant> for the common profile.
-                    </para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <parameter>stride</parameter>
-                </term>
-                <listitem>
-                    <para>
+                    <code class="constant">GL_FIXED</code> for the common lite profile,
+                    or <code class="constant">GL_FLOAT</code> for the common profile.
+                    </p></dd><dt><span class="term">
+                    <em class="parameter"><code>stride</code></em>
+                </span></dt><dd><p>
                     Specifies the byte offset between consecutive
-                    point sizes. If <parameter>stride</parameter>
+                    point sizes. If <em class="parameter"><code>stride</code></em>
                     is 0, the point sizes are understood to be tightly packed in
                     the array.
-                    The initial value is <constant>0</constant>.
-                    </para>
-                </listitem>
-            </varlistentry>
-
-            <varlistentry>
-                <term>
-                    <parameter>pointer</parameter>
-                </term>
-                <listitem>
-                    <para>
+                    The initial value is <code class="constant">0</code>.
+                    </p></dd><dt><span class="term">
+                    <em class="parameter"><code>pointer</code></em>
+                </span></dt><dd><p>
                     Specifies a pointer to the point size of the
                     first vertex in the array.
-                    The initial value is <constant>0</constant>.
-                    </para>
-                </listitem>
-            </varlistentry>
-        </variablelist>
-    </refsect1>
-
-    <refsect1 id="description"><title>Description</title>
-
-        <para>
-        <function>glPointSizePointerOES</function>
+                    The initial value is <code class="constant">0</code>.
+                    </p></dd></dl></div></div><div class="refsect1"><a id="description"></a><h2>Description</h2><p>
+        <code class="function">glPointSizePointerOES</code>
         specifies the location and data of an array of point sizes
         to use when rendering points.
-        <parameter>type</parameter> specifies the data type of the coordinates.
-        <parameter>stride</parameter>
+        <em class="parameter"><code>type</code></em> specifies the data type of the coordinates.
+        <em class="parameter"><code>stride</code></em>
         specifies the byte stride from one point size to the next, allowing
         vertices and attributes to be packed into a single array or
         stored in separate arrays. (Single-array storage may be more
         efficient on some implementations.)
-        </para>
-
-        <para>
+        </p><p>
         The point sizes supplied in the
         point size arrays will be the sizes used to render
         both points and point sprites.
-        </para>
-
-        <para>
+        </p><p>
         Distance-based attenuation works in conjunction with
-        <constant>GL_POINT_SIZE_ARRAY_OES</constant>.
+        <code class="constant">GL_POINT_SIZE_ARRAY_OES</code>.
         If distance-based attenuation is enabled
         the point size from the point size array will be attenuated as defined by
-        <citerefentry><refentrytitle>glPointParameter</refentrytitle></citerefentry>,
+        <a class="citerefentry" href="glPointParameter.xml"><span class="citerefentry"><span class="refentrytitle">glPointParameter</span></span></a>,
         to compute the final point size.
-        </para>
-
-        <para>
+        </p><p>
         When a point size array is
         specified,
-        <parameter>type</parameter>,
-        <parameter>stride</parameter>, and
-        <parameter>pointer</parameter> are saved as client-side state.
-        </para>
-
-        <para>
+        <em class="parameter"><code>type</code></em>,
+        <em class="parameter"><code>stride</code></em>, and
+        <em class="parameter"><code>pointer</code></em> are saved as client-side state.
+        </p><p>
         If the point size array is enabled, it is used to control
         the sizes used to render points and point sprites.
         To enable and disable the point size array, call
-        <citerefentry><refentrytitle>glEnableClientState</refentrytitle></citerefentry>
+        <a class="citerefentry" href="glEnableClientState.xml"><span class="citerefentry"><span class="refentrytitle">glEnableClientState</span></span></a>
         and
-        <citerefentry><refentrytitle>glDisableClientState</refentrytitle></citerefentry>
+        <a class="citerefentry" href="glDisableClientState.xml"><span class="citerefentry"><span class="refentrytitle">glDisableClientState</span></span></a>
         with the argument
-        <constant>GL_POINT_SIZE_ARRAY_OES</constant>.
+        <code class="constant">GL_POINT_SIZE_ARRAY_OES</code>.
         The point size array is initially disabled.
-        </para>
-
-    </refsect1>
-
-    <refsect1 id="notes"><title>Notes</title>
-
-	<para revision="es1.1"> 
-	<function>glPointSizePointerOES</function> is only supported
+        </p></div><div class="refsect1"><a id="notes"></a><h2>Notes</h2><p> 
+	<code class="function">glPointSizePointerOES</code> is only supported
 	if the OpenGL ES version number is 1.1 or greater. 
-	</para> 
-
-        <para>
+	</p><p>
         If point size array is enabled, the point
         size defined by
-        <function>glPointSize</function>
+        <code class="function">glPointSize</code>
         is ignored.
-        </para>
-
-        <para>
-        <function>glPointSizePointerOES</function>
+        </p><p>
+        <code class="function">glPointSizePointerOES</code>
         is typically implemented on the client side.
-        </para>
-
-    </refsect1>
-
-    <refsect1 id="errors"><title>Errors</title>
-
-        <para>
-        <constant>GL_INVALID_ENUM</constant> is generated if
-        <parameter>type</parameter> is is not an accepted value.
-        </para>
-
-        <para>
-        <constant>GL_INVALID_VALUE</constant> is generated if
-        <parameter>stride</parameter> is negative.
-        </para>
-    </refsect1>
-
-    <refsect1 id="seealso"><title>See Also</title>
-
-        <para>
-            <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glPointParameter</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glPointSize</refentrytitle></citerefentry>,
-        </para>
-    </refsect1>
-    <refsect1 id="copyright"><title>Copyright</title>
-        <para>
-            Copyright <trademark class="copyright"></trademark> 2003-2004
+        </p></div><div class="refsect1"><a id="errors"></a><h2>Errors</h2><p>
+        <code class="constant">GL_INVALID_ENUM</code> is generated if
+        <em class="parameter"><code>type</code></em> is is not an accepted value.
+        </p><p>
+        <code class="constant">GL_INVALID_VALUE</code> is generated if
+        <em class="parameter"><code>stride</code></em> is negative.
+        </p></div><div class="refsect1"><a id="seealso"></a><h2>See Also</h2><p>
+            <a class="citerefentry" href="glDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span></a>,
+            <a class="citerefentry" href="glDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a>,
+            <a class="citerefentry" href="glPointParameter.xml"><span class="citerefentry"><span class="refentrytitle">glPointParameter</span></span></a>,
+            <a class="citerefentry" href="glPointSize.xml"><span class="citerefentry"><span class="refentrytitle">glPointSize</span></span></a>,
+        </p></div><div class="refsect1"><a id="copyright"></a><h2>Copyright</h2><p>
+            Copyright <span class="trademark"></span>© 2003-2004
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see
-            <ulink url="http://oss.sgi.com/projects/FreeB/">http://oss.sgi.com/projects/FreeB/</ulink>.
-        </para>
-    </refsect1>
-</refentry>
+            <a class="ulink" href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
+        </p></div></div></body></html>

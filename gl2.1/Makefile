@@ -17,8 +17,8 @@ JING = jing
 
 LDIRT := $(wildcard gl*.xml)
 
-default:
-	cd html ; make
+default clean:
+	cd xhtml ; $(MAKE) $@
 
 # Need Docbook 4 + MathML schema
 # Docbook 5 Relax-NG with XInclude schema URLs and local filenames
@@ -27,7 +27,7 @@ default:
 
 XML = $(filter-out $(XIFILES),$(wildcard *.xml))
 
-#        $(JING) -c $(DB5XIRNC) $(XML)
+#	 $(JING) -c $(DB5XIRNC) $(XML)
 
 validate:
 	echo "Validation not supported for this ref page set"
