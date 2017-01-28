@@ -140,7 +140,7 @@
             values.
         </para>
         <para>
-            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>target</parameter> is not a name returned from
+            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>texture</parameter> is not a name returned from
             a previous call to <citerefentry><refentrytitle>glGenTextures</refentrytitle></citerefentry>.
         </para>
         <para>
