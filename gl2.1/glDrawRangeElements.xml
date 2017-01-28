@@ -97,7 +97,7 @@
     </refsect1>
     <refsect1 id="description"><title>Description</title>
         <para>
-            <function>glDrawRangeElements</function> is a restricted form of <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>. <parameter>mode</parameter>, <parameter>start</parameter>, <parameter>end</parameter>,
+            <function>glDrawRangeElements</function> is a restricted form of <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>. <parameter>mode</parameter>
             and <parameter>count</parameter> match the corresponding arguments to <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>, with
             the additional constraint that all values in the arrays <parameter>count</parameter> must lie
             between <parameter>start</parameter> and <parameter>end</parameter>, inclusive.
