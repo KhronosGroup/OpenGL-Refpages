@@ -167,10 +167,11 @@
     <parameter>renderbuffer</parameter> is not the name of an existing
     renderbuffer object.</para>
 
-    <para><constant>GL_INVALID_VALUE</constant> is generated if
-    <parameter>samples</parameter> is greater than
-    <constant>GL_MAX_SAMPLES</constant>.</para>
-
+	<para>
+		<constant>GL_INVALID_OPERATION</constant> is generated if <parameter>samples</parameter> is greater than the maximum number of samples
+					supported for <parameter>internalformat</parameter>.
+	</para>
+		
     <para><constant>GL_INVALID_ENUM</constant> is generated if
     <parameter>internalformat</parameter> is not a color-renderable,
     depth-renderable, or stencil-renderable format.</para>

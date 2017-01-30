@@ -113,7 +113,7 @@
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>target</parameter> is not <constant>GL_RENDERBUFFER</constant>.
         </para>
         <para>
-            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>samples</parameter> is greater than the maximum number of samples
+            <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>samples</parameter> is greater than the maximum number of samples
                         supported for <parameter>internalformat</parameter>.
         </para>
         <para>
