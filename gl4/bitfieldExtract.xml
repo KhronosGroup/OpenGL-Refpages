@@ -63,7 +63,7 @@
     <refsect1 xml:id="description"><title>Description</title>
         <para>
             <function>bitfieldExtract</function> extracts a subset of the bits of <parameter>value</parameter> and returns
-            it in the least significant bits of the result. The range of bits extracted is [<parameter>offset</parameter>, <parameter>offset</parameter> + <parameter>bits</parameter> + 1].
+            it in the least significant bits of the result. The range of bits extracted is [<parameter>offset</parameter>, <parameter>offset</parameter> + <parameter>bits</parameter> - 1].
         </para>
         <para>
             For unsigned data types, the most significant bits of the result will be set to zero. For signed data types, the most significant bits will be set to the value of

@@ -409,10 +409,9 @@
                         <entry> <constant>GL_ONE_MINUS_SRC_COLOR</constant> </entry>
                         <entry>
                         <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
-                            <!-- eqn: ( 1,  1,  1,  1 )  -  ( R sub s0 / k sub R ,  G sub s0 / k sub G ,  B sub 0s / k sub B ): -->
+                            <!-- eqn: ( 1,  1,  1 )  -  ( R sub s0 / k sub R ,  G sub s0 / k sub G ,  B sub 0s / k sub B ): -->
                             <mml:mrow>
                                 <mml:mfenced open="(" close=")">
-                                    <mml:mn>1</mml:mn>
                                     <mml:mn>1</mml:mn>
                                     <mml:mn>1</mml:mn>
                                     <mml:mn>1</mml:mn>

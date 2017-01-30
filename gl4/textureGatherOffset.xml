@@ -115,7 +115,7 @@
 <programlisting>    vec4(Sample_i0_j1(P + offset, base).comp,
          Sample_i1_j1(P + offset, base).comp,
          Sample_i1_j0(P + offset, base).comp,
-         Sample_i0_j1(P + offset, base).comp);</programlisting>
+         Sample_i0_j0(P + offset, base).comp);</programlisting>
     </para>
     <para>
         It perfoms as <citerefentry><refentrytitle>textureGather</refentrytitle></citerefentry> but with <parameter>offset</parameter>

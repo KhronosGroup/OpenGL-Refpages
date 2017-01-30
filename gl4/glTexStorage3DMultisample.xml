@@ -180,8 +180,11 @@
             <parameter>levels</parameter> is less than 1.
         </para>
         <para>
-            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>samples</parameter> is greater than the
-            value of <constant>GL_MAX_SAMPLES</constant>.
+            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>samples</parameter> is zero.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>samples</parameter> is greater than the
+            maximum number of samples supported for this <parameter>target</parameter> and <parameter>internalformat</parameter>.
         </para>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if the value of <constant>GL_TEXTURE_IMMUTABLE_FORMAT</constant>
