@@ -114,26 +114,30 @@
                     </para>
                 </listitem>
                 <listitem>
-                    <para> Any variable name specified in the <parameter>varyings</parameter> array
-                        is not declared as an output in the vertex shader (or the geometry shader,
-                        if active), or is not one of the special identifiers listed above. </para>
+                    <para>
+                        Any variable name specified in the <parameter>varyings</parameter> array is not declared as an output
+                        in the vertex shader (or the geometry shader, if active), or is not
+                        one of the special identifiers listed above.
+                    </para>
                 </listitem>
                 <listitem>
-                    <para> Special identifiers appear in a <parameter>varyings</parameter> array
-                        where <parameter>bufferMode</parameter> is not
-                            <constant>GL_INTERLEAVED_ATTRIBS</constant>.</para>
+                    <para>
+                        Special identifiers appear in a <parameter>varyings</parameter> array where
+                        <parameter>bufferMode</parameter> is not <constant>GL_INTERLEAVED_ATTRIBS</constant>.
+                    </para>
                 </listitem>
                 <listitem>
-                    <para> Any two entries in the <parameter>varyings</parameter> array, which are
-                        not one of the special varyings above, specify the same varying
-                        variable.</para>
+                    <para>
+                        Any two entries in the <parameter>varyings</parameter> array, which are not one of the special varyings above,
+                        specify the same varying variable.
+                    </para>
                 </listitem>
                 <listitem>
-                    <para> Discounting any special identifiers, the total number of components to
-                        capture in any varying variable in <parameter>varyings</parameter> is
-                        greater than the constant
-                            <constant>GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS</constant> and
-                        the buffer mode is <constant>GL_SEPARATE_ATTRIBS</constant>. </para>
+                    <para>
+                        Discounting any special identifiers, the total number of components to capture in any
+                        varying variable in <parameter>varyings</parameter> is greater than the constant <constant>GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS</constant>
+                        and the buffer mode is <constant>GL_SEPARATE_ATTRIBS</constant>. 
+                    </para>
                 </listitem>
                 <listitem>
                     <para>
