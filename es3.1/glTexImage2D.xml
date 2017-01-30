@@ -228,7 +228,7 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_RG</constant></term>
+                <term><constant>GL_RG_INTEGER</constant></term>
                 <listitem>
                     <para>
                         Each element is a red/green double.
