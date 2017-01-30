@@ -105,8 +105,7 @@
             transferred by the corresponding draw call will be taken from element <parameter>indices</parameter>[i] + <parameter>basevertex</parameter>
             of each enabled array. If the resulting value is larger than the maximum value representable by <parameter>type</parameter>,
             it is as if the calculation were upconverted to 32-bit unsigned integers (with wrapping on overflow conditions).
-            The operation is undefined if the sum would be negative. The <parameter>basevertex</parameter> has no effect on the
-            shader-visible value of <constant>gl_VertexID</constant>.
+            The operation is undefined if the sum would be negative.
         </para>
         <para>
             Specific vertex attributes may be classified as <emphasis>instanced</emphasis> through the use of

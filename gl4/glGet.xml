@@ -506,6 +506,16 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_CULL_FACE_MODE</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single value indicating the mode of polygon culling.
+                        The initial value is <constant>GL_BACK</constant>.
+                        See <citerefentry><refentrytitle>glCullFace</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_CURRENT_PROGRAM</constant></term>
                 <listitem>
                     <para>

@@ -71,7 +71,7 @@
             <term><parameter>bufSize</parameter></term>
             <listitem>
                 <para>
-                    Specifies the maximum number of basic machine units that may be written to <parameter>params</parameter> by the function.
+                    Specifies the maximum number of integers of the specified width that may be written to <parameter>params</parameter> by the function.
                 </para>
             </listitem>
         </varlistentry>
