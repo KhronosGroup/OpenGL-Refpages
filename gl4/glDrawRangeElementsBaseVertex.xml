@@ -102,7 +102,7 @@
         <para>
             <function>glDrawRangeElementsBaseVertex</function> is a restricted form of
             <citerefentry><refentrytitle>glDrawElementsBaseVertex</refentrytitle></citerefentry>. <parameter>mode</parameter>,
-            <parameter>start</parameter>, <parameter>end</parameter>, <parameter>count</parameter> and <parameter>basevertex</parameter> match
+            <parameter>count</parameter> and <parameter>basevertex</parameter> match
             the corresponding arguments to <citerefentry><refentrytitle>glDrawElementsBaseVertex</refentrytitle></citerefentry>, with the additional
             constraint that all values in the array <parameter>indices</parameter> must lie between <parameter>start</parameter> and <parameter>end</parameter>,
             inclusive, prior to adding <parameter>basevertex</parameter>. Index values lying outside the range [<parameter>start</parameter>, <parameter>end</parameter>]
