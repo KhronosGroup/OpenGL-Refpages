@@ -75,7 +75,8 @@
             by <parameter>target</parameter>. If <parameter>buffers</parameter> is <constant>NULL</constant> then
             <function>glBindBuffersBase</function> unbinds any buffers that are currently bound to the referenced binding points.
             Assuming no errors are generated, it is equivalent to the following
-            pseudo-code, which calls <citerefentry><refentrytitle>glBindBufferBase</refentrytitle></citerefentry>:
+            pseudo-code, which calls <citerefentry><refentrytitle>glBindBufferBase</refentrytitle></citerefentry>,
+            with the exception that the non-indexed <parameter>target</parameter> is not changed by <function>glBindBuffersBase</function>:
         </para>
 <programlisting>    for (i = 0; i &lt; count; i++) {
         if (buffers != NULL) {
@@ -84,6 +85,11 @@
             glBindBufferBase(target, first + i, 0);
         }
     }</programlisting>
+        <para>
+            Each entry in <parameter>buffers</parameter> will be checked individually and if found to be invalid, the state
+            for that buffer binding index will not be changed and an error will be generated. However, the state for
+            other buffer binding indices referenced by the command will still be updated.
+        </para>
     </refsect1>
     <refsect1 xml:id="notes"><title>Notes</title>
         <para>
