@@ -113,6 +113,32 @@
                     A pointer to an array of names of buffer objects to bind to the targets on the specified binding point, or <code class="constant">NULL</code>.
                 </p>
             </dd>
+            <dt>
+              <span class="term">
+                <em class="parameter">
+                  <code>offsets</code>
+                </em>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                        A pointer to an array of offsets into the corresponding buffer in <em class="parameter"><code>buffers</code></em> to
+                        bind, or <code class="constant">NULL</code> if <em class="parameter"><code>buffers</code></em> is <code class="constant">NULL</code>.
+                    </p>
+            </dd>
+            <dt>
+              <span class="term">
+                <em class="parameter">
+                  <code>sizes</code>
+                </em>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                        A pointer to an array of sizes of the corresponding buffer in <em class="parameter"><code>buffers</code></em> to
+                        bind, or <code class="constant">NULL</code> if <em class="parameter"><code>buffers</code></em> is <code class="constant">NULL</code>.
+                    </p>
+            </dd>
           </dl>
         </div>
       </div>
@@ -124,18 +150,24 @@
             points starting from index <em class="parameter"><code>index</code></em> of the array of targets specified
             by <em class="parameter"><code>target</code></em>. <em class="parameter"><code>offsets</code></em> specifies the address of an array containing
             <em class="parameter"><code>count</code></em> starting offsets within the buffers, and <em class="parameter"><code>sizes</code></em> specifies the
-            adderess of an array of <em class="parameter"><code>count</code></em> sizes of the ranges. If <em class="parameter"><code>buffers</code></em> is <code class="constant">NULL</code> then
+            address of an array of <em class="parameter"><code>count</code></em> sizes of the ranges. If <em class="parameter"><code>buffers</code></em> is <code class="constant">NULL</code> then
             <em class="parameter"><code>offsets</code></em> and <em class="parameter"><code>sizes</code></em> are ignored and <code class="function">glBindBuffersRange</code> unbinds any
             buffers that are currently bound to the referenced binding points. Assuming no errors are generated, it is equivalent to the following
-            pseudo-code, which calls <a class="citerefentry" href="glBindBufferRange.xhtml"><span class="citerefentry"><span class="refentrytitle">glBindBufferRange</span></span></a>:
-        </p>
+            pseudo-code, which calls <a class="citerefentry" href="glBindBufferRange.xhtml"><span class="citerefentry"><span class="refentrytitle">glBindBufferRange</span></span></a>,
+            with the exception that the non-indexed <em class="parameter"><code>target</code></em> is not changed by <code class="function">glBindBuffersRange</code>:</p>
         <pre class="programlisting">    for (i = 0; i &lt; count; i++) {
         if (buffers != NULL) {
             glBindBufferRange(target, first + i, buffers[i], offsets[i], sizes[i]);
         } else {
-            glBindBufferBase(target, first + i, 0);
+            glBindBufferRange(target, first + i, 0);
         }
     }</pre>
+        <p>
+            Each entry in <em class="parameter"><code>buffers</code></em>, <em class="parameter"><code>offsets</code></em>, and <em class="parameter"><code>sizes</code></em> will be
+            checked individually and if found to be invalid, the state for that buffer binding index will not be changed and an
+            error will be generated. However, the state for other buffer binding indices referenced by the command will
+            still be updated.
+        </p>
       </div>
       <div class="refsect1" id="notes">
         <h2>Notes</h2>

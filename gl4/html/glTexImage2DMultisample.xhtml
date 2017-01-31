@@ -192,7 +192,11 @@
             <code class="constant">GL_INVALID_VALUE</code> is generated if either <em class="parameter"><code>width</code></em> or <em class="parameter"><code>height</code></em> negative or is greater than <code class="constant">GL_MAX_TEXTURE_SIZE</code>.
         </p>
         <p>
-            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>samples</code></em> is greater than <code class="constant">GL_MAX_SAMPLES</code>.
+            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>samples</code></em> is zero.
+        </p>
+        <p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>samples</code></em> is greater than the
+            maximum number of samples supported for this <em class="parameter"><code>target</code></em> and <em class="parameter"><code>internalformat</code></em>.
         </p>
       </div>
       <div class="refsect1" id="versions">

@@ -1107,8 +1107,11 @@
             <em class="parameter"><code>levels</code></em> is less than 1.
         </p>
         <p>
-            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>samples</code></em> is greater than the
-            value of <code class="constant">GL_MAX_SAMPLES</code>.
+            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>samples</code></em> is zero.
+        </p>
+        <p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>samples</code></em> is greater than the
+            maximum number of samples supported for this <em class="parameter"><code>target</code></em> and <em class="parameter"><code>internalformat</code></em>.
         </p>
         <p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if the value of <code class="constant">GL_TEXTURE_IMMUTABLE_FORMAT</code>

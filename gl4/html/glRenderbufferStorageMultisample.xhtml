@@ -193,9 +193,10 @@
     <code class="function">glNamedRenderbufferStorageMultisample</code> function if
     <em class="parameter"><code>renderbuffer</code></em> is not the name of an existing
     renderbuffer object.</p>
-        <p><code class="constant">GL_INVALID_VALUE</code> is generated if
-    <em class="parameter"><code>samples</code></em> is greater than
-    <code class="constant">GL_MAX_SAMPLES</code>.</p>
+        <p>
+		<code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>samples</code></em> is greater than the maximum number of samples
+					supported for <em class="parameter"><code>internalformat</code></em>.
+	</p>
         <p><code class="constant">GL_INVALID_ENUM</code> is generated if
     <em class="parameter"><code>internalformat</code></em> is not a color-renderable,
     depth-renderable, or stencil-renderable format.</p>

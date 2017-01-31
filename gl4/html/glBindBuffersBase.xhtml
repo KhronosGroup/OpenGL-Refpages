@@ -117,7 +117,8 @@
             by <em class="parameter"><code>target</code></em>. If <em class="parameter"><code>buffers</code></em> is <code class="constant">NULL</code> then
             <code class="function">glBindBuffersBase</code> unbinds any buffers that are currently bound to the referenced binding points.
             Assuming no errors are generated, it is equivalent to the following
-            pseudo-code, which calls <a class="citerefentry" href="glBindBufferBase.xhtml"><span class="citerefentry"><span class="refentrytitle">glBindBufferBase</span></span></a>:
+            pseudo-code, which calls <a class="citerefentry" href="glBindBufferBase.xhtml"><span class="citerefentry"><span class="refentrytitle">glBindBufferBase</span></span></a>,
+            with the exception that the non-indexed <em class="parameter"><code>target</code></em> is not changed by <code class="function">glBindBuffersBase</code>:
         </p>
         <pre class="programlisting">    for (i = 0; i &lt; count; i++) {
         if (buffers != NULL) {
@@ -126,6 +127,11 @@
             glBindBufferBase(target, first + i, 0);
         }
     }</pre>
+        <p>
+            Each entry in <em class="parameter"><code>buffers</code></em> will be checked individually and if found to be invalid, the state
+            for that buffer binding index will not be changed and an error will be generated. However, the state for
+            other buffer binding indices referenced by the command will still be updated.
+        </p>
       </div>
       <div class="refsect1" id="notes">
         <h2>Notes</h2>
