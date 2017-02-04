@@ -19,7 +19,16 @@ include_once("../../assets/static_pages/khr_page_top.php");
     Khronos-authored projects, has been retired. Projects formerly in the
     SDK which are still active are linked below. </p>
 
+
+<h2> Reference Pages </h2>
+
+<p> <a href="index.php"> Reference Pages </a> for OpenGL and OpenGL ES. </p>
+
+
 <h2> Libraries </h2>
+
+<p> <a href="https://github.com/Eyescale/Equalizer">Equalizer</a> -
+    Middleware to create and deploy parallel OpenGL-based applications. </p>
 
 <p> <a href="https://github.com/nigels-com/glew">GLEW</a> - The OpenGL
     Extension Wrangler Library. </p>
@@ -27,18 +36,15 @@ include_once("../../assets/static_pages/khr_page_top.php");
 <p> <a href="http://glm.g-truc.net">GLM (OpenGL Mathematics)</a> - - A C++
     mathematics library for graphics programming. </p>
 
-<p> <a href="https://github.com/Eyescale/Equalizer">Equalizer</a> -
-    Middleware to create and deploy parallel OpenGL-based applications. </p>
+<p> <a href="https://github.com/McNopper/GLUS">GLUS</a> - A modern OpenGL,
+    OpenGL ES and OpenVG Utility library. </p>
+
+<p> <a href="http://mesa3d.org/">Mesa 3D</a> - An open-source
+    implementation of the OpenGL specification. </p>
 
 <p> <a href="http://www.openscenegraph.org">Open Scene Graph</a> - A high
     performance 3D graphics toolkit widely used in research and industry.
     </p>
-
-<p> <a href="https://github.com/McNopper/GLUS">GLUS</a> - A modern OpenGL,
-    OpenGL ES and OpenVG Utility library. </p>
-
-<p> <a href="https://mesa3d.org/">Mesa 3D</a> - An open-source
-    implementation of the OpenGL specification. </p>
 
 
 <h2> Tools </h2>
@@ -50,14 +56,14 @@ include_once("../../assets/static_pages/khr_page_top.php");
     file format for OpenGL textures, and <tt> libktx </tt> library for
     reading and writing KTX files. </p>
 
+<p> <a href="https://github.com/dtrebilco/glintercept"> GLIntercept </a> -
+    OpenGL function call intercept & logging tool. </p>
+
 <p> <a href="https://github.com/KhronosGroup/glslang"> GLSLang </a> - OpenGL
     Shading Language Reference Compiler. </p>
 
 <p> <a href="http://realtech-vr.com/admin/glview"> GLView </a> - OpenGL
     Extensions Viewer. </p>
-
-<p> <a href="https://github.com/dtrebilco/glintercept"> GLIntercept </a> -
-    OpenGL function call intercept & logging tool. </p>
 
 <p> <a href="https://developer.nvidia.com/gameworks-tools-overview"> NVIDIA
     Nsight Visual Studio</a> (and other developer tools). </p>
