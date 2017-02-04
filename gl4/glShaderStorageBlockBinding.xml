@@ -61,7 +61,7 @@
             shader storage block with an assigned index of <parameter>storageBlockIndex</parameter>
             in program object <parameter>program</parameter>.  <parameter>storageBlockIndex</parameter> must be an active shader storage block
             index in <parameter>program</parameter>. <parameter>storageBlockBinding</parameter> must be less than the value of <constant>GL_MAX_SHADER_STORAGE_BUFFER_BINDINGS</constant>.
-            If successful, <function>glShaderStorageBinding</function> specifies that <parameter>program</parameter> will use the data store of
+            If successful, <function>glShaderStorageBlockBinding</function> specifies that <parameter>program</parameter> will use the data store of
             the buffer object bound to the binding point <parameter>storageBlockBinding</parameter> to read
             and write the values of the buffer variables in the shader storage block identified by <parameter>storageBlockIndex</parameter>.
         </para>
