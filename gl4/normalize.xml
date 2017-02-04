@@ -15,7 +15,7 @@
     </refmeta>
     <refnamediv>
         <refname>normalize</refname>
-        <refpurpose>calculate the normalize product of two vectors</refpurpose>
+        <refpurpose>calculates the unit vector in the same direction as the original vector</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>Declaration</title>
         <funcsynopsis>
