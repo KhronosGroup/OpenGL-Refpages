@@ -33,17 +33,16 @@
 
 <h1> API Reference Cards </h1>
 
-<p> <a target="_new"
-    href="https://www.khronos.org/developers/reference-cards"> Quick
-    reference cards</a> are available in several formats for OpenGL 3.3 -
+<p> <a href="https://www.khronos.org/developers/reference-cards"> Quick
+    Reference Cards</a> are available in several formats for OpenGL 3.3 -
     4.5 and OpenGL ES 2.0 - 3.2. </p>
 
 <p> Formal Specifications for the OpenGL and OpenGL ES APIs and Shading
-    Languages are available from the <a target="_new"
-    href="https://www.khronos.org/registry/OpenGL/"> OpenGL Registry
-    Registry</a>. These are the authoritative documents for how the APIs and
-    Shading Languages are intended to work. They are also the most difficult
-    to read, being written primarily for device driver implementers, not
+    Languages are available from the <a
+    href="https://www.khronos.org/registry/OpenGL/"> OpenGL Registry</a>.
+    These are the authoritative documents for how the APIs and Shading
+    Languages are intended to work. They are also the most difficult to
+    read, being written primarily for device driver implementers, not
     developers using OpenGL ES. </p>
 
 <p> <small> Copyright &copy; 2010-2017 Khronos Group. This work is licensed
