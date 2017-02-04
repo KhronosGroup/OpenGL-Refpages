@@ -40,7 +40,7 @@
             The <varname>gl_ClipDistance</varname> variable provides a forward compatible
             mechanism for controlling user clipping. The element <parameter>gl_ClipDistance</parameter>[<emphasis>i</emphasis>]
             specifies a clip distance for each user clip plane <emphasis>i</emphasis>. A distance of 0.0 means that
-            the vertex is on the plane, a positive distance means that the vertex is insider the clip plane, and a negative
+            the vertex is on the plane, a positive distance means that the vertex is inside the clip plane, and a negative
             distance means that the point is outside the clip plane. The clip distances will be linearly interpolated across
             the primitive and the portion of the primitive with interpolated distances less than 0.0 will be clipped.
         </para>
