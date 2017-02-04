@@ -16,14 +16,14 @@ include_once("../../assets/static_pages/khr_page_top.php");
 <p> Complete descriptions of API commands and shading language functions are
     provided for the following versions of these APIs: </p>
 
-<p> <b>Current API Versions:</b> </p>
+<h2> Current API Versions </h2>
 
 <ul>
 <li> <p> <a href="es3/"> OpenGL ES 3.2 and OpenGL ES Shading Language 3.20 </a>
 <li> <p> <a href="gl4/"> OpenGL 4.5 and OpenGL Shading Language 4.50 </a>
 </ul>
 
-<p> <b>Older API Versions:</b> </p>
+<h2> Older API Versions </h2>
 
 <ul>
 <li> <p> <a href="es3.1/"> OpenGL ES 3.1 and OpenGL ES Shading Language 3.10 </a>
@@ -33,6 +33,12 @@ include_once("../../assets/static_pages/khr_page_top.php");
 <li> <p> <a href="gl2.1/"> OpenGL 2.1 </a>
      (inncluding GLX and fixed-function GL compatibility APIs)
 </ul>
+
+<h2> Reference Page Sources </h2>
+
+<p> The source documents for the reference pages are maintained in the
+    Khronos <a href="https://github.com/KhronosGroup/OpenGL-Refpages">
+    OpenGL-Refpages </a> repository on github. </p>
 
 
 <h1> API Reference Cards </h1>
