@@ -41,7 +41,7 @@
     <refsect1 xml:id="description"><title>Description</title>
         <para>
             <function>sqrt</function> returns the square root of $x$, i.e.
-            the value $\sqrt { x }$. The result is undefined is $x &lt; 0$.
+            the value $\sqrt { x }$. The result is undefined if $x &lt; 0$.
         </para>
     </refsect1>
     <refsect1 xml:id="versions"><title>Version Support</title>
