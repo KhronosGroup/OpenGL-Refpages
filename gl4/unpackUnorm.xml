@@ -77,7 +77,7 @@
                 <tbody>
                     <row>
                         <entry>unpackUnorm2x16</entry>
-                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(/*/*[@role='41']/*)"/>
+                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(/*/*[@role='40']/*)"/>
                     </row>
                     <row>
                         <entry>unpackSnorm2x16</entry>
@@ -85,11 +85,11 @@
                     </row>
                     <row>
                         <entry>unpackUnorm4x8</entry>
-                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(/*/*[@role='41']/*)"/>
+                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(/*/*[@role='40']/*)"/>
                     </row>
                     <row>
                         <entry>unpackSnorm4x8</entry>
-                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(/*/*[@role='41']/*)"/>
+                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(/*/*[@role='40']/*)"/>
                     </row>
                 </tbody>
             </tgroup>
