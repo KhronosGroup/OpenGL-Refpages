@@ -18,11 +18,11 @@ There are separate ref page sets for each of the following apis:
 == Building
 
 The ref pages rely on the Docbook 4 and 5 toolchains, DTDs, XSL, etc.
-Tools you'll need to build include
+Tools you'll need to build include:
 
-* xsltproc (Debian 'xsltproc' package, might also be 'libxslt')
+* xsltproc (Debian 'xsltproc' package, might also be 'libxslt').
 * Docbook stylesheets (Debian 'docbook-xsl' and 'docbook-xsl-ns' packages,
-  might also be 'docbook-style-xsl')
+  might also be 'docbook-style-xsl').
 ** If your XML catalog does not resolve the stylesheet URIs in the man
    page sources to a local reference to the installed stylesheets,
    processing will be very, very slow. You can find out if this is
@@ -31,8 +31,8 @@ Tools you'll need to build include
 * MathML 2.0 DTD (Debian 'w3-dtd-mathml' package)
 * Docboook MathML Module 1.1 (Debian 'docbook-mathml' package, or
   install http://www.docbook.org/xml/mathml/1.1CR1/dbmathml.dtd into
-  your local XML catalog with the commands:
-* GNU Make
+  your local XML catalog).
+* GNU Make.
 
 If you're using Ubuntu, or the Windows 10 Ubuntu subsystem, the required
 package names are probably basically the same as Debian.
