@@ -1,12 +1,11 @@
-<!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="style-index.css" />
     <title>OpenGL 4.x Reference Pages</title>
-    <script type="text/javascript" src="accord.js"></script>
+    <?php include 'accord.js'; ?>
 </head>
 <body>
-    <a href="indexflat.html">Use alternate (flat) index</a>
+    <a href="indexflat.php">Use alternate (flat) index</a>
     <div id="navwrap">
     <ul id="containerul"> <!-- Must wrap entire list for expand/contract -->
     <li class="Level1">

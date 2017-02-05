@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    #top {
+        position: static;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+    }
+    #nav {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 280px;
+        height: 100%;
+    }
+    #display {
+        position: absolute;
+        top: 100px;
+        left: 280px;
+        width: 100%;
+        height: 100%;
+    }
+    .banner img {
+        float: left;
+        padding: 0 0 0 0;
+    }
+    .title {
+        margin: 0 0 0 0;
+        font-size: 250%;
+        font-weight: bold;
+    }
+</style>
+<title>Iframe test - OpenGL 4 Reference Pages</title>
+</head>
+<body>
+<div id="top">
+    <div class="banner">
+        <img src="OpenGL_100px_June16.png"/>
+        <p class="title"> OpenGL 4.x Reference Pages </p>
+    </div>
+</div>
+<div id="nav">
+    <iframe height="100%" width="100%" src="index.html">
+    </iframe>
+</div>
+<div id="display">
+    <iframe height="100%" width="100%" name="pagedisplay" src="start.html">
+    </iframe>
+</div>
+</body>
+</html>

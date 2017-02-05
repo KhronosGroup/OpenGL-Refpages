@@ -1,6 +1,4 @@
 <!-- Javascript for accordion menus, included by index.php, shared with OpenCL man pages -->
-<script type="text/javascript">
-<!--
 var temp, temp2, cookieArray, cookieArray2, cookieCount;
 function initiate(){
   cookieCount=0;
@@ -54,5 +52,3 @@ function writeCookie(){ // Runs through the menu and puts the "states" of each n
   }
   document.cookie="state="+cookieArray.join(",")+";expires="+new Date(new Date().getTime() + 365*24*60*60*1000).toGMTString();
 }
-//-->
-</script>
