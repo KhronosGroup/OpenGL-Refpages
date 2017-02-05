@@ -1,0 +1,68 @@
+= OpenGL-Refpages
+
+OpenGL^R^ and OpenGL ES reference page sources, and generated HTML used
+as backing store for khronos.org .
+
+== Directory Structure
+
+There are separate ref page sets for each of the following apis:
+
+* +es1.1+ - OpenGL ES 1.1 (fixed function)
+* +es2.0+ - OpenGL ES 2.0
+* +es3.0+ - OpenGL ES 3.0
+* +es3.1+ - OpenGL ES 3.1
+* +es3+ - OpenGL ES 3.x (will always be the latest ES, currently 3.2)
+* +gl2.1+ - OpenGL 2.1 (including fixed functionality)
+* +gl4+ - OpenGL 4.x (will always be the latest GL, currently 4.5)
+
+== Building
+
+The ref pages rely on the Docbook 4 and 5 toolchains, DTDs, XSL, etc.
+Tools you'll need to build include:
+
+* xsltproc (Debian 'xsltproc' package, might also be 'libxslt').
+* Docbook stylesheets (Debian 'docbook-xsl' and 'docbook-xsl-ns' packages,
+  might also be 'docbook-style-xsl').
+** If your XML catalog does not resolve the stylesheet URIs in the man
+   page sources to a local reference to the installed stylesheets,
+   processing will be very, very slow. You can find out if this is
+   happening by invoking one of the xsltproc commands in the build with
+   the '--nonet' argument.
+* MathML 2.0 DTD (Debian 'w3-dtd-mathml' package)
+* Docboook MathML Module 1.1 (Debian 'docbook-mathml' package, or
+  install http://www.docbook.org/xml/mathml/1.1CR1/dbmathml.dtd into
+  your local XML catalog).
+* GNU Make.
+
+If you're using Ubuntu, or the Windows 10 Ubuntu subsystem, the required
+package names are probably basically the same as Debian.
+
+It's possible to build the ref pages on Mac OS X and Cygwin, but we
+don't have current package names or instructions for those environments.
+If you do, please submit a pull request adding details to this README.
+
+== Ref Pages in Subversion are Deprecated
+
+The reference pages were formerly maintained in Khronos Subversion. The
+Subversion copies will not be removed, but are no longer being
+maintained or exposed via the opengl.org and khronos.org websites.
+
+== Future Plans
+
+We're interested in migrating from Docbook to asciidoc, but if and only
+if we can find a robust way to automatically convert Docbook <refentry>
+documents into asciidoc, including handling XIncludes, imbedded MathML
+into LaTeX math, etc. We've tried several XSLT scripts and other
+conversion tools without success.
+
+We'll accept reasonable pull requests to improve the current ref pages,
+but aren't going to put a lot of effort into them ourselves.
+
+== Licenses
+
+For historical reasons, the ref pages are under a mix of open source
+licenses from Khronos, SGI, 3Dlabs, and others. We are unable to change
+many of those licenses, because the original authors are no longer in
+business (SGI, 3Dlabs). Ideally we'd like to end up with a Creative
+Commons license on all the ref pages and Apache 2.0 on all the scripts
+and tools, but it's unlikely that will ever be possible.
