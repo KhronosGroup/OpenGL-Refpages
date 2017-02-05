@@ -1,4 +1,4 @@
-<!-- Javascript for accordion menus, included by index.php, shared with OpenCL man pages -->
+<!-- Javascript for accordion menus, included by index.html -->
 var temp, temp2, cookieArray, cookieArray2, cookieCount;
 function initiate(){
   cookieCount=0;
