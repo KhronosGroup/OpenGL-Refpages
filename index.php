@@ -28,7 +28,7 @@ include_once("../../assets/static_pages/khr_page_top.php");
 <ul>
 <li> <p> <a href="es3.1/"> OpenGL ES 3.1 and OpenGL ES Shading Language 3.10 </a> </p> </li>
 <li> <p> <a href="es3.0/"> OpenGL ES 3.0 and OpenGL ES Shading Language 3.00 </a> </p> </li>
-<li> <p> <a href="es2.1/"> OpenGL ES 2.1 </a> </p> </li>
+<li> <p> <a href="es2.0/"> OpenGL ES 2.0 </a> </p> </li>
 <li> <p> <a href="es1.1/xhtml/"> OpenGL ES 1.1 </a> </p> </li>
 <li> <p> <a href="gl2.1/"> OpenGL 2.1 </a>
      (ncluding GLX, GLU, and fixed-function GL compatibility profile APIs) </p> </li>
