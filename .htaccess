@@ -4,9 +4,15 @@ RewriteEngine on
 RewriteCond %{ENV:REDIRECT_STATUS} 200
 RewriteRule ^ - [L]
 
+# Ancient redirect for GL page which aliases two commands. Should do this at the file level instead.
+RewriteRule ^gl4/html/glEndQuery.xhtml$ /registry/OpenGL-Refpages/gl4/html/glBeginQuery.xhtml [L,R=301]
+
+# The remaining redirects may be pointless at this time
+
 # Redirect queries against the old GLSL-specific directory (e.g. cached
 # links) to the ES 3.1 HTML5 pages.
-RewriteRule ^manglsl/xhtml/(.*)\.xml https://www.khronos.org/opengles/sdk/docs/man31/html/$1.xhtml [L,R=301]
+RewriteRule ^manglsl/xhtml/(.*)\.xml /registry/OpenGL-Refpages/es3.1/html/$1.xhtml [L,R=301]
 
-# Renamed 'man' to 'man2' directory
-RewriteRule ^man/(.*) https://www.khronos.org/opengles/sdk/docs/man2/$1 [L,R=301]
+# Renamed GL 'man' to 'man2' directory
+RewriteRule ^man/(.*) /registry/OpenGL-Refpages/gl2.1/$1 [L,R=301]
+
