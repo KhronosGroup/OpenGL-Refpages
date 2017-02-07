@@ -578,8 +578,8 @@
                 <li><a href="glMapBufferRange.xhtml" target="pagedisplay">glMapNamedBufferRange</a></li>
                 <li><a href="matrixCompMult.xhtml" target="pagedisplay">matrixCompMult</a></li>
                 <li><a href="max.xhtml" target="pagedisplay">max</a></li>
-                <li><a href="memoryBarrier.xhtml" target="pagedisplay">memoryBarrier</a></li>
                 <li><a href="glMemoryBarrier.xhtml" target="pagedisplay">glMemoryBarrier</a></li>
+                <li><a href="memoryBarrier.xhtml" target="pagedisplay">memoryBarrier</a></li>
                 <li><a href="memoryBarrierAtomicCounter.xhtml" target="pagedisplay">memoryBarrierAtomicCounter</a></li>
                 <li><a href="memoryBarrierBuffer.xhtml" target="pagedisplay">memoryBarrierBuffer</a></li>
                 <li><a href="glMemoryBarrier.xhtml" target="pagedisplay">glMemoryBarrierByRegion</a></li>

@@ -96,7 +96,7 @@
             shader storage block with an assigned index of <em class="parameter"><code>storageBlockIndex</code></em>
             in program object <em class="parameter"><code>program</code></em>.  <em class="parameter"><code>storageBlockIndex</code></em> must be an active shader storage block
             index in <em class="parameter"><code>program</code></em>. <em class="parameter"><code>storageBlockBinding</code></em> must be less than the value of <code class="constant">GL_MAX_SHADER_STORAGE_BUFFER_BINDINGS</code>.
-            If successful, <code class="function">glShaderStorageBinding</code> specifies that <em class="parameter"><code>program</code></em> will use the data store of
+            If successful, <code class="function">glShaderStorageBlockBinding</code> specifies that <em class="parameter"><code>program</code></em> will use the data store of
             the buffer object bound to the binding point <em class="parameter"><code>storageBlockBinding</code></em> to read
             and write the values of the buffer variables in the shader storage block identified by <em class="parameter"><code>storageBlockIndex</code></em>.
         </p>
@@ -104,15 +104,13 @@
       <div class="refsect1" id="errors">
         <h2>Errors</h2>
         <p>
-            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>attribindex</code></em> is greater than
-            or equal to the value of <code class="constant">GL_MAX_VERTEX_ATTRIBS</code>.
+            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>program</code></em> is not the name of either a program or shader object.
         </p>
         <p>
-            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>bindingindex</code></em> is greater than
-            or equal to the value of <code class="constant">GL_MAX_VERTEX_ATTRIB_BINDINGS</code>.
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>program</code></em> is the name of a shader object.
         </p>
         <p>
-            <code class="constant">GL_INVALID_OPERATION</code> is generated if no vertex array object is bound.
+            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>storageBlockIndex</code></em> is not an active shader storage block index in <em class="parameter"><code>program</code></em>, or if <em class="parameter"><code>storageBlockBinding</code></em> is greater than or equal to the value of <code class="constant">MAX_SHADER_STORAGE_BUFFER_BINDINGS</code>.
         </p>
       </div>
       <div class="refsect1" id="associatedgets">
