@@ -2,54 +2,94 @@
 <html>
 <head>
 <style>
+    html, body, iframe { height: 100%; }
+    body {
+        margin: 0;
+        min-width: 600px;
+        font-family: sans-serif;
+    }
     #top {
-        position: static;
-        top: 0;
-        left: 0;
         width: 100%;
         height: 100px;
     }
-    #nav {
-        position: absolute;
-        top: 100px;
-        left: 0;
-        width: 280px;
+    .wrapper {
+        position:relative;
+        clear:both;
+        float:left;
+        width:100%;
         height: 100%;
+        overflow:hidden;
     }
-    #display {
-        position: absolute;
-        top: 100px;
-        left: 280px;
+    .opengl .contentwrapper {
+        position:relative;
+        float:left;
+        width:200%;
+        height: 100%;
+        left:310px;
+    }
+    .opengl .displaywrapper {
+        position:relative;
+        float:right;
+        width:50%;
+        height: 100%;
+        right:330px;
+        padding-bottom:1em;
+    }
+    .opengl .display {
+        margin:0 15px 0 335px;
+        position:relative;
+        right:100%;
+        height: 100%;
+        overflow:hidden;
+    }
+    .opengl .nav {
+        float:left;
+        width:280px;
+        height: 100%;
+        position:relative;
+        right:295px;
+    }
+    iframe {
         width: 100%;
         height: 100%;
-        overflow: scroll;
+        border: 0;
+        border-right: 3px solid #eee;
+        overflow: hidden;
     }
+
     .banner img {
         float: left;
-        padding: 0 0 0 0;
+        padding: 0;
     }
-    .title {
-        margin: 0 0 0 0;
+    h1.title {
+        float: left;
         font-size: 250%;
         font-weight: bold;
+        padding-left: 50px;
+        vertical-align: middle;
+        display:block;
     }
 </style>
 <title>Iframe test - OpenGL 4 Reference Pages</title>
 </head>
 <body>
-<div id="top">
-    <div class="banner">
-        <img src="OpenGL_100px_June16.png"/>
-        <p class="title"> OpenGL 4.x Reference Pages </p>
+    <div id="top">
+        <div class="banner">
+            <img src="OpenGL_100px_June16.png" alt="">
+            <h1 class="title">OpenGL 4.x Reference Pages</h1>
+        </div>
     </div>
-</div>
-<div id="nav">
-    <iframe height="100%" width="100%" src="indexflat.html">
-    </iframe>
-</div>
-<div id="display">
-    <iframe height="100%" width="100%" name="pagedisplay" src="start.html">
-    </iframe>
-</div>
+    <div class="wrapper opengl">
+        <div class="contentwrapper">
+            <div class="displaywrapper">
+                <div class="display">
+                    <iframe class="displayframe" name="pagedisplay" src="start.html"></iframe>
+                </div>
+            </div>
+            <div class="nav">
+                <iframe class="navframe" src="indexflat.html"></iframe>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

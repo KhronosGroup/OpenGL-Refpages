@@ -5,8 +5,12 @@
         a:link, a:visited {color:blue; text-decoration:none;}
         a:hover {color:blue; text-decoration:none; background-color:FFFF99; }
         
+        body {
+                width: 270px;
+        }
+
+        li {word-wrap: break-word;}
         #navwrap {
-                width: 320px;
                 margin:0 0 0 4px;
                 padding:0;
                 }
