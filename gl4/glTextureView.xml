@@ -136,7 +136,7 @@
                     </row>
                     <row>
                         <entry><constant>GL_TEXTURE_CUBE_MAP</constant></entry>
-                        <entry><constant>GL_TEXTURE_CUBE_MAP</constant>, <constant>GL_TEXTURE_2D</constant>, <constant>GL_TEXTURE_2D_ARRAY</constant>, <constant>GL_TEXTUER_CUBE_MAP_ARRAY</constant></entry>
+                        <entry><constant>GL_TEXTURE_CUBE_MAP</constant>, <constant>GL_TEXTURE_2D</constant>, <constant>GL_TEXTURE_2D_ARRAY</constant>, <constant>GL_TEXTURE_CUBE_MAP_ARRAY</constant></entry>
                     </row>
                     <row>
                         <entry><constant>GL_TEXTURE_RECTANGLE</constant></entry>
@@ -156,7 +156,7 @@
                     </row>
                     <row>
                         <entry><constant>GL_TEXTURE_CUBE_MAP_ARRAY</constant></entry>
-                        <entry><constant>GL_TEXTURE_CUBE_MAP</constant>, <constant>GL_TEXTURE_2D</constant>, <constant>GL_TEXTURE_2D_ARRAY</constant>, <constant>GL_TEXTUER_CUBE_MAP_ARRAY</constant></entry>
+                        <entry><constant>GL_TEXTURE_CUBE_MAP</constant>, <constant>GL_TEXTURE_2D</constant>, <constant>GL_TEXTURE_2D_ARRAY</constant>, <constant>GL_TEXTURE_CUBE_MAP_ARRAY</constant></entry>
                     </row>
                     <row>
                         <entry><constant>GL_TEXTURE_2D_MULTISAMPLE</constant></entry>
