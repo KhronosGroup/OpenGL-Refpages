@@ -50,10 +50,10 @@
                     bound for <function>glTexStorage3D</function>. Must be
                     one of <constant>GL_TEXTURE_3D</constant>,
                     <constant>GL_TEXTURE_2D_ARRAY</constant>,
-                    <constant>GL_TEXTURE_CUBE_ARRAY</constant>,
+                    <constant>GL_TEXTURE_CUBE_MAP_ARRAY</constant>,
                     <constant>GL_PROXY_TEXTURE_3D</constant>,
                     <constant>GL_PROXY_TEXTURE_2D_ARRAY</constant> or
-                    <constant>GL_PROXY_TEXTURE_CUBE_ARRAY</constant>.
+                    <constant>GL_PROXY_TEXTURE_CUBE_MAP_ARRAY</constant>.
                 </para>
             </listitem>
         </varlistentry>
@@ -249,7 +249,7 @@
         </para>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>target</parameter> is <constant>GL_TEXTURE_2D_ARRAY</constant>,
-            <constant>GL_PROXY_TEXTURE_2D_ARRAY</constant>, <constant>GL_TEXURE_CUBE_ARRAY</constant>, or <constant>GL_PROXY_TEXTURE_CUBE_MAP_ARRAY</constant>
+            <constant>GL_PROXY_TEXTURE_2D_ARRAY</constant>, <constant>GL_TEXURE_CUBE_MAP_ARRAY</constant>, or <constant>GL_PROXY_TEXTURE_CUBE_MAP_ARRAY</constant>
             and <parameter>levels</parameter> is greater than
             <inlineequation>
                 <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
