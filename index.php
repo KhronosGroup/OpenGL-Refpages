@@ -14,16 +14,27 @@ include_once("../../assets/static_pages/khr_page_top.php");
 <h1 style="text-align:center"> OpenGL&reg; and OpenGL&reg; ES Reference Pages </h1>
 
 <p> Complete descriptions of API commands and shading language functions are
-    provided for the following versions of these APIs: </p>
+    provided for the current versions these APIs. </p>
 
 <h2> Current API Versions </h2>
 
 <ul>
 <li> <p> <a href="es3/"> OpenGL ES 3.2 and OpenGL ES Shading Language 3.20 </a> </p> </li>
-<li> <p> <a href="gl4/"> OpenGL 4.5 and OpenGL Shading Language 4.50 </a> </p> </li>
+<li> <p> <a href="gl4/"> OpenGL 4.5 and OpenGL Shading Language 4.50 </a></p> </li>
 </ul>
 
 <h2> Older API Versions </h2>
+
+<p> Note that each reference page in the Current Versions pages linked above
+    includes version support information for older versions, so (for
+    example) the OpenGL 3.x reference pages are no longer provided. The
+    older OpenGL ES 3.x and 2.x pages linked here are increasingly out of
+    date, and may eventually be removed. </p>
+
+<p> he OpenGL 2.1 pages are the only source of reference material for GLX,
+    GLU, and the OpenGL Compatibility Profile. They may be retained for that
+    reason, even though they are otherwise useless, or we may eventually
+    incorporate that material in the OpenGL 4.5 pages instead. </p>
 
 <ul>
 <li> <p> <a href="es3.1/"> OpenGL ES 3.1 and OpenGL ES Shading Language 3.10 </a> </p> </li>
