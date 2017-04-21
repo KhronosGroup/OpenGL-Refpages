@@ -58,7 +58,7 @@
             <funcprototype>
                 <funcdef>float <function>texture</function></funcdef>
                 <paramdef>samplerCubeShadow <parameter>sampler</parameter></paramdef>
-                <paramdef>vec3 <parameter>P</parameter></paramdef>
+                <paramdef>vec4 <parameter>P</parameter></paramdef>
                 <paramdef>[float <parameter>bias</parameter>]</paramdef>
             </funcprototype>
             <funcprototype>
