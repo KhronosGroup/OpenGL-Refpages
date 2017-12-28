@@ -227,7 +227,7 @@
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>border</parameter> is not 0.
         </para>
         <para>
-            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>internalformat</parameter> is not an
+            <constant>GL_INVALID_ENUM</constant> is generated if <parameter>internalformat</parameter> is not an
             accepted format.
         </para>
     </refsect1>
