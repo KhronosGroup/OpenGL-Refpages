@@ -866,6 +866,15 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_MAX_DEPTH_TEXTURE_SAMPLES</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns one value,
+                        the maximum number of samples in a depth/stencil multisample texture.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_MAX_DRAW_BUFFERS</constant></term>
                 <listitem>
                     <para>
@@ -1604,6 +1613,15 @@
                         <parameter>params</parameter> returns a single positive floating-point value indicating the
                         current sample coverage value.
                         See <citerefentry><refentrytitle>glSampleCoverage</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_SAMPLE_MASK_VALUE</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns one value indicating the current sample mask value.
+                        See <citerefentry><refentrytitle>glSampleMaski</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
