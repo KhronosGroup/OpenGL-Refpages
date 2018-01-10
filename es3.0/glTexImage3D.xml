@@ -534,7 +534,7 @@
             where <emphasis>max</emphasis> is the returned value of <constant>GL_MAX_3D_TEXTURE_SIZE</constant>.
         </para>
         <para>
-            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>internalFormat</parameter> is not one of the
+            <constant>GL_INVALID_ENUM</constant> is generated if <parameter>internalFormat</parameter> is not one of the
             accepted resolution and format symbolic constants.
         </para>
         <para>
