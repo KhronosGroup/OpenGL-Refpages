@@ -104,8 +104,8 @@
             <constant>GL_COLOR</constant>, a particular draw buffer <constant>GL_DRAWBUFFER</constant><parameter>i</parameter> is specified
             by passing <parameter>i</parameter> as <parameter>drawBuffer</parameter>. In this case, <parameter>value</parameter> points to
             a four-element vector specifying the R, G, B and A color to clear that draw buffer to. The <function>glClearBufferfv</function>,
-            <function>glClearBufferiv</function>, and <function>glClearBufferuiv</function> commands should be used to clear fixed-point,
-            signed integer, and unsigned integer color buffers respectively. Clamping and conversion for fixed-point color
+            <function>glClearBufferiv</function>, and <function>glClearBufferuiv</function> commands should be used to clear fixed- and
+            floating-point, signed integer, and unsigned integer color buffers respectively. Clamping and conversion for fixed-point color
             buffers are performed in the same fashion as <citerefentry><refentrytitle>glClearColor</refentrytitle></citerefentry>.
         </para>
         <para>
