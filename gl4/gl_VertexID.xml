@@ -41,7 +41,7 @@
                 <tbody>
                     <row>
                         <entry><varname>gl_VertexID</varname></entry>
-                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(/*/*[@role='11']/*)"/>
+                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(/*/*[@role='13']/*)"/>
                     </row>
                 </tbody>
             </tgroup>
