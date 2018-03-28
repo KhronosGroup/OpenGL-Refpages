@@ -133,9 +133,9 @@ include_once("../../assets/static_pages/khr_page_top.php");
     </p>
 
 
-<p> <small> Copyright &copy; 2017 Khronos Group. This work is licensed under
-    a <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
-    Attribution 4.0 International License</a>. </small> </p>
+<p> <small> Copyright &copy; 2017-2018 Khronos Group. This work is licensed
+    under a <a href="http://creativecommons.org/licenses/by/4.0/">Creative
+    Commons Attribution 4.0 International License</a>. </small> </p>
 
 <?php include_once("../../assets/static_pages/khr_page_bottom.php"); ?>
 </body>
