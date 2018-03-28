@@ -31,7 +31,7 @@ include_once("../../assets/static_pages/khr_page_top.php");
     older OpenGL ES 3.x and 2.x pages linked here are increasingly out of
     date, and may eventually be removed. </p>
 
-<p> he OpenGL 2.1 pages are the only source of reference material for GLX,
+<p> The OpenGL 2.1 pages are the only source of reference material for GLX,
     GLU, and the OpenGL Compatibility Profile. They may be retained for that
     reason, even though they are otherwise useless, or we may eventually
     incorporate that material in the OpenGL 4.5 pages instead. </p>
