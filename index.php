@@ -1,17 +1,14 @@
 <?php
-$static_title = 'Khronos OpenGL&reg; Reference Pages';
+$static_title = 'Khronos OpenGL&reg; and OpenGL&reg; ES Reference Pages';
 $static_breadcrumb = array(
     '/registry/' => 'Registry',
-    'NOLINK' => 'OpenGL Reference Pages'
+    'NOLINK' => 'OpenGL and OpenGL ES Reference Pages'
 );
 include_once("../../assets/static_pages/khr_page_top.php");
 ?>
 
 <h1 class="pagetitle"> OpenGL&reg; and OpenGL&reg; ES Reference Pages </h1>
 <div id="mainformat">
-
-
-<h1 style="text-align:center"> OpenGL&reg; and OpenGL&reg; ES Reference Pages </h1>
 
 <p> Complete descriptions of API commands and shading language functions are
     provided for the current versions these APIs. </p>
