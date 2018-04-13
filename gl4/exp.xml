@@ -39,7 +39,7 @@
     </refsect1>
     <refsect1 xml:id="description"><title>Description</title>
         <para>
-            <function>pow</function> returns the natural exponentiation of <parameter>x</parameter>. i.e.,
+            <function>exp</function> returns the natural exponentiation of <parameter>x</parameter>. i.e.,
             <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:msup><mml:mi>e</mml:mi><mml:mi>x</mml:mi></mml:msup></mml:math></inlineequation>.
         </para>
     </refsect1>
