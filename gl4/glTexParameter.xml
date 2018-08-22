@@ -134,8 +134,7 @@
 
         <paramdef>GLenum <parameter>pname</parameter></paramdef>
 
-        <paramdef>const GLfloat
-        *<parameter>paramtexture.</parameter></paramdef>
+        <paramdef>const GLfloat *<parameter>paramtexture</parameter></paramdef>
       </funcprototype>
 
       <funcprototype>

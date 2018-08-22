@@ -21,7 +21,7 @@
         <funcsynopsis>
             <funcprototype>
                 <funcdef>void <function>glGetActiveAtomicCounterBufferiv</function></funcdef>
-                <paramdef>Gluint <parameter>program</parameter></paramdef>
+                <paramdef>GLuint <parameter>program</parameter></paramdef>
                 <paramdef>GLuint <parameter>bufferIndex</parameter></paramdef>
                 <paramdef>GLenum <parameter>pname</parameter></paramdef>
                 <paramdef>GLint *<parameter>params</parameter></paramdef>

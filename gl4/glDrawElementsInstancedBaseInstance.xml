@@ -26,7 +26,7 @@
                 <paramdef>GLenum <parameter>type</parameter></paramdef>
                 <paramdef>const void * <parameter>indices</parameter></paramdef>
                 <paramdef>GLsizei <parameter>primcount</parameter></paramdef>
-                <paramdef>GLuitn <parameter>baseinstance</parameter></paramdef>
+                <paramdef>GLuint <parameter>baseinstance</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

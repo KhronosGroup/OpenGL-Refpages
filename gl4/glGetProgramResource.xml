@@ -25,7 +25,7 @@
                 <paramdef>GLenum <parameter>programInterface</parameter></paramdef>
                 <paramdef>GLuint <parameter>index</parameter></paramdef>
                 <paramdef>GLsizei <parameter>propCount</parameter></paramdef>
-                <paramdef>const Glenum * <parameter>props</parameter></paramdef>
+                <paramdef>const GLenum * <parameter>props</parameter></paramdef>
                 <paramdef>GLsizei <parameter>bufSize</parameter></paramdef>
                 <paramdef>GLsizei * <parameter>length</parameter></paramdef>
                 <paramdef>GLint * <parameter>params</parameter></paramdef>
