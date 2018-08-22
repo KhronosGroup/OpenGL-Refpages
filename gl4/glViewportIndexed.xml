@@ -57,14 +57,14 @@
             </listitem>
         </varlistentry>
         <varlistentry>
-            <term><parameter>width</parameter></term>
-            <term><parameter>height</parameter></term>
+            <term><parameter>w</parameter></term>
+            <term><parameter>h</parameter></term>
             <listitem>
                 <para>
                     For <function>glViewportIndexedf</function>, specifies the width and height
                     of the viewport.
                     When a GL context is first attached to a window,
-                    <parameter>width</parameter> and <parameter>height</parameter> are set to the dimensions of that
+                    <parameter>w</parameter> and <parameter>h</parameter> are set to the dimensions of that
                     window.
                 </para>
             </listitem>
@@ -229,7 +229,7 @@
             the value of <constant>GL_MAX_VIEWPORTS</constant>.
         </para>
         <para>
-            <constant>GL_INVALID_VALUE</constant> is generated if either <parameter>width</parameter> or <parameter>height</parameter> is negative.
+            <constant>GL_INVALID_VALUE</constant> is generated if either <parameter>w</parameter> or <parameter>h</parameter> is negative.
         </para>
     </refsect1>
     <refsect1 xml:id="associatedgets"><title>Associated Gets</title>

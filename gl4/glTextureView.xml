@@ -59,7 +59,7 @@
             </listitem>
         </varlistentry>
         <varlistentry>
-            <term><parameter>internalFormat</parameter></term>
+            <term><parameter>internalformat</parameter></term>
             <listitem>
                 <para>
                     Specifies the internal format for the newly created view.

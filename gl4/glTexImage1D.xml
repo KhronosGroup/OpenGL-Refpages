@@ -23,7 +23,7 @@
                 <funcdef>void <function>glTexImage1D</function></funcdef>
                 <paramdef>GLenum <parameter>target</parameter></paramdef>
                 <paramdef>GLint <parameter>level</parameter></paramdef>
-                <paramdef>GLint <parameter>internalFormat</parameter></paramdef>
+                <paramdef>GLint <parameter>internalformat</parameter></paramdef>
                 <paramdef>GLsizei <parameter>width</parameter></paramdef>
                 <paramdef>GLint <parameter>border</parameter></paramdef>
                 <paramdef>GLenum <parameter>format</parameter></paramdef>
@@ -54,7 +54,7 @@
             </listitem>
         </varlistentry>
         <varlistentry>
-            <term><parameter>internalFormat</parameter></term>
+            <term><parameter>internalformat</parameter></term>
             <listitem>
                 <para>
                     Specifies the number of color components in the texture.
@@ -262,41 +262,41 @@
         <para>
             If an application wants to store the texture at a certain
             resolution or in a certain format, it can request the resolution
-            and format with <parameter>internalFormat</parameter>. The GL will choose an internal
-            representation that closely approximates that requested by <parameter>internalFormat</parameter>, but
+            and format with <parameter>internalformat</parameter>. The GL will choose an internal
+            representation that closely approximates that requested by <parameter>internalformat</parameter>, but
             it may not match exactly.
             (The representations specified by <constant>GL_RED</constant>, <constant>GL_RG</constant>,
             <constant>GL_RGB</constant> and <constant>GL_RGBA</constant> must match exactly.)
         </para>
         <para>
-            <parameter>internalFormat</parameter> may be one of the base internal formats shown in
+            <parameter>internalformat</parameter> may be one of the base internal formats shown in
             Table 1, below
         </para>
         <para>
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="baseformattable.xml"/>
         </para>
         <para>
-            <parameter>internalFormat</parameter> may also be one of the sized internal formats
+            <parameter>internalformat</parameter> may also be one of the sized internal formats
             shown in Table 2, below
         </para>
         <para>
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="internalformattable.xml"/>
         </para>
         <para>
-            Finally, <parameter>internalFormat</parameter> may also be one of the generic or compressed
+            Finally, <parameter>internalformat</parameter> may also be one of the generic or compressed
             compressed texture formats shown in Table 3 below
         </para>
         <para>
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="compressedformattable.xml"/>
         </para>
         <para>
-                If the <parameter>internalFormat</parameter> parameter is one of the generic compressed formats,
+                If the <parameter>internalformat</parameter> parameter is one of the generic compressed formats,
                 <constant>GL_COMPRESSED_RED</constant>, <constant>GL_COMPRESSED_RG</constant>,
                 <constant>GL_COMPRESSED_RGB</constant>, or
                 <constant>GL_COMPRESSED_RGBA</constant>, the GL will replace the internal format with the symbolic constant for a specific internal format and compress the texture before storage.  If no corresponding internal format is available, or the GL can not compress that image for any reason, the internal format is instead replaced with a corresponding base internal format.
         </para>
         <para>
-            If the <parameter>internalFormat</parameter> parameter is
+            If the <parameter>internalformat</parameter> parameter is
             <constant>GL_SRGB</constant>,
                         <constant>GL_SRGB8</constant>,
                         <constant>GL_SRGB_ALPHA</constant>or
@@ -471,7 +471,7 @@
             where <emphasis>max</emphasis> is the returned value of <constant>GL_MAX_TEXTURE_SIZE</constant>.
         </para>
         <para>
-            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>internalFormat</parameter> is not
+            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>internalformat</parameter> is not
             one of the accepted resolution and format symbolic constants.
         </para>
         <para>
@@ -503,12 +503,12 @@
         </para>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>format</parameter> is
-            <constant>GL_DEPTH_COMPONENT</constant> and <parameter>internalFormat</parameter> is not
+            <constant>GL_DEPTH_COMPONENT</constant> and <parameter>internalformat</parameter> is not
             <constant>GL_DEPTH_COMPONENT</constant>, <constant>GL_DEPTH_COMPONENT16</constant>,
             <constant>GL_DEPTH_COMPONENT24</constant>, or <constant>GL_DEPTH_COMPONENT32</constant>.
         </para>
         <para>
-            <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>internalFormat</parameter> is
+            <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>internalformat</parameter> is
             <constant>GL_DEPTH_COMPONENT</constant>, <constant>GL_DEPTH_COMPONENT16</constant>,
             <constant>GL_DEPTH_COMPONENT24</constant>, or <constant>GL_DEPTH_COMPONENT32</constant>, and <parameter>format</parameter> is
             not <constant>GL_DEPTH_COMPONENT</constant>.
