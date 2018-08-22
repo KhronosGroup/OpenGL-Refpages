@@ -21,11 +21,11 @@
         <funcsynopsis>
             <funcprototype>
                 <funcdef>void <function>glBindBufferRange</function></funcdef>
-                <paramdef>GLenum<parameter>target</parameter></paramdef>
-                <paramdef>GLuint<parameter>index</parameter></paramdef>
-                <paramdef>GLuint<parameter>buffer</parameter></paramdef>
-                <paramdef>GLintptr<parameter>offset</parameter></paramdef>
-                <paramdef>GLsizeiptr<parameter>size</parameter></paramdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLuint <parameter>index</parameter></paramdef>
+                <paramdef>GLuint <parameter>buffer</parameter></paramdef>
+                <paramdef>GLintptr <parameter>offset</parameter></paramdef>
+                <paramdef>GLsizeiptr <parameter>size</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

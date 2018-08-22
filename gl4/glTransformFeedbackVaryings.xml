@@ -21,10 +21,10 @@
         <funcsynopsis>
             <funcprototype>
                 <funcdef>void <function>glTransformFeedbackVaryings</function></funcdef>
-                <paramdef>GLuint<parameter>program</parameter></paramdef>
-                <paramdef>GLsizei<parameter>count</parameter></paramdef>
+                <paramdef>GLuint <parameter>program</parameter></paramdef>
+                <paramdef>GLsizei <parameter>count</parameter></paramdef>
                 <paramdef>const char **<parameter>varyings</parameter></paramdef>
-                <paramdef>GLenum<parameter>bufferMode</parameter></paramdef>
+                <paramdef>GLenum <parameter>bufferMode</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
