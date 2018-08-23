@@ -38,7 +38,7 @@
 
         <paramdef>GLintptr <parameter>offset</parameter></paramdef>
 
-        <paramdef>GLintptr <parameter>stride</parameter></paramdef>
+        <paramdef>GLsizei <parameter>stride</parameter></paramdef>
       </funcprototype>
 
       <funcprototype>
