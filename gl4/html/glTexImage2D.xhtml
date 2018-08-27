@@ -40,7 +40,7 @@
             </tr>
             <tr>
               <td> </td>
-              <td>GLint <var class="pdparam">internalFormat</var>, </td>
+              <td>GLint <var class="pdparam">internalformat</var>, </td>
             </tr>
             <tr>
               <td> </td>
@@ -115,7 +115,7 @@
             <dt>
               <span class="term">
                 <em class="parameter">
-                  <code>internalFormat</code>
+                  <code>internalformat</code>
                 </em>
               </span>
             </dt>
@@ -383,15 +383,15 @@
         <p>
             If an application wants to store the texture at a certain
             resolution or in a certain format, it can request the resolution
-            and format with <em class="parameter"><code>internalFormat</code></em>. The GL will choose an internal
-            representation that closely approximates that requested by <em class="parameter"><code>internalFormat</code></em>, but
+            and format with <em class="parameter"><code>internalformat</code></em>. The GL will choose an internal
+            representation that closely approximates that requested by <em class="parameter"><code>internalformat</code></em>, but
             it may not match exactly.
             (The representations specified by <code class="constant">GL_RED</code>,
             <code class="constant">GL_RG</code>, <code class="constant">GL_RGB</code>,
             and <code class="constant">GL_RGBA</code> must match exactly.)
         </p>
         <p>
-            <em class="parameter"><code>internalFormat</code></em> may be one of the base internal formats shown in
+            <em class="parameter"><code>internalformat</code></em> may be one of the base internal formats shown in
             Table 1, below
         </p>
         <p>
@@ -468,7 +468,7 @@
         <p><br class="table-break"/>
         </p>
         <p>
-            <em class="parameter"><code>internalFormat</code></em> may also be one of the sized internal formats
+            <em class="parameter"><code>internalformat</code></em> may also be one of the sized internal formats
             shown in Table 2, below
         </p>
         <p>
@@ -1312,7 +1312,7 @@
         <p><br class="table-break"/>
         </p>
         <p>
-            Finally, <em class="parameter"><code>internalFormat</code></em> may also be one of the generic or compressed
+            Finally, <em class="parameter"><code>internalformat</code></em> may also be one of the generic or compressed
             compressed texture formats shown in Table 3 below
         </p>
         <p>
@@ -1473,13 +1473,13 @@
         <p><br class="table-break"/>
         </p>
         <p>
-            If the <em class="parameter"><code>internalFormat</code></em> parameter is one of the generic compressed formats,
+            If the <em class="parameter"><code>internalformat</code></em> parameter is one of the generic compressed formats,
             <code class="constant">GL_COMPRESSED_RED</code>, <code class="constant">GL_COMPRESSED_RG</code>,
             <code class="constant">GL_COMPRESSED_RGB</code>, or
             <code class="constant">GL_COMPRESSED_RGBA</code>, the GL will replace the internal format with the symbolic constant for a specific internal format and compress the texture before storage.  If no corresponding internal format is available, or the GL can not compress that image for any reason, the internal format is instead replaced with a corresponding base internal format.
         </p>
         <p>
-            If the <em class="parameter"><code>internalFormat</code></em> parameter is
+            If the <em class="parameter"><code>internalformat</code></em> parameter is
             <code class="constant">GL_SRGB</code>,
             <code class="constant">GL_SRGB8</code>,
             <code class="constant">GL_SRGB_ALPHA</code>, or
@@ -1682,7 +1682,7 @@
             where <span class="emphasis"><em>max</em></span> is the returned value of <code class="constant">GL_MAX_TEXTURE_SIZE</code>.
         </p>
         <p>
-            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>internalFormat</code></em> is not one of the
+            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>internalformat</code></em> is not one of the
             accepted resolution and format symbolic constants.
         </p>
         <p>
@@ -1718,18 +1718,18 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>target</code></em> is not
             <code class="constant">GL_TEXTURE_2D</code>, <code class="constant">GL_PROXY_TEXTURE_2D</code>,
             <code class="constant">GL_TEXTURE_RECTANGLE</code>, or <code class="constant">GL_PROXY_TEXTURE_RECTANGLE</code>,
-            and <em class="parameter"><code>internalFormat</code></em> is
+            and <em class="parameter"><code>internalformat</code></em> is
             <code class="constant">GL_DEPTH_COMPONENT</code>, <code class="constant">GL_DEPTH_COMPONENT16</code>,
             <code class="constant">GL_DEPTH_COMPONENT24</code>, or <code class="constant">GL_DEPTH_COMPONENT32F</code>.
         </p>
         <p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>format</code></em> is
-            <code class="constant">GL_DEPTH_COMPONENT</code> and <em class="parameter"><code>internalFormat</code></em> is not
+            <code class="constant">GL_DEPTH_COMPONENT</code> and <em class="parameter"><code>internalformat</code></em> is not
             <code class="constant">GL_DEPTH_COMPONENT</code>, <code class="constant">GL_DEPTH_COMPONENT16</code>,
             <code class="constant">GL_DEPTH_COMPONENT24</code>, or <code class="constant">GL_DEPTH_COMPONENT32F</code>.
         </p>
         <p>
-            <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>internalFormat</code></em> is
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>internalformat</code></em> is
             <code class="constant">GL_DEPTH_COMPONENT</code>, <code class="constant">GL_DEPTH_COMPONENT16</code>,
             <code class="constant">GL_DEPTH_COMPONENT24</code>, or <code class="constant">GL_DEPTH_COMPONENT32F</code>, and <em class="parameter"><code>format</code></em> is
             not <code class="constant">GL_DEPTH_COMPONENT</code>.
