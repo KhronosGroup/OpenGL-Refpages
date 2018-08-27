@@ -99,7 +99,7 @@
         </para>
         <para>
             The information retrieved will be written to memory addressed by the pointer specified in <parameter>params</parameter>. No
-            more than <parameter>bufSize</parameter> basic machine units will be written to this memory.
+            more than <parameter>bufSize</parameter> integers will be written to this memory.
         </para>
         <para>
             If <parameter>pname</parameter> is <constant>GL_NUM_SAMPLE_COUNTS</constant>, the number of sample counts that would be
@@ -489,7 +489,7 @@
     </refsect1>
     <refsect1 xml:id="Copyright"><title>Copyright</title>
         <para>
-            Copyright <trademark class="copyright"/> 2011-2014 Khronos Group.
+            Copyright <trademark class="copyright"/> 2011-2018 Khronos Group.
             This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
             <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://opencontent.org/openpub/">http://opencontent.org/openpub/</link>.
