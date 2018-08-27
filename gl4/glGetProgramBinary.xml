@@ -22,7 +22,7 @@
             <funcprototype>
                 <funcdef>void <function>glGetProgramBinary</function></funcdef>
                 <paramdef>GLuint <parameter>program</parameter></paramdef>
-                <paramdef>GLsizei <parameter>bufsize</parameter></paramdef>
+                <paramdef>GLsizei <parameter>bufSize</parameter></paramdef>
                 <paramdef>GLsizei *<parameter>length</parameter></paramdef>
                 <paramdef>GLenum *<parameter>binaryFormat</parameter></paramdef>
                 <paramdef>void *<parameter>binary</parameter></paramdef>

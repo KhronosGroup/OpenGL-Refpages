@@ -24,7 +24,7 @@
                 <paramdef>GLuint <parameter>count</parameter></paramdef>
                 <paramdef>GLsizei <parameter>bufSize</parameter></paramdef>
                 <paramdef>GLenum *<parameter>sources</parameter></paramdef>
-                <paramdef>Glenum *<parameter>types</parameter></paramdef>
+                <paramdef>GLenum *<parameter>types</parameter></paramdef>
                 <paramdef>GLuint *<parameter>ids</parameter></paramdef>
                 <paramdef>GLenum *<parameter>severities</parameter></paramdef>
                 <paramdef>GLsizei *<parameter>lengths</parameter></paramdef>

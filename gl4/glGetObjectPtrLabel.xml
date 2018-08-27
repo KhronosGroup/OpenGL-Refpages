@@ -22,7 +22,7 @@
             <funcprototype>
                 <funcdef>void <function>glGetObjectPtrLabel</function></funcdef>
                 <paramdef>void * <parameter>ptr</parameter></paramdef>
-                <paramdef>GLsizei <parameter>bifSize</parameter></paramdef>
+                <paramdef>GLsizei <parameter>bufSize</parameter></paramdef>
                 <paramdef>GLsizei * <parameter>length</parameter></paramdef>
                 <paramdef>char * <parameter>label</parameter></paramdef>
             </funcprototype>

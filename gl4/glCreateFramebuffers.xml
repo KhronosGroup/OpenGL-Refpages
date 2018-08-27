@@ -20,7 +20,7 @@
             <funcprototype>
                 <funcdef>void <function>glCreateFramebuffers</function></funcdef>
                 <paramdef>GLsizei <parameter>n</parameter></paramdef>
-                <paramdef>GLuint *<parameter>ids</parameter></paramdef>
+                <paramdef>GLuint *<parameter>framebuffers</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
