@@ -80,7 +80,7 @@
         <code class="constant">GL_MAX_VERTEX_UNITS_OES</code>.
         </p><p>
         <code class="constant">GL_INVALID_ENUM</code> is generated if
-        <em class="parameter"><code>type</code></em> is is not an accepted value.
+        <em class="parameter"><code>type</code></em> is not an accepted value.
         </p><p>
         <code class="constant">GL_INVALID_VALUE</code> is generated if
         <em class="parameter"><code>stride</code></em> is negative.

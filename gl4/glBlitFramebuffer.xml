@@ -128,7 +128,7 @@
             For <function>glBlitNamedFramebuffer</function>,
             <parameter>readFramebuffer</parameter> and
             <parameter>drawFramebuffer</parameter> are the names of the read
-            read and draw framebuffer objects respectively. If
+            and draw framebuffer objects respectively. If
             <parameter>readFramebuffer</parameter> or
             <parameter>drawFramebuffer</parameter> is zero, then the default
             read or draw framebuffer respectively is used.

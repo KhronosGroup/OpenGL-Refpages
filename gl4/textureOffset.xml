@@ -125,7 +125,7 @@
     <refsect1 xml:id="description"><title>Description</title>
         <para>
             <function>textureOffset</function> performs a texture lookup at coordinate <parameter>P</parameter> from the
-            texture bound to <parameter>sampler</parameter> with an an additional offset, specified in texels in <parameter>offset</parameter>
+            texture bound to <parameter>sampler</parameter> with an additional offset, specified in texels in <parameter>offset</parameter>
             that will be applied to the (u, v, w) texture coordinates before looking up each texel.
             The offset value must be a constant expression. A limited range of offset values are supported;
             the minimum and maximum offset values are implementation-dependent and may be determined

@@ -52,7 +52,7 @@
             <function>glBindTransformFeedback</function> binds the transform feedback object with name <parameter>id</parameter> to the current
             GL state. <parameter>id</parameter> must be a name previously returned from a call to
             <citerefentry><refentrytitle>glGenTransformFeedbacks</refentrytitle></citerefentry>. If <parameter>id</parameter> has not
-            previously been bound, a new transform feedback object with name <parameter>id</parameter> and initialized with with the
+            previously been bound, a new transform feedback object with name <parameter>id</parameter> and initialized with the
             default transform state vector is created.
         </para>
         <para>

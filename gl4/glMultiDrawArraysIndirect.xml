@@ -64,7 +64,7 @@
             <term><parameter>drawcount</parameter></term>
             <listitem>
                 <para>
-                    Specifies the the number of elements in the array of draw parameter structures.
+                    Specifies the number of elements in the array of draw parameter structures.
                 </para>
             </listitem>
         </varlistentry>

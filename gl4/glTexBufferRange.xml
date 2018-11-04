@@ -101,7 +101,7 @@
             <function>glTextureBufferRange</function> attach a range of the
             data store of a specified buffer object to a specified texture
             object, and specify the storage format for the texture image
-            found found in the buffer object. The texture object must be a
+            found in the buffer object. The texture object must be a
             buffer texture.
         </para>
         <para>

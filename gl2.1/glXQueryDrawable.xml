@@ -14,7 +14,7 @@
     </refmeta>
     <refnamediv>
         <refname>glXQueryDrawable</refname>
-        <refpurpose>returns an attribute assoicated with a GLX drawable</refpurpose>
+        <refpurpose>returns an attribute associated with a GLX drawable</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
@@ -119,7 +119,7 @@
                         fail to create a GLXPbuffer if the requested size
                         is larger than the implementation maximum or
                         available resources.  If <constant>True</constant>
-                        is returned, a GLXPbuffer of the maximum availble
+                        is returned, a GLXPbuffer of the maximum available
                         size (if less than the requested width and height)
                         is created.
                     </para>

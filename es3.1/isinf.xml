@@ -40,7 +40,7 @@
     </refsect1>
     <refsect1 xml:id="description"><title>Description</title>
         <para>
-            For each element element <emphasis>i</emphasis> of the result, <function>isinf</function> returns <constant>true</constant> if
+            For each element <emphasis>i</emphasis> of the result, <function>isinf</function> returns <constant>true</constant> if
             <parameter>x</parameter>[<emphasis>i</emphasis>] is posititve or negative floating point infinity and false otherwise.
         </para>
     </refsect1>

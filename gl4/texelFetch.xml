@@ -103,7 +103,7 @@
             <term><parameter>sample</parameter></term>
             <listitem>
                 <para>
-                    For multisampled fetches, specifies which sample within the texel from which which will be returned.
+                    For multisampled fetches, specifies which sample within the texel from which will be returned.
                 </para>
             </listitem>
         </varlistentry>

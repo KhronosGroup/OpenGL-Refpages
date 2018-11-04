@@ -566,7 +566,7 @@
 		    <para>
 		    <parameter>params</parameter>
 		    returns one value,
-		    the symbolic name of the depth comparision function.
+		    the symbolic name of the depth comparison function.
 		    See <citerefentry><refentrytitle>glDepthFunc</refentrytitle></citerefentry>.
 		    </para>
 		</listitem>

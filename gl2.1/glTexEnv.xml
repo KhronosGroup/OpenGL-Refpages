@@ -2491,7 +2491,7 @@
             </tgroup>
         </informaltable>
         <para>
-            The RGB and alpha results of the texture function are multipled by the
+            The RGB and alpha results of the texture function are multiplied by the
             values of <constant>GL_RGB_SCALE</constant> and <constant>GL_ALPHA_SCALE</constant>, respectively, and
             clamped to the range
             <inlineequation><mml:math>

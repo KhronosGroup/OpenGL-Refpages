@@ -58,7 +58,7 @@
 
         <para>
             Function names and tokens for OpenGL ES extensions are suffixed with OES
-            or with a vendor-specfic acronym. OES is used for extensions that have
+            or with a vendor-specific acronym. OES is used for extensions that have
             been reviewed by the Khronos Group and might be supported by more than
             one OpenGL ES vendor.
         </para>

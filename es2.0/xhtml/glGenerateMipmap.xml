@@ -19,7 +19,7 @@
 	<em class="parameter"><code>target</code></em> is not <code class="constant">GL_TEXTURE_2D</code> or
 	<code class="constant">GL_TEXTURE_CUBE_MAP</code>.</p><p><code class="constant">GL_INVALID_OPERATION</code> is generated if
 	the texture bound to <em class="parameter"><code>target</code></em> is a cube map, but its
-	six faces do not share indentical widths, heights, formats, and types.</p><p><code class="constant">GL_INVALID_OPERATION</code> is generated if
+	six faces do not share identical widths, heights, formats, and types.</p><p><code class="constant">GL_INVALID_OPERATION</code> is generated if
 	either the width or height of the zero level array is not a power of two.</p><p><code class="constant">GL_INVALID_OPERATION</code> is generated if
 	the zero level array is stored in a compressed internal format.</p></div><div class="refsect1"><a id="seealso"></a><h2>See Also</h2><p><a class="citerefentry" href="glBindTexture.xml"><span class="citerefentry"><span class="refentrytitle">glBindTexture</span></span></a>,
 	<a class="citerefentry" href="glFramebufferTexture2D.xml"><span class="citerefentry"><span class="refentrytitle">glFramebufferTexture2D</span></span></a>,

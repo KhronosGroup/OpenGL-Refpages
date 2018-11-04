@@ -78,7 +78,7 @@
             <term><parameter>type</parameter></term>
             <listitem>
                 <para>
-                    The address of a variable that will recieve the type of the varying.
+                    The address of a variable that will receive the type of the varying.
                 </para>
             </listitem>
         </varlistentry>

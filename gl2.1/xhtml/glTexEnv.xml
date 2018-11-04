@@ -1932,7 +1932,7 @@
                             </mml:mrow>
                         </mml:math>
                         </td></tr></tbody></table></div><p>
-            The RGB and alpha results of the texture function are multipled by the
+            The RGB and alpha results of the texture function are multiplied by the
             values of <code class="constant">GL_RGB_SCALE</code> and <code class="constant">GL_ALPHA_SCALE</code>, respectively, and
             clamped to the range
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">

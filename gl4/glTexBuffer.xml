@@ -78,7 +78,7 @@
             <function>glTexBuffer</function> and
             <function>glTextureBuffer</function> attaches the data store of
             a specified buffer object to a specified texture object, and
-            specify the storage format for the texture image found found in
+            specify the storage format for the texture image found in
             the buffer object. The texture object must be a buffer texture.
         </para>
         <para>

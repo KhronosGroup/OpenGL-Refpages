@@ -52,7 +52,7 @@
                             <mml:mo>&lt;</mml:mo>
                             <mml:mi>GL_MAX_TEXTURE_UNITS</mml:mi>
                         </mml:math></inlineequation>,
-                        which is an implementation-dependent value. The intial value is
+                        which is an implementation-dependent value. The initial value is
                         <constant>GL_TEXTURE0</constant>.
                     </para>
                 </listitem>

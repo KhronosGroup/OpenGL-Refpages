@@ -206,7 +206,7 @@
         <constant>GL_TEXTURE_2D</constant>.</para>
 
         <para><constant>GL_INVALID_VALUE</constant> may be generated if
-        if <parameter>internalformat</parameter> is not one of the paletted formats and
+        <parameter>internalformat</parameter> is not one of the paletted formats and
         <parameter>level</parameter> is greater than 0 or the
         absolute value of <parameter>level</parameter> is greater than
         <inlineequation><mml:math>
@@ -216,7 +216,7 @@
         <constant>GL_MAX_TEXTURE_SIZE</constant>.</para>
 
         <para><constant>GL_INVALID_VALUE</constant> may be generated if
-        if <parameter>internalformat</parameter> is not one of the paletted formats and
+        <parameter>internalformat</parameter> is not one of the paletted formats and
         <parameter>level</parameter> is less than 0 or greater than
         <inlineequation><mml:math>
             <mml:msub><mml:mo>log</mml:mo><mml:mn>2</mml:mn></mml:msub><mml:mi>max</mml:mi>
@@ -246,7 +246,7 @@
 
         <para><constant>GL_INVALID_VALUE</constant> is generated if
         <parameter>imageSize</parameter> is not consistent
-        with format, dimentions, and contents of the compressed image.</para>
+        with format, dimensions, and contents of the compressed image.</para>
     </refsect1>
 
     <refsect1 id="associatedgets"><title>Associated Gets</title>

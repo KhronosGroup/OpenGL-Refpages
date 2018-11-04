@@ -41,7 +41,7 @@
     <refsect1 xml:id="description"><title>Description</title>
         <para>
             <function>atomicCounter</function> returns the current value of
-            of the atomic counter <parameter>c</parameter>.
+            the atomic counter <parameter>c</parameter>.
         </para>
     </refsect1>
     <refsect1 xml:id="versions">

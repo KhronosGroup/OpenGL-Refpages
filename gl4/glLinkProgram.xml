@@ -100,7 +100,7 @@
         <listitem>
         <para>A varying variable actually used in the fragment
         shader is not declared in the same way (or is not
-        declared at all) in the vertex shader, or geometry shader shader if present.</para>
+        declared at all) in the vertex shader, or geometry shader if present.</para>
         </listitem>
         <listitem>
         <para>A reference to a function or variable name is

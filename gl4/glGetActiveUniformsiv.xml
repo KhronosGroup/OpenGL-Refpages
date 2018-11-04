@@ -718,7 +718,7 @@
         </para>
         <para>
             If <parameter>pname</parameter> is <constant>GL_UNIFORM_BLOCK_INDEX</constant>, then an array identifying the
-            the uniform block index of each of the uniforms specified by the corresponding array of <parameter>uniformIndices</parameter>
+            uniform block index of each of the uniforms specified by the corresponding array of <parameter>uniformIndices</parameter>
             is returned. The uniform block index of a uniform associated with the default uniform block is -1.
         </para>
         <para>

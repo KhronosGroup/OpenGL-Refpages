@@ -315,7 +315,7 @@
         </para>
         <para>
             Finally, <parameter>internalformat</parameter> may also be one of the generic or compressed
-            compressed texture formats shown in Table 3 below
+            texture formats shown in Table 3 below
         </para>
         <para>
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="compressedformattable.xml"/>

@@ -49,7 +49,7 @@
             <term><parameter>insert</parameter></term>
             <listitem>
                 <para>
-                    Specifies the the value of the bits to insert.
+                    Specifies the value of the bits to insert.
                 </para>
             </listitem>
         </varlistentry>
