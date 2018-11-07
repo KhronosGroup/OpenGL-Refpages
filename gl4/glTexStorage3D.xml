@@ -114,7 +114,7 @@
     <refsect1 xml:id="description"><title>Description</title>
         <para>
             <function>glTexStorage3D</function> and
-            <function>glTextureStorage3D</function> specify specify the
+            <function>glTextureStorage3D</function> specify the
             storage requirements for all levels
             of a three-dimensional, two-dimensional array or cube-map array texture simultaneously. Once a texture is specified with this
             command, the format and dimensions of all levels become immutable unless it is a proxy

@@ -56,7 +56,7 @@
         <para>
             <function>atomicAdd</function> performs an atomic addition of <parameter>data</parameter> to the contents of
             <parameter>mem</parameter> and returns the original contents of <parameter>mem</parameter>
-            from before the addition occured. The contents of the memory being updated by the atomic operation are
+            from before the addition occurred. The contents of the memory being updated by the atomic operation are
             guaranteed not to be modified by any other assignment or atomic memory function in any shader
             invocation between the time the original value is read and the time the new value is written.
         </para>

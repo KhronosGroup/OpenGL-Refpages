@@ -159,7 +159,7 @@
 
         <para>
         <constant>GL_INVALID_ENUM</constant> is generated if
-        <parameter>type</parameter> is is not an accepted value.
+        <parameter>type</parameter> is not an accepted value.
         </para>
 
         <para>

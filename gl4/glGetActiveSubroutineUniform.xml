@@ -82,7 +82,7 @@
         <para>
             <function>glGetActiveSubroutineUniform</function> queries a parameter of an active shader subroutine uniform.
             <parameter>program</parameter> contains the name of the program containing the uniform. <parameter>shadertype</parameter>
-            specifies the stage which which the uniform location, given by <parameter>index</parameter>, is valid. <parameter>index</parameter>
+            specifies the stage which the uniform location, given by <parameter>index</parameter>, is valid. <parameter>index</parameter>
             must be between zero and the value of <constant>GL_ACTIVE_SUBROUTINE_UNIFORMS</constant> minus one for the
             shader stage.
         </para>

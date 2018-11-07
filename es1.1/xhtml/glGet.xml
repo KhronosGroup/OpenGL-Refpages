@@ -255,7 +255,7 @@
 		</span></dt><dd><p>
 		    <em class="parameter"><code>params</code></em>
 		    returns one value,
-		    the symbolic name of the depth comparision function.
+		    the symbolic name of the depth comparison function.
 		    See <a class="citerefentry" href="glDepthFunc.xml"><span class="citerefentry"><span class="refentrytitle">glDepthFunc</span></span></a>.
 		    </p></dd><dt><span class="term">
 		    <code class="constant">GL_DEPTH_RANGE</code>

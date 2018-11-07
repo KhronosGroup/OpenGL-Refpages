@@ -90,7 +90,7 @@
                     </para>
                 </listitem>
             </itemizedlist>
-            Otherwise, in the absense of <code>precise</code> consumption, there are no
+            Otherwise, in the absence of <code>precise</code> consumption, there are no
             special constraints on the number of operations or difference in precision between
             <function>fma</function>() and the expression <code>a * b + c</code>.
         </para>

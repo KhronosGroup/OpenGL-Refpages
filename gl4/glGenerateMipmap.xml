@@ -62,8 +62,8 @@
             <function>glGenerateMipmap</function> and
             <function>glGenerateTextureMipmap</function> generates mipmaps
             for the specified texture object. For
-            <function>glGenerateMipmap</function>, the texture object is
-            that bound to to <parameter>target</parameter>. For
+            <function>glGenerateMipmap</function>, the texture object
+            that is bound to <parameter>target</parameter>. For
             <function>glGenerateTextureMipmap</function>,
             <parameter>texture</parameter> is the name of the texture
             object.

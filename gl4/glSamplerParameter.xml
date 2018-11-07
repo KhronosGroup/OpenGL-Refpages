@@ -600,8 +600,8 @@
                         </mml:math></inlineequation>
                         represents the fractional part of
                         <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>.
-                        <constant>GL_MIRROR_CLAMP_TO_EDGE</constant> causes the the <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>
-                        coordinate to be repeated as for <constant>GL_MIRRORED_REPEAT</constant> for one reptition of the texture,
+                        <constant>GL_MIRROR_CLAMP_TO_EDGE</constant> causes the <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>
+                        coordinate to be repeated as for <constant>GL_MIRRORED_REPEAT</constant> for one repetition of the texture,
                         at which point the coordinate to be clamped as in <constant>GL_CLAMP_TO_EDGE</constant>.
                         Initially, <constant>GL_TEXTURE_WRAP_S</constant> is set to <constant>GL_REPEAT</constant>.
                     </para>

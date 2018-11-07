@@ -108,7 +108,7 @@
     <refsect1 xml:id="associatedgets"><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGetFragDataLocation</refentrytitle></citerefentry> with a valid program object
-            and the the name of a user-defined varying out variable
+            and the name of a user-defined varying out variable
         </para>
     </refsect1>
     <refsect1 xml:id="versions"><title>Version Support</title>

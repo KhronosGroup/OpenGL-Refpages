@@ -108,7 +108,7 @@
             for each vertex. The viewport transform
             is then applied to each vertex to produce a three-dimensional bounding
             volume in window coordinates. The window space bounding volume is expanded in the X and Y dimensions to
-            accomodate the rasterization rules for the primitive type, and to fall on
+            accommodate the rasterization rules for the primitive type, and to fall on
             fragment boundaries.
         </para>
         <para>
