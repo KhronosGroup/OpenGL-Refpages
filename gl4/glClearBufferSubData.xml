@@ -33,7 +33,7 @@
                 <paramdef>GLuint <parameter>buffer</parameter></paramdef>
                 <paramdef>GLenum <parameter>internalformat</parameter></paramdef>
                 <paramdef>GLintptr <parameter>offset</parameter></paramdef>
-                <paramdef>GLsizei <parameter>size</parameter></paramdef>
+                <paramdef>GLsizeiptr <parameter>size</parameter></paramdef>
                 <paramdef>GLenum <parameter>format</parameter></paramdef>
                 <paramdef>GLenum <parameter>type</parameter></paramdef>
                 <paramdef>const void *<parameter>data</parameter></paramdef>

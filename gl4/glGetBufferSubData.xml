@@ -33,7 +33,7 @@
                 <funcdef>void <function>glGetNamedBufferSubData</function></funcdef>
                 <paramdef>GLuint <parameter>buffer</parameter></paramdef>
                 <paramdef>GLintptr <parameter>offset</parameter></paramdef>
-                <paramdef>GLsizei <parameter>size</parameter></paramdef>
+                <paramdef>GLsizeiptr <parameter>size</parameter></paramdef>
                 <paramdef>void *<parameter>data</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>

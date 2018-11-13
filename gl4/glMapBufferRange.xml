@@ -29,7 +29,7 @@
                 <funcdef>void *<function>glMapNamedBufferRange</function></funcdef>
                 <paramdef>GLuint <parameter>buffer</parameter></paramdef>
                 <paramdef>GLintptr <parameter>offset</parameter></paramdef>
-                <paramdef>GLsizei <parameter>length</parameter></paramdef>
+                <paramdef>GLsizeiptr <parameter>length</parameter></paramdef>
                 <paramdef>GLbitfield <parameter>access</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>

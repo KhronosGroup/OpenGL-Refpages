@@ -35,7 +35,7 @@
                 <funcdef>void <function>glNamedBufferSubData</function></funcdef>
                 <paramdef>GLuint <parameter>buffer</parameter></paramdef>
                 <paramdef>GLintptr <parameter>offset</parameter></paramdef>
-                <paramdef>GLsizei <parameter>size</parameter></paramdef>
+                <paramdef>GLsizeiptr <parameter>size</parameter></paramdef>
                 <paramdef>const void *<parameter>data</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
