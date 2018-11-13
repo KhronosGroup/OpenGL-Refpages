@@ -20,7 +20,7 @@
     <refsynopsisdiv><title>Declaration</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef>uint <function>memoryBarrier</function></funcdef>
+                <funcdef>void <function>memoryBarrier</function></funcdef>
                 <paramdef>void</paramdef>
             </funcprototype>
         </funcsynopsis>
