@@ -142,6 +142,7 @@
                     <constant>GL_SHORT</constant>,
                     <constant>GL_UNSIGNED_INT</constant>,
                     <constant>GL_INT</constant>,
+                    <constant>GL_HALF_FLOAT</constant>,
                     <constant>GL_FLOAT</constant>,
                     <constant>GL_UNSIGNED_BYTE_3_3_2</constant>,
                     <constant>GL_UNSIGNED_BYTE_2_3_3_REV</constant>,
