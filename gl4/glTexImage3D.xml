@@ -565,6 +565,10 @@
                         <entry><function>glTexImage3D</function></entry>
                         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="apiversion.xml" xpointer="xpointer(/*/*[@role='20']/*)"/>
                     </row>
+                    <row>
+                        <entry><constant>GL_HALF_FLOAT</constant></entry>
+                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="apiversion.xml" xpointer="xpointer(/*/*[@role='30']/*)"/>
+                    </row>
                 </tbody>
             </tgroup>
         </informaltable>
