@@ -15,7 +15,7 @@
     </refmeta>
     <refnamediv>
         <refname>glObjectPtrLabel</refname>
-        <refpurpose>label a a sync object identified by a pointer</refpurpose>
+        <refpurpose>label a sync object identified by a pointer</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>

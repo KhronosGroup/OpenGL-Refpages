@@ -45,7 +45,7 @@
     </refsect1>
     <refsect1 xml:id="description"><title>Description</title>
         <para>
-            <function>trunc</function> returns a a value equal to the nearest integer to <parameter>x</parameter>
+            <function>trunc</function> returns a value equal to the nearest integer to <parameter>x</parameter>
             whose absolute value is not larger than the absolute value of <parameter>x</parameter>.
         </para>
     </refsect1>

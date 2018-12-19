@@ -1086,7 +1086,7 @@
             then if <em class="parameter"><code>param</code></em> is 0,
             the parameter is false;
             otherwise it is set to true.
-            If <em class="parameter"><code>pname</code></em> is a integer type parameter,
+            If <em class="parameter"><code>pname</code></em> is an integer type parameter,
             <em class="parameter"><code>param</code></em> is rounded to the nearest integer.
         </p><p>
             Likewise, <code class="function">glPixelStorei</code> can also be used to set any of the
