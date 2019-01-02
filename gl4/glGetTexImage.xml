@@ -78,7 +78,7 @@
           <constant>GL_TEXTURE_CUBE_MAP_NEGATIVE_Y</constant>,
           <constant>GL_TEXTURE_CUBE_MAP_POSITIVE_Z</constant>,
           <constant>GL_TEXTURE_CUBE_MAP_NEGATIVE_Z</constant>, and
-          <code>GL_TEXTURE_CUBE_MAP_ARRAY</code> are acceptable.</para>
+          <constant>GL_TEXTURE_CUBE_MAP_ARRAY</constant> are acceptable.</para>
         </listitem>
       </varlistentry>
 
