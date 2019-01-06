@@ -15,7 +15,7 @@
     </refmeta>
     <refnamediv>
         <refname>trunc</refname>
-        <refpurpose>find the nearest integer less than or equal to the parameter</refpurpose>
+        <refpurpose>find the truncated value of the parameter</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>Declaration</title>
         <funcsynopsis>

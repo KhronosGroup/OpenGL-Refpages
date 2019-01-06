@@ -15,7 +15,7 @@
     </refmeta>
     <refnamediv>
         <refname>round</refname>
-        <refpurpose>find the nearest integer less than or equal to the parameter</refpurpose>
+        <refpurpose>find the nearest integer to the parameter</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>Declaration</title>
         <funcsynopsis>
