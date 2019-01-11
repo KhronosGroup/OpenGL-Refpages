@@ -115,6 +115,7 @@
             <listitem>
                 <para>
                     Specifies the symbolic name of a query object parameter.
+		    Accepted values are <constant>GL_QUERY_RESULT</constant> or <constant>GL_QUERY_RESULT_AVAILABLE</constant>.
                 </para>
             </listitem>
         </varlistentry>
