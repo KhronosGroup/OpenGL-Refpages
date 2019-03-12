@@ -54,8 +54,9 @@
         <listitem>
           <para>Specifies the target to which the texture object is bound for
           <function>glCopyTexSubImage3D</function> function. Must be
-          <constant>GL_TEXTURE_3D</constant> or
-          <constant>GL_TEXTURE_2D_ARRAY</constant>.</para>
+          <constant>GL_TEXTURE_3D</constant>,
+          <constant>GL_TEXTURE_2D_ARRAY</constant> or
+          <constant>GL_TEXTURE_CUBE_MAP_ARRAY</constant>.</para>
         </listitem>
       </varlistentry>
 
