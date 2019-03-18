@@ -3,7 +3,7 @@
   <head>
     <title>glGetQueryObject - OpenGL 4 Reference Pages</title>
     <link rel="stylesheet" type="text/css" href="opengl-man.css"/>
-    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1"/>
+    <meta name="generator" content="DocBook XSL Stylesheets V1.79.2"/>
     <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
                 MathML: {
@@ -22,7 +22,7 @@
       <div class="titlepage"/>
       <div class="refnamediv">
         <h2>Name</h2>
-        <p>glGetQueryObject — return parameters of a query object</p>
+        <p>glGetQueryObject, glGetQueryBufferObject — return parameters of a query object</p>
       </div>
       <div class="refsynopsisdiv">
         <h2>C Specification</h2>
@@ -102,6 +102,98 @@
           </table>
           <div class="funcprototype-spacer"> </div>
         </div>
+        <div class="funcsynopsis">
+          <table style="border: 0; cellspacing: 0; cellpadding: 0;" class="funcprototype-table">
+            <tr>
+              <td>
+                <code class="funcdef">void <strong class="fsfunc">glGetQueryBufferObjectiv</strong>(</code>
+              </td>
+              <td>GLuint <var class="pdparam">id</var>, </td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td>GLuint <var class="pdparam">buffer</var>, </td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td>GLenum <var class="pdparam">pname</var>, </td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td>GLintptr <var class="pdparam">offset</var><code>)</code>;</td>
+            </tr>
+          </table>
+          <div class="funcprototype-spacer"> </div>
+        </div>
+        <div class="funcsynopsis">
+          <table style="border: 0; cellspacing: 0; cellpadding: 0;" class="funcprototype-table">
+            <tr>
+              <td>
+                <code class="funcdef">void <strong class="fsfunc">glGetQueryBufferObjectuiv</strong>(</code>
+              </td>
+              <td>GLuint <var class="pdparam">id</var>, </td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td>GLuint <var class="pdparam">buffer</var>, </td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td>GLenum <var class="pdparam">pname</var>, </td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td>GLintptr <var class="pdparam">offset</var><code>)</code>;</td>
+            </tr>
+          </table>
+          <div class="funcprototype-spacer"> </div>
+        </div>
+        <div class="funcsynopsis">
+          <table style="border: 0; cellspacing: 0; cellpadding: 0;" class="funcprototype-table">
+            <tr>
+              <td>
+                <code class="funcdef">void <strong class="fsfunc">glGetQueryBufferObjecti64v</strong>(</code>
+              </td>
+              <td>GLuint <var class="pdparam">id</var>, </td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td>GLuint <var class="pdparam">buffer</var>, </td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td>GLenum <var class="pdparam">pname</var>, </td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td>GLintptr <var class="pdparam">offset</var><code>)</code>;</td>
+            </tr>
+          </table>
+          <div class="funcprototype-spacer"> </div>
+        </div>
+        <div class="funcsynopsis">
+          <table style="border: 0; cellspacing: 0; cellpadding: 0;" class="funcprototype-table">
+            <tr>
+              <td>
+                <code class="funcdef">void <strong class="fsfunc">glGetQueryBufferObjectui64v</strong>(</code>
+              </td>
+              <td>GLuint <var class="pdparam">id</var>, </td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td>GLuint <var class="pdparam">buffer</var>, </td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td>GLenum <var class="pdparam">pname</var>, </td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td>GLintptr <var class="pdparam">offset</var><code>)</code>;</td>
+            </tr>
+          </table>
+          <div class="funcprototype-spacer"> </div>
+        </div>
       </div>
       <div class="refsect1" id="parameters">
         <h2>Parameters</h2>
@@ -122,6 +214,18 @@
             <dt>
               <span class="term">
                 <em class="parameter">
+                  <code>buffer</code>
+                </em>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                    Specifies the name of a buffer object.
+                </p>
+            </dd>
+            <dt>
+              <span class="term">
+                <em class="parameter">
                   <code>pname</code>
                 </em>
               </span>
@@ -129,7 +233,7 @@
             <dd>
               <p>
                     Specifies the symbolic name of a query object parameter.
-                    Accepted values are <code class="constant">GL_QUERY_RESULT</code> or <code class="constant">GL_QUERY_RESULT_AVAILABLE</code>.
+		    Accepted values are <code class="constant">GL_QUERY_RESULT</code> or <code class="constant">GL_QUERY_RESULT_AVAILABLE</code>.
                 </p>
             </dd>
             <dt>
@@ -147,14 +251,29 @@
                     treated as an address in client memory of a variable to receive the resulting data.
                 </p>
             </dd>
+            <dt>
+              <span class="term">
+                <em class="parameter">
+                  <code>offset</code>
+                </em>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                    Specifies the byte offset into <em class="parameter"><code>buffer</code></em>'s data store
+                    where the queried result will be written.
+                </p>
+            </dd>
           </dl>
         </div>
       </div>
       <div class="refsect1" id="description">
         <h2>Description</h2>
         <p>
-            <code class="function">glGetQueryObject</code> returns in <em class="parameter"><code>params</code></em> a selected parameter of the query object
-            specified by <em class="parameter"><code>id</code></em>.
+            These commands return a selected parameter of the query object specified by <em class="parameter"><code>id</code></em>.
+            <code class="function">glGetQueryObject</code> returns in <em class="parameter"><code>params</code></em> a selected parameter of the query object specified by <em class="parameter"><code>id</code></em>.
+            <code class="function">glGetQueryBufferObject</code> returns in <em class="parameter"><code>buffer</code></em> a selected parameter of the query object specified by <em class="parameter"><code>id</code></em>,
+            by writing it to <em class="parameter"><code>buffer</code></em>'s data store at the byte offset specified by <em class="parameter"><code>offset</code></em>.
         </p>
         <p>
             <em class="parameter"><code>pname</code></em> names a specific query object parameter.  <em class="parameter"><code>pname</code></em> can be as follows:
@@ -168,7 +287,7 @@
             </dt>
             <dd>
               <p>
-                        <em class="parameter"><code>params</code></em> returns the value of the query object's passed samples counter.
+                        <em class="parameter"><code>params</code></em> or <em class="parameter"><code>buffer</code></em> returns the value of the query object's passed samples counter.
                         The initial value is 0.
                     </p>
             </dd>
@@ -180,8 +299,8 @@
             <dd>
               <p>
                         If the result of the query is available (that is, a query of <code class="constant">GL_QUERY_RESULT_AVAILABLE</code> would
-                        return non-zero), then <em class="parameter"><code>params</code></em> returns the value of the query object's passed samples counter,
-                        otherwise, the data referred to by <em class="parameter"><code>params</code></em> is not modified.
+                        return non-zero), then <em class="parameter"><code>params</code></em> or <em class="parameter"><code>buffer</code></em> returns the value of the query object's passed samples counter,
+                        otherwise, the data referred to by <em class="parameter"><code>params</code></em> or <em class="parameter"><code>buffer</code></em> is not modified.
                         The initial value is 0.
                     </p>
             </dd>
@@ -192,7 +311,7 @@
             </dt>
             <dd>
               <p>
-                        <em class="parameter"><code>params</code></em> returns whether the passed samples counter is immediately available.
+                        <em class="parameter"><code>params</code></em> or <em class="parameter"><code>buffer</code></em> returns whether the passed samples counter is immediately available.
                         If a delay would occur waiting for the query result, <code class="constant">GL_FALSE</code> is returned.
                         Otherwise, <code class="constant">GL_TRUE</code> is returned, which also indicates that the results of all
                         previous queries are available as well.
@@ -205,15 +324,16 @@
         <h2>Notes</h2>
         <p>
             If an error is generated,
-            no change is made to the contents of <em class="parameter"><code>params</code></em>.
+            no change is made to the contents of <em class="parameter"><code>params</code></em> or <em class="parameter"><code>buffer</code></em>.
         </p>
         <p>
-            <code class="function">glGetQueryObject</code> implicitly flushes the GL pipeline so that any incomplete rendering
+            <code class="function">glGetQueryObject</code> and <code class="function">glGetQueryBufferObject</code> implicitly flush the GL pipeline so that any incomplete rendering
             delimited by the occlusion query completes in finite time.
         </p>
         <p>
             If multiple queries are issued using the same query object <em class="parameter"><code>id</code></em> before calling
-            <code class="function">glGetQueryObject</code>, the results of the most recent query will be returned.  In this case,
+            <code class="function">glGetQueryObject</code> or <code class="function">glGetQueryBufferObject</code>,
+            the results of the most recent query will be returned.  In this case,
             when issuing a new query, the results of the previous query are discarded.
         </p>
         <p>
@@ -238,13 +358,24 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>id</code></em> is not the name of a query object.
         </p>
         <p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated by <code class="function">glGetQueryBufferObject</code>
+            if <em class="parameter"><code>buffer</code></em> is not the name of an already created buffer object.
+	</p>
+        <p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>id</code></em> is the name of a currently active
             query object.
         </p>
         <p>
-            <code class="constant">GL_INVALID_OPERATION</code> is generated if a buffer is currently bound to the
+            <code class="constant">GL_INVALID_OPERATION</code> is generated by <code class="function">glGetQueryObject</code> if a buffer is currently bound to the
             <code class="constant">GL_QUERY_RESULT_BUFFER</code> target and the command would cause data to be written beyond the bounds
             of that buffer's data store.
+        </p>
+        <p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated by <code class="function">glGetQueryBufferObject</code>
+            if the command would cause data to be written beyond the bounds of <em class="parameter"><code>buffer</code></em>'s data store.
+        </p>
+        <p>
+            <code class="constant">GL_INVALID_VALUE</code> is generated by <code class="function">glGetQueryBufferObject</code> if <em class="parameter"><code>offset</code></em> is negative.
         </p>
       </div>
       <div class="refsect1" id="versions">
@@ -370,20 +501,88 @@
                 <td style="text-align: center; border-bottom: 2px solid ; ">✔</td>
               </tr>
               <tr>
-                <td style="text-align: left; border-right: 2px solid ; ">
+                <td style="text-align: left; border-right: 2px solid ; border-bottom: 2px solid ; ">
                   <code class="function">glGetQueryObjectuiv</code>
                 </td>
-                <td style="text-align: center; border-right: 2px solid ; ">✔</td>
-                <td style="text-align: center; border-right: 2px solid ; ">✔</td>
-                <td style="text-align: center; border-right: 2px solid ; ">✔</td>
-                <td style="text-align: center; border-right: 2px solid ; ">✔</td>
-                <td style="text-align: center; border-right: 2px solid ; ">✔</td>
-                <td style="text-align: center; border-right: 2px solid ; ">✔</td>
-                <td style="text-align: center; border-right: 2px solid ; ">✔</td>
-                <td style="text-align: center; border-right: 2px solid ; ">✔</td>
-                <td style="text-align: center; border-right: 2px solid ; ">✔</td>
-                <td style="text-align: center; border-right: 2px solid ; ">✔</td>
-                <td style="text-align: center; border-right: 2px solid ; ">✔</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">✔</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">✔</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">✔</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">✔</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">✔</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">✔</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">✔</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">✔</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">✔</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">✔</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">✔</td>
+                <td style="text-align: center; border-bottom: 2px solid ; ">✔</td>
+              </tr>
+              <tr>
+                <td style="text-align: left; border-right: 2px solid ; border-bottom: 2px solid ; ">
+                  <code class="function">glGetQueryBufferObjecti64v</code>
+                </td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-bottom: 2px solid ; ">✔</td>
+              </tr>
+              <tr>
+                <td style="text-align: left; border-right: 2px solid ; border-bottom: 2px solid ; ">
+                  <code class="function">glGetQueryBufferObjectiv</code>
+                </td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-bottom: 2px solid ; ">✔</td>
+              </tr>
+              <tr>
+                <td style="text-align: left; border-right: 2px solid ; border-bottom: 2px solid ; ">
+                  <code class="function">glGetQueryBufferObjectui64v</code>
+                </td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-bottom: 2px solid ; ">✔</td>
+              </tr>
+              <tr>
+                <td style="text-align: left; border-right: 2px solid ; ">
+                  <code class="function">glGetQueryBufferObjectuiv</code>
+                </td>
+                <td style="text-align: center; border-right: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; ">-</td>
                 <td style="text-align: center; ">✔</td>
               </tr>
             </tbody>

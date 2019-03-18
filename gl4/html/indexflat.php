@@ -395,6 +395,10 @@
                 <li><a href="glGetProgramResourceName.xhtml" target="pagedisplay">glGetProgramResourceName</a></li>
                 <li><a href="glGetProgramStage.xhtml" target="pagedisplay">glGetProgramStage</a></li>
                 <li><a href="glGetProgramStage.xhtml" target="pagedisplay">glGetProgramStageiv</a></li>
+                <li><a href="glGetQueryObject.xhtml" target="pagedisplay">glGetQueryBufferObjecti64v</a></li>
+                <li><a href="glGetQueryObject.xhtml" target="pagedisplay">glGetQueryBufferObjectiv</a></li>
+                <li><a href="glGetQueryObject.xhtml" target="pagedisplay">glGetQueryBufferObjectui64v</a></li>
+                <li><a href="glGetQueryObject.xhtml" target="pagedisplay">glGetQueryBufferObjectuiv</a></li>
                 <li><a href="glGetQueryIndexed.xhtml" target="pagedisplay">glGetQueryIndexed</a></li>
                 <li><a href="glGetQueryIndexed.xhtml" target="pagedisplay">glGetQueryIndexediv</a></li>
                 <li><a href="glGetQueryiv.xhtml" target="pagedisplay">glGetQueryiv</a></li>
