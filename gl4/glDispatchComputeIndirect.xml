@@ -64,7 +64,7 @@
             A call to <function>glDispatchComputeIndirect</function> is equivalent, assuming no
             errors are generated, to:
             <programlisting>    cmd = (const DispatchIndirectCommand  *)indirect;
-    glDispatchComputeIndirect(cmd-&gt;num_groups_x, cmd-&gt;num_groups_y, cmd-&gt;num_groups_z);</programlisting>
+    glDispatchCompute(cmd-&gt;num_groups_x, cmd-&gt;num_groups_y, cmd-&gt;num_groups_z);</programlisting>
         </para>
         <para>
             Unlike <citerefentry><refentrytitle>glDispatchCompute</refentrytitle></citerefentry>,
