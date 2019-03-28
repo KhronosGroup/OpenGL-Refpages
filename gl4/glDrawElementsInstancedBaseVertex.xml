@@ -25,7 +25,7 @@
                 <paramdef>GLsizei <parameter>count</parameter></paramdef>
                 <paramdef>GLenum <parameter>type</parameter></paramdef>
                 <paramdef>GLvoid *<parameter>indices</parameter></paramdef>
-                <paramdef>GLsizei <parameter>primcount</parameter></paramdef>
+                <paramdef>GLsizei <parameter>instancecount</parameter></paramdef>
                 <paramdef>GLint <parameter>basevertex</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
@@ -71,7 +71,7 @@
             </listitem>
         </varlistentry>
         <varlistentry>
-            <term><parameter>primcount</parameter></term>
+            <term><parameter>instancecount</parameter></term>
             <listitem>
                 <para>
                     Specifies the number of instances of the indexed geometry that should be drawn.
@@ -109,7 +109,7 @@
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>mode</parameter> is not an accepted value.
         </para>
         <para>
-            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>count</parameter> or <parameter>primcount</parameter> is negative.
+            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>count</parameter> or <parameter>instancecount</parameter> is negative.
         </para>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if a geometry shader is active and <parameter>mode</parameter>
