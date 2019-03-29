@@ -44,7 +44,7 @@
             </tr>
             <tr>
               <td> </td>
-              <td>GLsizei <var class="pdparam">primcount</var>, </td>
+              <td>GLsizei <var class="pdparam">instancecount</var>, </td>
             </tr>
             <tr>
               <td> </td>
@@ -102,7 +102,7 @@
             <dt>
               <span class="term">
                 <em class="parameter">
-                  <code>primcount</code>
+                  <code>instancecount</code>
                 </em>
               </span>
             </dt>
@@ -130,7 +130,7 @@
         <h2>Description</h2>
         <p>
             <code class="function">glDrawArraysInstancedBaseInstance</code> behaves identically to <a class="citerefentry" href="glDrawArrays.xhtml"><span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span></a>
-            except that <em class="parameter"><code>primcount</code></em> instances of the range of elements are executed and the value of the internal counter
+            except that <em class="parameter"><code>instancecount</code></em> instances of the range of elements are executed and the value of the internal counter
             <em class="parameter"><code>instanceID</code></em> advances for each iteration. <em class="parameter"><code>instanceID</code></em> is an internal 32-bit integer counter
             that may be read by a vertex shader as <code class="constant">gl_InstanceID</code>.
         </p>
@@ -140,7 +140,7 @@
         <pre class="programlisting">    if ( mode or count is invalid )
         generate appropriate error
     else {
-        for (int i = 0; i &lt; primcount ; i++) {
+        for (int i = 0; i &lt; instancecount ; i++) {
             instanceID = i;
             glDrawArrays(mode, first, count);
         }
@@ -184,7 +184,7 @@
             is incompatible with the input primitive type of the geometry shader in the currently installed program object.
         </p>
         <p>
-            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>count</code></em> or <em class="parameter"><code>primcount</code></em> are negative.
+            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>count</code></em> or <em class="parameter"><code>instancecount</code></em> is negative.
         </p>
         <p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to an
