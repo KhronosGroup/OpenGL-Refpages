@@ -5,7 +5,7 @@
 <refentry xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="glDrawElementsIndirect">
     <info>
         <copyright>
-            <year>2010-2014</year>
+            <year>2010-2019</year>
             <holder>Khronos Group.</holder>
         </copyright>
     </info>
@@ -28,7 +28,6 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <!-- eqn: ignoring delim $$ -->
     <refsect1 xml:id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
@@ -76,8 +75,8 @@
             transferred by the corresponding draw call will be taken from element <parameter>indices</parameter>[i] + <parameter>baseVertex</parameter>
             of each enabled array. If the resulting value is larger than the maximum value representable by <parameter>type</parameter>,
             it is as if the calculation were upconverted to 32-bit unsigned integers (with wrapping on overflow conditions).
-            The operation is undefined if the sum would be negative.It also supports the addition of 
-			a value baseVertex to each index.
+            The operation is undefined if the sum would be negative.It also supports the addition of
+            a value baseVertex to each index.
         </para>
         <para>
             The parameters addressed by <parameter>indirect</parameter> are packed into a structure
@@ -129,17 +128,29 @@
         <para>
             <function>glDrawElementsInstancedBaseVertex</function> isn't actually present in OpenGL ES, but is used to describe this functionality.
         </para>
-    </refsect1>    <refsect1 xml:id="errors"><title>Errors</title>
+    </refsect1>
+    <refsect1 xml:id="errors"><title>Errors</title>
         <para>
-            <constant>GL_INVALID_ENUM</constant> is generated if <parameter>mode</parameter> is not an accepted value.
+            <constant>GL_INVALID_ENUM</constant> is generated if
+            <parameter>mode</parameter> is not an accepted value.
         </para>
         <para>
-            <constant>GL_INVALID_OPERATION</constant> is generated if no buffer is bound to the <constant>GL_ELEMENT_ARRAY_BUFFER</constant>
-            binding, or if such a buffer's data store is currently mapped.
+            <constant>GL_INVALID_OPERATION</constant> is generated if zero
+            is bound to the <constant>GL_VERTEX_ARRAY_BINDING</constant>,
+            <constant>GL_DRAW_INDIRECT_BUFFER</constant>, or
+            <constant>GL_ELEMENT_ARRAY_BUFFER</constant> binding, or to any
+            enabled vertex array.
+                <!-- old text said that buffers could not be mapped, but that's not in 3.2 spec -->
         </para>
         <para>
-            <constant>GL_INVALID_OPERATION</constant> is generated if a non-zero buffer object name is bound to an
-            enabled array or to the <constant>GL_DRAW_INDIRECT_BUFFER</constant> binding and the buffer object's data store is currently mapped.
+            <constant>GL_INVALID_OPERATION</constant> is generated if the
+            command would source data beyond the end of any bound buffer
+            object.
+        </para>
+        <para>
+            <constant>GL_INVALID_VALUE</constant> is generated if
+            <parameter>indirect</parameter> is not a multiple of the size,
+            in basic machine units, of <code>GLuint</code>.
         </para>
     </refsect1>
     <refsect1 xml:id="versions">
@@ -167,8 +178,8 @@
     </refsect1>
     <refsect1 xml:id="Copyright"><title>Copyright</title>
         <para>
-            Copyright <trademark class="copyright"/> 2010-2014 Khronos Group. 
-            This material may be distributed subject to the terms and conditions set forth in 
+            Copyright <trademark class="copyright"/> 2010-2019 Khronos Group.
+            This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
             <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://opencontent.org/openpub/">http://opencontent.org/openpub/</link>.
         </para>
