@@ -115,7 +115,7 @@
         <p>
             The parameters addressed by <em class="parameter"><code>indirect</code></em> are packed into a structure
             that takes the form (in C):
-            </p>
+        </p>
         <pre class="programlisting">    typedef  struct {
         uint  count;
         uint  primCount;
@@ -123,8 +123,6 @@
         uint  baseVertex;
         uint  baseInstance;
     } DrawElementsIndirectCommand;</pre>
-        <p>
-        </p>
         <p>
             <code class="function">glDrawElementsIndirect</code> is equivalent to:
         </p>
@@ -177,7 +175,8 @@
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>mode</code></em> is not an accepted value.
         </p>
         <p>
-            <code class="constant">GL_INVALID_OPERATION</code> is generated if no buffer is bound to the <code class="constant">GL_ELEMENT_ARRAY_BUFFER</code>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if zero
+            is bound to the <code class="constant">GL_ELEMENT_ARRAY_BUFFER</code>
             binding, or if such a buffer's data store is currently mapped.
         </p>
         <p>
