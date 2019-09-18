@@ -3,7 +3,7 @@
   <head>
     <title>glDrawElementsIndirect - OpenGL ES 3.1 Reference Pages</title>
     <link rel="stylesheet" type="text/css" href="opengl-man.css"/>
-    <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"/>
+    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1"/>
     <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
                 MathML: {
@@ -109,8 +109,8 @@
             transferred by the corresponding draw call will be taken from element <em class="parameter"><code>indices</code></em>[i] + <em class="parameter"><code>baseVertex</code></em>
             of each enabled array. If the resulting value is larger than the maximum value representable by <em class="parameter"><code>type</code></em>,
             it is as if the calculation were upconverted to 32-bit unsigned integers (with wrapping on overflow conditions).
-            The operation is undefined if the sum would be negative.It also supports the addition of 
-			a value baseVertex to each index.
+            The operation is undefined if the sum would be negative.It also supports the addition of
+            a value baseVertex to each index.
         </p>
         <p>
             The parameters addressed by <em class="parameter"><code>indirect</code></em> are packed into a structure
@@ -169,15 +169,26 @@
       <div class="refsect1" id="errors">
         <h2>Errors</h2>
         <p>
-            <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>mode</code></em> is not an accepted value.
+            <code class="constant">GL_INVALID_ENUM</code> is generated if
+            <em class="parameter"><code>mode</code></em> is not an accepted value.
         </p>
         <p>
-            <code class="constant">GL_INVALID_OPERATION</code> is generated if no buffer is bound to the <code class="constant">GL_ELEMENT_ARRAY_BUFFER</code>
-            binding, or if such a buffer's data store is currently mapped.
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if zero
+            is bound to the <code class="constant">GL_VERTEX_ARRAY_BINDING</code>,
+            <code class="constant">GL_DRAW_INDIRECT_BUFFER</code>, or
+            <code class="constant">GL_ELEMENT_ARRAY_BUFFER</code> binding, or to any
+            enabled vertex array.
+                
         </p>
         <p>
-            <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to an
-            enabled array or to the <code class="constant">GL_DRAW_INDIRECT_BUFFER</code> binding and the buffer object's data store is currently mapped.
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if the
+            command would source data beyond the end of any bound buffer
+            object.
+        </p>
+        <p>
+            <code class="constant">GL_INVALID_VALUE</code> is generated if
+            <em class="parameter"><code>indirect</code></em> is not a multiple of the size,
+            in basic machine units, of <code class="code">GLuint</code>.
         </p>
       </div>
       <div class="refsect1" id="versions">
@@ -240,8 +251,8 @@
       <div class="refsect1" id="Copyright">
         <h2>Copyright</h2>
         <p>
-            Copyright <span class="trademark"/>© 2010-2014 Khronos Group. 
-            This material may be distributed subject to the terms and conditions set forth in 
+            Copyright <span class="trademark"/>© 2010-2019 Khronos Group.
+            This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
             <a class="link" href="http://opencontent.org/openpub/" target="_top">http://opencontent.org/openpub/</a>.
         </p>
