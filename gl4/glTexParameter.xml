@@ -280,11 +280,11 @@
                 <listitem>
                     <para>
                         Specifies the mode used to read from depth-stencil format textures. <parameter>params</parameter>
-                        must be one of <constant>GL_DEPTH_COMPONENT</constant> or <constant>GL_STENCIL_COMPONENT</constant>.
+                        must be one of <constant>GL_DEPTH_COMPONENT</constant> or <constant>GL_STENCIL_INDEX</constant>.
                         If the depth stencil mode is <constant>GL_DEPTH_COMPONENT</constant>, then reads from depth-stencil
                         format textures will return the depth component of the texel in
                         <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:msub><mml:mi>R</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:math></inlineequation> and the stencil component
-                        will be discarded. If the depth stencil mode is <constant>GL_STENCIL_COMPONENT</constant> then
+                        will be discarded. If the depth stencil mode is <constant>GL_STENCIL_INDEX</constant> then
                         the stencil component is returned in <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:msub><mml:mi>R</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:math></inlineequation>
                         and the depth component is discarded. The initial value is <constant>GL_DEPTH_COMPONENT</constant>.
                     </para>
