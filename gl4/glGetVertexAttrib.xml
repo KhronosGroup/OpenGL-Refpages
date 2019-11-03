@@ -1,4 +1,4 @@
-<!DOCTYPE refentry [ <!ENTITY % mathent SYSTEM "math.ent"> %mathent; ]>
+﻿<!DOCTYPE refentry [ <!ENTITY % mathent SYSTEM "math.ent"> %mathent; ]>
 
 <!-- Converted by db4-upgrade version 1.1 -->
 
@@ -88,7 +88,10 @@
             <constant>GL_VERTEX_ATTRIB_ARRAY_TYPE</constant>,
             <constant>GL_VERTEX_ATTRIB_ARRAY_NORMALIZED</constant>,
             <constant>GL_VERTEX_ATTRIB_ARRAY_INTEGER</constant>,
-            <constant>GL_VERTEX_ATTRIB_ARRAY_DIVISOR</constant>, or
+            <constant>GL_VERTEX_ATTRIB_ARRAY_LONG</constant>,
+            <constant>GL_VERTEX_ATTRIB_ARRAY_DIVISOR</constant>, 
+            <constant>GL_VERTEX_ATTRIB_BINDING</constant>,
+            <constant>GL_VERTEX_ATTRIB_RELATIVE_OFFSET</constant> or
             <constant>GL_CURRENT_VERTEX_ATTRIB</constant>.</para>
         </listitem>
         </varlistentry>
@@ -213,6 +216,18 @@
             0 (<constant>GL_FALSE</constant>).</para>
         </listitem>
         </varlistentry>
+        
+        <varlistentry>
+        <term><constant>GL_VERTEX_ATTRIB_ARRAY_LONG</constant></term>
+        <listitem>
+                <para>
+                </para>
+            <para> <parameter>param</parameter> returns a single value that is non-zero
+	          (true) if a vertex attribute is stored as an unconverted double, and
+	          0 (false) otherwise. The initial value is 0
+	          (<constant>GL_FALSE</constant>).</para>
+        </listitem>
+        </varlistentry>
 
         <varlistentry>
         <term><constant>GL_VERTEX_ATTRIB_ARRAY_DIVISOR</constant></term>
@@ -223,6 +238,29 @@
             single value that is the frequency divisor used for instanced
             rendering. See <citerefentry><refentrytitle>glVertexAttribDivisor</refentrytitle></citerefentry>.
             The initial value is 0.</para>
+        </listitem>
+        </varlistentry>
+        
+        <varlistentry>
+        <term><constant>GL_VERTEX_ATTRIB_BINDING</constant></term>
+        <listitem>
+                <para>
+                </para>
+            <para> <parameter>params</parameter> returns a
+            single value, the vertex buffer binding of the vertex attribute array
+            <parameter>index</parameter>.</para>
+        </listitem>
+        </varlistentry>
+
+        <varlistentry>
+        <term><constant>GL_VERTEX_ATTRIB_RELATIVE_OFFSET</constant></term>
+        <listitem>
+                <para>
+                </para>
+            <para> <parameter>params</parameter> returns a single value that is the byte
+	          offset of the first element relative to the start of the vertex
+	          buffer binding specified attribute fetches from. The initial value
+	          is 0.</para>
         </listitem>
         </varlistentry>
 
