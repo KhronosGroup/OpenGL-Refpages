@@ -30,7 +30,7 @@
         <paramdef>GLenum <parameter>type</parameter></paramdef>
         <paramdef>GLboolean <parameter>normalized</parameter></paramdef>
         <paramdef>GLsizei <parameter>stride</parameter></paramdef>
-        <paramdef>const GLvoid * <parameter>pointer</parameter></paramdef>
+        <paramdef>const void * <parameter>pointer</parameter></paramdef>
         </funcprototype>
         <funcprototype>
         <funcdef>void <function>glVertexAttribIPointer</function></funcdef>
@@ -38,7 +38,7 @@
         <paramdef>GLint <parameter>size</parameter></paramdef>
         <paramdef>GLenum <parameter>type</parameter></paramdef>
         <paramdef>GLsizei <parameter>stride</parameter></paramdef>
-        <paramdef>const GLvoid * <parameter>pointer</parameter></paramdef>
+        <paramdef>const void * <parameter>pointer</parameter></paramdef>
         </funcprototype>
         <funcprototype>
         <funcdef>void <function>glVertexAttribLPointer</function></funcdef>
@@ -46,7 +46,7 @@
         <paramdef>GLint <parameter>size</parameter></paramdef>
         <paramdef>GLenum <parameter>type</parameter></paramdef>
         <paramdef>GLsizei <parameter>stride</parameter></paramdef>
-        <paramdef>const GLvoid * <parameter>pointer</parameter></paramdef>
+        <paramdef>const void * <parameter>pointer</parameter></paramdef>
         </funcprototype>
     </funcsynopsis>
     </refsynopsisdiv>

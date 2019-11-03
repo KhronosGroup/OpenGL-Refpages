@@ -26,8 +26,8 @@
                 <paramdef>GLsizei <parameter>height</parameter></paramdef>
                 <paramdef>GLenum <parameter>format</parameter></paramdef>
                 <paramdef>GLenum <parameter>type</parameter></paramdef>
-                <paramdef>const GLvoid * <parameter>row</parameter></paramdef>
-                <paramdef>const GLvoid * <parameter>column</parameter></paramdef>
+                <paramdef>const void * <parameter>row</parameter></paramdef>
+                <paramdef>const void * <parameter>column</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

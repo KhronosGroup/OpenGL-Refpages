@@ -41,7 +41,7 @@
 
         <paramdef>GLsizeiptr <parameter>size</parameter></paramdef>
 
-        <paramdef>const GLvoid * <parameter>data</parameter></paramdef>
+        <paramdef>const void * <parameter>data</parameter></paramdef>
 
         <paramdef>GLenum <parameter>usage</parameter></paramdef>
       </funcprototype>

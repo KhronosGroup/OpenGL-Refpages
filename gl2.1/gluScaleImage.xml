@@ -28,7 +28,7 @@
                 <paramdef>GLsizei <parameter>wOut</parameter></paramdef>
                 <paramdef>GLsizei <parameter>hOut</parameter></paramdef>
                 <paramdef>GLenum <parameter>typeOut</parameter></paramdef>
-                <paramdef>GLvoid* <parameter>dataOut</parameter></paramdef>
+                <paramdef>void* <parameter>dataOut</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

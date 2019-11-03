@@ -23,9 +23,9 @@
                 <paramdef>GLenum <parameter>target</parameter></paramdef>
                 <paramdef>GLenum <parameter>format</parameter></paramdef>
                 <paramdef>GLenum <parameter>type</parameter></paramdef>
-                <paramdef>GLvoid * <parameter>row</parameter></paramdef>
-                <paramdef>GLvoid * <parameter>column</parameter></paramdef>
-                <paramdef>GLvoid * <parameter>span</parameter></paramdef>
+                <paramdef>void * <parameter>row</parameter></paramdef>
+                <paramdef>void * <parameter>column</parameter></paramdef>
+                <paramdef>void * <parameter>span</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

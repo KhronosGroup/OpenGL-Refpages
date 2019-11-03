@@ -22,7 +22,7 @@
                 <funcdef>void <function>glCallLists</function></funcdef>
                 <paramdef>GLsizei <parameter>n</parameter></paramdef>
                 <paramdef>GLenum <parameter>type</parameter></paramdef>
-                <paramdef>const GLvoid * <parameter>lists</parameter></paramdef>
+                <paramdef>const void * <parameter>lists</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

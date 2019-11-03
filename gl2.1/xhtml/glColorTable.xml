@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd"><!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glColorTable</title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /></head><body><div class="refentry"><a id="glColorTable"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glColorTable — define a color lookup table</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">void <strong class="fsfunc">glColorTable</strong>(</code></td><td>GLenum <var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum <var class="pdparam">internalformat</var>, </td></tr><tr><td> </td><td>GLsizei <var class="pdparam">width</var>, </td></tr><tr><td> </td><td>GLenum <var class="pdparam">format</var>, </td></tr><tr><td> </td><td>GLenum <var class="pdparam">type</var>, </td></tr><tr><td> </td><td>const GLvoid * <var class="pdparam">data</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glColorTable</title><meta name="generator" content="DocBook XSL Stylesheets V1.79.1" /></head><body><div class="refentry"><a id="glColorTable"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glColorTable — define a color lookup table</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">void <strong class="fsfunc">glColorTable</strong>(</code></td><td>GLenum <var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum <var class="pdparam">internalformat</var>, </td></tr><tr><td> </td><td>GLsizei <var class="pdparam">width</var>, </td></tr><tr><td> </td><td>GLenum <var class="pdparam">format</var>, </td></tr><tr><td> </td><td>GLenum <var class="pdparam">type</var>, </td></tr><tr><td> </td><td>const void * <var class="pdparam">data</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Must be one of
                     <code class="constant">GL_COLOR_TABLE</code>,
                     <code class="constant">GL_POST_CONVOLUTION_COLOR_TABLE</code>,
@@ -133,7 +133,7 @@
             and A) to the values included in the internal format (red, green, blue,
             alpha, luminance, and intensity).  The mapping is as follows:
         </p><p>
-        </p><div class="informaltable"><table border="1"><colgroup><col align="left" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /></colgroup><thead><tr><th align="left"><span class="bold"><strong>
+        </p><div class="informaltable"><table class="informaltable" border="1"><colgroup><col align="left" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /></colgroup><thead><tr><th align="left"><span class="bold"><strong>
                         Internal Format
                         </strong></span></th><th align="center"><span class="bold"><strong>
                         Red
@@ -272,7 +272,7 @@
             replaced by the table entry selected by that index.
             If the color components and contents of the table are represented as follows:
         </p><p>
-        </p><div class="informaltable"><table border="1"><colgroup><col align="center" /><col align="center" /></colgroup><thead><tr><th align="center"><span class="bold"><strong>
+        </p><div class="informaltable"><table class="informaltable" border="1"><colgroup><col align="center" /><col align="center" /></colgroup><thead><tr><th align="center"><span class="bold"><strong>
                         Representation
                         </strong></span></th><th align="center"><span class="bold"><strong>
                         Meaning
@@ -319,7 +319,7 @@
                         </td></tr></tbody></table></div><p>
             then the result of color table lookup is as follows:
         </p><p>
-        </p><div class="informaltable"><table border="1"><colgroup><col align="left" /><col align="left" class="r" /><col align="left" class="g" /><col align="left" class="b" /><col align="left" class="a" /></colgroup><thead><tr><th align="left"><span class="bold"><strong>
+        </p><div class="informaltable"><table class="informaltable" border="1"><colgroup><col align="left" /><col align="left" class="r" /><col align="left" class="g" /><col align="left" class="b" /><col align="left" class="a" /></colgroup><thead><tr><th align="left"><span class="bold"><strong>
                         </strong></span></th><th colspan="4" align="center"><span class="bold"><strong>
                         Resulting Texture Components
                         </strong></span></th></tr><tr><th align="left"><span class="bold"><strong>

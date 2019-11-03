@@ -32,7 +32,7 @@
                 <paramdef>GLint <parameter>level</parameter></paramdef>
                 <paramdef>GLenum <parameter>format</parameter></paramdef>
                 <paramdef>GLenum <parameter>type</parameter></paramdef>
-                <paramdef>GLvoid * <parameter>pixels</parameter></paramdef>
+                <paramdef>void * <parameter>pixels</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>void <function>glGetnTexImage</function></funcdef>

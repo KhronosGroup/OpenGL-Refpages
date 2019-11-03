@@ -32,7 +32,7 @@
                 <paramdef>GLint <parameter>border</parameter></paramdef>
                 <paramdef>GLenum <parameter>format</parameter></paramdef>
                 <paramdef>GLenum <parameter>type</parameter></paramdef>
-                <paramdef>const GLvoid * <parameter>pixels</parameter></paramdef>
+                <paramdef>const void * <parameter>pixels</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

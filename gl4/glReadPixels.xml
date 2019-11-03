@@ -50,7 +50,7 @@
 
         <paramdef>GLenum <parameter>type</parameter></paramdef>
 
-        <paramdef>GLvoid * <parameter>data</parameter></paramdef>
+        <paramdef>void * <parameter>data</parameter></paramdef>
       </funcprototype>
 
       <funcprototype>

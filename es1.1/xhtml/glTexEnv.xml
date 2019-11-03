@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd"><!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glTexEnv</title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /></head><body><div class="refentry"><a id="glTexEnv"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glTexEnv — set texture environment parameters</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">void <strong class="fsfunc">glTexEnvf</strong>(</code></td><td>GLenum <var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum <var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLfloat <var class="pdparam">param</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">void <strong class="fsfunc">glTexEnvi</strong>(</code></td><td>GLenum <var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum <var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLint <var class="pdparam">param</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">void <strong class="fsfunc">glTexEnvx</strong>(</code></td><td>GLenum <var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum <var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLfixed <var class="pdparam">param</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glTexEnv</title><meta name="generator" content="DocBook XSL Stylesheets V1.79.1" /></head><body><div class="refentry"><a id="glTexEnv"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glTexEnv — set texture environment parameters</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">void <strong class="fsfunc">glTexEnvf</strong>(</code></td><td>GLenum <var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum <var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLfloat <var class="pdparam">param</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">void <strong class="fsfunc">glTexEnvi</strong>(</code></td><td>GLenum <var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum <var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLint <var class="pdparam">param</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">void <strong class="fsfunc">glTexEnvx</strong>(</code></td><td>GLenum <var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum <var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLfixed <var class="pdparam">param</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Specifies a texture environment.
                     May be <code class="constant">GL_TEXTURE_ENV</code> or <code class="constant">GL_POINT_SPRITE_OES</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>
@@ -108,7 +108,7 @@
             <mml:mi mathvariant="italic">s</mml:mi></mml:msub></mml:math>
             are used by the texture functions described below.
         </p><p>
-        </p><div class="informaltable"><table border="1"><colgroup><col align="left" /><col align="left" /><col /></colgroup><thead><tr><th align="left">
+        </p><div class="informaltable"><table class="informaltable" border="1"><colgroup><col align="left" /><col align="left" /><col /></colgroup><thead><tr><th align="left">
                         Texture Base Internal Format
                         </th><th align="center">
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:msub><mml:mi mathvariant="bold-italic">C</mml:mi>
@@ -202,7 +202,7 @@
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">v</mml:mi></mml:math>
             indicates a value produced by the texture function.
         </p><p>
-        </p><div class="informaltable"><table width="100%" border="1"><colgroup><col align="center" /><col align="center" /><col align="center" /><col align="left" /><col align="left" /><col align="left" /><col align="left" /></colgroup><thead><tr><th align="center">
+        </p><div class="informaltable"><table class="informaltable" width="100%" border="1"><colgroup><col align="center" /><col align="center" /><col align="center" /><col align="left" /><col align="left" /><col align="left" /><col align="left" /></colgroup><thead><tr><th align="center">
                         Texture Base Internal Format
                         </th><th align="center">
                         <code class="constant">Value</code>
@@ -967,7 +967,7 @@
             <code class="constant">GL_ADD</code>, <code class="constant">GL_ADD_SIGNED</code>, <code class="constant">GL_INTERPOLATE</code>, <code class="constant">GL_SUBTRACT</code>,
             <code class="constant">GL_DOT3_RGB</code>, or <code class="constant">GL_DOT3_RGBA</code>.
         </p><p>
-        </p><div class="informaltable"><table border="1"><colgroup><col align="left" /><col align="left" /></colgroup><thead><tr><th align="left"><span class="bold"><strong>
+        </p><div class="informaltable"><table class="informaltable" border="1"><colgroup><col align="left" /><col align="left" /></colgroup><thead><tr><th align="left"><span class="bold"><strong>
                         <code class="constant">GL_COMBINE_RGB</code>
                         </strong></span></th><th align="left"><span class="bold"><strong>
                         Texture Function
@@ -1154,7 +1154,7 @@
             <code class="constant">GL_SUBTRACT</code>.  The following table describes how alpha values are
             combined:
         </p><p>
-        </p><div class="informaltable"><table border="1"><colgroup><col align="left" /><col align="left" /></colgroup><thead><tr><th align="left"><span class="bold"><strong>
+        </p><div class="informaltable"><table class="informaltable" border="1"><colgroup><col align="left" /><col align="left" /></colgroup><thead><tr><th align="left"><span class="bold"><strong>
                         <code class="constant">GL_COMBINE_ALPHA</code>
                         </strong></span></th><th align="left"><span class="bold"><strong>
                         Texture Function
@@ -1309,7 +1309,7 @@
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg2</mml:mi></mml:math>
             based upon the RGB sources and operands:
         </p><p>
-        </p><div class="informaltable"><table border="1"><colgroup><col align="left" /><col align="left" /><col align="center" /></colgroup><thead><tr><th align="left"><span class="bold"><strong>
+        </p><div class="informaltable"><table class="informaltable" border="1"><colgroup><col align="left" /><col align="left" /><col align="center" /></colgroup><thead><tr><th align="left"><span class="bold"><strong>
                         <code class="constant">GL_SRCn_RGB</code>
                         </strong></span></th><th align="left"><span class="bold"><strong>
                         <code class="constant">GL_OPERANDn_RGB</code>
@@ -1626,7 +1626,7 @@
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg2</mml:mi></mml:math>
             based upon the alpha sources and operands:
         </p><p>
-        </p><div class="informaltable"><table border="1"><colgroup><col align="left" /><col align="left" /><col align="center" /></colgroup><thead><tr><th align="left"><span class="bold"><strong>
+        </p><div class="informaltable"><table class="informaltable" border="1"><colgroup><col align="left" /><col align="left" /><col align="center" /></colgroup><thead><tr><th align="left"><span class="bold"><strong>
                         <code class="constant">GL_SRCn_ALPHA</code>
                         </strong></span></th><th align="left"><span class="bold"><strong>
                         <code class="constant">GL_OPERANDn_ALPHA</code>

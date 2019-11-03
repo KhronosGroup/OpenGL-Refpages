@@ -23,7 +23,7 @@
                 <paramdef>GLenum <parameter>mode</parameter></paramdef>
                 <paramdef>const GLsizei * <parameter>count</parameter></paramdef>
                 <paramdef>GLenum <parameter>type</parameter></paramdef>
-                <paramdef>const GLvoid ** <parameter>indices</parameter></paramdef>
+                <paramdef>const void ** <parameter>indices</parameter></paramdef>
                 <paramdef>GLsizei <parameter>primcount</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>

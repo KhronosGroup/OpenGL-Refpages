@@ -23,7 +23,7 @@
                 <paramdef>GLenum <parameter>target</parameter></paramdef>
                 <paramdef>GLenum <parameter>format</parameter></paramdef>
                 <paramdef>GLenum <parameter>type</parameter></paramdef>
-                <paramdef>GLvoid * <parameter>image</parameter></paramdef>
+                <paramdef>void * <parameter>image</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

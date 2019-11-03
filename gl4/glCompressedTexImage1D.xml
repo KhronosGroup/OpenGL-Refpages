@@ -31,7 +31,7 @@
                 <paramdef>GLsizei <parameter>width</parameter></paramdef>
                 <paramdef>GLint <parameter>border</parameter></paramdef>
                 <paramdef>GLsizei <parameter>imageSize</parameter></paramdef>
-                <paramdef>const GLvoid * <parameter>data</parameter></paramdef>
+                <paramdef>const void * <parameter>data</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

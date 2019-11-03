@@ -24,7 +24,7 @@
                 <paramdef>GLenum <parameter>mode</parameter></paramdef>
                 <paramdef>const GLsizei *<parameter>count</parameter></paramdef>
                 <paramdef>GLenum <parameter>type</parameter></paramdef>
-                <paramdef>const GLvoid * const *<parameter>indices</parameter></paramdef>
+                <paramdef>const void * const *<parameter>indices</parameter></paramdef>
                 <paramdef>GLsizei <parameter>drawcount</parameter></paramdef>
                 <paramdef>const GLint *<parameter>basevertex</parameter></paramdef>
             </funcprototype>

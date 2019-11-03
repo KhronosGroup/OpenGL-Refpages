@@ -34,7 +34,7 @@
                 <paramdef>GLsizei <parameter>height</parameter></paramdef>
                 <paramdef>GLenum <parameter>format</parameter></paramdef>
                 <paramdef>GLenum <parameter>type</parameter></paramdef>
-                <paramdef>const GLvoid * <parameter>pixels</parameter></paramdef>
+                <paramdef>const void * <parameter>pixels</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>void <function>glTextureSubImage2D</function></funcdef>

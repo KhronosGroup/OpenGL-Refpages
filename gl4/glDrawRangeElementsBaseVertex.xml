@@ -26,7 +26,7 @@
                 <paramdef>GLuint <parameter>end</parameter></paramdef>
                 <paramdef>GLsizei <parameter>count</parameter></paramdef>
                 <paramdef>GLenum <parameter>type</parameter></paramdef>
-                <paramdef>GLvoid *<parameter>indices</parameter></paramdef>
+                <paramdef>void *<parameter>indices</parameter></paramdef>
                 <paramdef>GLint <parameter>basevertex</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>

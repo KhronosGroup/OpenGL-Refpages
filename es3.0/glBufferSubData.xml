@@ -28,7 +28,7 @@
                 <paramdef>GLenum <parameter>target</parameter></paramdef>
                 <paramdef>GLintptr <parameter>offset</parameter></paramdef>
                 <paramdef>GLsizeiptr <parameter>size</parameter></paramdef>
-                <paramdef>const GLvoid * <parameter>data</parameter></paramdef>
+                <paramdef>const void * <parameter>data</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
