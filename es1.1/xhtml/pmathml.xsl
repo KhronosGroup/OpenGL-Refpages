@@ -468,7 +468,7 @@ mathplayer annotations, otherwise use first child or a presentation annotation.<
 
 <!-- end  verb mode -->
 
-<!-- replace all occurences of the character(s) `from'
+<!-- replace all occurrences of the character(s) `from'
      by the string `to' in the string `string'.-->
 <xsl:template name="string-replace" >
   <xsl:param name="string"/>

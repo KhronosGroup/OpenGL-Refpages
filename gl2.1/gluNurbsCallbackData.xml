@@ -21,7 +21,7 @@
             <funcprototype>
                 <funcdef>void <function>gluNurbsCallbackData</function></funcdef>
                 <paramdef>GLUnurbs* <parameter>nurb</parameter></paramdef>
-                <paramdef>GLvoid* <parameter>userData</parameter></paramdef>
+                <paramdef>void* <parameter>userData</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

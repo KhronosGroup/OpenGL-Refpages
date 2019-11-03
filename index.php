@@ -1,8 +1,8 @@
 <?php
-$static_title = 'Khronos OpenGL&reg; Reference Pages';
+$static_title = 'Khronos OpenGL&reg; and OpenGL&reg; ES Reference Pages';
 $static_breadcrumb = array(
     '/registry/' => 'Registry',
-    'NOLINK' => 'OpenGL Reference Pages'
+    'NOLINK' => 'OpenGL and OpenGL ES Reference Pages'
 );
 include_once("../../assets/static_pages/khr_page_top.php");
 ?>
@@ -10,35 +10,43 @@ include_once("../../assets/static_pages/khr_page_top.php");
 <h1 class="pagetitle"> OpenGL&reg; and OpenGL&reg; ES Reference Pages </h1>
 <div id="mainformat">
 
-
-<h1 style="text-align:center"> OpenGL&reg; and OpenGL&reg; ES Reference Pages </h1>
-
 <p> Complete descriptions of API commands and shading language functions are
-    provided for the following versions of these APIs: </p>
+    provided for the current versions these APIs. </p>
 
 <h2> Current API Versions </h2>
 
 <ul>
-<li> <p> <a href="es3/"> OpenGL ES 3.2 and OpenGL ES Shading Language 3.20 </a>
-<li> <p> <a href="gl4/"> OpenGL 4.5 and OpenGL Shading Language 4.50 </a>
+<li> <p> <a href="es3/"> OpenGL ES 3.2 and OpenGL ES Shading Language 3.20 </a> </p> </li>
+<li> <p> <a href="gl4/"> OpenGL 4.5 and OpenGL Shading Language 4.50 </a></p> </li>
 </ul>
 
 <h2> Older API Versions </h2>
 
+<p> Note that each reference page in the Current Versions pages linked above
+    includes version support information for older versions, so (for
+    example) the OpenGL 3.x reference pages are no longer provided. The
+    older OpenGL ES 3.x and 2.x pages linked here are increasingly out of
+    date, and may eventually be removed. </p>
+
+<p> The OpenGL 2.1 pages are the only source of reference material for GLX,
+    GLU, and the OpenGL Compatibility Profile. They may be retained for that
+    reason, even though they are otherwise useless, or we may eventually
+    incorporate that material in the OpenGL 4.5 pages instead. </p>
+
 <ul>
-<li> <p> <a href="es3.1/"> OpenGL ES 3.1 and OpenGL ES Shading Language 3.10 </a>
-<li> <p> <a href="es3.0/"> OpenGL ES 3.0 and OpenGL ES Shading Language 3.00 </a>
-<li> <p> <a href="es2.1/"> OpenGL ES 2.1 </a>
-<li> <p> <a href="es1.1/"> OpenGL ES 1.1 </a>
+<li> <p> <a href="es3.1/"> OpenGL ES 3.1 and OpenGL ES Shading Language 3.10 </a> </p> </li>
+<li> <p> <a href="es3.0/"> OpenGL ES 3.0 and OpenGL ES Shading Language 3.00 </a> </p> </li>
+<li> <p> <a href="es2.0/"> OpenGL ES 2.0 </a> </p> </li>
+<li> <p> <a href="es1.1/xhtml/"> OpenGL ES 1.1 </a> </p> </li>
 <li> <p> <a href="gl2.1/"> OpenGL 2.1 </a>
-     (inncluding GLX and fixed-function GL compatibility APIs)
+     (ncluding GLX, GLU, and fixed-function GL compatibility profile APIs) </p> </li>
 </ul>
 
 <h2> Reference Page Sources </h2>
 
-<p> The source documents for the reference pages are maintained in the
-    Khronos <a href="https://github.com/KhronosGroup/OpenGL-Refpages">
-    OpenGL-Refpages </a> repository on github. </p>
+<p> The Docbook source for the reference pages is available from the <a
+    href="https://github.com/KhronosGroup/OpenGL-Refpages"> OpenGL-Refpages
+    </a> github repository. </p>
 
 
 <h1> API Reference Cards </h1>
@@ -125,9 +133,9 @@ include_once("../../assets/static_pages/khr_page_top.php");
     </p>
 
 
-<p> <small> Copyright &copy; 2017 Khronos Group. This work is licensed under
-    a <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
-    Attribution 4.0 International License</a>. </small> </p>
+<p> <small> Copyright &copy; 2017-2018 Khronos Group. This work is licensed
+    under a <a href="http://creativecommons.org/licenses/by/4.0/">Creative
+    Commons Attribution 4.0 International License</a>. </small> </p>
 
 <?php include_once("../../assets/static_pages/khr_page_bottom.php"); ?>
 </body>

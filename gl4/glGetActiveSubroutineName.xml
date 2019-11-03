@@ -24,7 +24,7 @@
                 <paramdef>GLuint <parameter>program</parameter></paramdef>
                 <paramdef>GLenum <parameter>shadertype</parameter></paramdef>
                 <paramdef>GLuint <parameter>index</parameter></paramdef>
-                <paramdef>GLsizei <parameter>bufsize</parameter></paramdef>
+                <paramdef>GLsizei <parameter>bufSize</parameter></paramdef>
                 <paramdef>GLsizei *<parameter>length</parameter></paramdef>
                 <paramdef>GLchar *<parameter>name</parameter></paramdef>
             </funcprototype>
@@ -57,7 +57,7 @@
             </listitem>
         </varlistentry>
         <varlistentry>
-            <term><parameter>bufsize</parameter></term>
+            <term><parameter>bufSize</parameter></term>
             <listitem>
                 <para>
                     Specifies the size of the buffer whose address is given in <parameter>name</parameter>.
@@ -92,9 +92,9 @@
         <para>
             The name of the selected subroutine is returned as a null-terminated string in <parameter>name</parameter>. The
             actual number of characters written into <parameter>name</parameter>, not including the null-terminator, is
-            is returned in <parameter>length</parameter>. If <parameter>length</parameter> is <constant>NULL</constant>,
+            returned in <parameter>length</parameter>. If <parameter>length</parameter> is <constant>NULL</constant>,
             no length is returned. The maximum number of characters that may be written into <parameter>name</parameter>,
-            including the null-terminator, is given in <parameter>bufsize</parameter>.
+            including the null-terminator, is given in <parameter>bufSize</parameter>.
         </para>
     </refsect1>
     <refsect1 xml:id="errors"><title>Errors</title>

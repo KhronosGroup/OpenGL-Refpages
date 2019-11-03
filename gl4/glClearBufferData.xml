@@ -44,7 +44,7 @@
                 <para>
                     Specifies the target to which the buffer object is bound
                     for <function>glClearBufferData</function>, which must
-                    must be one of the buffer binding targets in the
+                    be one of the buffer binding targets in the
                     following table:
                 </para>
                 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="bufferbindings.xml"/>

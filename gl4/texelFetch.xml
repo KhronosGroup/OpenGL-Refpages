@@ -63,13 +63,13 @@
                 <funcdef>gvec4 <function>texelFetch</function></funcdef>
                 <paramdef>gsampler2DMS <parameter>sampler</parameter></paramdef>
                 <paramdef>ivec2 <parameter>P</parameter></paramdef>
-                <paramdef>sample <parameter>sample</parameter></paramdef>
+                <paramdef>int <parameter>sample</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>gvec4 <function>texelFetch</function></funcdef>
                 <paramdef>gsampler2DMSArray <parameter>sampler</parameter></paramdef>
                 <paramdef>ivec3 <parameter>P</parameter></paramdef>
-                <paramdef>sample <parameter>sample</parameter></paramdef>
+                <paramdef>int <parameter>sample</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -103,7 +103,7 @@
             <term><parameter>sample</parameter></term>
             <listitem>
                 <para>
-                    For multisampled fetches, specifies which sample within the texel from which which will be returned.
+                    For multisampled fetches, specifies which sample within the texel from which will be returned.
                 </para>
             </listitem>
         </varlistentry>

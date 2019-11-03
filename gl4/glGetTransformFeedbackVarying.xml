@@ -21,9 +21,9 @@
         <funcsynopsis>
             <funcprototype>
                 <funcdef>void <function>glGetTransformFeedbackVarying</function></funcdef>
-                <paramdef>GLuint<parameter>program</parameter></paramdef>
-                <paramdef>GLuint<parameter>index</parameter></paramdef>
-                <paramdef>GLsizei<parameter>bufSize</parameter></paramdef>
+                <paramdef>GLuint <parameter>program</parameter></paramdef>
+                <paramdef>GLuint <parameter>index</parameter></paramdef>
+                <paramdef>GLsizei <parameter>bufSize</parameter></paramdef>
                 <paramdef>GLsizei *<parameter>length</parameter></paramdef>
                 <paramdef>GLsizei *<parameter>size</parameter></paramdef>
                 <paramdef>GLenum *<parameter>type</parameter></paramdef>
@@ -78,7 +78,7 @@
             <term><parameter>type</parameter></term>
             <listitem>
                 <para>
-                    The address of a variable that will recieve the type of the varying.
+                    The address of a variable that will receive the type of the varying.
                 </para>
             </listitem>
         </varlistentry>

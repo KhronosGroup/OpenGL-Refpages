@@ -24,7 +24,7 @@
                 <paramdef>GLenum <parameter>mode</parameter></paramdef>
                 <paramdef>GLuint <parameter>id</parameter></paramdef>
                 <paramdef>GLuint <parameter>stream</parameter></paramdef>
-                <paramdef>GLsizei <parameter>primcount</parameter></paramdef>
+                <paramdef>GLsizei <parameter>instancecount</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -69,7 +69,7 @@
             </listitem>
         </varlistentry>
         <varlistentry>
-            <term><parameter>primcount</parameter></term>
+            <term><parameter>instancecount</parameter></term>
             <listitem>
                 <para>
                     Specifies the number of instances of the geometry to render.
@@ -84,7 +84,7 @@
             a count retrieved from the transform feedback stream specified by <parameter>stream</parameter> of the transform feedback object
             specified by <parameter>id</parameter>. Calling <function>glDrawTransformFeedbackStreamInstanced</function>
             is equivalent to calling <citerefentry><refentrytitle>glDrawArraysInstanced</refentrytitle></citerefentry> with <parameter>mode</parameter>
-            and <parameter>primcount</parameter> as specified, <parameter>first</parameter> set to zero, and <parameter>count</parameter> set to the number of vertices captured
+            and <parameter>instancecount</parameter> as specified, <parameter>first</parameter> set to zero, and <parameter>count</parameter> set to the number of vertices captured
             on vertex stream <parameter>stream</parameter> the last time transform feedback was active on the transform feedback object named
             by <parameter>id</parameter>.
         </para>

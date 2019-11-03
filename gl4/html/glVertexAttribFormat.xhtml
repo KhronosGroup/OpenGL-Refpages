@@ -3,7 +3,7 @@
   <head>
     <title>glVertexAttribFormat - OpenGL 4 Reference Pages</title>
     <link rel="stylesheet" type="text/css" href="opengl-man.css"/>
-    <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"/>
+    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1"/>
     <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
                 MathML: {
@@ -230,7 +230,10 @@
               </span>
             </dt>
             <dd>
-              <p>The distance between elements within the buffer.</p>
+              <p>
+                    Specifies whether fixed-point data values should be normalized (<code class="constant">GL_TRUE</code>) or 
+		    converted directly as fixed-point values (<code class="constant">GL_FALSE</code>) when they are accessed. This parameter is ignored if <em class="parameter"><code>type</code></em> is <code class="constant">GL_FIXED</code>.
+                </p>
             </dd>
             <dt>
               <span class="term">

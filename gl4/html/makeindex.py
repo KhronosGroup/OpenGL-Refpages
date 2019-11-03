@@ -78,14 +78,14 @@ class Feature:
         self.alias = alias
         self.apiCommand = apiCommand
     def makeKey(self):
-        # Return dictionary / sort key based on the feature name 
-        if (self.apiCommand and self.feature[0:2] == 'gl'): 
+        # Return dictionary / sort key based on the feature name
+        if (self.apiCommand and self.feature[0:2] == 'gl'):
             return self.feature[2:]
         else:
             return self.feature
 
 # Add dictionary entry for specified Feature.
-# The key used is the feature name, with the leading 'gl' stripped 
+# The key used is the feature name, with the leading 'gl' stripped
 #  off if this is an API command
 def addkey(dict, feature):
     key = feature.makeKey()
@@ -104,11 +104,11 @@ def addkey(dict, feature):
 #   not indexed.
 # - Each collision in index terms is reported.
 # - Index terms are keys in a dictionary whose entries
-#   are [ pagename, alias, glPrefix ] where pagename is 
+#   are [ pagename, alias, glPrefix ] where pagename is
 #   the base name of the indexed page and alias is True
 #   if this index isn't the same as pagename.
 # - API keys have their glPrefix value set to True,
-#   GLSL keys to False. There is a simplistic way of 
+#   GLSL keys to False. There is a simplistic way of
 #   telling the files apart based on the file name:
 #
 #   * Everything starting with 'gl[A-Z]' is API
@@ -176,17 +176,17 @@ def printHeader(fp, flatMenu = False, letters = None, altMenu = None):
             altLabel = '(accordion-style)'
         else:
             altLabel = '(flat)'
-        print('    <a href="' + altMenu + '">' + 
+        print('    <a href="' + altMenu + '">' +
               'Use alternate ' + altLabel + ' index' +
               '</a>', file=fp)
 
     if (letters):
         print('    <center>\n<div id="container">', file=fp)
         for letter in letters:
-            print('        <b><a href="#' + 
-                  letter + 
-                  '" style="text-decoration:none">' + 
-                  letter + 
+            print('        <b><a href="#' +
+                  letter +
+                  '" style="text-decoration:none">' +
+                  letter +
                   '</a></b> &nbsp;', file=fp)
         print('    </div>\n</center>', file=fp)
 

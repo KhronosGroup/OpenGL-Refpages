@@ -42,7 +42,7 @@
             </listitem>
         </varlistentry>
         <varlistentry>
-            <term><parameter>index</parameter></term>
+            <term><parameter>first</parameter></term>
             <listitem>
                 <para>
                     Specify the index of the first binding point within the array specified by <parameter>target</parameter>.
@@ -71,7 +71,7 @@
         <para>
             <function>glBindBuffersBase</function> binds a set of <parameter>count</parameter> buffer objects whose names
             are given in the array <parameter>buffers</parameter> to the <parameter>count</parameter> consecutive binding
-            points starting from index <parameter>index</parameter> of the array of targets specified
+            points starting from index <parameter>first</parameter> of the array of targets specified
             by <parameter>target</parameter>. If <parameter>buffers</parameter> is <constant>NULL</constant> then
             <function>glBindBuffersBase</function> unbinds any buffers that are currently bound to the referenced binding points.
             Assuming no errors are generated, it is equivalent to the following

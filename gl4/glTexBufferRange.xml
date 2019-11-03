@@ -21,7 +21,7 @@
             <funcprototype>
                 <funcdef>void <function>glTexBufferRange</function></funcdef>
                 <paramdef>GLenum <parameter>target</parameter></paramdef>
-                <paramdef>GLenum <parameter>internalFormat</parameter></paramdef>
+                <paramdef>GLenum <parameter>internalformat</parameter></paramdef>
                 <paramdef>GLuint <parameter>buffer</parameter></paramdef>
                 <paramdef>GLintptr <parameter>offset</parameter></paramdef>
                 <paramdef>GLsizeiptr <parameter>size</parameter></paramdef>
@@ -58,7 +58,7 @@
             </listitem>
         </varlistentry>
         <varlistentry>
-            <term><parameter>internalFormat</parameter></term>
+            <term><parameter>internalformat</parameter></term>
             <listitem>
                 <para>
                     Specifies the internal format of the data in the store
@@ -101,7 +101,7 @@
             <function>glTextureBufferRange</function> attach a range of the
             data store of a specified buffer object to a specified texture
             object, and specify the storage format for the texture image
-            found found in the buffer object. The texture object must be a
+            found in the buffer object. The texture object must be a
             buffer texture.
         </para>
         <para>

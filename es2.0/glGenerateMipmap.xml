@@ -56,7 +56,7 @@
 
 	<para><constant>GL_INVALID_OPERATION</constant> is generated if
 	the texture bound to <parameter>target</parameter> is a cube map, but its
-	six faces do not share indentical widths, heights, formats, and types.</para>
+	six faces do not share identical widths, heights, formats, and types.</para>
 
 	<para><constant>GL_INVALID_OPERATION</constant> is generated if
 	either the width or height of the zero level array is not a power of two.</para>

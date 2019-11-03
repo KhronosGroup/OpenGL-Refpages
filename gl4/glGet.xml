@@ -1,4 +1,4 @@
-<!DOCTYPE refentry [ <!ENTITY % mathent SYSTEM "math.ent"> %mathent; ]>
+﻿<!DOCTYPE refentry [ <!ENTITY % mathent SYSTEM "math.ent"> %mathent; ]>
 
 <!-- Converted by db4-upgrade version 1.1 -->
 
@@ -2536,6 +2536,15 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_VERTEX_BINDING_BUFFER</constant></term>
+                <listitem>
+                    <para>
+                        Accepted by the indexed forms. <parameter>data</parameter> returns a single integer value representing the name of the buffer
+                        bound to vertex binding <parameter>index</parameter>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_MAX_VERTEX_ATTRIB_RELATIVE_OFFSET</constant></term>
                 <listitem>
                     <para>
@@ -2697,7 +2706,7 @@
             <constant>GL_TEXTURE_BUFFER_OFFSET_ALIGNMENT</constant> is available only if the GL version is 4.3 or greater.
         </para>
         <para>
-            <constant>GL_VERTEX_BINDING_DIVISOR</constant>, <constant>GL_VERTEX_BINDING_OFFSET</constant>, <constant>GL_VERTEX_BINDING_STRIDE</constant>,
+            <constant>GL_VERTEX_BINDING_DIVISOR</constant>, <constant>GL_VERTEX_BINDING_OFFSET</constant>, <constant>GL_VERTEX_BINDING_STRIDE</constant>, <constant>GL_VERTEX_BINDING_BUFFER</constant>,
             <constant>GL_MAX_VERTEX_ATTRIB_RELATIVE_OFFSET</constant> and <constant>GL_MAX_VERTEX_ATTRIB_BINDINGS</constant> are available only if
             the GL version is 4.3 or greater.
         </para>

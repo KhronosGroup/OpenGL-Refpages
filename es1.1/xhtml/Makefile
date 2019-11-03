@@ -96,6 +96,7 @@ GLXML = \
     glLoadMatrix.xml \
     glLogicOp.xml \
     glMaterial.xml \
+    glMatrixIndexPointer.xml \
     glMatrixMode.xml \
     glMultiTexCoord.xml \
     glMultMatrix.xml \

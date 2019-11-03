@@ -144,7 +144,7 @@
         </para>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>mask</parameter> contains <constant>GL_DEPTH_BUFFER_BIT</constant> or
-            <constant>GL_DEPTH_BUFFER_BIT</constant> and the source and destination depth and stencil formats do not match.
+            <constant>GL_STENCIL_BUFFER_BIT</constant> and the source and destination depth and stencil formats do not match.
         </para>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>filter</parameter> is <constant>GL_LINEAR</constant> and the read buffer

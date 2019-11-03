@@ -92,7 +92,7 @@
 
         <para>
         <function>glPolygonOffset</function>
-        is useful for for applying decals to surfaces.</para>
+        is useful for applying decals to surfaces.</para>
     </refsect1>
 
     <refsect1 id="seealso"><title>See Also</title>

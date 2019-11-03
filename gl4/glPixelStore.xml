@@ -1333,7 +1333,7 @@
             then if <parameter>param</parameter> is 0,
             the parameter is false;
             otherwise it is set to true.
-            If <parameter>pname</parameter> is a integer type parameter,
+            If <parameter>pname</parameter> is an integer type parameter,
             <parameter>param</parameter> is rounded to the nearest integer.
         </para>
         <para>

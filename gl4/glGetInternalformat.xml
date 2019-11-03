@@ -99,7 +99,7 @@
         </para>
         <para>
             The information retrieved will be written to memory addressed by the pointer specified in <parameter>params</parameter>. No
-            more than <parameter>bufSize</parameter> basic machine units will be written to this memory.
+            more than <parameter>bufSize</parameter> integers will be written to this memory.
         </para>
         <para>
             If <parameter>pname</parameter> is <constant>GL_NUM_SAMPLE_COUNTS</constant>, the number of sample counts that would be
@@ -148,11 +148,11 @@
             </itemizedlist>
         </para>
         <para>
-            If <parameter>pname</parameter> is <constant>GL_INTERNALFORMAT_SUPPORTED</constant>, <parameter>params</parameter> is set to <constant>GL_TRUE</constant> if <parameter>internalFormat</parameter>
+            If <parameter>pname</parameter> is <constant>GL_INTERNALFORMAT_SUPPORTED</constant>, <parameter>params</parameter> is set to <constant>GL_TRUE</constant> if <parameter>internalformat</parameter>
             is a supported internal format for <parameter>target</parameter> and to <constant>GL_FALSE</constant> otherwise.
         </para>
         <para>
-            If <parameter>pname</parameter> is <constant>GL_INTERNALFORMAT_PREFERRED</constant>, <parameter>params</parameter> is set to <constant>GL_TRUE</constant> if <parameter>internalFormat</parameter>
+            If <parameter>pname</parameter> is <constant>GL_INTERNALFORMAT_PREFERRED</constant>, <parameter>params</parameter> is set to <constant>GL_TRUE</constant> if <parameter>internalformat</parameter>
             is an format for <parameter>target</parameter> that is preferred by the implementation and to <constant>GL_FALSE</constant> otherwise.
         </para>
         <para>
@@ -160,7 +160,7 @@
             <constant>GL_INTERNALFORMAT_BLUE_SIZE</constant>, <constant>GL_INTERNALFORMAT_ALPHA_SIZE</constant>, <constant>GL_INTERNALFORMAT_DEPTH_SIZE</constant>,
             <constant>GL_INTERNALFORMAT_STENCIL_SIZE</constant>, or <constant>GL_INTERNALFORMAT_SHARED_SIZE</constant> then
             <parameter>params</parameter> is set to the actual resolutions that would be used for storing image array components
-            for the resource for the red, green, blue, alpha, depth, stencil and shared channels respectively. If <parameter>internalFormat</parameter>
+            for the resource for the red, green, blue, alpha, depth, stencil and shared channels respectively. If <parameter>internalformat</parameter>
             is a compressed internal format, then <parameter>params</parameter> is set to the component resolution of an uncompressed internal format that produces
             an image of roughly the same quality as the compressed algorithm. If the internal format is unsupported, or if a particular component is
             not present in the format, 0 is written to <parameter>params</parameter>.
@@ -169,13 +169,13 @@
             If <parameter>pname</parameter> is <constant>GL_INTERNALFORMAT_RED_TYPE</constant>, <constant>GL_INTERNALFORMAT_GREEN_TYPE</constant>,
             <constant>GL_INTERNALFORMAT_BLUE_TYPE</constant>, <constant>GL_INTERNALFORMAT_ALPHA_TYPE</constant>, <constant>GL_INTERNALFORMAT_DEPTH_TYPE</constant>,
             or <constant>GL_INTERNALFORMAT_STENCIL_TYPE</constant> then <parameter>params</parameter> is set to a token identifying the data type used
-            to store the respective component. If the <parameter>internalFormat</parameter> represents a compressed internal format then
+            to store the respective component. If the <parameter>internalformat</parameter> represents a compressed internal format then
             the types returned specify how components are interpreted after decompression.
         </para>
         <para>
             If <parameter>pname</parameter> is <constant>GL_MAX_WIDTH</constant>, <constant>GL_MAX_HEIGHT</constant>, <constant>GL_MAX_DEPTH</constant>,
             or <constant>GL_MAX_LAYERS</constant> then <parameter>pname</parameter> is filled with the maximum width, height, depth or layer count
-            for textures with internal format <parameter>internalFormat</parameter>, respectively. If <parameter>pname</parameter> is <constant>GL_MAX_COMBINED_DIMENSIONS</constant>
+            for textures with internal format <parameter>internalformat</parameter>, respectively. If <parameter>pname</parameter> is <constant>GL_MAX_COMBINED_DIMENSIONS</constant>
             then <parameter>pname</parameter> is filled with the maximum combined dimensions of a texture of the specified internal format.
         </para>
         <para>
@@ -489,7 +489,7 @@
     </refsect1>
     <refsect1 xml:id="Copyright"><title>Copyright</title>
         <para>
-            Copyright <trademark class="copyright"/> 2011-2014 Khronos Group.
+            Copyright <trademark class="copyright"/> 2011-2018 Khronos Group.
             This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
             <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://opencontent.org/openpub/">http://opencontent.org/openpub/</link>.

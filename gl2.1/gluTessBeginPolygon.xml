@@ -21,7 +21,7 @@
             <funcprototype>
                 <funcdef>void <function>gluTessBeginPolygon</function></funcdef>
                 <paramdef>GLUtesselator* <parameter>tess</parameter></paramdef>
-                <paramdef>GLvoid* <parameter>data</parameter></paramdef>
+                <paramdef>void* <parameter>data</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

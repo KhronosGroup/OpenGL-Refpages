@@ -513,7 +513,7 @@
                     </row>
                     <row>
                         <entry> <constant>GL_ONE_MINUS_DST_COLOR</constant> </entry>
-                        <entry> 
+                        <entry>
                         <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             <!-- eqn: ( 1,  1,  1 )  -  ( R sub d / k sub R ,  G sub d / k sub G ,  B sub d / k sub B ): -->
                             <mml:mrow>
@@ -981,7 +981,7 @@
                         </entry>
                     </row>
                     <row>
-                        <entry> <constant>GL_ONE_MINUS_SRC_COLOR</constant> </entry>
+                        <entry> <constant>GL_ONE_MINUS_SRC1_COLOR</constant> </entry>
                         <entry>
                         <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             <!-- eqn: ( 1,  1,  1,  1 )  -  ( R sub s1 / k sub R ,  G sub s1 / k sub G ,  B sub s1 / k sub B ): -->
@@ -1088,7 +1088,7 @@
                         </entry>
                     </row>
                     <row>
-                        <entry> <constant>GL_ONE_MINUS_SRC_ALPHA</constant> </entry>
+                        <entry> <constant>GL_ONE_MINUS_SRC1_ALPHA</constant> </entry>
                         <entry>
                         <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             <!-- eqn: ( 1,  1,  1 )  -  ( A sub s1 / k sub A ,  A sub s1 / k sub A ,  A sub s1 / k sub A ): -->
@@ -1489,7 +1489,7 @@
     <refsect1 xml:id="Copyright"><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"/> 1991-2006 Silicon Graphics, Inc.
-            Copyright <trademark class="copyright"/> 2010-2014 Khronos Group.
+            Copyright <trademark class="copyright"/> 2010-2018 Khronos Group.
             This document is licensed under the SGI Free Software B License.
             For details, see
             <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://oss.sgi.com/projects/FreeB/">http://oss.sgi.com/projects/FreeB/</link>.

@@ -28,7 +28,7 @@
         <funcdef>void <function>glGetVertexAttribPointerv</function></funcdef>
         <paramdef>GLuint <parameter>index</parameter></paramdef>
         <paramdef>GLenum <parameter>pname</parameter></paramdef>
-        <paramdef>GLvoid **<parameter>pointer</parameter></paramdef>
+        <paramdef>void **<parameter>pointer</parameter></paramdef>
         </funcprototype>
     </funcsynopsis>
     </refsynopsisdiv>

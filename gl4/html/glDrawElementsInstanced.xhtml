@@ -3,7 +3,7 @@
   <head>
     <title>glDrawElementsInstanced - OpenGL 4 Reference Pages</title>
     <link rel="stylesheet" type="text/css" href="opengl-man.css"/>
-    <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"/>
+    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1"/>
     <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
                 MathML: {
@@ -48,7 +48,7 @@
             </tr>
             <tr>
               <td> </td>
-              <td>GLsizei <var class="pdparam">primcount</var><code>)</code>;</td>
+              <td>GLsizei <var class="pdparam">instancecount</var><code>)</code>;</td>
             </tr>
           </table>
           <div class="funcprototype-spacer"> </div>
@@ -123,7 +123,7 @@
             <dt>
               <span class="term">
                 <em class="parameter">
-                  <code>primcount</code>
+                  <code>instancecount</code>
                 </em>
               </span>
             </dt>
@@ -139,7 +139,7 @@
         <h2>Description</h2>
         <p>
             <code class="function">glDrawElementsInstanced</code> behaves identically to <a class="citerefentry" href="glDrawElements.xhtml"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a>
-            except that <em class="parameter"><code>primcount</code></em> instances of the set of elements are executed and the value of the internal counter
+            except that <em class="parameter"><code>instancecount</code></em> instances of the set of elements are executed and the value of the internal counter
             <em class="parameter"><code>instanceID</code></em> advances for each iteration. <em class="parameter"><code>instanceID</code></em> is an internal 32-bit integer counter
             that may be read by a vertex shader as <code class="constant">gl_InstanceID</code>.
         </p>
@@ -149,7 +149,7 @@
         <pre class="programlisting">    if (mode, count, or type is invalid )
         generate appropriate error
     else {
-        for (int i = 0; i &lt; primcount ; i++) {
+        for (int i = 0; i &lt; instancecount ; i++) {
             instanceID = i;
             glDrawElements(mode, count, type, indices);
         }
@@ -179,7 +179,7 @@
             <code class="constant">GL_TRIANGLE_STRIP</code>, <code class="constant">GL_TRIANGLE_FAN</code>, or <code class="constant">GL_TRIANGLES</code>.
         </p>
         <p>
-            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>count</code></em> or <em class="parameter"><code>primcount</code></em> are negative.
+            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>count</code></em> or <em class="parameter"><code>instancecount</code></em> is negative.
         </p>
         <p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if a geometry shader is active and <em class="parameter"><code>mode</code></em>

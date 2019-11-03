@@ -3,7 +3,7 @@
   <head>
     <title>glDrawElementsInstancedBaseVertexBaseInstance - OpenGL 4 Reference Pages</title>
     <link rel="stylesheet" type="text/css" href="opengl-man.css"/>
-    <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"/>
+    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1"/>
     <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
                 MathML: {
@@ -44,11 +44,11 @@
             </tr>
             <tr>
               <td> </td>
-              <td>GLvoid *<var class="pdparam">indices</var>, </td>
+              <td>void *<var class="pdparam">indices</var>, </td>
             </tr>
             <tr>
               <td> </td>
-              <td>GLsizei <var class="pdparam">primcount</var>, </td>
+              <td>GLsizei <var class="pdparam">instancecount</var>, </td>
             </tr>
             <tr>
               <td> </td>
@@ -123,7 +123,7 @@
             <dt>
               <span class="term">
                 <em class="parameter">
-                  <code>primcount</code>
+                  <code>instancecount</code>
                 </em>
               </span>
             </dt>
@@ -207,7 +207,7 @@
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>mode</code></em> is not an accepted value.
         </p>
         <p>
-            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>count</code></em> or <em class="parameter"><code>primcount</code></em> is negative.
+            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>count</code></em> or <em class="parameter"><code>instancecount</code></em> is negative.
         </p>
         <p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if a geometry shader is active and <em class="parameter"><code>mode</code></em>

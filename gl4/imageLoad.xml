@@ -46,7 +46,7 @@
             </funcprototype>
             <funcprototype>
                 <funcdef>gvec4 <function>imageLoad</function></funcdef>
-                <paramdef>gbufferImage <parameter>image</parameter></paramdef>
+                <paramdef>gimageBuffer <parameter>image</parameter></paramdef>
                 <paramdef>int <parameter>P</parameter></paramdef>
             </funcprototype>
             <funcprototype>

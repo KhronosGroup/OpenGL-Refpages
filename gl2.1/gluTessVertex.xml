@@ -22,7 +22,7 @@
                 <funcdef>void <function>gluTessVertex</function></funcdef>
                 <paramdef>GLUtesselator* <parameter>tess</parameter></paramdef>
                 <paramdef>GLdouble * <parameter>location</parameter></paramdef>
-                <paramdef>GLvoid* <parameter>data</parameter></paramdef>
+                <paramdef>void* <parameter>data</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

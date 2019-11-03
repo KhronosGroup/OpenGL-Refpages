@@ -24,7 +24,7 @@
                 <paramdef>GLint <parameter>level</parameter></paramdef>
                 <paramdef>GLenum <parameter>format</parameter></paramdef>
                 <paramdef>GLenum <parameter>type</parameter></paramdef>
-                <paramdef>GLvoid * <parameter>img</parameter></paramdef>
+                <paramdef>void * <parameter>img</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

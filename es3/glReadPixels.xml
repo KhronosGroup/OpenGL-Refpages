@@ -33,7 +33,7 @@
                 <paramdef>GLsizei <parameter>height</parameter></paramdef>
                 <paramdef>GLenum <parameter>format</parameter></paramdef>
                 <paramdef>GLenum <parameter>type</parameter></paramdef>
-                <paramdef>GLvoid * <parameter>data</parameter></paramdef>
+                <paramdef>void * <parameter>data</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>void <function>glReadnPixels</function></funcdef>
@@ -44,7 +44,7 @@
                 <paramdef>GLenum <parameter>format</parameter></paramdef>
                 <paramdef>GLenum <parameter>type</parameter></paramdef>
                 <paramdef>GLsizei <parameter>bufSize</parameter></paramdef>
-                <paramdef>GLvoid * <parameter>data</parameter></paramdef>
+                <paramdef>void * <parameter>data</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

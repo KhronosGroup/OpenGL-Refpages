@@ -27,7 +27,7 @@
                 <paramdef>GLint <parameter>size</parameter></paramdef>
                 <paramdef>GLenum <parameter>type</parameter></paramdef>
                 <paramdef>GLsizei <parameter>stride</parameter></paramdef>
-                <paramdef>const GLvoid * <parameter>pointer</parameter></paramdef>
+                <paramdef>const void * <parameter>pointer</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -154,7 +154,7 @@
         <parameter>size</parameter> is not 2, 3, or 4.</para>
 
         <para><constant>GL_INVALID_ENUM</constant> is generated if
-        <parameter>type</parameter> is is not an accepted value.</para>
+        <parameter>type</parameter> is not an accepted value.</para>
 
         <para><constant>GL_INVALID_VALUE</constant> is generated if
         <parameter>stride</parameter> is negative.</para>

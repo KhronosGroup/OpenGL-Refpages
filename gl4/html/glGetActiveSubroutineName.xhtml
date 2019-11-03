@@ -3,7 +3,7 @@
   <head>
     <title>glGetActiveSubroutineName - OpenGL 4 Reference Pages</title>
     <link rel="stylesheet" type="text/css" href="opengl-man.css"/>
-    <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"/>
+    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1"/>
     <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
                 MathML: {
@@ -44,7 +44,7 @@
             </tr>
             <tr>
               <td> </td>
-              <td>GLsizei <var class="pdparam">bufsize</var>, </td>
+              <td>GLsizei <var class="pdparam">bufSize</var>, </td>
             </tr>
             <tr>
               <td> </td>
@@ -101,7 +101,7 @@
             <dt>
               <span class="term">
                 <em class="parameter">
-                  <code>bufsize</code>
+                  <code>bufSize</code>
                 </em>
               </span>
             </dt>
@@ -148,9 +148,9 @@
         <p>
             The name of the selected subroutine is returned as a null-terminated string in <em class="parameter"><code>name</code></em>. The
             actual number of characters written into <em class="parameter"><code>name</code></em>, not including the null-terminator, is
-            is returned in <em class="parameter"><code>length</code></em>. If <em class="parameter"><code>length</code></em> is <code class="constant">NULL</code>,
+            returned in <em class="parameter"><code>length</code></em>. If <em class="parameter"><code>length</code></em> is <code class="constant">NULL</code>,
             no length is returned. The maximum number of characters that may be written into <em class="parameter"><code>name</code></em>,
-            including the null-terminator, is given in <em class="parameter"><code>bufsize</code></em>.
+            including the null-terminator, is given in <em class="parameter"><code>bufSize</code></em>.
         </p>
       </div>
       <div class="refsect1" id="errors">

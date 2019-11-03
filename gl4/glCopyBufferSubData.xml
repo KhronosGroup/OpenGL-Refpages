@@ -32,7 +32,7 @@
                 <paramdef>GLuint <parameter>writeBuffer</parameter></paramdef>
                 <paramdef>GLintptr <parameter>readOffset</parameter></paramdef>
                 <paramdef>GLintptr <parameter>writeOffset</parameter></paramdef>
-                <paramdef>GLsizei <parameter>size</parameter></paramdef>
+                <paramdef>GLsizeiptr <parameter>size</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

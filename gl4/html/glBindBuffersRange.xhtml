@@ -3,7 +3,7 @@
   <head>
     <title>glBindBuffersRange - OpenGL 4 Reference Pages</title>
     <link rel="stylesheet" type="text/css" href="opengl-man.css"/>
-    <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"/>
+    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1"/>
     <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
                 MathML: {
@@ -80,7 +80,7 @@
             <dt>
               <span class="term">
                 <em class="parameter">
-                  <code>index</code>
+                  <code>first</code>
                 </em>
               </span>
             </dt>
@@ -147,7 +147,7 @@
         <p>
             <code class="function">glBindBuffersRange</code> binds a set of <em class="parameter"><code>count</code></em> ranges from buffer objects whose names
             are given in the array <em class="parameter"><code>buffers</code></em> to the <em class="parameter"><code>count</code></em> consecutive binding
-            points starting from index <em class="parameter"><code>index</code></em> of the array of targets specified
+            points starting from index <em class="parameter"><code>first</code></em> of the array of targets specified
             by <em class="parameter"><code>target</code></em>. <em class="parameter"><code>offsets</code></em> specifies the address of an array containing
             <em class="parameter"><code>count</code></em> starting offsets within the buffers, and <em class="parameter"><code>sizes</code></em> specifies the
             address of an array of <em class="parameter"><code>count</code></em> sizes of the ranges. If <em class="parameter"><code>buffers</code></em> is <code class="constant">NULL</code> then

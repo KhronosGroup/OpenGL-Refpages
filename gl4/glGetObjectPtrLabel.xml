@@ -22,7 +22,7 @@
             <funcprototype>
                 <funcdef>void <function>glGetObjectPtrLabel</function></funcdef>
                 <paramdef>void * <parameter>ptr</parameter></paramdef>
-                <paramdef>GLsizei <parameter>bifSize</parameter></paramdef>
+                <paramdef>GLsizei <parameter>bufSize</parameter></paramdef>
                 <paramdef>GLsizei * <parameter>length</parameter></paramdef>
                 <paramdef>char * <parameter>label</parameter></paramdef>
             </funcprototype>
@@ -72,7 +72,7 @@
         <para>
             <parameter>label</parameter> is the address of a string that will be used to store the object label.
             <parameter>bufSize</parameter> specifies the number of characters in the array identified by <parameter>label</parameter>.
-            <parameter>length</parameter> contains the address of a variable which will receive the the number of characters in the object label.
+            <parameter>length</parameter> contains the address of a variable which will receive the number of characters in the object label.
             If <parameter>length</parameter> is NULL, then it is ignored and no data is written. Likewise, if <parameter>label</parameter>
             is NULL, or if <parameter>bufSize</parameter> is zero then no data is written to <parameter>label</parameter>.
         </para>

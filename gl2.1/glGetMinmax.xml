@@ -24,7 +24,7 @@
                 <paramdef>GLboolean <parameter>reset</parameter></paramdef>
                 <paramdef>GLenum <parameter>format</parameter></paramdef>
                 <paramdef>GLenum <parameter>types</parameter></paramdef>
-                <paramdef>GLvoid * <parameter>values</parameter></paramdef>
+                <paramdef>void * <parameter>values</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

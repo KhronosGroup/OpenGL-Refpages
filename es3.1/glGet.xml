@@ -697,6 +697,14 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_MAX_COMBINED_ATOMIC_COUNTER_BUFFERS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns a single value, the maximum number of atomic counter buffers that may be accessed by all active shaders.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_MAX_COMBINED_COMPUTE_UNIFORM_COMPONENTS</constant></term>
                 <listitem>
                     <para>
@@ -866,6 +874,15 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_MAX_DEPTH_TEXTURE_SAMPLES</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns one value,
+                        the maximum number of samples in a depth/stencil multisample texture.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_MAX_DRAW_BUFFERS</constant></term>
                 <listitem>
                     <para>
@@ -922,6 +939,15 @@
                 <listitem>
                     <para>
                         <parameter>params</parameter> returns a single value, the maximum number of atomic counters available to fragment shaders.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_FRAGMENT_ATOMIC_COUNTER_BUFFERS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns a single value, the maximum number of atomic counter buffers that may be accessed by a fragment shader.
+                        In GL ES 3.1, the minimum value is 0.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1207,6 +1233,14 @@
                 <listitem>
                     <para>
                         <parameter>params</parameter> returns a single value, the maximum number of atomic counters available to vertex shaders.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_VERTEX_ATOMIC_COUNTER_BUFFERS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns a single value, the maximum number of atomic counter buffers that may be accessed by a vertex shader.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1604,6 +1638,15 @@
                         <parameter>params</parameter> returns a single positive floating-point value indicating the
                         current sample coverage value.
                         See <citerefentry><refentrytitle>glSampleCoverage</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_SAMPLE_MASK_VALUE</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns one value indicating the current sample mask value.
+                        See <citerefentry><refentrytitle>glSampleMaski</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -2256,10 +2299,13 @@
             <constant>GL_MAX_FRAMGENT_ATOMIC_COUNTERS</constant>,
             <constant>GL_MAX_COMPUTE_ATOMIC_COUNTERS</constant>,
             <constant>GL_MAX_COMBINED_ATOMIC_COUNTERS</constant>,
+            <constant>GL_MAX_VERTEX_ATOMIC_COUNTER_BUFFERS</constant>,
+            <constant>GL_MAX_FRAMGENT_ATOMIC_COUNTER_BUFFERS</constant>,
+            <constant>GL_MAX_COMPUTE_ATOMIC_COUNTER_BUFFERS</constant>,
+            <constant>GL_MAX_COMBINED_ATOMIC_COUNTER_BUFFERS</constant>,
             <constant>GL_MAX_COMPUTE_UNIFORM_BLOCKS</constant>,
             <constant>GL_MAX_COMPUTE_TEXTURE_IMAGE_UNITS</constant>,
             <constant>GL_MAX_COMPUTE_UNIFORM_COMPONENTS</constant>,
-            <constant>GL_MAX_COMPUTE_ATOMIC_COUNTER_BUFFERS</constant>,
             <constant>GL_MAX_COMBINED_COMPUTE_UNIFORM_COMPONENTS</constant>,
             <constant>GL_MAX_COMPUTE_WORK_GROUP_INVOCATIONS</constant>,
             <constant>GL_MAX_COMPUTE_WORK_GROUP_COUNT</constant>,

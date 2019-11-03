@@ -49,6 +49,7 @@
                     one of <constant>GL_TEXTURE_2D</constant>,
                     <constant>GL_TEXTURE_1D_ARRAY</constant>,
                     <constant>GL_TEXTURE_RECTANGLE</constant>,
+                    <constant>GL_TEXTURE_CUBE_MAP</constant>,
                     <constant>GL_PROXY_TEXTURE_2D</constant>,
                     <constant>GL_PROXY_TEXTURE_1D_ARRAY</constant>,
                     <constant>GL_PROXY_TEXTURE_RECTANGLE</constant>, or
@@ -114,11 +115,16 @@
             texture.
         </para>
         <para>
-            The behavior of <function>glTexStorage2D</function> depends on the <parameter>target</parameter> parameter.
-            When <parameter>target</parameter> is <constant>GL_TEXTURE_2D</constant>, <constant>GL_PROXY_TEXTURE_2D</constant>,
-            <constant>GL_TEXTURE_RECTANGLE</constant>, <constant>GL_PROXY_TEXTURE_RECTANGLE</constant> or <constant>GL_PROXY_TEXTURE_CUBE_MAP</constant>,
-            calling <function>glTexStorage2D</function> is equivalent, assuming no errors are generated,
-            to executing the following pseudo-code:
+            The behavior of <function>glTexStorage2D</function> depends on
+            the <parameter>target</parameter> parameter. When
+            <parameter>target</parameter> is
+            <constant>GL_TEXTURE_2D</constant>,
+            <constant>GL_PROXY_TEXTURE_2D</constant>,
+            <constant>GL_TEXTURE_RECTANGLE</constant>,
+            <constant>GL_PROXY_TEXTURE_RECTANGLE</constant> or
+            <constant>GL_PROXY_TEXTURE_CUBE_MAP</constant>, calling
+            <function>glTexStorage2D</function> is equivalent, assuming no
+            errors are generated, to executing the following pseudo-code:
         </para>
 <programlisting>    for (i = 0; i &lt; levels; i++) {
         glTexImage2D(target, i, internalformat, width, height, 0, format, type, NULL);
@@ -126,8 +132,9 @@
         height = max(1, (height / 2));
     }</programlisting>
         <para>
-            When <parameter>target</parameter> is <constant>GL_TEXTURE_CUBE_MAP</constant>, <function>glTexStorage2D</function>
-            is equivalent to:
+            When <parameter>target</parameter> is
+            <constant>GL_TEXTURE_CUBE_MAP</constant>,
+            <function>glTexStorage2D</function> is equivalent to:
         </para>
 <programlisting>    for (i = 0; i &lt; levels; i++) {
         for (face in (+X, -X, +Y, -Y, +Z, -Z)) {
@@ -137,7 +144,9 @@
         height = max(1, (height / 2));
     }</programlisting>
         <para>
-            When <parameter>target</parameter> is <constant>GL_TEXTURE_1D</constant> or <constant>GL_TEXTURE_1D_ARRAY</constant>,
+            When <parameter>target</parameter> is
+            <constant>GL_TEXTURE_1D_ARRAY</constant> or
+            <constant>GL_PROXY_TEXTURE_1D_ARRAY</constant>,
             <function>glTexStorage2D</function> is equivalent to:
         </para>
 <programlisting>    for (i = 0; i &lt; levels; i++) {

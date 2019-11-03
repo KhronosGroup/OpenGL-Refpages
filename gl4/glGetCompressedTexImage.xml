@@ -44,7 +44,7 @@
 
         <paramdef>GLint <parameter>level</parameter></paramdef>
 
-        <paramdef>GLvoid * <parameter>pixels</parameter></paramdef>
+        <paramdef>void * <parameter>pixels</parameter></paramdef>
       </funcprototype>
 
       <funcprototype>

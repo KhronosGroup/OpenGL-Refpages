@@ -21,7 +21,7 @@
             <funcprototype>
                 <funcdef>void <function>glTexBuffer</function></funcdef>
                 <paramdef>GLenum <parameter>target</parameter></paramdef>
-                <paramdef>GLenum <parameter>internalFormat</parameter></paramdef>
+                <paramdef>GLenum <parameter>internalformat</parameter></paramdef>
                 <paramdef>GLuint <parameter>buffer</parameter></paramdef>
             </funcprototype>
             <funcprototype>
@@ -54,7 +54,7 @@
             </listitem>
         </varlistentry>
         <varlistentry>
-            <term><parameter>internalFormat</parameter></term>
+            <term><parameter>internalformat</parameter></term>
             <listitem>
                 <para>
                     Specifies the internal format of the data in the store
@@ -78,7 +78,7 @@
             <function>glTexBuffer</function> and
             <function>glTextureBuffer</function> attaches the data store of
             a specified buffer object to a specified texture object, and
-            specify the storage format for the texture image found found in
+            specify the storage format for the texture image found in
             the buffer object. The texture object must be a buffer texture.
         </para>
         <para>

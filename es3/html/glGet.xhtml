@@ -3,7 +3,7 @@
   <head>
     <title>glGet - OpenGL ES 3.2 Reference Pages</title>
     <link rel="stylesheet" type="text/css" href="opengl-man.css"/>
-    <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"/>
+    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1"/>
     <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
                 MathML: {
@@ -971,6 +971,16 @@
             </dd>
             <dt>
               <span class="term">
+                <code class="constant">GL_MAX_COMBINED_ATOMIC_COUNTER_BUFFERS</code>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                        <em class="parameter"><code>data</code></em> returns a single value, the maximum number of atomic counter buffers that may be accessed by all active shaders.
+                    </p>
+            </dd>
+            <dt>
+              <span class="term">
                 <code class="constant">GL_MAX_COMBINED_COMPUTE_UNIFORM_COMPONENTS</code>
               </span>
             </dt>
@@ -1261,6 +1271,17 @@
             </dd>
             <dt>
               <span class="term">
+                <code class="constant">GL_MAX_DEPTH_TEXTURE_SAMPLES</code>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                        <em class="parameter"><code>params</code></em> returns one value,
+                        the maximum number of samples in a depth/stencil multisample texture.
+                    </p>
+            </dd>
+            <dt>
+              <span class="term">
                 <code class="constant">GL_MAX_DRAW_BUFFERS</code>
               </span>
             </dt>
@@ -1327,7 +1348,7 @@
             <dd>
               <p>
                         <em class="parameter"><code>data</code></em> returns a single value, the maximum number of atomic counters available to fragment shaders.
-                        In GL ES 3.1, the minimum value is 0. in GL ES 3.2, the minimum value is 8.
+                        In GL ES 3.1, the minimum value is 0. In GL ES 3.2, the minimum value is 8.
                     </p>
             </dd>
             <dt>
@@ -1338,7 +1359,7 @@
             <dd>
               <p>
                         <em class="parameter"><code>data</code></em> returns a single value, the maximum number of atomic counter buffers that may be accessed by a fragment shader.
-                        In GL ES 3.1, the minimum value is 0. in GL ES 3.2, the minimum value is 1.
+                        In GL ES 3.1, the minimum value is 0. In GL ES 3.2, the minimum value is 1.
                     </p>
             </dd>
             <dt>
@@ -1350,7 +1371,7 @@
               <p>
                         <em class="parameter"><code>data</code></em> returns one value, the maximum supported number of image variables 
                         in fragment shaders.
-                        In GL ES 3.1, the minimum value is 0. in GL ES 3.2, the minimum value is 4.
+                        In GL ES 3.1, the minimum value is 0. In GL ES 3.2, the minimum value is 4.
                     </p>
             </dd>
             <dt>
@@ -1385,7 +1406,7 @@
               <p>
                         <em class="parameter"><code>data</code></em> returns one value,
                         the maximum number of active shader storage blocks that may be accessed by a fragment shader.
-                        In GL ES 3.1, the minimum value is 0. in GL ES 3.2, the minimum value is 4.
+                        In GL ES 3.1, the minimum value is 0. In GL ES 3.2, the minimum value is 4.
                     </p>
             </dd>
             <dt>
@@ -2115,6 +2136,16 @@
             </dd>
             <dt>
               <span class="term">
+                <code class="constant">GL_MAX_VERTEX_ATOMIC_COUNTER_BUFFERS</code>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                        <em class="parameter"><code>data</code></em> returns a single value, the maximum number of atomic counter buffers that may be accessed by a vertex shader.
+                    </p>
+            </dd>
+            <dt>
+              <span class="term">
                 <code class="constant">GL_MAX_VERTEX_ATTRIB_BINDINGS</code>
               </span>
             </dt>
@@ -2677,6 +2708,17 @@
                         <em class="parameter"><code>data</code></em> returns a single positive floating-point value indicating the
                         current sample coverage value.
                         See <a class="citerefentry" href="glSampleCoverage.xhtml"><span class="citerefentry"><span class="refentrytitle">glSampleCoverage</span></span></a>.
+                    </p>
+            </dd>
+            <dt>
+              <span class="term">
+                <code class="constant">GL_SAMPLE_MASK_VALUE</code>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                        <em class="parameter"><code>params</code></em> returns one value indicating the current sample mask value.
+                        See <a class="citerefentry" href="glSampleMaski.xhtml"><span class="citerefentry"><span class="refentrytitle">glSampleMaski</span></span></a>.
                     </p>
             </dd>
             <dt>
@@ -3511,10 +3553,13 @@
             <code class="constant">GL_MAX_FRAMGENT_ATOMIC_COUNTERS</code>,
             <code class="constant">GL_MAX_COMPUTE_ATOMIC_COUNTERS</code>,
             <code class="constant">GL_MAX_COMBINED_ATOMIC_COUNTERS</code>,
+            <code class="constant">GL_MAX_VERTEX_ATOMIC_COUNTER_BUFFERS</code>,
+            <code class="constant">GL_MAX_FRAMGENT_ATOMIC_COUNTER_BUFFERS</code>,
+            <code class="constant">GL_MAX_COMPUTE_ATOMIC_COUNTER_BUFFERS</code>,
+            <code class="constant">GL_MAX_COMBINED_ATOMIC_COUNTER_BUFFERS</code>,
             <code class="constant">GL_MAX_COMPUTE_UNIFORM_BLOCKS</code>,
             <code class="constant">GL_MAX_COMPUTE_TEXTURE_IMAGE_UNITS</code>,
             <code class="constant">GL_MAX_COMPUTE_UNIFORM_COMPONENTS</code>,
-            <code class="constant">GL_MAX_COMPUTE_ATOMIC_COUNTER_BUFFERS</code>,
             <code class="constant">GL_MAX_COMBINED_COMPUTE_UNIFORM_COMPONENTS</code>,
             <code class="constant">GL_MAX_COMPUTE_WORK_GROUP_INVOCATIONS</code>,
             <code class="constant">GL_MAX_COMPUTE_WORK_GROUP_COUNT</code>,

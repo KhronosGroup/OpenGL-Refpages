@@ -134,8 +134,7 @@
 
         <paramdef>GLenum <parameter>pname</parameter></paramdef>
 
-        <paramdef>const GLfloat
-        *<parameter>paramtexture.</parameter></paramdef>
+        <paramdef>const GLfloat *<parameter>params</parameter></paramdef>
       </funcprototype>
 
       <funcprototype>
@@ -145,7 +144,7 @@
 
         <paramdef>GLenum <parameter>pname</parameter></paramdef>
 
-        <paramdef>const GLint *<parameter>param</parameter></paramdef>
+        <paramdef>const GLint *<parameter>params</parameter></paramdef>
       </funcprototype>
 
       <funcprototype>
@@ -281,11 +280,11 @@
                 <listitem>
                     <para>
                         Specifies the mode used to read from depth-stencil format textures. <parameter>params</parameter>
-                        must be one of <constant>GL_DEPTH_COMPONENT</constant> or <constant>GL_STENCIL_COMPONENT</constant>.
+                        must be one of <constant>GL_DEPTH_COMPONENT</constant> or <constant>GL_STENCIL_INDEX</constant>.
                         If the depth stencil mode is <constant>GL_DEPTH_COMPONENT</constant>, then reads from depth-stencil
                         format textures will return the depth component of the texel in
                         <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:msub><mml:mi>R</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:math></inlineequation> and the stencil component
-                        will be discarded. If the depth stencil mode is <constant>GL_STENCIL_COMPONENT</constant> then
+                        will be discarded. If the depth stencil mode is <constant>GL_STENCIL_INDEX</constant> then
                         the stencil component is returned in <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:msub><mml:mi>R</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:math></inlineequation>
                         and the depth component is discarded. The initial value is <constant>GL_DEPTH_COMPONENT</constant>.
                     </para>
@@ -735,7 +734,7 @@
                         </mml:math></inlineequation>
                         is the depth texture value sampled from the currently bound depth texture.
                         <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">result</mml:mi></mml:math></inlineequation>
-                        is assigned to the the red channel.
+                        is assigned to the red channel.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1373,8 +1372,8 @@
                         </mml:math></inlineequation>
                         represents the fractional part of
                         <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>.
-                        <constant>GL_MIRROR_CLAMP_TO_EDGE</constant> causes the the <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>
-                        coordinate to be repeated as for <constant>GL_MIRRORED_REPEAT</constant> for one reptition of the texture,
+                        <constant>GL_MIRROR_CLAMP_TO_EDGE</constant> causes the <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>
+                        coordinate to be repeated as for <constant>GL_MIRRORED_REPEAT</constant> for one repetition of the texture,
                         at which point the coordinate to be clamped as in <constant>GL_CLAMP_TO_EDGE</constant>.
                         Initially, <constant>GL_TEXTURE_WRAP_S</constant> is set to <constant>GL_REPEAT</constant>.
                     </para>

@@ -3,7 +3,7 @@
   <head>
     <title>glGetInternalformat - OpenGL 4 Reference Pages</title>
     <link rel="stylesheet" type="text/css" href="opengl-man.css"/>
-    <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"/>
+    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1"/>
     <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
                 MathML: {
@@ -165,7 +165,7 @@
         </p>
         <p>
             The information retrieved will be written to memory addressed by the pointer specified in <em class="parameter"><code>params</code></em>. No
-            more than <em class="parameter"><code>bufSize</code></em> basic machine units will be written to this memory.
+            more than <em class="parameter"><code>bufSize</code></em> integers will be written to this memory.
         </p>
         <p>
             If <em class="parameter"><code>pname</code></em> is <code class="constant">GL_NUM_SAMPLE_COUNTS</code>, the number of sample counts that would be
@@ -217,11 +217,11 @@
         <p>
         </p>
         <p>
-            If <em class="parameter"><code>pname</code></em> is <code class="constant">GL_INTERNALFORMAT_SUPPORTED</code>, <em class="parameter"><code>params</code></em> is set to <code class="constant">GL_TRUE</code> if <em class="parameter"><code>internalFormat</code></em>
+            If <em class="parameter"><code>pname</code></em> is <code class="constant">GL_INTERNALFORMAT_SUPPORTED</code>, <em class="parameter"><code>params</code></em> is set to <code class="constant">GL_TRUE</code> if <em class="parameter"><code>internalformat</code></em>
             is a supported internal format for <em class="parameter"><code>target</code></em> and to <code class="constant">GL_FALSE</code> otherwise.
         </p>
         <p>
-            If <em class="parameter"><code>pname</code></em> is <code class="constant">GL_INTERNALFORMAT_PREFERRED</code>, <em class="parameter"><code>params</code></em> is set to <code class="constant">GL_TRUE</code> if <em class="parameter"><code>internalFormat</code></em>
+            If <em class="parameter"><code>pname</code></em> is <code class="constant">GL_INTERNALFORMAT_PREFERRED</code>, <em class="parameter"><code>params</code></em> is set to <code class="constant">GL_TRUE</code> if <em class="parameter"><code>internalformat</code></em>
             is an format for <em class="parameter"><code>target</code></em> that is preferred by the implementation and to <code class="constant">GL_FALSE</code> otherwise.
         </p>
         <p>
@@ -229,7 +229,7 @@
             <code class="constant">GL_INTERNALFORMAT_BLUE_SIZE</code>, <code class="constant">GL_INTERNALFORMAT_ALPHA_SIZE</code>, <code class="constant">GL_INTERNALFORMAT_DEPTH_SIZE</code>,
             <code class="constant">GL_INTERNALFORMAT_STENCIL_SIZE</code>, or <code class="constant">GL_INTERNALFORMAT_SHARED_SIZE</code> then
             <em class="parameter"><code>params</code></em> is set to the actual resolutions that would be used for storing image array components
-            for the resource for the red, green, blue, alpha, depth, stencil and shared channels respectively. If <em class="parameter"><code>internalFormat</code></em>
+            for the resource for the red, green, blue, alpha, depth, stencil and shared channels respectively. If <em class="parameter"><code>internalformat</code></em>
             is a compressed internal format, then <em class="parameter"><code>params</code></em> is set to the component resolution of an uncompressed internal format that produces
             an image of roughly the same quality as the compressed algorithm. If the internal format is unsupported, or if a particular component is
             not present in the format, 0 is written to <em class="parameter"><code>params</code></em>.
@@ -238,13 +238,13 @@
             If <em class="parameter"><code>pname</code></em> is <code class="constant">GL_INTERNALFORMAT_RED_TYPE</code>, <code class="constant">GL_INTERNALFORMAT_GREEN_TYPE</code>,
             <code class="constant">GL_INTERNALFORMAT_BLUE_TYPE</code>, <code class="constant">GL_INTERNALFORMAT_ALPHA_TYPE</code>, <code class="constant">GL_INTERNALFORMAT_DEPTH_TYPE</code>,
             or <code class="constant">GL_INTERNALFORMAT_STENCIL_TYPE</code> then <em class="parameter"><code>params</code></em> is set to a token identifying the data type used
-            to store the respective component. If the <em class="parameter"><code>internalFormat</code></em> represents a compressed internal format then
+            to store the respective component. If the <em class="parameter"><code>internalformat</code></em> represents a compressed internal format then
             the types returned specify how components are interpreted after decompression.
         </p>
         <p>
             If <em class="parameter"><code>pname</code></em> is <code class="constant">GL_MAX_WIDTH</code>, <code class="constant">GL_MAX_HEIGHT</code>, <code class="constant">GL_MAX_DEPTH</code>,
             or <code class="constant">GL_MAX_LAYERS</code> then <em class="parameter"><code>pname</code></em> is filled with the maximum width, height, depth or layer count
-            for textures with internal format <em class="parameter"><code>internalFormat</code></em>, respectively. If <em class="parameter"><code>pname</code></em> is <code class="constant">GL_MAX_COMBINED_DIMENSIONS</code>
+            for textures with internal format <em class="parameter"><code>internalformat</code></em>, respectively. If <em class="parameter"><code>pname</code></em> is <code class="constant">GL_MAX_COMBINED_DIMENSIONS</code>
             then <em class="parameter"><code>pname</code></em> is filled with the maximum combined dimensions of a texture of the specified internal format.
         </p>
         <p>
@@ -654,7 +654,7 @@
       <div class="refsect1" id="Copyright">
         <h2>Copyright</h2>
         <p>
-            Copyright <span class="trademark"/>© 2011-2014 Khronos Group.
+            Copyright <span class="trademark"/>© 2011-2018 Khronos Group.
             This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
             <a class="link" href="http://opencontent.org/openpub/" target="_top">http://opencontent.org/openpub/</a>.

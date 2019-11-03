@@ -50,7 +50,7 @@
         </para>
         <para>
             A <parameter>value</parameter> of 1.0 indicates that each sample in the framebuffer should be
-            indpendently shaded. A <parameter>value</parameter> of 0.0 effectively allows the GL to ignore
+            independently shaded. A <parameter>value</parameter> of 0.0 effectively allows the GL to ignore
             sample rate shading. Any value between 0.0 and 1.0 allows the GL to shade only a subset
             of the total samples within each covered fragment. Which samples are shaded and the algorithm
             used to select that subset of the fragment's samples is implementation dependent.

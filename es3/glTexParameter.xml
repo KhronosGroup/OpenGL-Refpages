@@ -555,7 +555,7 @@
                         </mml:math></inlineequation>
                         is the depth texture value sampled from the currently bound depth texture.
                         <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">result</mml:mi></mml:math></inlineequation>
-                        is assigned to the the red channel.
+                        is assigned to the red channel.
                     </para>
                 </listitem>
             </varlistentry>
