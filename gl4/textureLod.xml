@@ -52,7 +52,7 @@
             <funcprototype>
                 <funcdef>float <function>textureLod</function></funcdef>
                 <paramdef>sampler2DShadow <parameter>sampler</parameter></paramdef>
-                <paramdef>vec4 <parameter>P</parameter></paramdef>
+                <paramdef>vec3 <parameter>P</parameter></paramdef>
                 <paramdef>float <parameter>lod</parameter></paramdef>
             </funcprototype>
             <funcprototype>
