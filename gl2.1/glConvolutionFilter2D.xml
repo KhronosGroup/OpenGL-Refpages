@@ -415,7 +415,7 @@
             <constant>GL_MAX_CONVOLUTION_HEIGHT</constant>.
         </para>
         <para>
-            <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>height</parameter> is one of
+            <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>type</parameter> is one of
             <constant>GL_UNSIGNED_BYTE_3_3_2</constant>,
             <constant>GL_UNSIGNED_BYTE_2_3_3_REV</constant>,
             <constant>GL_UNSIGNED_SHORT_5_6_5</constant>, or
@@ -423,7 +423,7 @@
             and <parameter>format</parameter> is not <constant>GL_RGB</constant>.
         </para>
         <para>
-            <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>height</parameter> is one of
+            <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>type</parameter> is one of
             <constant>GL_UNSIGNED_SHORT_4_4_4_4</constant>,
             <constant>GL_UNSIGNED_SHORT_4_4_4_4_REV</constant>,
             <constant>GL_UNSIGNED_SHORT_5_5_5_1</constant>,
