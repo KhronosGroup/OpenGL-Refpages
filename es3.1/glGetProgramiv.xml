@@ -256,7 +256,7 @@
             </para>
             <para> <parameter>params</parameter> returns 
 			<constant>GL_TRUE</constant> if the program has been flagged
-			for use as a separable program object that can be found to 
+			for use as a separable program object that can be bound to 
 			individual shader stages with 
 			<citerefentry><refentrytitle>glUseProgramStages</refentrytitle></citerefentry>.</para>
         </listitem>
