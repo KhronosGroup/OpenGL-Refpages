@@ -362,9 +362,9 @@
             and the read buffer contains integer data.
         </p>
         <p>
-            <code class="constant">GL_INVALID_OPERATION</code> is generated if the
-            effective value of <code class="constant">GL_SAMPLES</code> for the read
-            and draw framebuffers is not identical.
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if both the
+			read and draw framebuffers are multisampled, and their effective
+			values of <code class="constant">GL_SAMPLES</code> are not identical.
         </p>
         <p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if the

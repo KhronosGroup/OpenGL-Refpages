@@ -227,14 +227,14 @@
             using target <code class="constant">GL_CONVOLUTION_1D</code> and name
             <code class="constant">GL_MAX_CONVOLUTION_WIDTH</code>.
         </p><p>
-            <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>format</code></em> is one of
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>type</code></em> is one of
             <code class="constant">GL_UNSIGNED_BYTE_3_3_2</code>,
             <code class="constant">GL_UNSIGNED_BYTE_2_3_3_REV</code>,
             <code class="constant">GL_UNSIGNED_SHORT_5_6_5</code>, or
             <code class="constant">GL_UNSIGNED_SHORT_5_6_5_REV</code>
-            and <em class="parameter"><code>type</code></em> is not <code class="constant">GL_RGB</code>.
+            and <em class="parameter"><code>format</code></em> is not <code class="constant">GL_RGB</code>.
         </p><p>
-            <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>format</code></em> is one of
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>type</code></em> is one of
             <code class="constant">GL_UNSIGNED_SHORT_4_4_4_4</code>,
             <code class="constant">GL_UNSIGNED_SHORT_4_4_4_4_REV</code>,
             <code class="constant">GL_UNSIGNED_SHORT_5_5_5_1</code>,
@@ -243,7 +243,7 @@
             <code class="constant">GL_UNSIGNED_INT_8_8_8_8_REV</code>,
             <code class="constant">GL_UNSIGNED_INT_10_10_10_2</code>, or
             <code class="constant">GL_UNSIGNED_INT_2_10_10_10_REV</code>
-            and <em class="parameter"><code>type</code></em> is neither <code class="constant">GL_RGBA</code> nor <code class="constant">GL_BGRA</code>.
+            and <em class="parameter"><code>format</code></em> is neither <code class="constant">GL_RGBA</code> nor <code class="constant">GL_BGRA</code>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
             <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target and the buffer object's data store is currently mapped.
