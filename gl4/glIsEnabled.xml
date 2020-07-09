@@ -234,6 +234,14 @@
                     </row>
                     <row>
                         <entry>
+                            <constant>GL_PRIMITIVE_RESTART_FIXED_INDEX</constant>
+                        </entry>
+                        <entry>
+                            <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>, 
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
                             <constant>GL_SAMPLE_ALPHA_TO_COVERAGE</constant>
                         </entry>
                         <entry>
@@ -299,6 +307,9 @@
         <para>
             If an error is generated,
             <function>glIsEnabled</function> and <function>glIsEnabledi</function> return <constant>GL_FALSE</constant>.
+        </para>
+        <para>
+            <constant>GL_PRIMITIVE_RESTART_FIXED_INDEX</constant> are available only if the GL version is 4.3 or greater.
         </para>
         <para>
             <constant>GL_DEBUG_OUTPUT</constant> and <constant>GL_DEBUG_OUTPUT_SYNCHRONOUS</constant> are available only if the GL version is 4.3 or greater.
