@@ -76,7 +76,7 @@
                 <tbody>
                     <row>
                         <entry><function>glDeleteSamplers</function></entry>
-                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="apiversion.xml" xpointer="xpointer(/*/*[@role='32']/*)"/>
+                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="apiversion.xml" xpointer="xpointer(/*/*[@role='33']/*)"/>
                     </row>
                 </tbody>
             </tgroup>
