@@ -15,7 +15,7 @@
     </refmeta>
     <refnamediv>
         <refname>glMinSampleShading</refname>
-        <refpurpose>specifies minimum rate at which sample shaing takes place</refpurpose>
+        <refpurpose>specifies minimum rate at which sample shading takes place</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
