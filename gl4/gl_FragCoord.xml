@@ -51,7 +51,7 @@
             If <varname>gl_FragCoord</varname> is redeclared in any fragment shader in a program, it must be redeclared
             in all fragment shaders in that program that have static use of <varname>gl_FragCoord</varname>. Redeclaring
             <varname>gl_FragCoord</varname> with any accepted qualifier affects only <varname>gl_FragCoord.x</varname>
-            and <varname>gl_FragCoord.y</varname>. It has no affect on rasterization, transformation or any other part
+            and <varname>gl_FragCoord.y</varname>. It has no effect on rasterization, transformation or any other part
             of the OpenGL pipeline or language features.
         </para>
     </refsect1>
