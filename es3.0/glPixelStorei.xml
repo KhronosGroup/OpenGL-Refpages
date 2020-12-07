@@ -617,9 +617,7 @@
                         These values are provided as a convenience to the programmer;
                         they provide no functionality that cannot be duplicated by
                         incrementing the pointer passed to
-                        <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>,
-                        <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>,
-                        <citerefentry><refentrytitle>glTexSubImage1D</refentrytitle></citerefentry> or
+                        <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry> or
                         <citerefentry><refentrytitle>glTexSubImage2D</refentrytitle></citerefentry>.
                         Setting <constant>GL_UNPACK_SKIP_PIXELS</constant> to
                         <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
