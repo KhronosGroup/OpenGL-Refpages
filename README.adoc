@@ -66,3 +66,8 @@ many of those licenses, because the original authors are no longer in
 business (SGI, 3Dlabs). Ideally we'd like to end up with a Creative
 Commons license on all the ref pages and Apache 2.0 on all the scripts
 and tools, but it's unlikely that will ever be possible.
+
+The SGI Free Software B License used on some of the pages is no longer
+hosted at the original location on SGI's webservers, following their
+acquisition. Instead, we host a copy in LICENSES/LicenseRef-FreeB.txt, and
+have updated copyright links in the reference pages to this file.
