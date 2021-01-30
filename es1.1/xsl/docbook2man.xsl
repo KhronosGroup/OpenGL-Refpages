@@ -10,7 +10,7 @@
   of the License at Silicon Graphics, Inc., attn: Legal Services, 1600
   Amphitheatre Parkway, Mountain View, CA 94043-1351, or at:
 
-  http://oss.sgi.com/projects/FreeB
+  https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt
 
   Note that, as provided in the License, the Software is distributed on an
   "AS IS" basis, with ALL EXPRESS AND IMPLIED WARRANTIES AND CONDITIONS
