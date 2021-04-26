@@ -21,7 +21,7 @@
     <thead>
         <row>
             <entry rowsep="0">
-                <!-- Until morerows= is fixed WRT cell borders, do this --> 
+                <!-- Until morerows= is fixed WRT cell borders, do this -->
             </entry>
             <entry spanname="allvers">
                 <emphasis role="bold">OpenGL Shading Language Version</emphasis>

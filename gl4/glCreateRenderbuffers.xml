@@ -47,7 +47,7 @@
     </refsect1>
     <refsect1 xml:id="description"><title>Description</title>
         <para>
-            <function>glCreateRenderbuffers</function> 
+            <function>glCreateRenderbuffers</function>
             returns <parameter>n</parameter> previously unused renderbuffer
             object names in <parameter>renderbuffers</parameter>, each representing
             a new renderbuffer object initialized to the default state.

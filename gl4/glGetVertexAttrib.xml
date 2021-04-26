@@ -89,7 +89,7 @@
             <constant>GL_VERTEX_ATTRIB_ARRAY_NORMALIZED</constant>,
             <constant>GL_VERTEX_ATTRIB_ARRAY_INTEGER</constant>,
             <constant>GL_VERTEX_ATTRIB_ARRAY_LONG</constant>,
-            <constant>GL_VERTEX_ATTRIB_ARRAY_DIVISOR</constant>, 
+            <constant>GL_VERTEX_ATTRIB_ARRAY_DIVISOR</constant>,
             <constant>GL_VERTEX_ATTRIB_BINDING</constant>,
             <constant>GL_VERTEX_ATTRIB_RELATIVE_OFFSET</constant> or
             <constant>GL_CURRENT_VERTEX_ATTRIB</constant>.</para>
@@ -216,16 +216,16 @@
             0 (<constant>GL_FALSE</constant>).</para>
         </listitem>
         </varlistentry>
-        
+
         <varlistentry>
         <term><constant>GL_VERTEX_ATTRIB_ARRAY_LONG</constant></term>
         <listitem>
                 <para>
                 </para>
             <para> <parameter>param</parameter> returns a single value that is non-zero
-	          (true) if a vertex attribute is stored as an unconverted double, and
-	          0 (false) otherwise. The initial value is 0
-	          (<constant>GL_FALSE</constant>).</para>
+                  (true) if a vertex attribute is stored as an unconverted double, and
+                  0 (false) otherwise. The initial value is 0
+                  (<constant>GL_FALSE</constant>).</para>
         </listitem>
         </varlistentry>
 
@@ -240,7 +240,7 @@
             The initial value is 0.</para>
         </listitem>
         </varlistentry>
-        
+
         <varlistentry>
         <term><constant>GL_VERTEX_ATTRIB_BINDING</constant></term>
         <listitem>
@@ -258,9 +258,9 @@
                 <para>
                 </para>
             <para> <parameter>params</parameter> returns a single value that is the byte
-	          offset of the first element relative to the start of the vertex
-	          buffer binding specified attribute fetches from. The initial value
-	          is 0.</para>
+                  offset of the first element relative to the start of the vertex
+                  buffer binding specified attribute fetches from. The initial value
+                  is 0.</para>
         </listitem>
         </varlistentry>
 

@@ -95,14 +95,14 @@
                     <para>
                         <constant>GL_READ_ONLY</constant> indicates that
                         the returned pointer may be used to read buffer
-                        object data. 
+                        object data.
                     </para>
                 </listitem>
                 <listitem>
                     <para>
                         <constant>GL_WRITE_ONLY</constant> indicates that
                         the returned pointer may be used to modify buffer
-                        object data. 
+                        object data.
                     </para>
                 </listitem>
                 <listitem>
@@ -122,7 +122,7 @@
             If no error occurs, the returned pointer will reflect an
             allocation aligned to the value of
             <constant>GL_MIN_MAP_BUFFER_ALIGNMENT</constant> basic machine
-            units. 
+            units.
         </para>
         <para>
             The returned pointer values may not be passed as parameter

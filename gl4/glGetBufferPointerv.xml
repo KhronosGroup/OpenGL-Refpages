@@ -57,7 +57,7 @@
             <listitem>
                 <para>
                     Specifies the name of the buffer object for
-                    <function>glGetNamedBufferPointerv</function>.   
+                    <function>glGetNamedBufferPointerv</function>.
                 </para>
             </listitem>
         </varlistentry>

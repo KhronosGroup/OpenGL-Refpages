@@ -157,8 +157,8 @@
             <term><parameter>normalized</parameter></term>
             <listitem>
                 <para>
-                    Specifies whether fixed-point data values should be normalized (<constant>GL_TRUE</constant>) or 
-		    converted directly as fixed-point values (<constant>GL_FALSE</constant>) when they are accessed. This parameter is ignored if <parameter>type</parameter> is <constant>GL_FIXED</constant>.
+                    Specifies whether fixed-point data values should be normalized (<constant>GL_TRUE</constant>) or
+                    converted directly as fixed-point values (<constant>GL_FALSE</constant>) when they are accessed. This parameter is ignored if <parameter>type</parameter> is <constant>GL_FIXED</constant>.
                 </para>
             </listitem>
         </varlistentry>

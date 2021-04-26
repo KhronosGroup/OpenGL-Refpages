@@ -93,7 +93,7 @@
             of these commands.
         </para>
         <para>
-            For <function>glFramebufferRenderbuffer</function>, 
+            For <function>glFramebufferRenderbuffer</function>,
             the framebuffer object is that bound to
             <parameter>target</parameter>, which must be
             <constant>GL_DRAW_FRAMEBUFFER</constant>,

@@ -102,7 +102,7 @@
                 <term>
                     <constant>GL_RENDERBUFFER_WIDTH</constant>,
                     <constant>GL_RENDERBUFFER_HEIGHT</constant>,
-                    <constant>GL_RENDERBUFFER_INTERNAL_FORMAT</constant> or 
+                    <constant>GL_RENDERBUFFER_INTERNAL_FORMAT</constant> or
                     <constant>GL_RENDERBUFFER_SAMPLES</constant>
                 </term>
                 <listitem>

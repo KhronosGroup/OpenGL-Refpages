@@ -47,7 +47,7 @@
     </refsect1>
     <refsect1 xml:id="description"><title>Description</title>
         <para>
-            <function>glCreateTransformFeedbacks</function> 
+            <function>glCreateTransformFeedbacks</function>
             returns <parameter>n</parameter> previously unused transform
             feedback object names in <parameter>ids</parameter>, each
             representing a new transform feedback object initialized to the

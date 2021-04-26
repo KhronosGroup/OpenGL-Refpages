@@ -78,12 +78,12 @@
     </refsect1>
     <refsect1 xml:id="description"><title>Description</title>
         <para>
-            <function>glTransformFeedbackBufferRange</function> 
+            <function>glTransformFeedbackBufferRange</function>
             binds a range of the buffer object <parameter>buffer</parameter>
             represented by <parameter>offset</parameter> and
             <parameter>size</parameter> to the binding point at index
             <parameter>index</parameter> of the transform feedback object
-            <parameter>xfb</parameter>. 
+            <parameter>xfb</parameter>.
         </para>
         <para>
             <parameter>offset</parameter> specifies the offset in basic

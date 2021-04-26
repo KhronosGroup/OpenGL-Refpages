@@ -121,7 +121,7 @@
                             <code class="constant">GL_BLEND</code>
                         </td>
                 <td style="text-align: left; border-bottom: 2px solid ; ">
-                            <a class="citerefentry" href="glBlendFunc.xhtml"><span class="citerefentry"><span class="refentrytitle">glBlendFunc</span></span></a>, 
+                            <a class="citerefentry" href="glBlendFunc.xhtml"><span class="citerefentry"><span class="refentrytitle">glBlendFunc</span></span></a>,
                             <a class="citerefentry" href="glLogicOp.xhtml"><span class="citerefentry"><span class="refentrytitle">glLogicOp</span></span></a>
                         </td>
               </tr>
@@ -178,7 +178,7 @@
                             <code class="constant">GL_DEPTH_TEST</code>
                         </td>
                 <td style="text-align: left; border-bottom: 2px solid ; ">
-                            <a class="citerefentry" href="glDepthFunc.xhtml"><span class="citerefentry"><span class="refentrytitle">glDepthFunc</span></span></a>, 
+                            <a class="citerefentry" href="glDepthFunc.xhtml"><span class="citerefentry"><span class="refentrytitle">glDepthFunc</span></span></a>,
                             <a class="citerefentry" href="glDepthRange.xhtml"><span class="citerefentry"><span class="refentrytitle">glDepthRange</span></span></a>
                         </td>
               </tr>
@@ -259,8 +259,16 @@
                             <code class="constant">GL_PRIMITIVE_RESTART</code>
                         </td>
                 <td style="text-align: left; border-bottom: 2px solid ; ">
-                            <a class="citerefentry" href="glEnable.xhtml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>, 
+                            <a class="citerefentry" href="glEnable.xhtml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>,
                             <a class="citerefentry" href="glPrimitiveRestartIndex.xhtml"><span class="citerefentry"><span class="refentrytitle">glPrimitiveRestartIndex</span></span></a>
+                        </td>
+              </tr>
+              <tr>
+                <td style="text-align: left; border-right: 2px solid ; border-bottom: 2px solid ; ">
+                            <code class="constant">GL_PRIMITIVE_RESTART_FIXED_INDEX</code>
+                        </td>
+                <td style="text-align: left; border-bottom: 2px solid ; ">
+                            <a class="citerefentry" href="glEnable.xhtml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>,
                         </td>
               </tr>
               <tr>
@@ -308,7 +316,7 @@
                             <code class="constant">GL_STENCIL_TEST</code>
                         </td>
                 <td style="text-align: left; border-bottom: 2px solid ; ">
-                            <a class="citerefentry" href="glStencilFunc.xhtml"><span class="citerefentry"><span class="refentrytitle">glStencilFunc</span></span></a>, 
+                            <a class="citerefentry" href="glStencilFunc.xhtml"><span class="citerefentry"><span class="refentrytitle">glStencilFunc</span></span></a>,
                             <a class="citerefentry" href="glStencilOp.xhtml"><span class="citerefentry"><span class="refentrytitle">glStencilOp</span></span></a>
                         </td>
               </tr>
@@ -331,6 +339,9 @@
         <p>
             If an error is generated,
             <code class="function">glIsEnabled</code> and <code class="function">glIsEnabledi</code> return <code class="constant">GL_FALSE</code>.
+        </p>
+        <p>
+            <code class="constant">GL_PRIMITIVE_RESTART_FIXED_INDEX</code> are available only if the GL version is 4.3 or greater.
         </p>
         <p>
             <code class="constant">GL_DEBUG_OUTPUT</code> and <code class="constant">GL_DEBUG_OUTPUT_SYNCHRONOUS</code> are available only if the GL version is 4.3 or greater.
@@ -368,7 +379,7 @@
             <thead>
               <tr>
                 <th style="text-align: left; border-right: 2px solid ; ">
-                 
+                
             </th>
                 <th style="text-align: center; border-bottom: 2px solid ; " colspan="12">
                 <span class="bold"><strong>OpenGL Version</strong></span>

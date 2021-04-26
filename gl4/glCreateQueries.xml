@@ -56,18 +56,18 @@
     </refsect1>
     <refsect1 xml:id="description"><title>Description</title>
         <para>
-            <function>glCreateQueries</function> 
+            <function>glCreateQueries</function>
             returns <parameter>n</parameter> previously unused query
             object names in <parameter>ids</parameter>, each representing
             a new query object with the specified <parameter>target</parameter>.
         </para>
         <para>
             <parameter>target</parameter> may be one of
-            <constant>GL_SAMPLES_PASSED</constant>, 
-            <constant>GL_ANY_SAMPLES_PASSED</constant>, 
-            <constant>GL_ANY_SAMPLES_PASSED_CONSERVATIVE</constant>, 
-            <constant>GL_TIME_ELAPSED</constant>, 
-            <constant>GL_TIMESTAMP</constant>, 
+            <constant>GL_SAMPLES_PASSED</constant>,
+            <constant>GL_ANY_SAMPLES_PASSED</constant>,
+            <constant>GL_ANY_SAMPLES_PASSED_CONSERVATIVE</constant>,
+            <constant>GL_TIME_ELAPSED</constant>,
+            <constant>GL_TIMESTAMP</constant>,
             <constant>GL_PRIMITIVES_GENERATED</constant> or
             <constant>GL_TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN</constant>.
         </para>

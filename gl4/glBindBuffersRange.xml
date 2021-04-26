@@ -167,7 +167,7 @@
             <citerefentry><refentrytitle>glMapBuffer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glUnmapBuffer</refentrytitle></citerefentry>
         </para>
-    </refsect1>    
+    </refsect1>
     <refsect1 xml:id="Copyright"><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"/> 2013-2014 Khronos Group.

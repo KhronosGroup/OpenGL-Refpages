@@ -47,7 +47,7 @@
     </refsect1>
     <refsect1 xml:id="description"><title>Description</title>
         <para>
-            <function>glCreateVertexArrays</function> 
+            <function>glCreateVertexArrays</function>
             returns <parameter>n</parameter> previously unused vertex array
             object names in <parameter>arrays</parameter>, each representing
             a new vertex array object initialized to the default state.

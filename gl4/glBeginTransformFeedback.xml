@@ -63,12 +63,12 @@
                 <thead>
                     <row>
                         <entry>
-                            <emphasis role="bold"> 
+                            <emphasis role="bold">
                                 Transform Feedback <parameter>primitiveMode</parameter>
                             </emphasis>
-                        </entry> 
+                        </entry>
                         <entry>
-                            <emphasis role="bold"> 
+                            <emphasis role="bold">
                                 Allowed Render Primitive <parameter>modes</parameter>
                             </emphasis>
                         </entry>
@@ -94,10 +94,10 @@
                             <constant>GL_TRIANGLES</constant>
                         </entry>
                         <entry>
-                            <constant>GL_TRIANGLES</constant>, 
-                            <constant>GL_TRIANGLE_STRIP</constant>, 
+                            <constant>GL_TRIANGLES</constant>,
+                            <constant>GL_TRIANGLE_STRIP</constant>,
                             <constant>GL_TRIANGLE_FAN</constant>,
-                            <constant>GL_TRIANGLES_ADJACENCY</constant>, 
+                            <constant>GL_TRIANGLES_ADJACENCY</constant>,
                             <constant>GL_TRIANGLE_STRIP_ADJACENCY</constant>
                         </entry>
                     </row>

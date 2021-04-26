@@ -81,7 +81,7 @@
             targets of these commands.
         </para>
         <para>
-            For <function>glFramebufferParameteri</function>, 
+            For <function>glFramebufferParameteri</function>,
             the framebuffer object is that bound to
             <parameter>target</parameter>, which must be
             <constant>GL_DRAW_FRAMEBUFFER</constant>,
@@ -97,7 +97,7 @@
         </para>
         <para>
             <parameter>pname</parameter> specifies the parameter to be
-            modified. The following values are accepted: 
+            modified. The following values are accepted:
         </para>
         <variablelist>
             <varlistentry>

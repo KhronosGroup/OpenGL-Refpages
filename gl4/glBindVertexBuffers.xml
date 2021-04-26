@@ -155,7 +155,7 @@
     </refsect1>
     <refsect1 xml:id="errors"><title>Errors</title>
         <para>
-            <constant>GL_INVALID_OPERATION</constant> is generated 
+            <constant>GL_INVALID_OPERATION</constant> is generated
             by <function>glBindVertexBuffers</function> if no vertex array
             object is bound.
         </para>

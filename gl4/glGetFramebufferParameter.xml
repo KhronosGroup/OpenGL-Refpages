@@ -157,7 +157,7 @@
             </varlistentry>
         </variablelist>
         <para>
-            The following parameters can be queried for both default framebuffers 
+            The following parameters can be queried for both default framebuffers
             and framebuffer objects:
         </para>
         <variablelist>
@@ -232,7 +232,7 @@
             Queries of default framebuffers are supported only if the GL
             version is 4.5 or higher. Otherwise, an
             <constant>GL_INVALID_OPERATION</constant> error is generated.
-        </para> 
+        </para>
         <para>
             Queries of the framebuffer-dependent parameters
             <constant>GL_DOUBLEBUFFER</constant>,

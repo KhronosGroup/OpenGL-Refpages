@@ -37,12 +37,12 @@
             <citerefentry><refentrytitle>dFdx</refentrytitle></citerefentry>()
             and <function>dFdy</function>.
         </para>
-        <para> 
+        <para>
             Fragment shader helper invocations execute the same shader code
             as non-helper invocations, but will not have side effects that
             modify the framebuffer or other shader-accessible memory. In
             particular:
-        
+
             <itemizedlist>
                 <listitem>
                     <para>

@@ -230,26 +230,26 @@
 
             <itemizedlist>
                <listitem>
-                    <para> 
-                        the formats are the same, 
+                    <para>
+                        the formats are the same,
                     </para>
                </listitem>
                <listitem>
-                    <para> 
+                    <para>
                         the formats are considered compatible according
                         to the compatibility rules used for texture
                         views as defined in section 3.9.X. In
                         particular, if both internal formats are listed
                         in the same entry of Table 3.X.2, they are
                         considered compatible, or
-                    </para> 
+                    </para>
                </listitem>
                <listitem>
-                    <para> 
+                    <para>
                         one format is compressed and the other is
                         uncompressed and Table 4.X.1 lists the two
                         formats in the same row.
-                    </para> 
+                    </para>
                </listitem>
             </itemizedlist>
 

@@ -124,7 +124,7 @@
             <function>glClearBufferSubData</function> and
             <function>glClearNamedBufferSubData</function> fill a specified
             region of a buffer object's data store with data from client
-            memory. 
+            memory.
         </para>
         <para>
             <parameter>offset</parameter> and <parameter>size</parameter>

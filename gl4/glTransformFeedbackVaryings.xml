@@ -136,7 +136,7 @@
                     <para>
                         Discounting any special identifiers, the total number of components to capture in any
                         varying variable in <parameter>varyings</parameter> is greater than the constant <constant>GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS</constant>
-                        and the buffer mode is <constant>GL_SEPARATE_ATTRIBS</constant>. 
+                        and the buffer mode is <constant>GL_SEPARATE_ATTRIBS</constant>.
                     </para>
                 </listitem>
                 <listitem>

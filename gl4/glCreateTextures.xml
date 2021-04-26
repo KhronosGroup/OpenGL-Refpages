@@ -57,10 +57,10 @@
     </refsect1>
     <refsect1 xml:id="description"><title>Description</title>
         <para>
-            <function>glCreateTextures</function> 
+            <function>glCreateTextures</function>
             returns <parameter>n</parameter> previously unused texture names
             in <parameter>textures</parameter>, each representing a new
-            texture object of the dimensionality and type specified by 
+            texture object of the dimensionality and type specified by
             <parameter>target</parameter> and initialized to the default values
             for that texture type.
         </para>

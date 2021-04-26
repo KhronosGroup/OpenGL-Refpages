@@ -90,7 +90,7 @@
                             <constant>GL_BLEND</constant>
                         </entry>
                         <entry>
-                            <citerefentry><refentrytitle>glBlendFunc</refentrytitle></citerefentry>, 
+                            <citerefentry><refentrytitle>glBlendFunc</refentrytitle></citerefentry>,
                             <citerefentry><refentrytitle>glLogicOp</refentrytitle></citerefentry>
                         </entry>
                     </row>
@@ -147,7 +147,7 @@
                             <constant>GL_DEPTH_TEST</constant>
                         </entry>
                         <entry>
-                            <citerefentry><refentrytitle>glDepthFunc</refentrytitle></citerefentry>, 
+                            <citerefentry><refentrytitle>glDepthFunc</refentrytitle></citerefentry>,
                             <citerefentry><refentrytitle>glDepthRange</refentrytitle></citerefentry>
                         </entry>
                     </row>
@@ -228,7 +228,7 @@
                             <constant>GL_PRIMITIVE_RESTART</constant>
                         </entry>
                         <entry>
-                            <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>, 
+                            <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>,
                             <citerefentry><refentrytitle>glPrimitiveRestartIndex</refentrytitle></citerefentry>
                         </entry>
                     </row>
@@ -237,7 +237,7 @@
                             <constant>GL_PRIMITIVE_RESTART_FIXED_INDEX</constant>
                         </entry>
                         <entry>
-                            <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>, 
+                            <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>,
                         </entry>
                     </row>
                     <row>
@@ -285,7 +285,7 @@
                             <constant>GL_STENCIL_TEST</constant>
                         </entry>
                         <entry>
-                            <citerefentry><refentrytitle>glStencilFunc</refentrytitle></citerefentry>, 
+                            <citerefentry><refentrytitle>glStencilFunc</refentrytitle></citerefentry>,
                             <citerefentry><refentrytitle>glStencilOp</refentrytitle></citerefentry>
                         </entry>
                     </row>

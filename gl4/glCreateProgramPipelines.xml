@@ -47,7 +47,7 @@
     </refsect1>
     <refsect1 xml:id="description"><title>Description</title>
         <para>
-            <function>glCreateProgramPipelines</function> 
+            <function>glCreateProgramPipelines</function>
             returns <parameter>n</parameter> previously unused program pipeline
             names in <parameter>pipelines</parameter>, each representing
             a new program pipeline object initialized to the default state.
