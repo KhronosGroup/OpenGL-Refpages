@@ -93,7 +93,7 @@
             </funcprototype>
             <funcprototype>
                 <funcdef>float <function>textureProjGradOffset</function></funcdef>
-                <paramdef>gsampler2DRectShadow <parameter>sampler</parameter></paramdef>
+                <paramdef>sampler2DRectShadow <parameter>sampler</parameter></paramdef>
                 <paramdef>vec4 <parameter>P</parameter></paramdef>
                 <paramdef>vec2 <parameter>dPdx</parameter></paramdef>
                 <paramdef>vec2 <parameter>dPdy</parameter></paramdef>

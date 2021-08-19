@@ -70,7 +70,7 @@
             </funcprototype>
             <funcprototype>
                 <funcdef>ivec2 <function>textureSize</function></funcdef>
-                <paramdef>gsamplerRectShadow <parameter>sampler</parameter></paramdef>
+                <paramdef>samplerRectShadow <parameter>sampler</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>ivec2 <function>textureSize</function></funcdef>

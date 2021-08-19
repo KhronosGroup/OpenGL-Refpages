@@ -64,7 +64,7 @@
             </funcprototype>
             <funcprototype>
                 <funcdef>float <function>textureGrad</function></funcdef>
-                <paramdef>gsampler2DArrayShadow <parameter>sampler</parameter></paramdef>
+                <paramdef>sampler2DArrayShadow <parameter>sampler</parameter></paramdef>
                 <paramdef>vec4 <parameter>P</parameter></paramdef>
                 <paramdef>vec2 <parameter>dPdx</parameter></paramdef>
                 <paramdef>vec2 <parameter>dPdy</parameter></paramdef>
