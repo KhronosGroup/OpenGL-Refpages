@@ -102,13 +102,13 @@
             </p>
         <pre class="programlisting">    typedef  struct {
         uint  count;
-        uint  primCount;
+        uint  instanceCount;
         uint  first;
         uint  baseInstance;
     } DrawArraysIndirectCommand;
 
     const DrawArraysIndirectCommand *cmd = (const DrawArraysIndirectCommand *)indirect;
-    glDrawArraysInstancedBaseInstance(mode, cmd-&gt;first, cmd-&gt;count, cmd-&gt;primCount, cmd-&gt;baseInstance);</pre>
+    glDrawArraysInstancedBaseInstance(mode, cmd-&gt;first, cmd-&gt;count, cmd-&gt;instanceCount, cmd-&gt;baseInstance);</pre>
         <p>
         </p>
         <p>
