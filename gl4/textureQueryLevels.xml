@@ -41,7 +41,7 @@
             </funcprototype>
             <funcprototype>
                 <funcdef>int <function>textureQueryLevels</function></funcdef>
-                <paramdef>gsampler2DDArray <parameter>sampler</parameter></paramdef>
+                <paramdef>gsampler2DArray <parameter>sampler</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>int <function>textureQueryLevels</function></funcdef>

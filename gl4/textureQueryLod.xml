@@ -46,7 +46,7 @@
             </funcprototype>
             <funcprototype>
                 <funcdef>vec2 <function>textureQueryLod</function></funcdef>
-                <paramdef>gsampler2DDArray <parameter>sampler</parameter></paramdef>
+                <paramdef>gsampler2DArray <parameter>sampler</parameter></paramdef>
                 <paramdef>vec2 <parameter>P</parameter></paramdef>
             </funcprototype>
             <funcprototype>
