@@ -54,7 +54,7 @@
                 <tbody>
                     <row>
                         <entry>isinf (genType)</entry>
-                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(/*/*[@role='11']/*)"/>
+                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(/*/*[@role='13']/*)"/>
                     </row>
                     <row>
                         <entry>isinf (genDType)</entry>
