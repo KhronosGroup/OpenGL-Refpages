@@ -56,8 +56,8 @@
             </funcprototype>
             <funcprototype>
                 <funcdef>float <function>textureGrad</function></funcdef>
-                <paramdef>gsampler2DRectShadow <parameter>sampler</parameter></paramdef>
-                <paramdef>vec2 <parameter>P</parameter></paramdef>
+                <paramdef>sampler2DRectShadow <parameter>sampler</parameter></paramdef>
+                <paramdef>vec3 <parameter>P</parameter></paramdef>
                 <paramdef>vec2 <parameter>dPdx</parameter></paramdef>
                 <paramdef>vec2 <parameter>dPdy</parameter></paramdef>
             </funcprototype>
@@ -67,13 +67,6 @@
                 <paramdef>vec3 <parameter>P</parameter></paramdef>
                 <paramdef>float <parameter>dPdx</parameter></paramdef>
                 <paramdef>float <parameter>dPdy</parameter></paramdef>
-            </funcprototype>
-            <funcprototype>
-                <funcdef>float <function>textureGrad</function></funcdef>
-                <paramdef>sampler2DShadow <parameter>sampler</parameter></paramdef>
-                <paramdef>vec3 <parameter>P</parameter></paramdef>
-                <paramdef>vec2 <parameter>dPdx</parameter></paramdef>
-                <paramdef>vec2 <parameter>dPdy</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>gvec4 <function>textureGrad</function></funcdef>
@@ -95,6 +88,27 @@
                 <paramdef>vec3 <parameter>P</parameter></paramdef>
                 <paramdef>float <parameter>dPdx</parameter></paramdef>
                 <paramdef>float <parameter>dPdy</parameter></paramdef>
+            </funcprototype>
+            <funcprototype>
+                <funcdef>float <function>textureGrad</function></funcdef>
+                <paramdef>sampler2DShadow <parameter>sampler</parameter></paramdef>
+                <paramdef>vec3 <parameter>P</parameter></paramdef>
+                <paramdef>vec2 <parameter>dPdx</parameter></paramdef>
+                <paramdef>vec2 <parameter>dPdy</parameter></paramdef>
+            </funcprototype>
+            <funcprototype>
+                <funcdef>float <function>textureGrad</function></funcdef>
+                <paramdef>samplerCubeShadow <parameter>sampler</parameter></paramdef>
+                <paramdef>vec4 <parameter>P</parameter></paramdef>
+                <paramdef>vec3 <parameter>dPdx</parameter></paramdef>
+                <paramdef>vec3 <parameter>dPdy</parameter></paramdef>
+            </funcprototype>
+            <funcprototype>
+                <funcdef>float <function>textureGrad</function></funcdef>
+                <paramdef>sampler2DArrayShadow <parameter>sampler</parameter></paramdef>
+                <paramdef>vec4 <parameter>P</parameter></paramdef>
+                <paramdef>vec2 <parameter>dPdx</parameter></paramdef>
+                <paramdef>vec2 <parameter>dPdy</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>gvec4 <function>textureGrad</function></funcdef>

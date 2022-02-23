@@ -57,7 +57,7 @@
             </funcprototype>
             <funcprototype>
                 <funcdef>float <function>texture</function></funcdef>
-                <paramdef>gsampler2DArrayShadow <parameter>sampler</parameter></paramdef>
+                <paramdef>sampler2DArrayShadow <parameter>sampler</parameter></paramdef>
                 <paramdef>vec4 <parameter>P</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>

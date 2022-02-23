@@ -53,7 +53,7 @@
             </funcprototype>
             <funcprototype>
                 <funcdef>float <function>textureGradOffset</function></funcdef>
-                <paramdef>gsampler2DRectShadow <parameter>sampler</parameter></paramdef>
+                <paramdef>sampler2DRectShadow <parameter>sampler</parameter></paramdef>
                 <paramdef>vec3 <parameter>P</parameter></paramdef>
                 <paramdef>vec2 <parameter>dPdx</parameter></paramdef>
                 <paramdef>vec2 <parameter>dPdy</parameter></paramdef>
@@ -102,7 +102,7 @@
             <funcprototype>
                 <funcdef>float <function>textureGradOffset</function></funcdef>
                 <paramdef>sampler2DArrayShadow <parameter>sampler</parameter></paramdef>
-                <paramdef>vec3 <parameter>P</parameter></paramdef>
+                <paramdef>vec4 <parameter>P</parameter></paramdef>
                 <paramdef>vec2 <parameter>dPdx</parameter></paramdef>
                 <paramdef>vec2 <parameter>dPdy</parameter></paramdef>
                 <paramdef>ivec2 <parameter>offset</parameter></paramdef>

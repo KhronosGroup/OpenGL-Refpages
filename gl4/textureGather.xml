@@ -51,32 +51,32 @@
             </funcprototype>
             <funcprototype>
                 <funcdef>vec4 <function>textureGather</function></funcdef>
-                <paramdef>gsampler2DShadow <parameter>sampler</parameter></paramdef>
+                <paramdef>sampler2DShadow <parameter>sampler</parameter></paramdef>
                 <paramdef>vec2 <parameter>P</parameter></paramdef>
                 <paramdef>float <parameter>refZ</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>vec4 <function>textureGather</function></funcdef>
-                <paramdef>gsampler2DArrayShadow <parameter>sampler</parameter></paramdef>
+                <paramdef>sampler2DArrayShadow <parameter>sampler</parameter></paramdef>
                 <paramdef>vec3 <parameter>P</parameter></paramdef>
                 <paramdef>float <parameter>refZ</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>vec4 <function>textureGather</function></funcdef>
-                <paramdef>gsamplerCubeShadow <parameter>sampler</parameter></paramdef>
+                <paramdef>samplerCubeShadow <parameter>sampler</parameter></paramdef>
                 <paramdef>vec3 <parameter>P</parameter></paramdef>
                 <paramdef>float <parameter>refZ</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>vec4 <function>textureGather</function></funcdef>
-                <paramdef>gsamplerCubeArrayShadow <parameter>sampler</parameter></paramdef>
+                <paramdef>samplerCubeArrayShadow <parameter>sampler</parameter></paramdef>
                 <paramdef>vec4 <parameter>P</parameter></paramdef>
                 <paramdef>float <parameter>refZ</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>vec4 <function>textureGather</function></funcdef>
-                <paramdef>gsampler2DRectShadow <parameter>sampler</parameter></paramdef>
-                <paramdef>vec3 <parameter>P</parameter></paramdef>
+                <paramdef>sampler2DRectShadow <parameter>sampler</parameter></paramdef>
+                <paramdef>vec2 <parameter>P</parameter></paramdef>
                 <paramdef>float <parameter>refZ</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
