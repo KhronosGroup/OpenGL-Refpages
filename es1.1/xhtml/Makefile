@@ -133,7 +133,4 @@ XML    = $(GLXML)
 default: $(XML)
 
 clean:
-	$(RM) $(TEX_FILES) *.log *.aux *.toc *.dvi *.out
-
-clobber: clean
-	$(RM) $(XML) $(PDF_FILES)
+	$(RM) $(XML)
