@@ -805,5 +805,3 @@ indices: Makefile makeindex.py $(XML)
 
 clean:
 	$(RM) $(XML) index.php indexflat.php
-
-clobber: clean

@@ -143,7 +143,7 @@ XML = \
 default: $(XML)
 
 clean:
-	$(RM) $(XML) $(TEX_FILES) *.log *.aux *.toc *.dvi *.out
+	$(RM) $(XML)
 
 index.html: makeindex.pl
 	makeindex.pl . .. > index.html

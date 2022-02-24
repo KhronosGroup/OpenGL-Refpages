@@ -16,5 +16,10 @@
 
 APIS = es1.1 es2.0 es3 es3.0 es3.1 gl2.1 gl4
 
-all:
-	for dir in $(APIS) ; do (cd $$dir && $(MAKE)) ; done
+all: default
+
+default:
+	for dir in $(APIS) ; do (cd $$dir && $(MAKE) $@) ; done
+
+clean:
+	for dir in $(APIS) ; do (cd $$dir && $(MAKE) $@) ; done

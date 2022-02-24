@@ -49,10 +49,6 @@
     <!-- Now that the xmlns:db is declared above, it gets emitted on the
          <script> elements for unknown reasons
      -->
-    <!-- Per http://docs.mathjax.org/en/latest/start.html#secure-access-to-the-cdn
-         use their secure URI, instead of the HTTP URI
-            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-     -->
     <xsl:template name="user.head.content">
         <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
@@ -65,7 +61,7 @@
             });
         </script>
         <script type="text/javascript"
-            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
         </script>
     </xsl:template>
 
