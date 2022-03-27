@@ -1839,6 +1839,15 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_SAMPLE_MASK_VALUE</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns one value indicating the current sample mask value.
+                        See <citerefentry><refentrytitle>glSampleMaski</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_SAMPLER_BINDING</constant></term>
                 <listitem>
                     <para>
