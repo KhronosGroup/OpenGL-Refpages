@@ -70,7 +70,7 @@
             <parameter>severity</parameter> associated with the message, and
             <parameter>length</parameter> set to the length of debug message
             whose character string is in the array pointed to by
-            <parameter>message</parameter> <parameter>userParam</parameter>
+            <parameter>message</parameter>. <parameter>userParam</parameter>
             will be set to the value passed in the
             <parameter>userParam</parameter> parameter to the most recent
             call to <function>glDebugMessageCallback</function>.
