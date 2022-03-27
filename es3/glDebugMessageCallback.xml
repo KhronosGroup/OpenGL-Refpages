@@ -20,7 +20,7 @@
             <funcprototype>
                 <funcdef>void <function>glDebugMessageCallback</function></funcdef>
                 <paramdef>DEBUGPROC <parameter>callback</parameter></paramdef>
-                <paramdef>void * <parameter>userParam</parameter></paramdef>
+                <paramdef>const void * <parameter>userParam</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
