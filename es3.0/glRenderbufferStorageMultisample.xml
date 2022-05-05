@@ -86,7 +86,7 @@
             Both <parameter>width</parameter> and <parameter>height</parameter> must be less than or equal to the value of
             <constant>GL_MAX_RENDERBUFFER_SIZE</constant>. <parameter>samples</parameter> specifies the number of samples to be used
             for the renderbuffer object's image. If <parameter>internalformat</parameter> is a signed or unsigned integer format then
-                        <parameter>samples</parameter> must be 0.  Otherwise, <parameter>samples</parameter> must be must be less than or equal to
+                        <parameter>samples</parameter> must be 0.  Otherwise, <parameter>samples</parameter> must be less than or equal to
                         the maximum number of samples supported for <parameter>internalformat</parameter>.
                         (see <citerefentry><refentrytitle>glGetInternalformativ</refentrytitle></citerefentry>).
         </para>

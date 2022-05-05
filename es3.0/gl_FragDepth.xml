@@ -33,7 +33,7 @@
             depth will be used (this value is contained in the z component of <citerefentry><refentrytitle>gl_FragCoord</refentrytitle></citerefentry>)
             otherwise, the value written to <varname>gl_FragDepth</varname> is used.
             If a shader statically assigns to <varname>gl_FragDepth</varname>, then the value of the fragment's depth
-            may be undefined for executions of the shader that take that path. That is, if the set of linked fragment
+            may be undefined for executions of the shader that don't take that path. That is, if the set of linked fragment
             shaders statically contain a write to <varname>gl_FragDepth</varname>, then it is responsible for always
             writing it.
         </para>

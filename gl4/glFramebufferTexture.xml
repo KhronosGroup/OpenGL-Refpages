@@ -183,7 +183,7 @@
         <para>
             If <parameter>texture</parameter> is non-zero, the specified
             <parameter>level</parameter> of the texture object named
-            <parameter>texture</parameter> is attached to the framebfufer
+            <parameter>texture</parameter> is attached to the framebuffer
             attachment point named by <parameter>attachment</parameter>. For
             <function>glFramebufferTexture1D</function>,
             <function>glFramebufferTexture2D</function>, and

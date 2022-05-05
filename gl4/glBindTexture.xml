@@ -153,7 +153,7 @@
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_TEXTURE_BINDING_1D</constant>,
             <constant>GL_TEXTURE_BINDING_2D</constant>, <constant>GL_TEXTURE_BINDING_3D</constant>, <constant>GL_TEXTURE_BINDING_1D_ARRAY</constant>,
             <constant>GL_TEXTURE_BINDING_2D_ARRAY</constant>, <constant>GL_TEXTURE_BINDING_RECTANGLE</constant>,
-            <constant>GL_TEXTURE_BINDING_BUFFER</constant>, <constant>GL_TEXTURE_BINDING_CUBE_MAP</constant>, <constant>GL_TEXTURE_BINDING_CUBE_MAP</constant>,
+            <constant>GL_TEXTURE_BINDING_BUFFER</constant>, <constant>GL_TEXTURE_BINDING_CUBE_MAP</constant>,
             <constant>GL_TEXTURE_BINDING_CUBE_MAP_ARRAY</constant>,
             <constant>GL_TEXTURE_BINDING_2D_MULTISAMPLE</constant>,
             or <constant>GL_TEXTURE_BINDING_2D_MULTISAMPLE_ARRAY</constant>.

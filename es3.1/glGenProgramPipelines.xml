@@ -83,7 +83,6 @@
             <citerefentry><refentrytitle>glDeleteProgramPipelines</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glBindProgramPipeline</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glIsProgramPipeline</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glUseShaderPrograms</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glUseProgram</refentrytitle></citerefentry>
         </para>
     </refsect1>

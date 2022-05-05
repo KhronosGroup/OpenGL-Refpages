@@ -232,8 +232,12 @@
             </dt>
             <dd>
               <p>
-                    Specifies the symbolic name of a query object parameter.
-		    Accepted values are <code class="constant">GL_QUERY_RESULT</code> or <code class="constant">GL_QUERY_RESULT_AVAILABLE</code>.
+                    Specifies the symbolic name of a query object
+                    parameter.  Accepted values are
+                    <code class="constant">GL_QUERY_RESULT</code>,
+                    <code class="constant">GL_QUERY_RESULT_AVAILABLE</code>,
+                    <code class="constant">GL_QUERY_RESULT_NO_WAIT</code>, or
+                    <code class="constant">GL_QUERY_TARGET</code>.
                 </p>
             </dd>
             <dt>
@@ -315,6 +319,16 @@
                         If a delay would occur waiting for the query result, <code class="constant">GL_FALSE</code> is returned.
                         Otherwise, <code class="constant">GL_TRUE</code> is returned, which also indicates that the results of all
                         previous queries are available as well.
+                    </p>
+            </dd>
+            <dt>
+              <span class="term">
+                <code class="constant">GL_QUERY_TARGET</code>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                        <em class="parameter"><code>params</code></em> or <em class="parameter"><code>buffer</code></em> returns the query object's target.
                     </p>
             </dd>
           </dl>

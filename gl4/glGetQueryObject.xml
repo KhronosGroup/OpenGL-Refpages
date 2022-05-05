@@ -114,8 +114,12 @@
             <term><parameter>pname</parameter></term>
             <listitem>
                 <para>
-                    Specifies the symbolic name of a query object parameter.
-		    Accepted values are <constant>GL_QUERY_RESULT</constant> or <constant>GL_QUERY_RESULT_AVAILABLE</constant>.
+                    Specifies the symbolic name of a query object
+                    parameter.  Accepted values are
+                    <constant>GL_QUERY_RESULT</constant>,
+                    <constant>GL_QUERY_RESULT_AVAILABLE</constant>,
+                    <constant>GL_QUERY_RESULT_NO_WAIT</constant>, or
+                    <constant>GL_QUERY_TARGET</constant>.
                 </para>
             </listitem>
         </varlistentry>
@@ -180,6 +184,14 @@
                         If a delay would occur waiting for the query result, <constant>GL_FALSE</constant> is returned.
                         Otherwise, <constant>GL_TRUE</constant> is returned, which also indicates that the results of all
                         previous queries are available as well.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_QUERY_TARGET</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> or <parameter>buffer</parameter> returns the query object's target.
                     </para>
                 </listitem>
             </varlistentry>

@@ -57,7 +57,7 @@
             <constant>GL_ACTIVE_UNIFORM_BLOCKS</constant>,
             <constant>GL_ACTIVE_UNIFORM_BLOCK_MAX_NAME_LENGTH</constant>,
             <constant>GL_ACTIVE_UNIFORM_MAX_LENGTH</constant>,
-            <constant>GL_COMPUTE_WORK_GROUP_SIZE</constant>
+            <constant>GL_COMPUTE_WORK_GROUP_SIZE</constant>,
             <constant>GL_PROGRAM_BINARY_LENGTH</constant>,
             <constant>GL_TRANSFORM_FEEDBACK_BUFFER_MODE</constant>,
             <constant>GL_TRANSFORM_FEEDBACK_VARYINGS</constant>,
