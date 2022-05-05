@@ -313,9 +313,9 @@
                         </mml:mrow>
                     </mml:mfenced>
                     <mml:mo>&gt;</mml:mo>
-                    <mml:mn>0</mml:mn>
+                    <mml:mi mathvariant="italic">h</mml:mi>
                 </mml:mrow>
-            </mml:math></inlineequation>,, where <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">w</mml:mi></mml:math></inlineequation> is the <constant>GL_TEXTURE_WIDTH</constant>,
+            </mml:math></inlineequation>, where <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">w</mml:mi></mml:math></inlineequation> is the <constant>GL_TEXTURE_WIDTH</constant>,
             <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">h</mml:mi></mml:math></inlineequation>
             is the <constant>GL_TEXTURE_HEIGHT</constant> and
             of the texture image being modified.
