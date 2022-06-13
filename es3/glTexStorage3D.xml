@@ -164,7 +164,7 @@
                         <parameter>depth</parameter> or <parameter>levels</parameter> are less than 1.
         </para>
         <para>
-            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>target</parameter> is <constant>GL_TEXTURE_2D_ARRAY</constant> or <constant>GL_TEXTURE_CUBE_MAP_ARRAY</constant> and <parameter>width</parameter> and <parameter>height</parameter> are not equal, or
+            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>target</parameter> is <constant>GL_TEXTURE_CUBE_MAP_ARRAY</constant> and <parameter>width</parameter> and <parameter>height</parameter> are not equal, or
                         <parameter>depth</parameter> is not a multiple of six.
         </para>
         <para>
