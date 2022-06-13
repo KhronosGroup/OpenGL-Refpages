@@ -476,7 +476,7 @@
     <parameter>program</parameter> is not a program object.</para>
 
     <para><constant>GL_INVALID_VALUE</constant> is generated if
-    <parameter>uniformCount</parameter> is greater than or equal to the
+    <parameter>uniformCount</parameter> is greater than the
     value of <constant>GL_ACTIVE_UNIFORMS</constant> for
     <parameter>program</parameter>.</para>
 
