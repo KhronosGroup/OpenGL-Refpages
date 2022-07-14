@@ -1,6 +1,6 @@
 <div id="header">
 <div id="branding">
-<a class="branding-logo"  target="_top"  href="http://www.khronos.org/opengles/" title="The Standard for Embedded Accelerated 3D Graphics">
+<a class="branding-logo"  target="_top"  href="https://www.khronos.org/opengles/" title="The Standard for Embedded Accelerated 3D Graphics">
     <img src="//www.khronos.org/opengles/images/opengles_75px.png" alt="OpenGL ES SDK" height="75" width="204" />
 </a>
 <div class="branding-title">
@@ -9,11 +9,11 @@
 
 <div id="nav" class="clearfix">
     <ul id="navlist" class="clearfix">
-        <li class="small-screen"><a target="_top" href="/opengles/sdk/">SDK Home</a></li>
-        <li><a target="_top" href="/opengles/sdk/docs/">Documentation</a></li>
-        <li><a target="_top" href="/opengles/sdk/libs/">Libraries</a></li>
-        <li><a target="_top" href="/opengles/sdk/tools/">Tools</a></li>
-        <li><a target="_new" href="http://www.khronos.org/message_boards/">Forums</a></li>
+        <li class="small-screen"><a target="_top" href="https://www.khronos.org/opengles/sdk/">SDK Home</a></li>
+        <li><a target="_top" href="https://www.khronos.org/opengles/sdk/docs/">Documentation</a></li>
+        <li><a target="_top" href="https://www.khronos.org/opengles/sdk/libs/">Libraries</a></li>
+        <li><a target="_top" href="https://www.khronos.org/opengles/sdk/tools/">Tools</a></li>
+        <li><a target="_new" href="https://community.khronos.org/">Community Forums</a></li>
     </ul>
 </div>
 
