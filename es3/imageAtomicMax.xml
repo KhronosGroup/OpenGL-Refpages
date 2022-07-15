@@ -5,7 +5,7 @@
 <refentry xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="imageAtomicMax">
     <info>
         <copyright>
-            <year>2011-2015</year>
+            <year>2011-2022</year>
             <holder>Khronos Group</holder>
         </copyright>
     </info>
@@ -15,7 +15,7 @@
     </refmeta>
     <refnamediv>
         <refname>imageAtomicMax</refname>
-        <refpurpose>atomically compute the minimum of a value with an existing value in memory, store that value and return the original value</refpurpose>
+        <refpurpose>atomically compute the maximum of a value with an existing value in memory, store that value and return the original value</refpurpose>
     </refnamediv>
     <refsynopsisdiv>
         <title>Declaration</title>
@@ -116,7 +116,7 @@
             <term><parameter>data</parameter></term>
             <listitem>
                 <para>
-                    Specifies the data of which to take the minimum with that stored in the image.
+                    Specifies the data of which to take the maximum with that stored in the image.
                 </para>
             </listitem>
         </varlistentry>
@@ -158,10 +158,10 @@
     </refsect1>
     <refsect1 xml:id="Copyright"><title>Copyright</title>
         <para>
-            Copyright <trademark class="copyright"/> 2011-2015 Khronos Group. 
-            This material may be distributed subject to the terms and conditions set forth in 
+            Copyright <trademark class="copyright"/> 2011-2022 Khronos Group.
+            This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
-            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://opencontent.org/openpub/">http://opencontent.org/openpub/</link>.
+            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://opencontent.org/openpub/">https://opencontent.org/openpub/</link>.
         </para>
     </refsect1>
 </refentry>
