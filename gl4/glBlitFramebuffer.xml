@@ -258,9 +258,9 @@
         </para>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if the
-            value of <constant>GL_SAMPLE_BUFFERS</constant> for both read
-            and draw buffers is greater than zero and the dimensions of the
-            source and destination rectangles is not identical.
+            value of <constant>GL_SAMPLE_BUFFERS</constant> for either read or
+            draw buffers is greater than zero and the dimensions of the source
+            and destination rectangles is not identical.
         </para>
         <para>
             <constant>GL_INVALID_FRAMEBUFFER_OPERATION</constant> is
