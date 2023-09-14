@@ -1,15 +1,14 @@
 </div>
 </div>
 
-
 <div id="footer">
     <ul id="footer-menu">
-    <li><a href="/about/contact/">Contact Us</a></li>
-    <li><a href="/about/">About Us</a></li>
-    <li><a href="/legal/">Legal Notices</a></li>
-    <li><a href="/legal/trademarks/">Trademark Usage</a></li>
+    <li><a href="https://www.khronos.org/about/contact/">Contact Us</a></li>
+    <li><a href="https://www.khronos.org/about/">About Us</a></li>
+    <li><a href="https://www.khronos.org/legal/">Legal Notices</a></li>
+    <li><a href="https://www.khronos.org/legal/trademarks/">Trademark Usage</a></li>
     </ul>
-    <p class="small-print">OpenGL and OpenGL ES are registered trademarks of <a href="http://www.sgi.com">SGI</a>, used by permission.</p>
-    <p class="small-print">Copyright &copy;2014-2017 The Khronos Group. All rights reserved.</p>
-    <p class="small-print">The Khronos Group managed by <a href="http://www.goldstandardgroup.com/">Gold Standard Group</a> and website maintained by <a href="http://outofcontrol.ca/">Out of Control</a> </p>
+    <div class="copyright">&copy; The Khronos<sup>®</sup> Group Inc. 2022. All rights reserved. Hosting provided by <a href="https://khr.io/gitlabaffiliate" aria-label="Hosted by Digital Ocean">DigitalOcean</a></div>
+    <div class="trademark">Khronos® and Vulkan® are registered trademarks, and ANARI™, WebGL™, glTF™, NNEF™, OpenVX™, SPIR™, SPIR-V™, SYCL™, OpenVG™, and 3D Commerce™ are trademarks of The Khronos Group Inc. OpenXR™ is a trademark owned by The Khronos Group Inc. and is registered as a trademark in China, the European Union, Japan and the United Kingdom. OpenCL™, OpenGL® and the OpenGL ES™ and OpenGL SC™ logos are registered trademarks or trademarks used under license by Khronos. All other product names, trademarks, and/or company names are used solely for identification and belong to their respective owners.</div>
+    </div>
 </div>
