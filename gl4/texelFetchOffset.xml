@@ -58,7 +58,7 @@
                 <paramdef>gsampler2DArray <parameter>sampler</parameter></paramdef>
                 <paramdef>ivec3 <parameter>P</parameter></paramdef>
                 <paramdef>int <parameter>lod</parameter></paramdef>
-                <paramdef>ivec3 <parameter>offset</parameter></paramdef>
+                <paramdef>ivec2 <parameter>offset</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
