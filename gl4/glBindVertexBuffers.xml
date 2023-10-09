@@ -84,7 +84,7 @@
             </listitem>
         </varlistentry>
         <varlistentry>
-            <term><parameter>buffers</parameter></term>
+            <term><parameter>strides</parameter></term>
             <listitem>
                 <para>
                     Specifies the address of an array of strides to
