@@ -40,7 +40,7 @@
             <term><parameter>minW</parameter></term>
             <listitem>
                 <para>
-                    Specify the minimum clip space cooridnate of the bounding box. The initial value is (-1, -1, -1, -1).
+                    Specify the minimum clip space coordinate of the bounding box. The initial value is (-1, -1, -1, -1).
                 </para>
             </listitem>
         </varlistentry>
@@ -51,7 +51,7 @@
             <term><parameter>maxW</parameter></term>
             <listitem>
                 <para>
-                    Specify the maximum clip space cooridnate of the bounding box. The initial value is (1, 1, 1, 1).
+                    Specify the maximum clip space coordinate of the bounding box. The initial value is (1, 1, 1, 1).
                 </para>
             </listitem>
         </varlistentry>
