@@ -190,9 +190,9 @@
     less than the value of <constant>GL_MAX_VERTEX_ATTRIBS</constant>.</para>
 
     <para><parameter>size</parameter> determines the number of components per
-    vertex are allocated to the specified attribute and must be 1, 2, 3 or 4.
-    <parameter>type</parameter> indicates the type of the data. If
-    <parameter>type</parameter> is one of <constant>GL_BYTE</constant>,
+    vertex are allocated to the specified attribute and must be 1, 2, 3, 4, or
+    <code>GL_BGRA</code>. <parameter>type</parameter> indicates the type of the
+    data. If <parameter>type</parameter> is one of <constant>GL_BYTE</constant>,
     <constant>GL_SHORT</constant>, <constant>GL_INT</constant>,
     <constant>GL_FIXED</constant>, <constant>GL_FLOAT</constant>,
     <constant>GL_HALF_FLOAT</constant>, and <constant>GL_DOUBLE</constant>
