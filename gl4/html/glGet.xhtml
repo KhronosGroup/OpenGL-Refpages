@@ -640,6 +640,50 @@
             </dd>
             <dt>
               <span class="term">
+                <code class="constant">GL_DEBUG_LOGGED_MESSAGES</code>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                        <em class="parameter"><code>data</code></em> returns a single value, the number of messages
+                        currently in the debug message log.
+                    </p>
+            </dd>
+            <dt>
+              <span class="term">
+                <code class="constant">GL_DEBUG_NEXT_LOGGED_MESSAGE_LENGTH</code>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                        <em class="parameter"><code>data</code></em> returns a single value, the string length
+                        of the oldest debug message in the debug message log.
+                    </p>
+            </dd>
+            <dt>
+              <span class="term">
+                <code class="constant">GL_MAX_DEBUG_MESSAGE_LENGTH</code>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                        <em class="parameter"><code>data</code></em> returns a single value, the maximum length of a
+                        debug message string, including its null terminator.
+                    </p>
+            </dd>
+            <dt>
+              <span class="term">
+                <code class="constant">GL_MAX_DEBUG_LOGGED_MESSAGES</code>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                        <em class="parameter"><code>data</code></em> returns a single value, the maximum number
+                        of messages stored in the debug message log.
+                    </p>
+            </dd>
+            <dt>
+              <span class="term">
                 <code class="constant">GL_MAX_DEBUG_GROUP_STACK_DEPTH</code>
               </span>
             </dt>
@@ -922,6 +966,82 @@
             </dd>
             <dt>
               <span class="term">
+                <code class="constant">GL_QUERY_BUFFER_BINDING</code>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                        <em class="parameter"><code>data</code></em> returns a single value, the name of the buffer object
+                        currently bound to the target <code class="constant">GL_QUERY_BUFFER</code>. If no buffer object
+                        is bound to this target, 0 is returned.  The initial value is 0.
+                        See <a class="citerefentry" href="glBindBuffer.xhtml"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>.
+                    </p>
+            </dd>
+            <dt>
+              <span class="term">
+                <code class="constant">GL_COPY_READ_BUFFER_BINDING</code>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                        <em class="parameter"><code>data</code></em> returns a single value, the name of the buffer object
+                        currently bound to the target <code class="constant">GL_COPY_READ_BUFFER</code>. If no buffer object
+                        is bound to this target, 0 is returned.  The initial value is 0.
+                        See <a class="citerefentry" href="glBindBuffer.xhtml"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>.
+                    </p>
+            </dd>
+            <dt>
+              <span class="term">
+                <code class="constant">GL_COPY_WRITE_BUFFER_BINDING</code>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                        <em class="parameter"><code>data</code></em> returns a single value, the name of the buffer object
+                        currently bound to the target <code class="constant">GL_COPY_WRITE_BUFFER</code>. If no buffer object
+                        is bound to this target, 0 is returned.  The initial value is 0.
+                        See <a class="citerefentry" href="glBindBuffer.xhtml"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>.
+                    </p>
+            </dd>
+            <dt>
+              <span class="term">
+                <code class="constant">GL_COPY_WRITE_BUFFER_BINDING</code>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                        <em class="parameter"><code>data</code></em> returns a single value, the name of the buffer object
+                        currently bound to the target <code class="constant">GL_COPY_WRITE_BUFFER</code>. If no buffer object
+                        is bound to this target, 0 is returned.  The initial value is 0.
+                        See <a class="citerefentry" href="glBindBuffer.xhtml"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>.
+                    </p>
+            </dd>
+            <dt>
+              <span class="term">
+                <code class="constant">GL_RESET_NOTIFICATION_STRATEGY</code>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                        <em class="parameter"><code>data</code></em> returns a single value, the reset notification behavior. 
+                        Either <code class="constant">GL_NO_RESET_NOTIFICATION</code> or <code class="constant">GL_LOSE_CONTEXT_ON_RESET</code>.
+                    </p>
+            </dd>
+            <dt>
+              <span class="term">
+                <code class="constant">GL_TEXTURE_BUFFER_BINDING</code>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                        <em class="parameter"><code>data</code></em> returns a single value, the name of the buffer object
+                        currently bound to the target <code class="constant">GL_TEXTURE_BUFFER</code>. If no buffer object
+                        is bound to this target, 0 is returned.  The initial value is 0.
+                        See <a class="citerefentry" href="glBindBuffer.xhtml"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>.
+                    </p>
+            </dd>
+            <dt>
+              <span class="term">
                 <code class="constant">GL_LINE_SMOOTH</code>
               </span>
             </dt>
@@ -1153,6 +1273,36 @@
             </dd>
             <dt>
               <span class="term">
+                <code class="constant">GL_MIN_FRAGMENT_INTERPOLATION_OFFSET</code>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                        <em class="parameter"><code>data</code></em> returns one value, the furthest negative offset for <a class="citerefentry" href="interpolateAtOffset.xhtml"><span class="citerefentry"><span class="refentrytitle">interpolateAtOffset</span></span></a>.
+                    </p>
+            </dd>
+            <dt>
+              <span class="term">
+                <code class="constant">GL_MAX_FRAGMENT_INTERPOLATION_OFFSET</code>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                        <em class="parameter"><code>data</code></em> returns one value, the furthest positive offset for <a class="citerefentry" href="interpolateAtOffset.xhtml"><span class="citerefentry"><span class="refentrytitle">interpolateAtOffset</span></span></a>.
+                    </p>
+            </dd>
+            <dt>
+              <span class="term">
+                <code class="constant">GL_FRAGMENT_INTERPOLATION_OFFSET_BITS</code>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                        <em class="parameter"><code>data</code></em> returns one value, the subpixel bits for <a class="citerefentry" href="interpolateAtOffset.xhtml"><span class="citerefentry"><span class="refentrytitle">interpolateAtOffset</span></span></a>.
+                    </p>
+            </dd>
+            <dt>
+              <span class="term">
                 <code class="constant">GL_MAX_DRAW_BUFFERS</code>
               </span>
             </dt>
@@ -1175,6 +1325,61 @@
                         of active draw buffers when using dual-source  blending. The value must be at least 1.
                         See <a class="citerefentry" href="glBlendFunc.xhtml"><span class="citerefentry"><span class="refentrytitle">glBlendFunc</span></span></a> and
                         <a class="citerefentry" href="glBlendFuncSeparate.xhtml"><span class="citerefentry"><span class="refentrytitle">glBlendFuncSeparate</span></span></a>.
+                    </p>
+            </dd>
+            <dt>
+              <span class="term">
+                <code class="constant">GL_MAX_COLOR_ATTACHMENTS</code>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                        <em class="parameter"><code>data</code></em> returns one value, the maximum number
+                        of FBO attachment points for colorbuffers.
+                    </p>
+            </dd>
+            <dt>
+              <span class="term">
+                <code class="constant">GL_MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS</code>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                        <em class="parameter"><code>data</code></em> returns one value, the maximum number
+                        of components to write to a single buffer in interleaved mode.
+                    </p>
+            </dd>
+            <dt>
+              <span class="term">
+                <code class="constant">GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS</code>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                        <em class="parameter"><code>data</code></em> returns one value, the maximum number
+                        of separate attributes or outputs that can be captured in transform feedback.
+                    </p>
+            </dd>
+            <dt>
+              <span class="term">
+                <code class="constant">GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS</code>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                        <em class="parameter"><code>data</code></em> returns one value, the maximum number
+                        of components per attribute or output in separate mode.
+                    </p>
+            </dd>
+            <dt>
+              <span class="term">
+                <code class="constant">GL_MAX_TRANSFORM_FEEDBACK_BUFFERS</code>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                        <em class="parameter"><code>data</code></em> returns one value, the maximum number
+                        of buffer objs to write with transform feedback.
                     </p>
             </dd>
             <dt>
@@ -1496,6 +1701,17 @@
               <p>
                         <em class="parameter"><code>data</code></em> returns one value,
                         the maximum number of sample mask words.
+                    </p>
+            </dd>
+            <dt>
+              <span class="term">
+                <code class="constant">GL_MAX_SAMPLES</code>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                        <em class="parameter"><code>data</code></em> returns one value,
+                        the maximum number of samples supported for multisampling.
                     </p>
             </dd>
             <dt>

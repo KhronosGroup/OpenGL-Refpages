@@ -156,9 +156,9 @@
     </refsect1>
     <refsect1 xml:id="seealso"><title>See Also</title>
         <para>
-            <citerefentry><refentrytitle>glGetError</refentrytitle></citerefentry>
+            <citerefentry><refentrytitle>glGetError</refentrytitle></citerefentry>,
             <!-- FIX: link to glGet --> <function>glGetIntegerv</function>,
-            <!-- FIX: link to glGetQueryiv --> <function>glGetQueryObjectuiv</function>
+            <!-- FIX: link to glGetQueryiv --> <function>glGetQueryObjectuiv</function>,
             <!-- FIX: link to glGetSync --> <function>glGetSynciv</function>
         </para>
     </refsect1>
