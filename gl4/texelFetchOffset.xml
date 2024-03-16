@@ -104,8 +104,7 @@
             in the texture bound to <parameter>sampler</parameter>. Before fetching the texel, the offset specified in <parameter>offset</parameter>
             is added to <parameter>P</parameter>. <parameter>offset</parameter> must be a constant expression. The array layer is specified in the last component of
             <parameter>P</parameter> for array forms. The <parameter>lod</parameter> parameter (if present) specifies the level-of-detail
-            from which the texel will be fetched. The <parameter>sample</parameter> parameter specifies which sample within the texel will be
-            returned when reading from a multi-sample texure.
+            from which the texel will be fetched.
         </para>
     </refsect1>
     <refsect1 xml:id="versions"><title>Version Support</title>
@@ -115,15 +114,7 @@
                 <tbody>
                     <row>
                         <entry>texelFetchOffset</entry>
-                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(/*/*[@role='13']/*)"/>
-                    </row>
-                    <row>
-                        <entry>texelFetchOffset (gsampler2DRect)</entry>
                         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(/*/*[@role='14']/*)"/>
-                    </row>
-                    <row>
-                        <entry>texelFetchOffset (gsampler2DMS, gsampler2DMSArray)</entry>
-                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(/*/*[@role='15']/*)"/>
                     </row>
                 </tbody>
             </tgroup>
