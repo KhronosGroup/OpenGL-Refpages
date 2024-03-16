@@ -22,8 +22,8 @@
             <funcprototype>
                 <funcdef>int <function>atomicCompSwap</function></funcdef>
                 <paramdef>inout int <parameter>mem</parameter></paramdef>
-                <paramdef>uint <parameter>compare</parameter></paramdef>
-                <paramdef>uint <parameter>data</parameter></paramdef>
+                <paramdef>int <parameter>compare</parameter></paramdef>
+                <paramdef>int <parameter>data</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>uint <function>atomicCompSwap</function></funcdef>
