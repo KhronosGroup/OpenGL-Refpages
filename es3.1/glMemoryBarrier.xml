@@ -205,8 +205,11 @@
                     <term><constant>GL_SHADER_STORAGE_BARRIER_BIT</constant></term>
                     <listitem>
                     <para>
-                        Accesses to shader storage blocks after the
-                        barrier will reflect writes prior to the barrier.
+                        Memory accesses using shader buffer
+                        variables issued after the barrier will reflect data written by shaders prior to
+                        the barrier. Additionally, assignments to and atomic operations performed
+                        on shader buffer variables after the barrier will not execute until all memory
+                        accesses initiated prior to the barrier complete.
                     </para>
                     </listitem>
                 </varlistentry>

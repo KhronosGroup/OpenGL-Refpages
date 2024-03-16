@@ -294,8 +294,11 @@
             </dt>
             <dd>
               <p>
-                        Accesses to atomic counters after the
-                        barrier will reflect writes prior to the barrier.
+                        Memory accesses using shader atomic counter built-in functions issued after the 
+                        barrier will reflect data written by shaders prior to the barrier. 
+                        Additionally, atomic counter function invocations after 
+                        the barrier will not execute until all memory accesses 
+                        initiated prior to the barrier complete.
                     </p>
             </dd>
             <dt>
@@ -305,8 +308,11 @@
             </dt>
             <dd>
               <p>
-                        Accesses to shader storage blocks after the
-                        barrier will reflect writes prior to the barrier.
+                        Memory accesses using shader buffer variables issued 
+                        after the barrier will reflect data written by shaders prior to the barrier.
+                        Additionally, assignments to and atomic operations performed
+                        on shader buffer variables after the barrier will not execute until all memory
+                        accesses initiated prior to the barrier complete.
                     </p>
             </dd>
             <dt>
