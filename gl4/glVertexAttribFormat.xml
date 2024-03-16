@@ -167,7 +167,7 @@
         <term><parameter>relativeoffset</parameter></term>
 
         <listitem>
-          <para>The distance between elements within the buffer.</para>
+          <para>A byte offset of the first element relative to the start of the vertex buffer binding this attribute fetches from.</para>
         </listitem>
       </varlistentry>
     </variablelist>
