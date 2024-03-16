@@ -775,17 +775,6 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_COPY_WRITE_BUFFER_BINDING</constant></term>
-                <listitem>
-                    <para>
-                        <parameter>data</parameter> returns a single value, the name of the buffer object
-                        currently bound to the target <constant>GL_COPY_WRITE_BUFFER</constant>. If no buffer object
-                        is bound to this target, 0 is returned.  The initial value is 0.
-                        See <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>.
-                    </para>
-                </listitem>
-            </varlistentry>
-            <varlistentry>
                 <term><constant>GL_RESET_NOTIFICATION_STRATEGY</constant></term>
                 <listitem>
                     <para>
