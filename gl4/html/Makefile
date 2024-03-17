@@ -467,6 +467,7 @@ UNMODIFIEDXML = \
     glPointSize.xhtml \
     glPolygonMode.xhtml \
     glPolygonOffset.xhtml \
+    glPolygonOffsetClamp.xhtml \
     glPrimitiveRestartIndex.xhtml \
     glProvokingVertex.xhtml \
     glQueryCounter.xhtml \

@@ -487,6 +487,7 @@
                 <li><a href="glPointSize.xhtml" target="pagedisplay">glPointSize</a></li>
                 <li><a href="glPolygonMode.xhtml" target="pagedisplay">glPolygonMode</a></li>
                 <li><a href="glPolygonOffset.xhtml" target="pagedisplay">glPolygonOffset</a></li>
+                <li><a href="glPolygonOffsetClamp.xhtml" target="pagedisplay">glPolygonOffsetClamp</a></li>
                 <li><a href="glPopDebugGroup.xhtml" target="pagedisplay">glPopDebugGroup</a></li>
                 <li><a href="glPrimitiveRestartIndex.xhtml" target="pagedisplay">glPrimitiveRestartIndex</a></li>
                 <li><a href="glProgramBinary.xhtml" target="pagedisplay">glProgramBinary</a></li>

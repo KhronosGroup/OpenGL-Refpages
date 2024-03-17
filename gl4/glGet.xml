@@ -1717,7 +1717,8 @@
                         the scaling factor used to determine the variable offset that is added
                         to the depth value of each fragment generated when a polygon is
                         rasterized. The initial value is 0.
-                        See <citerefentry><refentrytitle>glPolygonOffset</refentrytitle></citerefentry>.
+                        See <citerefentry><refentrytitle>glPolygonOffset</refentrytitle></citerefentry> and
+                        <citerefentry><refentrytitle>glPolygonOffsetClamp</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1729,7 +1730,19 @@
                         This value is multiplied by an implementation-specific value and then
                         added to the depth value of each fragment
                         generated when a polygon is rasterized. The initial value is 0.
-                        See <citerefentry><refentrytitle>glPolygonOffset</refentrytitle></citerefentry>.
+                        See <citerefentry><refentrytitle>glPolygonOffset</refentrytitle></citerefentry> and
+                        <citerefentry><refentrytitle>glPolygonOffsetClamp</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_POLYGON_OFFSET_CLAMP</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value.
+                        This value is used to clamp the offset added to the depth value of each
+                        fragment generated when a polygon is resterized. The initial value is 0.
+                        See <citerefentry><refentrytitle>glPolygonOffsetClamp</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1739,7 +1752,8 @@
                     <para>
                         <parameter>data</parameter> returns a single boolean value indicating whether polygon offset
                         is enabled for polygons in fill mode. The initial value is <constant>GL_FALSE</constant>.
-                        See <citerefentry><refentrytitle>glPolygonOffset</refentrytitle></citerefentry>.
+                        See <citerefentry><refentrytitle>glPolygonOffset</refentrytitle></citerefentry> and
+                        <citerefentry><refentrytitle>glPolygonOffsetClamp</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1749,7 +1763,8 @@
                     <para>
                         <parameter>data</parameter> returns a single boolean value indicating whether polygon offset
                         is enabled for polygons in line mode. The initial value is <constant>GL_FALSE</constant>.
-                        See <citerefentry><refentrytitle>glPolygonOffset</refentrytitle></citerefentry>.
+                        See <citerefentry><refentrytitle>glPolygonOffset</refentrytitle></citerefentry> and
+                        <citerefentry><refentrytitle>glPolygonOffsetClamp</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1759,7 +1774,8 @@
                     <para>
                         <parameter>data</parameter> returns a single boolean value indicating whether polygon offset
                         is enabled for polygons in point mode. The initial value is <constant>GL_FALSE</constant>.
-                        See <citerefentry><refentrytitle>glPolygonOffset</refentrytitle></citerefentry>.
+                        See <citerefentry><refentrytitle>glPolygonOffset</refentrytitle></citerefentry> and
+                        <citerefentry><refentrytitle>glPolygonOffsetClamp</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>

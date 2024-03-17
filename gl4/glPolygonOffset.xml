@@ -120,6 +120,7 @@
     </refsect1>
     <refsect1 xml:id="seealso"><title>See Also</title>
         <para>
+            <citerefentry><refentrytitle>glPolygonOffsetClamp</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDepthFunc</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>,

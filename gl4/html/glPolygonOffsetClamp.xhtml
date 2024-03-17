@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <title>glPolygonOffset - OpenGL 4 Reference Pages</title>
+    <title>glPolygonOffsetClamp - OpenGL 4 Reference Pages</title>
     <link rel="stylesheet" type="text/css" href="opengl-man.css"/>
     <meta name="generator" content="DocBook XSL Stylesheets V1.79.2"/>
     <script type="text/x-mathjax-config">
@@ -18,11 +18,11 @@
   </head>
   <body>
     <header/>
-    <div class="refentry" id="glPolygonOffset">
+    <div class="refentry" id="glPolygonOffsetClamp">
       <div class="titlepage"/>
       <div class="refnamediv">
         <h2>Name</h2>
-        <p>glPolygonOffset — set the scale and units used to calculate depth values</p>
+        <p>glPolygonOffsetClamp — set the scale, units and clamp used to calculate depth values</p>
       </div>
       <div class="refsynopsisdiv">
         <h2>C Specification</h2>
@@ -30,13 +30,17 @@
           <table style="border: 0; cellspacing: 0; cellpadding: 0;" class="funcprototype-table">
             <tr>
               <td>
-                <code class="funcdef">void <strong class="fsfunc">glPolygonOffset</strong>(</code>
+                <code class="funcdef">void <strong class="fsfunc">glPolygonOffsetClamp</strong>(</code>
               </td>
               <td>GLfloat <var class="pdparam">factor</var>, </td>
             </tr>
             <tr>
               <td> </td>
-              <td>GLfloat <var class="pdparam">units</var><code>)</code>;</td>
+              <td>GLfloat <var class="pdparam">units</var>, </td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td>GLfloat <var class="pdparam">clamp</var><code>)</code>;</td>
             </tr>
           </table>
           <div class="funcprototype-spacer"> </div>
@@ -72,6 +76,18 @@
                     create a constant depth offset. The initial value is 0.
                 </p>
             </dd>
+            <dt>
+              <span class="term">
+                <em class="parameter">
+                  <code>clamp</code>
+                </em>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                    Used to set a maximum or minimum value for the offset calculation.
+                </p>
+            </dd>
           </dl>
         </div>
       </div>
@@ -82,23 +98,108 @@
             <code class="constant">GL_POLYGON_OFFSET_POINT</code> is enabled, each
             fragment's <span class="emphasis"><em>depth</em></span> value will be offset after it is interpolated
             from the <span class="emphasis"><em>depth</em></span> values of the appropriate vertices.
-            The value of the offset is
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
-                
-                <mml:mrow>
-                    <mml:mrow>
-                        <mml:mi mathvariant="italic">factor</mml:mi>
-                        <mml:mo>×</mml:mo>
-                        <mml:mi mathvariant="italic">DZ</mml:mi>
-                    </mml:mrow>
-                    <mml:mo>+</mml:mo>
-                    <mml:mrow>
-                        <mml:mi mathvariant="italic">r</mml:mi>
-                        <mml:mo>×</mml:mo>
-                        <mml:mi mathvariant="italic">units</mml:mi>
-                    </mml:mrow>
-                </mml:mrow>
-            </mml:math>,
+            The offset is calculated as follows:
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="block" overflow="scroll">
+            
+            <mml:mrow>
+                <mml:mi mathvariant="italic">o</mml:mi>
+                <mml:mo>=</mml:mo>
+                <mml:mo>{</mml:mo>
+                <mml:mtable columnalign="left left" rowspacing=".1em" columnspacing="1em">
+                <mml:mtr>
+                    <mml:mtd>
+                        <mml:mrow>
+                            <mml:mi mathvariant="italic">factor</mml:mi>
+                            <mml:mo>×</mml:mo>
+                            <mml:mi mathvariant="italic">DZ</mml:mi>
+                        </mml:mrow>
+                        <mml:mo>+</mml:mo>
+                        <mml:mrow>
+                            <mml:mi mathvariant="italic">r</mml:mi>
+                            <mml:mo>×</mml:mo>
+                            <mml:mi mathvariant="italic">units</mml:mi>
+                        </mml:mrow>
+                        <mml:mo>,</mml:mo>
+                    </mml:mtd>
+                    <mml:mtd>
+                        <mml:mrow>
+                            <mml:mi mathvariant="italic">clamp</mml:mi>
+                            <mml:mo>=</mml:mo>
+                            <mml:mn>0</mml:mn>
+                            <mml:mtext> </mml:mtext>
+                            <mml:mi mathvariant="normal">or</mml:mi>
+                            <mml:mtext> </mml:mtext>
+                            <mml:mi mathvariant="italic">NaN</mml:mi>
+                        </mml:mrow>
+                    </mml:mtd>
+                </mml:mtr>
+                <mml:mtr>
+                    <mml:mtd>
+                        <mml:mo movablelimits="true">min</mml:mo>
+                        <mml:mrow>
+                            <mml:mo stretchy="false">(</mml:mo>
+                            <mml:mrow>
+                                <mml:mi mathvariant="italic">factor</mml:mi>
+                                <mml:mo>×</mml:mo>
+                                <mml:mi mathvariant="italic">DZ</mml:mi>
+                            </mml:mrow>
+                            <mml:mo>+</mml:mo>
+                            <mml:mrow>
+                                <mml:mi mathvariant="italic">r</mml:mi>
+                                <mml:mo>×</mml:mo>
+                                <mml:mi mathvariant="italic">units</mml:mi>
+                            </mml:mrow>
+                            <mml:mo>,</mml:mo>
+                            <mml:mrow>
+                                <mml:mi mathvariant="italic">clamp</mml:mi>
+                            </mml:mrow>
+                            <mml:mo stretchy="false">)</mml:mo>
+                        </mml:mrow>
+                        <mml:mo>,</mml:mo>
+                    </mml:mtd>
+                    <mml:mtd>
+                        <mml:mrow>
+                            <mml:mi mathvariant="italic">clamp</mml:mi>
+                        </mml:mrow>
+                        <mml:mo>&gt;</mml:mo>
+                        <mml:mn>0</mml:mn>
+                    </mml:mtd>
+                </mml:mtr>
+                <mml:mtr>
+                    <mml:mtd>
+                        <mml:mo movablelimits="true">max</mml:mo>
+                        <mml:mrow>
+                            <mml:mo stretchy="false">(</mml:mo>
+                            <mml:mrow>
+                                <mml:mi mathvariant="italic">factor</mml:mi>
+                                <mml:mo>×</mml:mo>
+                                <mml:mi mathvariant="italic">DZ</mml:mi>
+                            </mml:mrow>
+                            <mml:mo>+</mml:mo>
+                            <mml:mrow>
+                                <mml:mi mathvariant="italic">r</mml:mi>
+                                <mml:mo>×</mml:mo>
+                                <mml:mi mathvariant="italic">units</mml:mi>
+                            </mml:mrow>
+                            <mml:mo>,</mml:mo>
+                            <mml:mrow>
+                                <mml:mi mathvariant="italic">clamp</mml:mi>
+                            </mml:mrow>
+                            <mml:mo stretchy="false">)</mml:mo>
+                        </mml:mrow>
+                        <mml:mo>,</mml:mo>
+                    </mml:mtd>
+                    <mml:mtd>
+                        <mml:mrow>
+                            <mml:mi mathvariant="italic">clamp</mml:mi>
+                        </mml:mrow>
+                        <mml:mo>&lt;</mml:mo>
+                        <mml:mn>0</mml:mn>
+                    </mml:mtd>
+                </mml:mtr>
+                </mml:mtable>
+            </mml:mrow>
+            </mml:math>
             where
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
@@ -113,7 +214,7 @@
             the value is written into the depth buffer.
         </p>
         <p>
-            <code class="function">glPolygonOffset</code> is useful for rendering hidden-line images, for applying decals
+            <code class="function">glPolygonOffsetClamp</code> is useful for rendering hidden-line images, for applying decals
             to surfaces, and for rendering solids with highlighted edges.
         </p>
       </div>
@@ -126,8 +227,8 @@
             or <code class="constant">GL_POLYGON_OFFSET_POINT</code>.
         </p>
         <p>
-            <a class="citerefentry" href="glGet.xhtml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_POLYGON_OFFSET_FACTOR</code> or
-            <code class="constant">GL_POLYGON_OFFSET_UNITS</code>.
+            <a class="citerefentry" href="glGet.xhtml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_POLYGON_OFFSET_FACTOR</code>, 
+            <code class="constant">GL_POLYGON_OFFSET_UNITS</code> or <code class="constant">POLYGON_OFFSET_CLAMP</code>.
         </p>
       </div>
       <div class="refsect1" id="versions">
@@ -207,7 +308,7 @@
             <tbody>
               <tr>
                 <td style="text-align: left; border-right: 2px solid ; ">
-                  <code class="function">glPolygonOffset</code>
+                  <code class="function">glPolygonOffsetClamp</code>
                 </td>
                 <td style="text-align: center; border-right: 2px solid ; ">✔</td>
                 <td style="text-align: center; border-right: 2px solid ; ">✔</td>
@@ -230,7 +331,7 @@
       <div class="refsect1" id="seealso">
         <h2>See Also</h2>
         <p>
-            <a class="citerefentry" href="glPolygonOffsetClamp.xhtml"><span class="citerefentry"><span class="refentrytitle">glPolygonOffsetClamp</span></span></a>,
+            <a class="citerefentry" href="glPolygonOffset.xhtml"><span class="citerefentry"><span class="refentrytitle">glPolygonOffset</span></span></a>,
             <a class="citerefentry" href="glDepthFunc.xhtml"><span class="citerefentry"><span class="refentrytitle">glDepthFunc</span></span></a>,
             <a class="citerefentry" href="glEnable.xhtml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>,
             <a class="citerefentry" href="glGet.xhtml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>,

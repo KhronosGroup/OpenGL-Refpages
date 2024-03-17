@@ -16,6 +16,7 @@
     <colspec colwidth="1*" align="center" />
     <colspec colwidth="1*" align="center" />
     <colspec colwidth="1*" align="center" />
+    <colspec colwidth="1*" align="center" />
     <colspec colwidth="1*" align="center" colname="lastvers" />
     <spanspec spanname="allvers" namest="firstvers" nameend="lastvers" />
     <thead>
@@ -66,6 +67,9 @@
             </entry>
             <entry>
                 <emphasis role="bold">4.50</emphasis>
+            </entry>
+            <entry>
+                <emphasis role="bold">4.60</emphasis>
             </entry>
         </row>
     </thead>
