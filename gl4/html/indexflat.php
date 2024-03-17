@@ -596,6 +596,7 @@
                 <li><a href="modf.xhtml" target="pagedisplay">modf</a></li>
                 <li><a href="glMultiDrawArrays.xhtml" target="pagedisplay">glMultiDrawArrays</a></li>
                 <li><a href="glMultiDrawArraysIndirect.xhtml" target="pagedisplay">glMultiDrawArraysIndirect</a></li>
+                <li><a href="glMultiDrawArraysIndirectCount.xhtml" target="pagedisplay">glMultiDrawArraysIndirectCount</a></li>
                 <li><a href="glMultiDrawElements.xhtml" target="pagedisplay">glMultiDrawElements</a></li>
                 <li><a href="glMultiDrawElementsBaseVertex.xhtml" target="pagedisplay">glMultiDrawElementsBaseVertex</a></li>
                 <li><a href="glMultiDrawElementsIndirect.xhtml" target="pagedisplay">glMultiDrawElementsIndirect</a></li>
