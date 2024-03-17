@@ -133,13 +133,16 @@
             by platform-recognition algorithms.
         </para>
         <para>
-            The <constant>GL_VERSION</constant> and <constant>GL_SHADING_LANGUAGE_VERSION</constant> strings begin with a version number.
-            The version number uses one
-            of these forms:
+            The <constant>GL_VERSION</constant> string is laid out as follows:
+            <blockquote><emphasis>OpenGL ES N.M vendor-specific information</emphasis></blockquote>
+            The <constant>GL_SHADING_LANGUAGE_VERSION</constant> string is laid out as follows:
+            <blockquote><emphasis>OpenGL ES GLSL ES N.M vendor-specific information</emphasis></blockquote>
         </para>
         <para>
-            <emphasis>major_number.minor_number</emphasis>
-            <emphasis>major_number.minor_number.release_number</emphasis>
+            The version number is either of the form <emphasis>major_number.minor_number</emphasis> or
+            <emphasis>major_number.minor_number.release_number</emphasis>, where the numbers all have one or more digits.
+            The minor number for SHADING_LANGUAGE_VERSION is always two digits, 
+            matching the OpenGL ES Shading Language Specification release number.
         </para>
         <para>
             Vendor-specific information may follow the version
