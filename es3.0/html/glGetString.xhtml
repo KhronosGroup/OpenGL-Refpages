@@ -178,13 +178,32 @@
             by platform-recognition algorithms.
         </p>
         <p>
-            The <code class="constant">GL_VERSION</code> and <code class="constant">GL_SHADING_LANGUAGE_VERSION</code> strings begin with a version number.
-            The version number uses one
-            of these forms:
+            The <code class="constant">GL_VERSION</code> string is laid out as follows:
+            </p>
+        <div class="blockquote">
+          <blockquote class="blockquote">
+            <span class="emphasis">
+              <em>OpenGL ES N.M vendor-specific information</em>
+            </span>
+          </blockquote>
+        </div>
+        <p>
+            The <code class="constant">GL_SHADING_LANGUAGE_VERSION</code> string is laid out as follows:
+            </p>
+        <div class="blockquote">
+          <blockquote class="blockquote">
+            <span class="emphasis">
+              <em>OpenGL ES GLSL ES N.M vendor-specific information</em>
+            </span>
+          </blockquote>
+        </div>
+        <p>
         </p>
         <p>
-            <span class="emphasis"><em>major_number.minor_number</em></span>
-            <span class="emphasis"><em>major_number.minor_number.release_number</em></span>
+            The version number is either of the form <span class="emphasis"><em>major_number.minor_number</em></span> or
+            <span class="emphasis"><em>major_number.minor_number.release_number</em></span>, where the numbers all have one or more digits.
+            The minor number for SHADING_LANGUAGE_VERSION is always two digits, 
+            matching the OpenGL ES Shading Language Specification release number.
         </p>
         <p>
             Vendor-specific information may follow the version
