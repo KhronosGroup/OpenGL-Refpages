@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <title>glMultiDrawElementsIndirect - OpenGL 4 Reference Pages</title>
+    <title>glMultiDrawElementsIndirectCount - OpenGL 4 Reference Pages</title>
     <link rel="stylesheet" type="text/css" href="opengl-man.css"/>
     <meta name="generator" content="DocBook XSL Stylesheets V1.79.2"/>
     <script type="text/x-mathjax-config">
@@ -18,11 +18,11 @@
   </head>
   <body>
     <header/>
-    <div class="refentry" id="glMultiDrawElementsIndirect">
+    <div class="refentry" id="glMultiDrawElementsIndirectCount">
       <div class="titlepage"/>
       <div class="refnamediv">
         <h2>Name</h2>
-        <p>glMultiDrawElementsIndirect — render indexed primitives from array data, taking parameters from memory</p>
+        <p>glMultiDrawElementsIndirectCount — render indexed primitives from array data, taking parameters and count from memory</p>
       </div>
       <div class="refsynopsisdiv">
         <h2>C Specification</h2>
@@ -30,7 +30,7 @@
           <table style="border: 0; cellspacing: 0; cellpadding: 0;" class="funcprototype-table">
             <tr>
               <td>
-                <code class="funcdef">void <strong class="fsfunc">glMultiDrawElementsIndirect</strong>(</code>
+                <code class="funcdef">void <strong class="fsfunc">glMultiDrawElementsIndirectCount</strong>(</code>
               </td>
               <td>GLenum <var class="pdparam">mode</var>, </td>
             </tr>
@@ -44,7 +44,11 @@
             </tr>
             <tr>
               <td> </td>
-              <td>GLsizei <var class="pdparam">drawcount</var>, </td>
+              <td>GLintptr <var class="pdparam">drawcount</var>, </td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td>GLsizei <var class="pdparam">maxdrawcount</var>, </td>
             </tr>
             <tr>
               <td> </td>
@@ -119,7 +123,22 @@
             </dt>
             <dd>
               <p>
-                    Specifies the number of elements in the array addressed by <em class="parameter"><code>indirect</code></em>.
+                    Specifies an offset (in bytes) into the buffer object bound to the <code class="constant">GL_PARAMETER_BUFFER</code> 
+                    binding point at which a single <span class="emphasis"><em>sizei</em></span> typed value is stored. Must be a multiple of four.
+                </p>
+            </dd>
+            <dt>
+              <span class="term">
+                <em class="parameter">
+                  <code>maxdrawcount</code>
+                </em>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                    Specifies the maximum number of draws that are expected to be stored in the buffer.
+                    If the value stored at <em class="parameter"><code>drawcount</code></em> into the buffer is greater than <em class="parameter"><code>maxdrawcount</code></em>,
+                    the implementation stops processing draws after <em class="parameter"><code>maxdrawcount</code></em> parameter sets.
                 </p>
             </dd>
             <dt>
@@ -140,13 +159,11 @@
       <div class="refsect1" id="description">
         <h2>Description</h2>
         <p>
-            <code class="function">glMultiDrawElementsIndirect</code> specifies multiple indexed geometric primitives
-            with very few subroutine calls. <code class="function">glMultiDrawElementsIndirect</code> behaves
-            similarly to a multitude of calls to <a class="citerefentry" href="glDrawElementsInstancedBaseVertexBaseInstance.xhtml"><span class="citerefentry"><span class="refentrytitle">glDrawElementsInstancedBaseVertexBaseInstance</span></span></a>,
-            execpt that the parameters to <a class="citerefentry" href="glDrawElementsInstancedBaseVertexBaseInstance.xhtml"><span class="citerefentry"><span class="refentrytitle">glDrawElementsInstancedBaseVertexBaseInstance</span></span></a>
-            are stored in an array in memory at the address given by <em class="parameter"><code>indirect</code></em>, separated
-            by the stride, in basic machine units, specified by <em class="parameter"><code>stride</code></em>. If <em class="parameter"><code>stride</code></em>
-            is zero, then the array is assumed to be tightly packed in memory.
+            <code class="function">glMultiDrawElementsIndirectCount</code> specifies multiple geometric primitives
+            with very few subroutine calls. <code class="function">glMultiDrawElementsIndirectCount</code> behaves
+            similarly to <a class="citerefentry" href="glMultiDrawElementsIndirect.xhtml"><span class="citerefentry"><span class="refentrytitle">glMultiDrawElementsIndirect</span></span></a>,
+            execept that the <em class="parameter"><code>drawcount</code></em> parameter is stored in the buffer bound to the 
+            <code class="constant">GL_PARAMETER_BUFFER</code> binding at the offset specified by <em class="parameter"><code>drawcount</code></em>.
         </p>
         <p>
             The parameters addressed by <em class="parameter"><code>indirect</code></em> are packed into a structure
@@ -162,31 +179,8 @@
         <p>
         </p>
         <p>
-            A single call to <code class="function">glMultiDrawElementsIndirect</code> is equivalent, assuming no errors
-            are generated to:
-            </p>
-        <pre class="programlisting">    GLsizei n;
-    for (n = 0; n &lt; drawcount; n++) {
-        const DrawElementsIndirectCommand *cmd;
-        if (stride != 0) {
-            cmd = (const DrawElementsIndirectCommand  *)((uintptr)indirect + n * stride);
-        } else {
-            cmd = (const DrawElementsIndirectCommand  *)indirect + n;
-        }
-
-        glDrawElementsInstancedBaseVertexBaseInstance(mode,
-                                                      cmd-&gt;count,
-                                                      type,
-                                                      cmd-&gt;firstIndex * size-of-type,
-                                                      cmd-&gt;instanceCount,
-                                                      cmd-&gt;baseVertex,
-                                                      cmd-&gt;baseInstance);
-    }</pre>
-        <p>
-        </p>
-        <p>
             If a buffer is bound to the <code class="constant">GL_DRAW_INDIRECT_BUFFER</code> binding at the time
-            of a call to <code class="function">glDrawElementsIndirect</code>, <em class="parameter"><code>indirect</code></em>
+            of a call to <code class="function">glMultiDrawElementsIndirectCount</code>, <em class="parameter"><code>indirect</code></em>
             is interpreted as an offset, in basic machine units, into that buffer and the parameter
             data is read from the buffer rather than from client memory.
         </p>
@@ -199,18 +193,9 @@
             of the parameter structure is non-zero. However, no error is generated in this case.
         </p>
         <p>
-            Vertex attributes that are modified by <code class="function">glDrawElementsIndirect</code> have an
-            unspecified value after <code class="function">glDrawElementsIndirect</code> returns. Attributes that aren't
+            Vertex attributes that are modified by <code class="function">glMultiDrawElementsIndirectCount</code> have an
+            unspecified value after <code class="function">glMultiDrawElementsIndirectCount</code> returns. Attributes that aren't
             modified remain well defined.
-        </p>
-      </div>
-      <div class="refsect1" id="notes">
-        <h2>Notes</h2>
-        <p>
-            The <em class="parameter"><code>baseInstance</code></em> member of the <em class="parameter"><code>DrawElementsIndirectCommand</code></em>
-            structure is defined only if the GL version is 4.2 or greater. For versions of the GL less than 4.2,
-            this parameter is present but is reserved and should be set to zero. On earlier versions of the GL,
-            behavior is undefined if it is non-zero.
         </p>
       </div>
       <div class="refsect1" id="errors">
@@ -219,8 +204,7 @@
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>mode</code></em> is not an accepted value.
         </p>
         <p>
-            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>stride</code></em> is not a multiple
-            of four.
+            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>stride</code></em> is not a multiple of four.
         </p>
         <p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>drawcount</code></em> is negative.
@@ -240,6 +224,17 @@
         <p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>mode</code></em> is <code class="constant">GL_PATCHES</code>
             and no tessellation control shader is active.
+        </p>
+        <p>
+            <code class="constant">GL_INVALID_OPERATION</code> error is generated if no buffer is bound to the <code class="constant">GL_PARAMETER_BUFFER</code> binding point.
+        </p>
+        <p>
+            <code class="constant">GL_INVALID_OPERATION</code> error is generated if <em class="parameter"><code>drawcount</code></em> is not a multiple of four.
+        </p>
+        <p>
+            <code class="constant">GL_INVALID_OPERATION</code> error is generated if reading a <span class="emphasis"><em>sizei</em></span> typed value
+            from the buffer bound to the <code class="constant">GL_PARAMETER_BUFFER</code> target at the offset specified
+            by <em class="parameter"><code>drawcount</code></em> would result in an out-of-bounds access.
         </p>
       </div>
       <div class="refsect1" id="versions">
@@ -319,7 +314,7 @@
             <tbody>
               <tr>
                 <td style="text-align: left; border-right: 2px solid ; ">
-                  <code class="function">glMultiDrawElementsIndirect</code>
+                  <code class="function">glMultiDrawElementsIndirectCount</code>
                 </td>
                 <td style="text-align: center; border-right: 2px solid ; ">-</td>
                 <td style="text-align: center; border-right: 2px solid ; ">-</td>
@@ -330,9 +325,9 @@
                 <td style="text-align: center; border-right: 2px solid ; ">-</td>
                 <td style="text-align: center; border-right: 2px solid ; ">-</td>
                 <td style="text-align: center; border-right: 2px solid ; ">-</td>
-                <td style="text-align: center; border-right: 2px solid ; ">✔</td>
-                <td style="text-align: center; border-right: 2px solid ; ">✔</td>
-                <td style="text-align: center; border-right: 2px solid ; ">✔</td>
+                <td style="text-align: center; border-right: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; ">-</td>
                 <td style="text-align: center; ">✔</td>
               </tr>
             </tbody>
@@ -349,6 +344,8 @@
             <a class="citerefentry" href="glDrawRangeElements.xhtml"><span class="citerefentry"><span class="refentrytitle">glDrawRangeElements</span></span></a>,
             <a class="citerefentry" href="glDrawElementsIndirect.xhtml"><span class="citerefentry"><span class="refentrytitle">glDrawElementsIndirect</span></span></a>,
             <a class="citerefentry" href="glMultiDrawArraysIndirect.xhtml"><span class="citerefentry"><span class="refentrytitle">glMultiDrawArraysIndirect</span></span></a>
+            <a class="citerefentry" href="glMultiDrawArraysIndirectCount.xhtml"><span class="citerefentry"><span class="refentrytitle">glMultiDrawArraysIndirectCount</span></span></a>
+            <a class="citerefentry" href="glMultiDrawElementsIndirect.xhtml"><span class="citerefentry"><span class="refentrytitle">glMultiDrawElementsIndirect</span></span></a>
         </p>
       </div>
       <div class="refsect1" id="Copyright">

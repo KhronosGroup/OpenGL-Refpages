@@ -241,7 +241,8 @@ GL_ARB_polygon_offset_clamp = \
     glPolygonOffsetClamp.xhtml
 
 GL_ARB_indirect_parameters = \
-    glMultiDrawArraysIndirectCount.xhtml
+    glMultiDrawArraysIndirectCount.xhtml \
+    glMultiDrawElementsIndirectCount.xhtml
 
 MODIFIEDFORGL4XML = \
     glClearDepth.xhtml \

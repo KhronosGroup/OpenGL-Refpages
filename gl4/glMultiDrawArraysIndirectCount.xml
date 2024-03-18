@@ -23,7 +23,7 @@
                 <funcdef>void <function>glMultiDrawArraysIndirectCount</function></funcdef>
                 <paramdef>GLenum <parameter>mode</parameter></paramdef>
                 <paramdef>const void *<parameter>indirect</parameter></paramdef>
-                <paramdef>GLsizei <parameter>drawcount</parameter></paramdef>
+                <paramdef>GLintptr <parameter>drawcount</parameter></paramdef>
                 <paramdef>GLsizei <parameter>maxdrawcount</parameter></paramdef>
                 <paramdef>GLsizei <parameter>stride</parameter></paramdef>
             </funcprototype>
@@ -66,7 +66,7 @@
             <listitem>
                 <para>
                     Specifies an offset (in bytes) into the buffer object bound to the <constant>GL_PARAMETER_BUFFER</constant> 
-                    binding point at which a single <emphasis>sizei</emphasis> typed value is stored.
+                    binding point at which a single <emphasis>sizei</emphasis> typed value is stored. Must be a multiple of four.
                 </para>
             </listitem>
         </varlistentry>
@@ -75,7 +75,7 @@
             <listitem>
                 <para>
                     Specifies the maximum number of draws that are expected to be stored in the buffer.
-                    If the value stored at drawcount into the buffer is greater than maxdrawcount,
+                    If the value stored at <parameter>drawcount</parameter> into the buffer is greater than <parameter>maxdrawcount</parameter>,
                     the implementation stops processing draws after <parameter>maxdrawcount</parameter> parameter sets.
                 </para>
             </listitem>
@@ -109,21 +109,6 @@
     } DrawArraysIndirectCommand;</programlisting>
         </para>
         <para>
-            A single call to <function>glMultiDrawArraysIndirectCount</function> is equivalent, assuming no errors
-            are generated to:
-            <programlisting>    GLsizei n;
-    for (n = 0; n &lt; drawcount; n++) {
-        const DrawArraysIndirectCommand *cmd;
-        if (stride != 0) {
-            cmd = (const DrawArraysIndirectCommand  *)((uintptr)indirect + n * stride);
-        } else  {
-            cmd = (const DrawArraysIndirectCommand  *)indirect + n;
-        }
-
-        glDrawArraysInstancedBaseInstance(mode, cmd-&gt;first, cmd-&gt;count, cmd-&gt;instanceCount, cmd-&gt;baseInstance);
-    }</programlisting>
-        </para>
-        <para>
             If a buffer is bound to the <constant>GL_DRAW_INDIRECT_BUFFER</constant> binding at the time
             of a call to <function>glMultiDrawArraysIndirectCount</function>, <parameter>indirect</parameter>
             is interpreted as an offset, in basic machine units, into that buffer and the parameter
@@ -140,24 +125,12 @@
             modified remain well defined.
         </para>
     </refsect1>
-    <refsect1 xml:id="notes"><title>Notes</title>
-        <para>
-            The <parameter>baseInstance</parameter> member of the <parameter>DrawArraysIndirectCommand</parameter>
-            structure is defined only if the GL version is 4.2 or greater. For versions of the GL less than 4.2,
-            this parameter is present but is reserved and should be set to zero. On earlier versions of the GL,
-            behavior is undefined if it is non-zero.
-        </para>
-        <para>
-            <function>glMultiDrawArraysIndirectCount</function> is available only if the GL version is 4.3 or greater.
-        </para>
-    </refsect1>
     <refsect1 xml:id="errors"><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>mode</parameter> is not an accepted value.
         </para>
         <para>
-            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>stride</parameter> is not a multiple
-            of four.
+            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>stride</parameter> is not a multiple of four.
         </para>
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>drawcount</parameter> is negative.
@@ -193,7 +166,7 @@
                 <tbody>
                     <row>
                         <entry><function>glMultiDrawArraysIndirectCount</function></entry>
-                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="apiversion.xml" xpointer="xpointer(/*/*[@role='43']/*)"/>
+                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="apiversion.xml" xpointer="xpointer(/*/*[@role='46']/*)"/>
                     </row>
                 </tbody>
             </tgroup>
@@ -206,7 +179,9 @@
             <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDrawArraysIndirect</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glMultiDrawArraysIndirect</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glMultiDrawElementsIndirect</refentrytitle></citerefentry>
+            <citerefentry><refentrytitle>glMultiDrawElementsIndirectCount</refentrytitle></citerefentry>
         </para>
     </refsect1>
     <refsect1 xml:id="Copyright"><title>Copyright</title>

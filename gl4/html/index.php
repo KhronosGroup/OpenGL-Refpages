@@ -444,6 +444,7 @@
                 <li><a href="glMultiDrawElements.xhtml" target="pagedisplay">glMultiDrawElements</a></li>
                 <li><a href="glMultiDrawElementsBaseVertex.xhtml" target="pagedisplay">glMultiDrawElementsBaseVertex</a></li>
                 <li><a href="glMultiDrawElementsIndirect.xhtml" target="pagedisplay">glMultiDrawElementsIndirect</a></li>
+                <li><a href="glMultiDrawElementsIndirectCount.xhtml" target="pagedisplay">glMultiDrawElementsIndirectCount</a></li>
             </ul> <!-- End Level3 -->
         </li>
         <a name="n"></a>

@@ -206,7 +206,7 @@
                 <tbody>
                     <row>
                         <entry><function>glPolygonOffsetClamp</function></entry>
-                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="apiversion.xml" xpointer="xpointer(/*/*[@role='20']/*)"/>
+                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="apiversion.xml" xpointer="xpointer(/*/*[@role='46']/*)"/>
                     </row>
                 </tbody>
             </tgroup>

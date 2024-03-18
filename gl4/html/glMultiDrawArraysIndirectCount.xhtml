@@ -40,7 +40,7 @@
             </tr>
             <tr>
               <td> </td>
-              <td>GLsizei <var class="pdparam">drawcount</var>, </td>
+              <td>GLintptr <var class="pdparam">drawcount</var>, </td>
             </tr>
             <tr>
               <td> </td>
@@ -106,7 +106,7 @@
             <dd>
               <p>
                     Specifies an offset (in bytes) into the buffer object bound to the <code class="constant">GL_PARAMETER_BUFFER</code> 
-                    binding point at which a single <span class="emphasis"><em>sizei</em></span> typed value is stored.
+                    binding point at which a single <span class="emphasis"><em>sizei</em></span> typed value is stored. Must be a multiple of four.
                 </p>
             </dd>
             <dt>
@@ -119,7 +119,7 @@
             <dd>
               <p>
                     Specifies the maximum number of draws that are expected to be stored in the buffer.
-                    If the value stored at drawcount into the buffer is greater than maxdrawcount,
+                    If the value stored at <em class="parameter"><code>drawcount</code></em> into the buffer is greater than <em class="parameter"><code>maxdrawcount</code></em>,
                     the implementation stops processing draws after <em class="parameter"><code>maxdrawcount</code></em> parameter sets.
                 </p>
             </dd>
@@ -160,23 +160,6 @@
         <p>
         </p>
         <p>
-            A single call to <code class="function">glMultiDrawArraysIndirectCount</code> is equivalent, assuming no errors
-            are generated to:
-            </p>
-        <pre class="programlisting">    GLsizei n;
-    for (n = 0; n &lt; drawcount; n++) {
-        const DrawArraysIndirectCommand *cmd;
-        if (stride != 0) {
-            cmd = (const DrawArraysIndirectCommand  *)((uintptr)indirect + n * stride);
-        } else  {
-            cmd = (const DrawArraysIndirectCommand  *)indirect + n;
-        }
-
-        glDrawArraysInstancedBaseInstance(mode, cmd-&gt;first, cmd-&gt;count, cmd-&gt;instanceCount, cmd-&gt;baseInstance);
-    }</pre>
-        <p>
-        </p>
-        <p>
             If a buffer is bound to the <code class="constant">GL_DRAW_INDIRECT_BUFFER</code> binding at the time
             of a call to <code class="function">glMultiDrawArraysIndirectCount</code>, <em class="parameter"><code>indirect</code></em>
             is interpreted as an offset, in basic machine units, into that buffer and the parameter
@@ -193,26 +176,13 @@
             modified remain well defined.
         </p>
       </div>
-      <div class="refsect1" id="notes">
-        <h2>Notes</h2>
-        <p>
-            The <em class="parameter"><code>baseInstance</code></em> member of the <em class="parameter"><code>DrawArraysIndirectCommand</code></em>
-            structure is defined only if the GL version is 4.2 or greater. For versions of the GL less than 4.2,
-            this parameter is present but is reserved and should be set to zero. On earlier versions of the GL,
-            behavior is undefined if it is non-zero.
-        </p>
-        <p>
-            <code class="function">glMultiDrawArraysIndirectCount</code> is available only if the GL version is 4.3 or greater.
-        </p>
-      </div>
       <div class="refsect1" id="errors">
         <h2>Errors</h2>
         <p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>mode</code></em> is not an accepted value.
         </p>
         <p>
-            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>stride</code></em> is not a multiple
-            of four.
+            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>stride</code></em> is not a multiple of four.
         </p>
         <p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>drawcount</code></em> is negative.
@@ -329,9 +299,9 @@
                 <td style="text-align: center; border-right: 2px solid ; ">-</td>
                 <td style="text-align: center; border-right: 2px solid ; ">-</td>
                 <td style="text-align: center; border-right: 2px solid ; ">-</td>
-                <td style="text-align: center; border-right: 2px solid ; ">✔</td>
-                <td style="text-align: center; border-right: 2px solid ; ">✔</td>
-                <td style="text-align: center; border-right: 2px solid ; ">✔</td>
+                <td style="text-align: center; border-right: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; ">-</td>
                 <td style="text-align: center; ">✔</td>
               </tr>
             </tbody>
@@ -346,7 +316,9 @@
             <a class="citerefentry" href="glDrawElements.xhtml"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a>,
             <a class="citerefentry" href="glDrawRangeElements.xhtml"><span class="citerefentry"><span class="refentrytitle">glDrawRangeElements</span></span></a>,
             <a class="citerefentry" href="glDrawArraysIndirect.xhtml"><span class="citerefentry"><span class="refentrytitle">glDrawArraysIndirect</span></span></a>,
+            <a class="citerefentry" href="glMultiDrawArraysIndirect.xhtml"><span class="citerefentry"><span class="refentrytitle">glMultiDrawArraysIndirect</span></span></a>,
             <a class="citerefentry" href="glMultiDrawElementsIndirect.xhtml"><span class="citerefentry"><span class="refentrytitle">glMultiDrawElementsIndirect</span></span></a>
+            <a class="citerefentry" href="glMultiDrawElementsIndirectCount.xhtml"><span class="citerefentry"><span class="refentrytitle">glMultiDrawElementsIndirectCount</span></span></a>
         </p>
       </div>
       <div class="refsect1" id="Copyright">
