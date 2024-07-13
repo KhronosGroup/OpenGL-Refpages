@@ -104,7 +104,7 @@
                 <term><constant>GL_FRAMEBUFFER_DEFAULT_WIDTH</constant></term>
                 <listitem>
                     <para>
-                        <parameter>param</parameter> specifies the assumed with for a framebuffer object with no attachments. If a
+                        <parameter>param</parameter> specifies the assumed width for a framebuffer object with no attachments. If a
                         framebuffer has attachments then the width of those attachments is used, otherwise
                         the value of <constant>GL_FRAMEBUFFER_DEFAULT_WIDTH</constant> is used for the
                         framebuffer. <parameter>param</parameter> must be greater than or equal to zero and less than
