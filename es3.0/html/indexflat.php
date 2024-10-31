@@ -7,17 +7,17 @@
 <body>
   <script>
     window.onload = function () {
-      tryToFindSubpage: try {
-      let params = new URL(document.location.toString()).searchParams;
-      let subpage = params.get("subpage");
-      if (subpage !== null) { 
-        const links = document.querySelectorAll('a');
-        for (let link of links) {
-          if (link.textContent === subpage) {
-            link.click() 
+      try {
+        let params = new URL(document.location.toString()).searchParams;
+        let subpage = params.get("subpage");
+        if (subpage !== null) { 
+          const links = document.querySelectorAll('a');
+          for (let link of links) {
+            if (link.textContent === subpage) {
+              link.click() 
+            }
           }
         }
-      }
     } catch (error) { }
   }
   </script>
