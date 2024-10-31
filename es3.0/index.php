@@ -8,7 +8,8 @@
          let subpage = params.get("subpage");
          if (subpage !== null) { 
            let bottomPage= document.getElementById("bottom");
-           bottomPage.src = bottomPage.src + "?subpage=" + subpage;
+           params.set("subpage", subpage) 
+           bottomPage.src = bottomPage.src + "?" + params.toString();
          }
        } catch (error) { }
      }

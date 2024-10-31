@@ -8,7 +8,8 @@
         let subpage = params.get("subpage");
         if (subpage !== null) { 
           let indexflat = document.getElementById("indexflat");
-          indexflat.src = indexflat.src + "?subpage=" + subpage;
+          params.set("subpage", subpage) 
+          indexflat.src = indexflat.src + "?" + params.toString(); 
         }
       } catch (error) { }
     }
