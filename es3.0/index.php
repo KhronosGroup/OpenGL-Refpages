@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>OpenGL ES 3.0 Reference Pages <?php print("hei") ?> </title>
+<title>OpenGL ES 3.0 Reference Pages</title>
 </head>
 <frameset rows="160,*">
   <frame scrolling="no" noresize frameborder="0" marginwidth="0" marginheight="0" src="top.php">
