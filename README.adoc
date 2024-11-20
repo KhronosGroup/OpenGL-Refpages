@@ -37,7 +37,9 @@ Tools you'll need to build include:
 If you're using Ubuntu, or the Windows 10 Ubuntu subsystem, the required
 package names are probably basically the same as Debian.
 
-It's possible to build the ref pages on Mac OS X and Cygwin, but we
+On MacOSx, you can install 'docbook' and 'docbook-xls' from homebrew. In order to view equations correctly, you can copy the Docbook MathML module into the subdirectories for the OpenGL versions. xsltproc should be on your system, but you may need to install 'xcode-tools'.
+
+It's possible to build the ref pages on Cygwin, but we
 don't have current package names or instructions for those environments.
 If you do, please submit a pull request adding details to this README.
 
