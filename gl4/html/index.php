@@ -440,9 +440,11 @@
                 <li><a href="glMinSampleShading.xhtml" target="pagedisplay">glMinSampleShading</a></li>
                 <li><a href="glMultiDrawArrays.xhtml" target="pagedisplay">glMultiDrawArrays</a></li>
                 <li><a href="glMultiDrawArraysIndirect.xhtml" target="pagedisplay">glMultiDrawArraysIndirect</a></li>
+                <li><a href="glMultiDrawArraysIndirectCount.xhtml" target="pagedisplay">glMultiDrawArraysIndirectCount</a></li>
                 <li><a href="glMultiDrawElements.xhtml" target="pagedisplay">glMultiDrawElements</a></li>
                 <li><a href="glMultiDrawElementsBaseVertex.xhtml" target="pagedisplay">glMultiDrawElementsBaseVertex</a></li>
                 <li><a href="glMultiDrawElementsIndirect.xhtml" target="pagedisplay">glMultiDrawElementsIndirect</a></li>
+                <li><a href="glMultiDrawElementsIndirectCount.xhtml" target="pagedisplay">glMultiDrawElementsIndirectCount</a></li>
             </ul> <!-- End Level3 -->
         </li>
         <a name="n"></a>
@@ -487,6 +489,7 @@
                 <li><a href="glPointSize.xhtml" target="pagedisplay">glPointSize</a></li>
                 <li><a href="glPolygonMode.xhtml" target="pagedisplay">glPolygonMode</a></li>
                 <li><a href="glPolygonOffset.xhtml" target="pagedisplay">glPolygonOffset</a></li>
+                <li><a href="glPolygonOffsetClamp.xhtml" target="pagedisplay">glPolygonOffsetClamp</a></li>
                 <li><a href="glPopDebugGroup.xhtml" target="pagedisplay">glPopDebugGroup</a></li>
                 <li><a href="glPrimitiveRestartIndex.xhtml" target="pagedisplay">glPrimitiveRestartIndex</a></li>
                 <li><a href="glProgramBinary.xhtml" target="pagedisplay">glProgramBinary</a></li>
