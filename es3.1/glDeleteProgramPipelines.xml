@@ -81,7 +81,6 @@
             <citerefentry><refentrytitle>glGenProgramPipelines</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glBindProgramPipeline</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glIsProgramPipeline</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glUseShaderPrograms</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glUseProgram</refentrytitle></citerefentry>
         </para>
     </refsect1>
@@ -90,7 +89,7 @@
             Copyright <trademark class="copyright"/> 2010-2014 Khronos Group. 
             This material may be distributed subject to the terms and conditions set forth in 
             the Open Publication License, v 1.0, 8 June 1999.
-            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://opencontent.org/openpub/">http://opencontent.org/openpub/</link>.
+            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://opencontent.org/openpub/">https://opencontent.org/openpub/</link>.
         </para>
     </refsect1>
 </refentry>

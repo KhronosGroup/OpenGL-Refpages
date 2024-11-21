@@ -132,7 +132,7 @@
             The <constant>GL_ATOMIC_COUNTER_BUFFER</constant> target is
             available only if the GL version is 4.2 or greater.
         </para>
-        <para> 
+        <para>
             The <constant>GL_DISPATCH_INDIRECT_BUFFER</constant> and
             <constant>GL_SHADER_STORAGE_BUFFER</constant> targets are
             available only if the GL version is 4.3 or greater.
@@ -224,7 +224,7 @@
             Copyright <trademark class="copyright"/> 2010-2014 Khronos Group.
             This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
-            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://opencontent.org/openpub/">http://opencontent.org/openpub/</link>.
+            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://opencontent.org/openpub/">https://opencontent.org/openpub/</link>.
         </para>
     </refsect1>
 </refentry>

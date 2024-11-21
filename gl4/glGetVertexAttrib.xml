@@ -89,7 +89,7 @@
             <constant>GL_VERTEX_ATTRIB_ARRAY_NORMALIZED</constant>,
             <constant>GL_VERTEX_ATTRIB_ARRAY_INTEGER</constant>,
             <constant>GL_VERTEX_ATTRIB_ARRAY_LONG</constant>,
-            <constant>GL_VERTEX_ATTRIB_ARRAY_DIVISOR</constant>, 
+            <constant>GL_VERTEX_ATTRIB_ARRAY_DIVISOR</constant>,
             <constant>GL_VERTEX_ATTRIB_BINDING</constant>,
             <constant>GL_VERTEX_ATTRIB_RELATIVE_OFFSET</constant> or
             <constant>GL_CURRENT_VERTEX_ATTRIB</constant>.</para>
@@ -216,16 +216,16 @@
             0 (<constant>GL_FALSE</constant>).</para>
         </listitem>
         </varlistentry>
-        
+
         <varlistentry>
         <term><constant>GL_VERTEX_ATTRIB_ARRAY_LONG</constant></term>
         <listitem>
                 <para>
                 </para>
             <para> <parameter>param</parameter> returns a single value that is non-zero
-	          (true) if a vertex attribute is stored as an unconverted double, and
-	          0 (false) otherwise. The initial value is 0
-	          (<constant>GL_FALSE</constant>).</para>
+                  (true) if a vertex attribute is stored as an unconverted double, and
+                  0 (false) otherwise. The initial value is 0
+                  (<constant>GL_FALSE</constant>).</para>
         </listitem>
         </varlistentry>
 
@@ -240,7 +240,7 @@
             The initial value is 0.</para>
         </listitem>
         </varlistentry>
-        
+
         <varlistentry>
         <term><constant>GL_VERTEX_ATTRIB_BINDING</constant></term>
         <listitem>
@@ -258,9 +258,9 @@
                 <para>
                 </para>
             <para> <parameter>params</parameter> returns a single value that is the byte
-	          offset of the first element relative to the start of the vertex
-	          buffer binding specified attribute fetches from. The initial value
-	          is 0.</para>
+                  offset of the first element relative to the start of the vertex
+                  buffer binding specified attribute fetches from. The initial value
+                  is 0.</para>
         </listitem>
         </varlistentry>
 
@@ -371,7 +371,7 @@
             Copyright <trademark class="copyright"/> 2010-2014 Khronos Group.
             This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
-            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://opencontent.org/openpub/">http://opencontent.org/openpub/</link>.
+            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://opencontent.org/openpub/">https://opencontent.org/openpub/</link>.
         </para>
     </refsect1>
 </refentry>

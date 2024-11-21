@@ -112,7 +112,7 @@
             zero, the default draw framebuffer is queried.
         </para>
         <para>
-            If the specified framebuffer is a framebuffer object, 
+            If the specified framebuffer is a framebuffer object,
             <parameter>attachment</parameter> must be one of
             <constant>GL_DEPTH_ATTACHMENT</constant>,
             <constant>GL_STENCIL_ATTACHMENT</constant>
@@ -121,7 +121,7 @@
             where <emphasis>i</emphasis> is between zero and the value of
             <constant>GL_MAX_COLOR_ATTACHMENTS</constant> minus one.
         </para>
-        <para> 
+        <para>
             If the specified framebuffer is a default framebuffer,
             <parameter>target</parameter>, <parameter>attachment</parameter>
             must be one of <constant>GL_FRONT_LEFT</constant>,
@@ -151,7 +151,7 @@
             for <parameter>pname</parameter> depend on the type of object,
             as described below.
         </para>
-        <para> 
+        <para>
             If the value of
             <constant>GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE</constant> is
             <constant>GL_NONE</constant>, then either no framebuffer is
@@ -397,7 +397,7 @@
             Copyright <trademark class="copyright"/> 2010-2014 Khronos Group.
             This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
-            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://opencontent.org/openpub/">http://opencontent.org/openpub/</link>.
+            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://opencontent.org/openpub/">https://opencontent.org/openpub/</link>.
         </para>
     </refsect1>
 </refentry>

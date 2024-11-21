@@ -98,12 +98,12 @@
             framebuffer object. If <parameter>framebuffer</parameter> is
             zero, the default draw framebuffer is affected.
         </para>
-        <para> 
+        <para>
             The set of attachments whose contents are to be invalidated are
             specified in the <parameter>attachments</parameter> array, which
             contains <parameter>numAttachments</parameter> elements.
         </para>
-        <para> 
+        <para>
             If the specified framebuffer is a framebuffer object, each
             element of <parameter>attachments</parameter> must be one of
             <constant>GL_DEPTH_ATTACHMENT</constant>,
@@ -113,7 +113,7 @@
             where <emphasis>i</emphasis> is between zero and the value of
             <constant>GL_MAX_FRAMEBUFFER_ATTACHMENTS</constant> minus one.
         </para>
-        <para> 
+        <para>
             If the specified framebuffer is a default framebuffer, each
             element of <parameter>attachments</parameter> must be one of
             <constant>GL_FRONT_LEFT</constant>,
@@ -129,7 +129,7 @@
             for a single-buffered context. The other attachments identify
             the corresponding specific buffer.
         </para>
-        <para> 
+        <para>
             The entire contents of each specified attachment become
             undefined after execution of
             <function>glInvalidateFramebuffer</function> or
@@ -209,7 +209,7 @@
             Copyright <trademark class="copyright"/> 2014 Khronos Group.
             This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
-            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://opencontent.org/openpub/">http://opencontent.org/openpub/</link>.
+            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://opencontent.org/openpub/">https://opencontent.org/openpub/</link>.
         </para>
     </refsect1>
 </refentry>

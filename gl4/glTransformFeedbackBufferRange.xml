@@ -78,12 +78,12 @@
     </refsect1>
     <refsect1 xml:id="description"><title>Description</title>
         <para>
-            <function>glTransformFeedbackBufferRange</function> 
+            <function>glTransformFeedbackBufferRange</function>
             binds a range of the buffer object <parameter>buffer</parameter>
             represented by <parameter>offset</parameter> and
             <parameter>size</parameter> to the binding point at index
             <parameter>index</parameter> of the transform feedback object
-            <parameter>xfb</parameter>. 
+            <parameter>xfb</parameter>.
         </para>
         <para>
             <parameter>offset</parameter> specifies the offset in basic
@@ -152,7 +152,7 @@
             Copyright <trademark class="copyright"/> 2014 Khronos Group.
             This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
-            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://opencontent.org/openpub/">http://opencontent.org/openpub/</link>.
+            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://opencontent.org/openpub/">https://opencontent.org/openpub/</link>.
         </para>
     </refsect1>
 </refentry>

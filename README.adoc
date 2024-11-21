@@ -37,7 +37,9 @@ Tools you'll need to build include:
 If you're using Ubuntu, or the Windows 10 Ubuntu subsystem, the required
 package names are probably basically the same as Debian.
 
-It's possible to build the ref pages on Mac OS X and Cygwin, but we
+On MacOSx, you can install 'docbook' and 'docbook-xls' from homebrew. In order to view equations correctly, you can copy the Docbook MathML module into the subdirectories for the OpenGL versions. xsltproc should be on your system, but you may need to install 'xcode-tools'.
+
+It's possible to build the ref pages on Cygwin, but we
 don't have current package names or instructions for those environments.
 If you do, please submit a pull request adding details to this README.
 
@@ -66,3 +68,8 @@ many of those licenses, because the original authors are no longer in
 business (SGI, 3Dlabs). Ideally we'd like to end up with a Creative
 Commons license on all the ref pages and Apache 2.0 on all the scripts
 and tools, but it's unlikely that will ever be possible.
+
+The SGI Free Software B License used on some of the pages is no longer
+hosted at the original location on SGI's webservers, following their
+acquisition. Instead, we host a copy in LICENSES/LicenseRef-FreeB.txt, and
+have updated copyright links in the reference pages to this file.

@@ -47,7 +47,7 @@
     </refsect1>
     <refsect1 xml:id="description"><title>Description</title>
         <para>
-            <function>glCreateRenderbuffers</function> 
+            <function>glCreateRenderbuffers</function>
             returns <parameter>n</parameter> previously unused renderbuffer
             object names in <parameter>renderbuffers</parameter>, each representing
             a new renderbuffer object initialized to the default state.
@@ -87,7 +87,7 @@
             Copyright <trademark class="copyright"/> 2014 Khronos Group.
             This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
-            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://opencontent.org/openpub/">http://opencontent.org/openpub/</link>.
+            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://opencontent.org/openpub/">https://opencontent.org/openpub/</link>.
         </para>
     </refsect1>
 </refentry>

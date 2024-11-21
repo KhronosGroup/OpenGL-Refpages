@@ -66,11 +66,11 @@
             </funcprototype>
             <funcprototype>
                 <funcdef>ivec2 <function>textureSize</function></funcdef>
-                <paramdef>gsamplerRect <parameter>sampler</parameter></paramdef>
+                <paramdef>gsampler2DRect <parameter>sampler</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>ivec2 <function>textureSize</function></funcdef>
-                <paramdef>gsamplerRectShadow <parameter>sampler</parameter></paramdef>
+                <paramdef>sampler2DRectShadow <parameter>sampler</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>ivec2 <function>textureSize</function></funcdef>
@@ -143,7 +143,7 @@
                         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(/*/*[@role='13']/*)"/>
                     </row>
                     <row>
-                        <entry>textureSize (samplerBuffer, samplerRect{Shadow})</entry>
+                        <entry>textureSize (samplerBuffer, sampler2DRect{Shadow})</entry>
                         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(/*/*[@role='14']/*)"/>
                     </row>
                     <row>
@@ -181,7 +181,7 @@
             Copyright <trademark class="copyright"/> 2011-2014 Khronos Group.
             This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
-            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://opencontent.org/openpub/">http://opencontent.org/openpub/</link>.
+            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://opencontent.org/openpub/">https://opencontent.org/openpub/</link>.
         </para>
     </refsect1>
 </refentry>

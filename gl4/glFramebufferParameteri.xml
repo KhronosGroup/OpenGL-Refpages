@@ -81,7 +81,7 @@
             targets of these commands.
         </para>
         <para>
-            For <function>glFramebufferParameteri</function>, 
+            For <function>glFramebufferParameteri</function>,
             the framebuffer object is that bound to
             <parameter>target</parameter>, which must be
             <constant>GL_DRAW_FRAMEBUFFER</constant>,
@@ -97,14 +97,14 @@
         </para>
         <para>
             <parameter>pname</parameter> specifies the parameter to be
-            modified. The following values are accepted: 
+            modified. The following values are accepted:
         </para>
         <variablelist>
             <varlistentry>
                 <term><constant>GL_FRAMEBUFFER_DEFAULT_WIDTH</constant></term>
                 <listitem>
                     <para>
-                        <parameter>param</parameter> specifies the assumed with for a framebuffer object with no attachments. If a
+                        <parameter>param</parameter> specifies the assumed width for a framebuffer object with no attachments. If a
                         framebuffer has attachments then the width of those attachments is used, otherwise
                         the value of <constant>GL_FRAMEBUFFER_DEFAULT_WIDTH</constant> is used for the
                         framebuffer. <parameter>param</parameter> must be greater than or equal to zero and less than
@@ -245,7 +245,7 @@
             Copyright <trademark class="copyright"/> 2013-2014 Khronos Group.
             This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
-            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://opencontent.org/openpub/">http://opencontent.org/openpub/</link>.
+            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://opencontent.org/openpub/">https://opencontent.org/openpub/</link>.
         </para>
     </refsect1>
 </refentry>

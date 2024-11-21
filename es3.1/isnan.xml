@@ -41,7 +41,7 @@
     <refsect1 xml:id="description"><title>Description</title>
         <para>
             For each element <emphasis>i</emphasis> of the result, <function>isnan</function> returns <constant>true</constant> if
-            <parameter>x</parameter>[<emphasis>i</emphasis>] is posititve or negative floating point NaN (Not a Number) and false otherwise.
+            <parameter>x</parameter>[<emphasis>i</emphasis>] is positive or negative floating point NaN (Not a Number) and false otherwise.
                         NaNs may not be supported by the implementation, in which case <function>isnan</function> returns false.
         </para>
     </refsect1>
@@ -68,7 +68,7 @@
             Copyright <trademark class="copyright"/> 2011-2014 Khronos Group.
             This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
-            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://opencontent.org/openpub/">http://opencontent.org/openpub/</link>.
+            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://opencontent.org/openpub/">https://opencontent.org/openpub/</link>.
         </para>
     </refsect1>
 </refentry>

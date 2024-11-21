@@ -252,15 +252,15 @@
             and the read buffer contains integer data.
         </para>
         <para>
-            <constant>GL_INVALID_OPERATION</constant> is generated if the
-            effective value of <constant>GL_SAMPLES</constant> for the read
-            and draw framebuffers is not identical.
+            <constant>GL_INVALID_OPERATION</constant> is generated if both the
+			read and draw framebuffers are multisampled, and their effective
+			values of <constant>GL_SAMPLES</constant> are not identical.
         </para>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if the
-            value of <constant>GL_SAMPLE_BUFFERS</constant> for both read
-            and draw buffers is greater than zero and the dimensions of the
-            source and destination rectangles is not identical.
+            value of <constant>GL_SAMPLE_BUFFERS</constant> for either read or
+            draw buffers is greater than zero and the dimensions of the source
+            and destination rectangles is not identical.
         </para>
         <para>
             <constant>GL_INVALID_FRAMEBUFFER_OPERATION</constant> is
@@ -299,7 +299,7 @@
             Copyright <trademark class="copyright"/> 2010-2014 Khronos Group.
             This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
-            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://opencontent.org/openpub/">http://opencontent.org/openpub/</link>.
+            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://opencontent.org/openpub/">https://opencontent.org/openpub/</link>.
         </para>
     </refsect1>
 </refentry>

@@ -50,7 +50,7 @@
             <funcprototype>
                 <funcdef>float <function>textureLodOffset</function></funcdef>
                 <paramdef>sampler2DShadow <parameter>sampler</parameter></paramdef>
-                <paramdef>vec4 <parameter>P</parameter></paramdef>
+                <paramdef>vec3 <parameter>P</parameter></paramdef>
                 <paramdef>float <parameter>lod</parameter></paramdef>
                 <paramdef>ivec2 <parameter>offset</parameter></paramdef>
             </funcprototype>
@@ -169,7 +169,7 @@
             Copyright <trademark class="copyright"/> 2011-2014 Khronos Group.
             This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
-            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://opencontent.org/openpub/">http://opencontent.org/openpub/</link>.
+            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://opencontent.org/openpub/">https://opencontent.org/openpub/</link>.
         </para>
     </refsect1>
 </refentry>

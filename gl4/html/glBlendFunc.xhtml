@@ -3,7 +3,7 @@
   <head>
     <title>glBlendFunc - OpenGL 4 Reference Pages</title>
     <link rel="stylesheet" type="text/css" href="opengl-man.css"/>
-    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1"/>
+    <meta name="generator" content="DocBook XSL Stylesheets V1.79.2"/>
     <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
                 MathML: {
@@ -14,7 +14,7 @@
                 }
             });
         </script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"/>
   </head>
   <body>
     <header/>
@@ -1334,78 +1334,6 @@
             Despite the apparent precision of the above equations,
             blending arithmetic is not exactly specified,
             because blending operates with imprecise integer color values.
-            However,
-            a blend factor that should be equal to 1
-            is guaranteed not to modify its multiplicand,
-            and a blend factor equal to 0 reduces its multiplicand to 0.
-            For example,
-            when <em class="parameter"><code>sfactor</code></em> is <code class="constant">GL_SRC_ALPHA</code>,
-            <em class="parameter"><code>dfactor</code></em> is <code class="constant">GL_ONE_MINUS_SRC_ALPHA</code>,
-            and
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
-                
-                <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
-                <mml:mi mathvariant="italic">s</mml:mi>
-                </mml:msub>
-            </mml:math>
-            is equal to
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
-                
-                <mml:msub><mml:mi mathvariant="italic">k</mml:mi>
-                <mml:mi mathvariant="italic">A</mml:mi>
-                </mml:msub>
-            </mml:math>,
-            the equations reduce to simple replacement:
-        </p>
-        <p>
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
-                
-                <mml:mrow>
-                    <mml:msub><mml:mi mathvariant="italic">R</mml:mi>
-                    <mml:mi mathvariant="italic">d</mml:mi>
-                    </mml:msub>
-                    <mml:mo>=</mml:mo>
-                    <mml:msub><mml:mi mathvariant="italic">R</mml:mi>
-                    <mml:mi mathvariant="italic">s</mml:mi>
-                    </mml:msub>
-                </mml:mrow>
-            </mml:math>
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
-                
-                <mml:mrow>
-                    <mml:msub><mml:mi mathvariant="italic">G</mml:mi>
-                    <mml:mi mathvariant="italic">d</mml:mi>
-                    </mml:msub>
-                    <mml:mo>=</mml:mo>
-                    <mml:msub><mml:mi mathvariant="italic">G</mml:mi>
-                    <mml:mi mathvariant="italic">s</mml:mi>
-                    </mml:msub>
-                </mml:mrow>
-            </mml:math>
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
-                
-                <mml:mrow>
-                    <mml:msub><mml:mi mathvariant="italic">B</mml:mi>
-                    <mml:mi mathvariant="italic">d</mml:mi>
-                    </mml:msub>
-                    <mml:mo>=</mml:mo>
-                    <mml:msub><mml:mi mathvariant="italic">B</mml:mi>
-                    <mml:mi mathvariant="italic">s</mml:mi>
-                    </mml:msub>
-                </mml:mrow>
-            </mml:math>
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
-                
-                <mml:mrow>
-                    <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
-                    <mml:mi mathvariant="italic">d</mml:mi>
-                    </mml:msub>
-                    <mml:mo>=</mml:mo>
-                    <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
-                    <mml:mi mathvariant="italic">s</mml:mi>
-                    </mml:msub>
-                </mml:mrow>
-            </mml:math>
         </p>
         <p>
         </p>
@@ -1441,7 +1369,7 @@
       <div class="refsect1" id="notes">
         <h2>Notes</h2>
         <p>
-            Incoming (source) alpha is correctly thought of as a material opacity,
+            Incoming (source) alpha would typically be used as a material opacity,
             ranging from 1.0
             (<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
@@ -1519,7 +1447,7 @@
             <thead>
               <tr>
                 <th style="text-align: left; border-right: 2px solid ; ">
-                 
+                
             </th>
                 <th style="text-align: center; border-bottom: 2px solid ; " colspan="12">
                 <span class="bold"><strong>OpenGL Version</strong></span>
@@ -1626,7 +1554,7 @@
             Copyright <span class="trademark"/>© 2010-2014 Khronos Group.
             This document is licensed under the SGI Free Software B License.
             For details, see
-            <a class="link" href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
+            <a class="link" href="https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt" target="_top">https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt</a>.
         </p>
       </div>
     </div>

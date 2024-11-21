@@ -1293,78 +1293,6 @@
             Despite the apparent precision of the above equations,
             blending arithmetic is not exactly specified,
             because blending operates with imprecise integer color values.
-            However,
-            a blend factor that should be equal to 1
-            is guaranteed not to modify its multiplicand,
-            and a blend factor equal to 0 reduces its multiplicand to 0.
-            For example,
-            when <parameter>sfactor</parameter> is <constant>GL_SRC_ALPHA</constant>,
-            <parameter>dfactor</parameter> is <constant>GL_ONE_MINUS_SRC_ALPHA</constant>,
-            and
-            <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
-                <!-- eqn: A sub s: -->
-                <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
-                <mml:mi mathvariant="italic">s</mml:mi>
-                </mml:msub>
-            </mml:math></inlineequation>
-            is equal to
-            <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
-                <!-- eqn: k sub A: -->
-                <mml:msub><mml:mi mathvariant="italic">k</mml:mi>
-                <mml:mi mathvariant="italic">A</mml:mi>
-                </mml:msub>
-            </mml:math></inlineequation>,
-            the equations reduce to simple replacement:
-        </para>
-        <para>
-            <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
-                <!-- eqn: R sub d  =      R sub s: -->
-                <mml:mrow>
-                    <mml:msub><mml:mi mathvariant="italic">R</mml:mi>
-                    <mml:mi mathvariant="italic">d</mml:mi>
-                    </mml:msub>
-                    <mml:mo>=</mml:mo>
-                    <mml:msub><mml:mi mathvariant="italic">R</mml:mi>
-                    <mml:mi mathvariant="italic">s</mml:mi>
-                    </mml:msub>
-                </mml:mrow>
-            </mml:math></inlineequation>
-            <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
-                <!-- eqn: G sub d  =    G sub s: -->
-                <mml:mrow>
-                    <mml:msub><mml:mi mathvariant="italic">G</mml:mi>
-                    <mml:mi mathvariant="italic">d</mml:mi>
-                    </mml:msub>
-                    <mml:mo>=</mml:mo>
-                    <mml:msub><mml:mi mathvariant="italic">G</mml:mi>
-                    <mml:mi mathvariant="italic">s</mml:mi>
-                    </mml:msub>
-                </mml:mrow>
-            </mml:math></inlineequation>
-            <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
-                <!-- eqn: B sub d  =    B sub s: -->
-                <mml:mrow>
-                    <mml:msub><mml:mi mathvariant="italic">B</mml:mi>
-                    <mml:mi mathvariant="italic">d</mml:mi>
-                    </mml:msub>
-                    <mml:mo>=</mml:mo>
-                    <mml:msub><mml:mi mathvariant="italic">B</mml:mi>
-                    <mml:mi mathvariant="italic">s</mml:mi>
-                    </mml:msub>
-                </mml:mrow>
-            </mml:math></inlineequation>
-            <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
-                <!-- eqn: A sub d  =    A sub s: -->
-                <mml:mrow>
-                    <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
-                    <mml:mi mathvariant="italic">d</mml:mi>
-                    </mml:msub>
-                    <mml:mo>=</mml:mo>
-                    <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
-                    <mml:mi mathvariant="italic">s</mml:mi>
-                    </mml:msub>
-                </mml:mrow>
-            </mml:math></inlineequation>
         </para>
         <para>
         </para>
@@ -1398,7 +1326,7 @@
     </refsect1>
     <refsect1 xml:id="notes"><title>Notes</title>
         <para>
-            Incoming (source) alpha is correctly thought of as a material opacity,
+            Incoming (source) alpha would typically be used as a material opacity,
             ranging from 1.0
             (<inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 <!-- eqn: K sub A: -->
@@ -1487,7 +1415,7 @@
             Copyright <trademark class="copyright"/> 2010-2014 Khronos Group.
             This document is licensed under the SGI Free Software B License.
             For details, see
-            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://oss.sgi.com/projects/FreeB/">http://oss.sgi.com/projects/FreeB/</link>.
+            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt">https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt</link>.
         </para>
     </refsect1>
 </refentry>

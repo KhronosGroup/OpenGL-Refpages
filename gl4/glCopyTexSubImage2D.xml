@@ -189,7 +189,7 @@
 
     <para>When <parameter>target</parameter> is
     <constant>GL_TEXTURE_1D_ARRAY</constant> then the y coordinate and height
-    are treated as the start slice and number of slices to modify.</para>
+    are treated as the start slice and number of slices to modify, respectively.</para>
 
     <para>If any of the pixels within the specified rectangle of the current
     <constant>GL_READ_BUFFER</constant> are outside the read window associated
@@ -197,8 +197,8 @@
     pixels are undefined.</para>
 
     <para>No change is made to the <emphasis>internalformat</emphasis>,
-    <emphasis>width</emphasis>, or <emphasis>height</emphasis>, parameters of
-    the specified texture array or to texel values outside the specified
+    <emphasis>width</emphasis> or <emphasis>height</emphasis> parameters of
+    the specified texture array, or to texel values outside the specified
     subregion.</para>
     </refsect1>
     <refsect1 xml:id="notes"><title>Notes</title>
@@ -218,7 +218,7 @@
     <constant>GL_TEXTURE_CUBE_MAP_NEGATIVE_Y</constant>,
     <constant>GL_TEXTURE_CUBE_MAP_POSITIVE_Z</constant>,
     <constant>GL_TEXTURE_CUBE_MAP_NEGATIVE_Z</constant>,
-    <constant>GL_TEXTURE_1D_ARRAY</constant>, or
+    <constant>GL_TEXTURE_1D_ARRAY</constant> or
     <constant>GL_RECTANGLE</constant>.</para>
 
     <para><constant>GL_INVALID_FRAMEBUFFER_OPERATION</constant> is generated
@@ -313,11 +313,11 @@
                         </mml:mrow>
                     </mml:mfenced>
                     <mml:mo>&gt;</mml:mo>
-                    <mml:mn>0</mml:mn>
+                    <mml:mi mathvariant="italic">h</mml:mi>
                 </mml:mrow>
-            </mml:math></inlineequation>,, where <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">w</mml:mi></mml:math></inlineequation> is the <constant>GL_TEXTURE_WIDTH</constant>,
+            </mml:math></inlineequation>, where <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">w</mml:mi></mml:math></inlineequation> is the <constant>GL_TEXTURE_WIDTH</constant> and
             <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">h</mml:mi></mml:math></inlineequation>
-            is the <constant>GL_TEXTURE_HEIGHT</constant> and
+            is the <constant>GL_TEXTURE_HEIGHT</constant>
             of the texture image being modified.
         </para>
 
@@ -390,7 +390,7 @@
             Silicon Graphics, Inc. Copyright <trademark class="copyright"/> 2012-2014 Khronos Group.
             This document is licensed under the SGI
             Free Software B License. For details, see
-            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://oss.sgi.com/projects/FreeB/">http://oss.sgi.com/projects/FreeB/</link>.
+            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt">https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt</link>.
         </para>
     </refsect1>
 </refentry>

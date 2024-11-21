@@ -378,7 +378,7 @@
                 <listitem>
                     <para>
                         <parameter>data</parameter> returns one value, the maximum supported texture image units that
-                        can be used to access texture maps from the compute shader. The value may be at least 16.
+                        can be used to access texture maps from the compute shader. The value must be at least 16.
                         See <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -1839,6 +1839,15 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_SAMPLE_MASK_VALUE</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns one value indicating the current sample mask value.
+                        See <citerefentry><refentrytitle>glSampleMaski</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_SAMPLER_BINDING</constant></term>
                 <listitem>
                     <para>
@@ -2290,16 +2299,6 @@
                     <para>
                         <parameter>data</parameter> returns a single value indicating the mode of the texture
                         compression hint.  The initial value is <constant>GL_DONT_CARE</constant>.
-                    </para>
-                </listitem>
-            </varlistentry>
-            <varlistentry>
-                <term><constant>GL_TEXTURE_BINDING_BUFFER</constant></term>
-                <listitem>
-                    <para>
-                        <parameter>data</parameter> returns a single value, the name of the buffer object
-                        currently bound to the <constant>GL_TEXTURE_BUFFER</constant> buffer binding point. The initial value is 0.
-                        See <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -2803,7 +2802,7 @@
             Copyright <trademark class="copyright"/> 1991-2006 Silicon Graphics, Inc.
             Copyright <trademark class="copyright"/> 2010-2014 Khronos Group.
             This document is licensed under the SGI Free Software B License. For details, see
-            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://oss.sgi.com/projects/FreeB/">http://oss.sgi.com/projects/FreeB/</link>.
+            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt">https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt</link>.
         </para>
     </refsect1>
 </refentry>

@@ -58,10 +58,11 @@
             <constant>GL_DELETE_STATUS</constant>,
             <constant>GL_INFO_LOG_LENGTH</constant>,
             <constant>GL_LINK_STATUS</constant>,
+            <constant>GL_PROGRAM_BINARY_LENGTH</constant>,
             <constant>GL_PROGRAM_BINARY_RETRIEVABLE_HINT</constant>,
             <constant>GL_PROGRAM_SEPARABLE</constant>,
             <constant>GL_TRANSFORM_FEEDBACK_BUFFER_MODE</constant>,
-            <constant>GL_TRANSFORM_FEEDBACK_VARYINGS</constant>, 
+            <constant>GL_TRANSFORM_FEEDBACK_VARYINGS</constant>,
             <constant>GL_TRANSFORM_FEEDBACK_VARYING_MAX_LENGTH</constant> and
             <constant>GL_VALIDATE_STATUS</constant>.</para>
         </listitem>
@@ -81,7 +82,7 @@
 
     <variablelist>
 
-	<varlistentry>
+        <varlistentry>
         <term><constant>GL_ACTIVE_ATOMIC_COUNTER_BUFFERS</constant></term>
         <listitem>
             <para>
@@ -124,11 +125,11 @@
             <para>
             </para>
             <para> <parameter>params</parameter> returns the
-            number of uniform blocks for <parameter>program</parameter> 
+            number of uniform blocks for <parameter>program</parameter>
                         containing active uniforms.</para>
         </listitem>
         </varlistentry>
-                
+
         <varlistentry>
         <term><constant>GL_ACTIVE_UNIFORM_BLOCK_MAX_NAME_LENGTH</constant></term>
         <listitem>
@@ -180,7 +181,7 @@
             <parameter>program</parameter>.</para>
         </listitem>
         </varlistentry>
-		
+
         <varlistentry>
         <term><constant>GL_COMPUTE_WORK_GROUP_SIZE</constant></term>
         <listitem>
@@ -239,6 +240,17 @@
         </varlistentry>
 
         <varlistentry>
+        <term><constant>GL_PROGRAM_BINARY_LENGTH</constant></term>
+        <listitem>
+            <para>
+            </para>
+            <para> <parameter>params</parameter> returns the
+            length of the program binary that would be returned by
+            <citerefentry><refentrytitle>glGetProgramBinary</refentrytitle></citerefentry>.</para>
+        </listitem>
+        </varlistentry>
+
+        <varlistentry>
         <term><constant>GL_PROGRAM_BINARY_RETRIEVABLE_HINT</constant></term>
         <listitem>
             <para>
@@ -254,11 +266,11 @@
         <listitem>
             <para>
             </para>
-            <para> <parameter>params</parameter> returns 
-			<constant>GL_TRUE</constant> if the program has been flagged
-			for use as a separable program object that can be found to 
-			individual shader stages with 
-			<citerefentry><refentrytitle>glUseProgramStages</refentrytitle></citerefentry>.</para>
+            <para> <parameter>params</parameter> returns
+            <constant>GL_TRUE</constant> if the program has been flagged
+            for use as a separable program object that can be bound to
+            individual shader stages with
+            <citerefentry><refentrytitle>glUseProgramStages</refentrytitle></citerefentry>.</para>
         </listitem>
         </varlistentry>
 
@@ -362,17 +374,18 @@
     <para><citerefentry><refentrytitle>glAttachShader</refentrytitle></citerefentry>,
     <citerefentry><refentrytitle>glCreateProgram</refentrytitle></citerefentry>,
     <citerefentry><refentrytitle>glDeleteProgram</refentrytitle></citerefentry>,
+    <citerefentry><refentrytitle>glGetProgramiv</refentrytitle></citerefentry>,
     <citerefentry><refentrytitle>glGetShaderiv</refentrytitle></citerefentry>,
     <citerefentry><refentrytitle>glLinkProgram</refentrytitle></citerefentry>,
     <citerefentry><refentrytitle>glValidateProgram</refentrytitle></citerefentry></para>
     </refsect1>
     <refsect1 xml:id="Copyright"><title>Copyright</title>
         <para>
-            Copyright <trademark class="copyright"/> 2003-2005 3Dlabs Inc. Ltd. 
-            Copyright <trademark class="copyright"/> 2010-2014 Khronos Group.
-            This material may be distributed subject to the terms and conditions set forth in 
+            Copyright <trademark class="copyright"/> 2003-2005 3Dlabs Inc. Ltd.
+            Copyright <trademark class="copyright"/> 2010-2020 Khronos Group.
+            This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
-            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://opencontent.org/openpub/">http://opencontent.org/openpub/</link>.
+            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://opencontent.org/openpub/">https://opencontent.org/openpub/</link>.
         </para>
     </refsect1>
 </refentry>

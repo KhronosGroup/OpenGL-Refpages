@@ -138,14 +138,14 @@ hr.spacer_hidden {visibility:hidden; padding:0px 0 0 0; clear:left; margin:0}
 
 div#nav {font-size: 1em;font-weight:bold;clear:both;position:relative;z-index:100;width: 100%;margin:3px 0 0px 0px;background:#fff;}
 #navlist, #nav ul {padding: 0;margin: 0;list-style: none;}
-#navlist {background:url('/opengles/sdk/inc/img/nav_bg_long.gif') bottom;height:31px;}
+#navlist {background:url('/OpenGL-Refpages/inc/img/nav_bg_long.gif') bottom;height:31px;}
 #nav ul ul {margin:0}
 #navlist a {display: block;margin:0 0;padding:.6em 1em 0.3em 1em;text-decoration:none;color:#000;font-weight:normal;font-family: Arial, Geneva, Helvetica, sans-serif;}
 #navlist ul li a {font-size:10px;}
 #navlist li {padding: 0;margin: 0;float: left;
 /* width:10em; width needed or else Opera goes nuts */
 }
-#navlist li {background: url('/opengles/sdk/inc/img/nav_divider.gif') bottom right no-repeat;}
+#navlist li {background: url('/OpenGL-Refpages/inc/img/nav_divider.gif') bottom right no-repeat;}
 #navlist li li {background:none}
 #navlist li ul {position: absolute;background: #faa;width: 169px;margin-top:0px;left: -999em;z-index:10;border-bottom:1px solid #111;}
 #navlist li ul li a {text-transform:none;margin:0;padding:.3em 7px .3em;width:155px;line-height:1.4em;font-variant:normal;font-size:.9em;font-style:normal;font-weight:normal;border-bottom:0px solid #a00;}

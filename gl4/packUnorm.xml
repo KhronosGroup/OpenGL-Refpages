@@ -52,8 +52,8 @@
     <refsect1 xml:id="description"><title>Description</title>
         <para>
             <function>packUnorm2x16</function>, <function>packSnorm2x16</function>, <function>packUnorm4x8</function> and <function>packSnorm4x8</function> convert
-            each component of the normalized floating-ponit value <parameter>v</parameter> into 8- or 16-bit integer
-            values and then packs the results into a 32-bit unsigned intgeter.
+            each component of the normalized floating-point value <parameter>v</parameter> into 8- or 16-bit integer
+            values and then packs the results into a 32-bit unsigned integer.
         </para>
         <para>
             The conversion for component <parameter>c</parameter> of <parameter>v</parameter> to fixed-point is
@@ -109,7 +109,7 @@
             Copyright <trademark class="copyright"/> 2011-2014 Khronos Group.
             This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
-            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://opencontent.org/openpub/">http://opencontent.org/openpub/</link>.
+            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://opencontent.org/openpub/">https://opencontent.org/openpub/</link>.
         </para>
     </refsect1>
 </refentry>

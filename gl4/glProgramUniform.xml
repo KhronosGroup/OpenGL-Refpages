@@ -126,24 +126,24 @@
         <funcdef>void <function>glProgramUniform2ui</function></funcdef>
         <paramdef>GLuint <parameter>program</parameter></paramdef>
         <paramdef>GLint <parameter>location</parameter></paramdef>
-        <paramdef>GLint <parameter>v0</parameter></paramdef>
+        <paramdef>GLuint <parameter>v0</parameter></paramdef>
         <paramdef>GLuint <parameter>v1</parameter></paramdef>
         </funcprototype>
         <funcprototype>
         <funcdef>void <function>glProgramUniform3ui</function></funcdef>
         <paramdef>GLuint <parameter>program</parameter></paramdef>
         <paramdef>GLint <parameter>location</parameter></paramdef>
-        <paramdef>GLint <parameter>v0</parameter></paramdef>
-        <paramdef>GLint <parameter>v1</parameter></paramdef>
+        <paramdef>GLuint <parameter>v0</parameter></paramdef>
+        <paramdef>GLuint <parameter>v1</parameter></paramdef>
         <paramdef>GLuint <parameter>v2</parameter></paramdef>
         </funcprototype>
         <funcprototype>
         <funcdef>void <function>glProgramUniform4ui</function></funcdef>
         <paramdef>GLuint <parameter>program</parameter></paramdef>
         <paramdef>GLint <parameter>location</parameter></paramdef>
-        <paramdef>GLint <parameter>v0</parameter></paramdef>
-        <paramdef>GLint <parameter>v1</parameter></paramdef>
-        <paramdef>GLint <parameter>v2</parameter></paramdef>
+        <paramdef>GLuint <parameter>v0</parameter></paramdef>
+        <paramdef>GLuint <parameter>v1</parameter></paramdef>
+        <paramdef>GLuint <parameter>v2</parameter></paramdef>
         <paramdef>GLuint <parameter>v3</parameter></paramdef>
         </funcprototype>
             <!-- Vector commands -->
@@ -711,7 +711,7 @@
             Copyright <trademark class="copyright"/> 2010-2014 Khronos Group.
             This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
-            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://opencontent.org/openpub/">http://opencontent.org/openpub/</link>.
+            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://opencontent.org/openpub/">https://opencontent.org/openpub/</link>.
         </para>
     </refsect1>
 </refentry>

@@ -3,7 +3,7 @@
   <head>
     <title>glGet - OpenGL 4 Reference Pages</title>
     <link rel="stylesheet" type="text/css" href="opengl-man.css"/>
-    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1"/>
+    <meta name="generator" content="DocBook XSL Stylesheets V1.79.2"/>
     <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
                 MathML: {
@@ -14,7 +14,7 @@
                 }
             });
         </script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"/>
   </head>
   <body>
     <header/>
@@ -536,7 +536,7 @@
             <dd>
               <p>
                         <em class="parameter"><code>data</code></em> returns one value, the maximum supported texture image units that
-                        can be used to access texture maps from the compute shader. The value may be at least 16.
+                        can be used to access texture maps from the compute shader. The value must be at least 16.
                         See <a class="citerefentry" href="glActiveTexture.xhtml"><span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span></a>.
                     </p>
             </dd>
@@ -2263,6 +2263,17 @@
             </dd>
             <dt>
               <span class="term">
+                <code class="constant">GL_SAMPLE_MASK_VALUE</code>
+              </span>
+            </dt>
+            <dd>
+              <p>
+                        <em class="parameter"><code>params</code></em> returns one value indicating the current sample mask value.
+                        See <a class="citerefentry" href="glSampleMaski.xhtml"><span class="citerefentry"><span class="refentrytitle">glSampleMaski</span></span></a>.
+                    </p>
+            </dd>
+            <dt>
+              <span class="term">
                 <code class="constant">GL_SAMPLER_BINDING</code>
               </span>
             </dt>
@@ -2798,18 +2809,6 @@
             </dd>
             <dt>
               <span class="term">
-                <code class="constant">GL_TEXTURE_BINDING_BUFFER</code>
-              </span>
-            </dt>
-            <dd>
-              <p>
-                        <em class="parameter"><code>data</code></em> returns a single value, the name of the buffer object
-                        currently bound to the <code class="constant">GL_TEXTURE_BUFFER</code> buffer binding point. The initial value is 0.
-                        See <a class="citerefentry" href="glBindBuffer.xhtml"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>.
-                    </p>
-            </dd>
-            <dt>
-              <span class="term">
                 <code class="constant">GL_TEXTURE_BUFFER_OFFSET_ALIGNMENT</code>
               </span>
             </dt>
@@ -3309,7 +3308,7 @@
             <thead>
               <tr>
                 <th style="text-align: left; border-right: 2px solid ; ">
-                 
+                
             </th>
                 <th style="text-align: center; border-bottom: 2px solid ; " colspan="12">
                 <span class="bold"><strong>OpenGL Version</strong></span>
@@ -3567,7 +3566,7 @@
             Copyright <span class="trademark"/>© 1991-2006 Silicon Graphics, Inc.
             Copyright <span class="trademark"/>© 2010-2014 Khronos Group.
             This document is licensed under the SGI Free Software B License. For details, see
-            <a class="link" href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
+            <a class="link" href="https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt" target="_top">https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt</a>.
         </p>
       </div>
     </div>

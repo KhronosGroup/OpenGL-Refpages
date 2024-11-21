@@ -76,14 +76,14 @@
             Mipmap generation replaces texel image levels $level_{base} + 1$
             through $q$ with images derived from the $level_{base}$ image,
             regardless of their previous contents. All other mimap images,
-            including the $level_{base}+1$ image, are left unchanged by this
+            including the $level_{base}$ image, are left unchanged by this
             computation.
         </para>
         <para>
             The internal formats of the derived mipmap images all match
             those of the $level_{base}$ image. The contents of the derived
             images are computed by repeated, filtered reduction of the
-            $level_{base} + 1$ image. For one- and two-dimensional array and
+            $level_{base}$ image. For one- and two-dimensional array and
             cube map array textures, each layer is filtered independently.
         </para>
     </refsect1>
@@ -144,7 +144,7 @@
             Copyright <trademark class="copyright"/> 2010-2014 Khronos Group.
             This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
-            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://opencontent.org/openpub/">http://opencontent.org/openpub/</link>.
+            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://opencontent.org/openpub/">https://opencontent.org/openpub/</link>.
         </para>
     </refsect1>
 </refentry>

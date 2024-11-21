@@ -157,8 +157,8 @@
             <term><parameter>normalized</parameter></term>
             <listitem>
                 <para>
-                    Specifies whether fixed-point data values should be normalized (<constant>GL_TRUE</constant>) or 
-		    converted directly as fixed-point values (<constant>GL_FALSE</constant>) when they are accessed. This parameter is ignored if <parameter>type</parameter> is <constant>GL_FIXED</constant>.
+                    Specifies whether fixed-point data values should be normalized (<constant>GL_TRUE</constant>) or
+                    converted directly as fixed-point values (<constant>GL_FALSE</constant>) when they are accessed. This parameter is ignored if <parameter>type</parameter> is <constant>GL_FIXED</constant>.
                 </para>
             </listitem>
         </varlistentry>
@@ -190,9 +190,9 @@
     less than the value of <constant>GL_MAX_VERTEX_ATTRIBS</constant>.</para>
 
     <para><parameter>size</parameter> determines the number of components per
-    vertex are allocated to the specified attribute and must be 1, 2, 3 or 4.
-    <parameter>type</parameter> indicates the type of the data. If
-    <parameter>type</parameter> is one of <constant>GL_BYTE</constant>,
+    vertex are allocated to the specified attribute and must be 1, 2, 3, 4, or
+    <code>GL_BGRA</code>. <parameter>type</parameter> indicates the type of the
+    data. If <parameter>type</parameter> is one of <constant>GL_BYTE</constant>,
     <constant>GL_SHORT</constant>, <constant>GL_INT</constant>,
     <constant>GL_FIXED</constant>, <constant>GL_FLOAT</constant>,
     <constant>GL_HALF_FLOAT</constant>, and <constant>GL_DOUBLE</constant>
@@ -388,7 +388,7 @@
             Copyright <trademark class="copyright"/> 2013-2014 Khronos Group.
             This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
-            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://opencontent.org/openpub/">http://opencontent.org/openpub/</link>.
+            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://opencontent.org/openpub/">https://opencontent.org/openpub/</link>.
         </para>
     </refsect1>
 </refentry>

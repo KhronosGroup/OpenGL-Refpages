@@ -618,9 +618,7 @@
                         These values are provided as a convenience to the programmer;
                         they provide no functionality that cannot be duplicated by
                         incrementing the pointer passed to
-                        <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>,
-                        <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>,
-                        <citerefentry><refentrytitle>glTexSubImage1D</refentrytitle></citerefentry> or
+                        <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry> or
                         <citerefentry><refentrytitle>glTexSubImage2D</refentrytitle></citerefentry>.
                         Setting <constant>GL_UNPACK_SKIP_PIXELS</constant> to
                         <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
@@ -980,10 +978,10 @@
     <refsect1 xml:id="Copyright"><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"/> 1991-2006 Silicon Graphics, Inc.
-            Copyright <trademark class="copyright"/> 2010-2016 Khronos Group.
+            Copyright <trademark class="copyright"/> 2010-2020 Khronos Group.
             This document is licensed under the SGI Free Software B License.
             For details, see
-            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://oss.sgi.com/projects/FreeB/">http://oss.sgi.com/projects/FreeB/</link>.
+            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt">https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt</link>.
         </para>
     </refsect1>
 </refentry>

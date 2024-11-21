@@ -90,7 +90,7 @@
                             <constant>GL_BLEND</constant>
                         </entry>
                         <entry>
-                            <citerefentry><refentrytitle>glBlendFunc</refentrytitle></citerefentry>, 
+                            <citerefentry><refentrytitle>glBlendFunc</refentrytitle></citerefentry>,
                             <citerefentry><refentrytitle>glLogicOp</refentrytitle></citerefentry>
                         </entry>
                     </row>
@@ -147,7 +147,7 @@
                             <constant>GL_DEPTH_TEST</constant>
                         </entry>
                         <entry>
-                            <citerefentry><refentrytitle>glDepthFunc</refentrytitle></citerefentry>, 
+                            <citerefentry><refentrytitle>glDepthFunc</refentrytitle></citerefentry>,
                             <citerefentry><refentrytitle>glDepthRange</refentrytitle></citerefentry>
                         </entry>
                     </row>
@@ -228,8 +228,16 @@
                             <constant>GL_PRIMITIVE_RESTART</constant>
                         </entry>
                         <entry>
-                            <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>, 
+                            <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>,
                             <citerefentry><refentrytitle>glPrimitiveRestartIndex</refentrytitle></citerefentry>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <constant>GL_PRIMITIVE_RESTART_FIXED_INDEX</constant>
+                        </entry>
+                        <entry>
+                            <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>,
                         </entry>
                     </row>
                     <row>
@@ -277,7 +285,7 @@
                             <constant>GL_STENCIL_TEST</constant>
                         </entry>
                         <entry>
-                            <citerefentry><refentrytitle>glStencilFunc</refentrytitle></citerefentry>, 
+                            <citerefentry><refentrytitle>glStencilFunc</refentrytitle></citerefentry>,
                             <citerefentry><refentrytitle>glStencilOp</refentrytitle></citerefentry>
                         </entry>
                     </row>
@@ -299,6 +307,9 @@
         <para>
             If an error is generated,
             <function>glIsEnabled</function> and <function>glIsEnabledi</function> return <constant>GL_FALSE</constant>.
+        </para>
+        <para>
+            <constant>GL_PRIMITIVE_RESTART_FIXED_INDEX</constant> are available only if the GL version is 4.3 or greater.
         </para>
         <para>
             <constant>GL_DEBUG_OUTPUT</constant> and <constant>GL_DEBUG_OUTPUT_SYNCHRONOUS</constant> are available only if the GL version is 4.3 or greater.
@@ -343,7 +354,7 @@
             Copyright <trademark class="copyright"/> 2010-2014 Khronos Group.
             This document is licensed under the SGI
             Free Software B License. For details, see
-            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://oss.sgi.com/projects/FreeB/">http://oss.sgi.com/projects/FreeB/</link>.
+            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt">https://khronos.org/registry/OpenGL-Refpages/LICENSES/LicenseRef-FreeB.txt</link>.
         </para>
     </refsect1>
 </refentry>

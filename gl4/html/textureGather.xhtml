@@ -3,7 +3,7 @@
   <head>
     <title>textureGather - OpenGL 4 Reference Pages</title>
     <link rel="stylesheet" type="text/css" href="opengl-man.css"/>
-    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1"/>
+    <meta name="generator" content="DocBook XSL Stylesheets V1.79.2"/>
     <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
                 MathML: {
@@ -14,7 +14,7 @@
                 }
             });
         </script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"/>
   </head>
   <body>
     <header/>
@@ -117,7 +117,7 @@
               <td>
                 <code class="funcdef">vec4 <strong class="fsfunc">textureGather</strong>(</code>
               </td>
-              <td>gsampler2DShadow <var class="pdparam">sampler</var>, </td>
+              <td>sampler2DShadow <var class="pdparam">sampler</var>, </td>
             </tr>
             <tr>
               <td> </td>
@@ -134,7 +134,7 @@
               <td>
                 <code class="funcdef">vec4 <strong class="fsfunc">textureGather</strong>(</code>
               </td>
-              <td>gsampler2DArrayShadow <var class="pdparam">sampler</var>, </td>
+              <td>sampler2DArrayShadow <var class="pdparam">sampler</var>, </td>
             </tr>
             <tr>
               <td> </td>
@@ -151,7 +151,7 @@
               <td>
                 <code class="funcdef">vec4 <strong class="fsfunc">textureGather</strong>(</code>
               </td>
-              <td>gsamplerCubeShadow <var class="pdparam">sampler</var>, </td>
+              <td>samplerCubeShadow <var class="pdparam">sampler</var>, </td>
             </tr>
             <tr>
               <td> </td>
@@ -168,7 +168,7 @@
               <td>
                 <code class="funcdef">vec4 <strong class="fsfunc">textureGather</strong>(</code>
               </td>
-              <td>gsamplerCubeArrayShadow <var class="pdparam">sampler</var>, </td>
+              <td>samplerCubeArrayShadow <var class="pdparam">sampler</var>, </td>
             </tr>
             <tr>
               <td> </td>
@@ -185,11 +185,11 @@
               <td>
                 <code class="funcdef">vec4 <strong class="fsfunc">textureGather</strong>(</code>
               </td>
-              <td>gsampler2DRectShadow <var class="pdparam">sampler</var>, </td>
+              <td>sampler2DRectShadow <var class="pdparam">sampler</var>, </td>
             </tr>
             <tr>
               <td> </td>
-              <td>vec3 <var class="pdparam">P</var>, </td>
+              <td>vec2 <var class="pdparam">P</var>, </td>
             </tr>
             <tr>
               <td> </td>
@@ -268,7 +268,7 @@
         <p>
     </p>
         <p>
-        If specified, the value of <em class="parameter"><code>comp</code></em> must ba constant integer expression with a value
+        If specified, the value of <em class="parameter"><code>comp</code></em> must be a constant integer expression with a value
         of 0, 1, 2, or 3, identifying the x, y, z or w component of the four-component vector lookup result for each
         texel, respectively. If <em class="parameter"><code>comp</code></em> is not specified, it is treated as 0, selecting the x
         component of each texel to generate the result.
@@ -296,7 +296,7 @@
             <thead>
               <tr>
                 <th style="text-align: left; border-right: 2px solid ; ">
-                 
+                
             </th>
                 <th style="text-align: center; border-bottom: 2px solid ; " colspan="12">
                 <span class="bold"><strong>OpenGL Shading Language Version</strong></span>
@@ -393,7 +393,7 @@
             Copyright <span class="trademark"/>© 2011-2014 Khronos Group.
             This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
-            <a class="link" href="http://opencontent.org/openpub/" target="_top">http://opencontent.org/openpub/</a>.
+            <a class="link" href="https://opencontent.org/openpub/" target="_top">https://opencontent.org/openpub/</a>.
         </p>
       </div>
     </div>

@@ -49,7 +49,7 @@
             <emphasis>Available only in the fragment shader</emphasis>,
             these functions return the sum of the absolute derivatives in
             $x$ and $y$ using local differencing for the input argument
-            <parameter>p</parameter>.  
+            <parameter>p</parameter>.
             <function>fwidth</function> is equivalent to
             <code>
                 <function>abs</function>(<parameter>dFdx</parameter>(p)) +
@@ -94,7 +94,7 @@
             Copyright <trademark class="copyright"/> 2011-2014 Khronos Group.
             This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
-            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://opencontent.org/openpub/">http://opencontent.org/openpub/</link>.
+            <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://opencontent.org/openpub/">https://opencontent.org/openpub/</link>.
         </para>
     </refsect1>
 </refentry>

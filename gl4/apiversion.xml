@@ -3,7 +3,7 @@
     <!-- Element sets are selected with XInclude from the row elements below
          using the role attribute to obtain table elements for the "Version
          Support" sections of the API man pages. The role element is based
-         on the GL API version (role=21 means OpenGL 2.1, etc.). 
+         on the GL API version (role=21 means OpenGL 2.1, etc.).
          It is similar but not identical to version.xml for GLSL pages. -->
     <row role="20">
         <entry>&#x2714;</entry>
