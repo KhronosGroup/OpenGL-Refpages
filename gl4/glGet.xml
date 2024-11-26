@@ -468,6 +468,42 @@
             <!-- // ARB_compute_shader -->
             <!-- ARB_debug_group -->
             <varlistentry>
+                <term><constant>GL_DEBUG_LOGGED_MESSAGES</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single value, the number of messages
+                        currently in the debug message log.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_DEBUG_NEXT_LOGGED_MESSAGE_LENGTH</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single value, the string length
+                        of the oldest debug message in the debug message log.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_DEBUG_MESSAGE_LENGTH</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single value, the maximum length of a
+                        debug message string, including its null terminator.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_DEBUG_LOGGED_MESSAGES</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single value, the maximum number
+                        of messages stored in the debug message log.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_MAX_DEBUG_GROUP_STACK_DEPTH</constant></term>
                 <listitem>
                     <para>
@@ -706,6 +742,59 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_QUERY_BUFFER_BINDING</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single value, the name of the buffer object
+                        currently bound to the target <constant>GL_QUERY_BUFFER</constant>. If no buffer object
+                        is bound to this target, 0 is returned.  The initial value is 0.
+                        See <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_COPY_READ_BUFFER_BINDING</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single value, the name of the buffer object
+                        currently bound to the target <constant>GL_COPY_READ_BUFFER</constant>. If no buffer object
+                        is bound to this target, 0 is returned.  The initial value is 0.
+                        See <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_COPY_WRITE_BUFFER_BINDING</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single value, the name of the buffer object
+                        currently bound to the target <constant>GL_COPY_WRITE_BUFFER</constant>. If no buffer object
+                        is bound to this target, 0 is returned.  The initial value is 0.
+                        See <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_RESET_NOTIFICATION_STRATEGY</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single value, the reset notification behavior. 
+                        Either <constant>GL_NO_RESET_NOTIFICATION</constant> or <constant>GL_LOSE_CONTEXT_ON_RESET</constant>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_TEXTURE_BUFFER_BINDING</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single value, the name of the buffer object
+                        currently bound to the target <constant>GL_TEXTURE_BUFFER</constant>. If no buffer object
+                        is bound to this target, 0 is returned.  The initial value is 0.
+                        See <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_LINE_SMOOTH</constant></term>
                 <listitem>
                     <para>
@@ -903,6 +992,30 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_MIN_FRAGMENT_INTERPOLATION_OFFSET</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value, the furthest negative offset for <citerefentry><refentrytitle>interpolateAtOffset</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_FRAGMENT_INTERPOLATION_OFFSET</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value, the furthest positive offset for <citerefentry><refentrytitle>interpolateAtOffset</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_FRAGMENT_INTERPOLATION_OFFSET_BITS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value, the subpixel bits for <citerefentry><refentrytitle>interpolateAtOffset</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_MAX_DRAW_BUFFERS</constant></term>
                 <listitem>
                     <para>
@@ -921,6 +1034,51 @@
                         of active draw buffers when using dual-source  blending. The value must be at least 1.
                         See <citerefentry><refentrytitle>glBlendFunc</refentrytitle></citerefentry> and
                         <citerefentry><refentrytitle>glBlendFuncSeparate</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_COLOR_ATTACHMENTS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value, the maximum number
+                        of FBO attachment points for colorbuffers.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value, the maximum number
+                        of components to write to a single buffer in interleaved mode.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value, the maximum number
+                        of separate attributes or outputs that can be captured in transform feedback.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value, the maximum number
+                        of components per attribute or output in separate mode.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_TRANSFORM_FEEDBACK_BUFFERS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value, the maximum number
+                        of buffer objs to write with transform feedback.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1192,6 +1350,15 @@
                     <para>
                         <parameter>data</parameter> returns one value,
                         the maximum number of sample mask words.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_SAMPLES</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum number of samples supported for multisampling.
                     </para>
                 </listitem>
             </varlistentry>
