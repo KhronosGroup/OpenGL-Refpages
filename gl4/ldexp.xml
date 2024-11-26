@@ -42,7 +42,7 @@
             </listitem>
         </varlistentry>
         <varlistentry>
-            <term><parameter>out exp</parameter></term>
+            <term><parameter>exp</parameter></term>
             <listitem>
                 <para>
                     Specifies the value to be used as a source of exponent.
