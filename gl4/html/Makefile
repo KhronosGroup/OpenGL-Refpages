@@ -237,6 +237,13 @@ GL_ARB_multi_bind_entries = \
     glBindSamplers.xhtml \
     glBindVertexBuffers.xhtml
 
+GL_ARB_polygon_offset_clamp = \
+    glPolygonOffsetClamp.xhtml
+
+GL_ARB_indirect_parameters = \
+    glMultiDrawArraysIndirectCount.xhtml \
+    glMultiDrawElementsIndirectCount.xhtml
+
 MODIFIEDFORGL4XML = \
     glClearDepth.xhtml \
     glCreateShader.xhtml \
@@ -315,6 +322,10 @@ GL45XML = \
     glGetGraphicsResetStatus.xhtml \
     glTextureBarrier.xhtml \
     gl_HelperInvocation.xhtml
+
+GL46XML = \
+    $(GL_ARB_polygon_offset_clamp) \
+    $(GL_ARB_indirect_parameters)
 
 UNMODIFIEDXML = \
     glActiveTexture.xhtml \
@@ -507,7 +518,7 @@ UNMODIFIEDXML = \
 
 MODIFIEDXML = \
 
-APIXML	= $(GL4XML) $(GL41XML) $(GL42XML) $(GL43XML) $(GL44XML) $(GL45XML) $(MODIFIEDFORGL4XML) $(UNMODIFIEDXML)
+APIXML	= $(GL4XML) $(GL41XML) $(GL42XML) $(GL43XML) $(GL44XML) $(GL45XML) $(GL46XML) $(MODIFIEDFORGL4XML) $(UNMODIFIEDXML)
 
 ############################ GLSL pages ############################
 

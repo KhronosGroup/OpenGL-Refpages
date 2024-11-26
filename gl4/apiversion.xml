@@ -18,9 +18,11 @@
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
     </row>
     <row role="21">
         <entry>-</entry>
+        <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
@@ -46,11 +48,13 @@
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
     </row>
     <row role="31">
         <entry>-</entry>
         <entry>-</entry>
         <entry>-</entry>
+        <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
@@ -74,6 +78,7 @@
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
     </row>
     <row role="33">
         <entry>-</entry>
@@ -81,6 +86,7 @@
         <entry>-</entry>
         <entry>-</entry>
         <entry>-</entry>
+        <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
@@ -102,6 +108,7 @@
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
     </row>
     <row role="41">
         <entry>-</entry>
@@ -111,6 +118,7 @@
         <entry>-</entry>
         <entry>-</entry>
         <entry>-</entry>
+        <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
@@ -130,6 +138,7 @@
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
     </row>
     <row role="43">
         <entry>-</entry>
@@ -141,6 +150,7 @@
         <entry>-</entry>
         <entry>-</entry>
         <entry>-</entry>
+        <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
@@ -158,8 +168,25 @@
         <entry>-</entry>
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
     </row>
     <row role="45">
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>-</entry>
+        <entry>&#x2714;</entry>
+        <entry>&#x2714;</entry>
+    </row>
+    <row role="46">
+        <entry>-</entry>
         <entry>-</entry>
         <entry>-</entry>
         <entry>-</entry>
