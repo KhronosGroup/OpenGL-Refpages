@@ -40,7 +40,7 @@
             <term><parameter>clamp</parameter></term>
             <listitem>
                 <para>
-                    Specifies whether to apply color clamping. <parameter>clamp</parameter> must be <constant>GL_TRUE</constant> or <constant>GL_FALSE</constant>.
+                    Specifies whether to apply color clamping. <parameter>clamp</parameter> must be <constant>GL_TRUE</constant>, <constant>GL_FALSE</constant>, or <constant>GL_FIXED_ONLY</constant>.
                 </para>
             </listitem>
         </varlistentry>

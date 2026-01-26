@@ -290,6 +290,48 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_CLAMP_READ_COLOR</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single value, the current read color clamping mode.
+                        The value is either <constant>GL_TRUE</constant>, <constant>GL_FALSE</constant>, or <constant>GL_FIXED_ONLY</constant>.
+                        Initial value is <constant>GL_FIXED_ONLY</constant>.
+                        See <citerefentry><refentrytitle>glClampColor</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_CLIP_DISTANCE</constant><emphasis>i</emphasis></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single boolean value indicating if the <emphasis>i</emphasis>th user clipping plane is enabled.
+                        Initial value is <constant>GL_FALSE</constant>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_CLIP_ORIGIN</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single value indicating the clip origin.
+                        The value is either <constant>GL_LOWER_LEFT</constant> or <constant>GL_UPPER_LEFT</constant>.
+                        Initial value is <constant>GL_LOWER_LEFT</constant>.
+                        See <citerefentry><refentrytitle>glClipControl</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_CLIP_DEPTH_MODE</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single value indicating the clip depth mode.
+                        The value is either <constant>GL_NEGATIVE_ONE_TO_ONE</constant> or <constant>GL_ZERO_TO_ONE</constant>.
+                        Initial value is <constant>GL_NEGATIVE_ONE_TO_ONE</constant>.
+                        See <citerefentry><refentrytitle>glClipControl</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_COLOR_CLEAR_VALUE</constant></term>
                 <listitem>
                     <para>
@@ -350,6 +392,25 @@
                     <para>
                         <parameter>data</parameter> returns one value,
                         the flags with which the context was created (such as debugging functionality).
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_CONTEXT_PROFILE_MASK</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the profile mask with which the context was created (such as core profile or compatibility profile).
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_CONTEXT_RELEASE_BEHAVIOR</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value, the flush behavior when the context is released with which the context was created.
+                        Initial value is depends on how the context was created, the default is nothing else is specified is <constant>GL_CONTEXT_RELEASE_BEHAVIOR_FLUSH</constant>.
+                        The value is either <constant>GL_CONTEXT_RELEASE_BEHAVIOR_FLUSH</constant> or <constant>GL_NONE</constant>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -429,6 +490,34 @@
                     <para>
                         <parameter>data</parameter> returns a single value, the string length
                         of the oldest debug message in the debug message log.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_DEBUG_OUTPUT</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single boolean value indicating whether debug output is enabled.
+                        The initial value is <constant>GL_TRUE</constant> in a debug context and <constant>GL_FALSE</constant> in a non-debug context.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_DEBUG_OUTPUT_SYNCHRONOUS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single boolean value indicating whether synchronous debug callbacks are enabled.
+                        The initial value is <constant>GL_FALSE</constant>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_DEPTH_CLAMP</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single boolean value indicating whether depth clamping is enabled.
+                        Initial value is <constant>GL_FALSE</constant>
+                        See <citerefentry><refentrytitle>glDepthRange</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -570,6 +659,17 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_DRAW_INDIRECT_BUFFER_BINDING</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the name of the buffer object currently bound to the <constant>GL_DRAW_INDIRECT_BUFFER</constant> target.
+                        If no buffer object is bound to this target, 0 is returned. The initial value is 0.
+                        See <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_ELEMENT_ARRAY_BUFFER_BINDING</constant></term>
                 <listitem>
                     <para>
@@ -585,6 +685,7 @@
                 <listitem>
                     <para>
                         <parameter>data</parameter> returns one value, the subpixel bits for <citerefentry><refentrytitle>interpolateAtOffset</refentrytitle></citerefentry>.
+                        The value must be at least 4.
                     </para>
                 </listitem>
             </varlistentry>
@@ -597,6 +698,95 @@
                         for fragment shaders. The initial value
                         is <constant>GL_DONT_CARE</constant>.
                         See <citerefentry><refentrytitle>glHint</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_FRAMEBUFFER_SRGB</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single boolean value indicating whether sRGB update and blending is enabled.
+                        Initial value is <constant>GL_FALSE</constant>.
+                        See <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_FRONT_FACE</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value, the polygon frontface mode.
+                        The value is either <constant>GL_CCW</constant> or <constant>GL_CW</constant>.
+                        The initial value is <constant>GL_CCW</constant>.
+                        See <citerefentry><refentrytitle>glFrontFace</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_IMAGE_BINDING_ACCESS</constant></term>
+                <listitem>
+                    <para>
+                        Accepted by the indexed versions of <function>glGet</function>.
+                        <parameter>data</parameter> returns a single enum value, the read/write access of the texture object bound to the indexed image unit.
+                        The value is either <constant>GL_READ_ONLY</constant>, <constant>GL_WRITE_ONLY</constant>, or <constant>GL_READ_WRITE</constant>.
+                        Initial value is <constant>GL_READ_ONLY</constant>.
+                        See <citerefentry><refentrytitle>glBindImageTexture</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_IMAGE_BINDING_FORMAT</constant></term>
+                <listitem>
+                    <para>
+                        Accepted by the indexed versions of <function>glGet</function>.
+                        <parameter>data</parameter> returns a single value, the image format of the indexed image unit.
+                        The value must be one of the allowed image formats.
+                        Initial value is <constant>GL_R8</constant>.
+                        See <citerefentry><refentrytitle>glBindImageTexture</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_IMAGE_BINDING_LAYER</constant></term>
+                <listitem>
+                    <para>
+                        Accepted by the indexed versions of <function>glGet</function>.
+                        <parameter>data</parameter> returns a single value, the layer of the texture object bound to the indexed image unit.
+                        Initial value is 0.
+                        See <citerefentry><refentrytitle>glBindImageTexture</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_IMAGE_BINDING_LAYERED</constant></term>
+                <listitem>
+                    <para>
+                        Accepted by the indexed versions of <function>glGet</function>.
+                        <parameter>data</parameter> returns a single boolean value, if the texture object bound to the indexed image unit was bound with multiple layers.
+                        Initial value is <constant>GL_FALSE</constant>.
+                        See <citerefentry><refentrytitle>glBindImageTexture</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_IMAGE_BINDING_LEVEL</constant></term>
+                <listitem>
+                    <para>
+                        Accepted by the indexed versions of <function>glGet</function>.
+                        <parameter>data</parameter> returns a single value, the level of the texture object bound to the indexed image unit.
+                        Initial value is 0.
+                        See <citerefentry><refentrytitle>glBindImageTexture</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_IMAGE_BINDING_NAME</constant></term>
+                <listitem>
+                    <para>
+                        Accepted by the indexed versions of <function>glGet</function>.
+                        <parameter>data</parameter> returns a single value, the name of the texture object bound to the indexed image unit.
+                        Initial value is 0.
+                        See <citerefentry><refentrytitle>glBindImageTexture</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -680,22 +870,6 @@
                     </para>
                 </listitem>
             </varlistentry>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <varlistentry>
                 <term><constant>GL_MAJOR_VERSION</constant></term>
                 <listitem>
@@ -728,6 +902,24 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_MAX_ATOMIC_COUNTER_BUFFER_BINDINGS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value.
+                        The maximum number of atomic counter buffer bindings. The value must be at least 1.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_ATOMIC_COUNTER_BUFFER_SIZE</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value.
+                        The maximum size in basic machine units of an atomic counter buffer. The value must be at least 32.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_MAX_CLIP_DISTANCES</constant></term>
                 <listitem>
                     <para>
@@ -755,6 +947,14 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_MAX_COMBINED_ATOMIC_COUNTER_BUFFERS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single value, the maximum number of atomic counter buffers per program.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_MAX_COMBINED_ATOMIC_COUNTERS</constant></term>
                 <listitem>
                     <para>
@@ -763,12 +963,23 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_MAX_COMBINED_CLIP_AND_CULL_DISTANCES</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the combined maximum number of application-defined clipping and culling distances. 
+                        The value must be at least 8.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_MAX_COMBINED_COMPUTE_UNIFORM_COMPONENTS</constant></term>
                 <listitem>
                     <para>
                         <parameter>data</parameter> returns one value,
-                        the number of words for compute shader uniform variables in all uniform
-                        blocks (including default). The value must be at least 1.
+                        the maximum number of words for compute shader uniform variables in all uniform
+                        blocks (including default). The value must be at least 
+                        <constant>GL_MAX_COMPUTE_UNIFORM_BLOCKS</constant> * <constant>GL_MAX_UNIFORM_BLOCK_SIZE</constant> / 4 + <constant>GL_MAX_COMPUTE_UNIFORM_COMPONENTS</constant>.
                         See <citerefentry><refentrytitle>glUniform</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -778,8 +989,9 @@
                 <listitem>
                     <para>
                         <parameter>data</parameter> returns one value,
-                        the number of words for fragment shader uniform variables in all uniform
-                        blocks (including default). The value must be at least 1.
+                        the maximum number of words for fragment shader uniform variables in all uniform
+                        blocks (including default). The value must be at least 
+                        <constant>GL_MAX_FRAGMENT_UNIFORM_BLOCKS</constant> * <constant>GL_MAX_UNIFORM_BLOCK_SIZE</constant> / 4 + <constant>GL_MAX_FRAGMENT_UNIFORM_COMPONENTS</constant>.
                         See <citerefentry><refentrytitle>glUniform</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -789,9 +1001,30 @@
                 <listitem>
                     <para>
                         <parameter>data</parameter> returns one value,
-                        the number of words for geometry shader uniform variables in all uniform
-                        blocks (including default). The value must be at least 1.
+                        the maximum number of words for geometry shader uniform variables in all uniform
+                        blocks (including default). The value must be at least 
+                        <constant>GL_MAX_GEOMETRY_UNIFORM_BLOCKS</constant> * <constant>GL_MAX_UNIFORM_BLOCK_SIZE</constant> / 4 + <constant>GL_MAX_GEOMETRY_UNIFORM_COMPONENTS</constant>.
                         See <citerefentry><refentrytitle>glUniform</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_COMBINED_IMAGE_UNIFORMS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum number of image variables in all shaders.
+                        The value must be at least 8.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_COMBINED_SHADER_OUTPUT_RESOURCES</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the limit on active image unit + shader storage blocks + fragment outputs. 
+                        The value must be at least 8.
                     </para>
                 </listitem>
             </varlistentry>
@@ -801,10 +1034,34 @@
                     <para>
                         <parameter>data</parameter> returns one value,
                         the maximum total number of active shader storage blocks that may be accessed by all active shaders.
+                        The value must be at least 8.
                     </para>
                 </listitem>
             </varlistentry>
-            
+            <varlistentry>
+                <term><constant>GL_MAX_COMBINED_TESS_CONTROL_UNIFORM_COMPONENTS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum number of words for tessellation control shader uniform variables in all uniform
+                        blocks (including default). The value must be at least 
+                        <constant>GL_MAX_TESS_CONTROL_UNIFORM_BLOCKS</constant> * <constant>GL_MAX_UNIFORM_BLOCK_SIZE</constant> / 4 + <constant>GL_MAX_TESS_CONTROL_UNIFORM_COMPONENTS</constant>.
+                        See <citerefentry><refentrytitle>glUniform</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_COMBINED_TESS_EVALUATION_UNIFORM_COMPONENTS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum number of words for tessellation evaluation shader uniform variables in all uniform
+                        blocks (including default). The value must be at least 
+                        <constant>GL_MAX_TESS_EVALUATION_UNIFORM_BLOCKS</constant> * <constant>GL_MAX_UNIFORM_BLOCK_SIZE</constant> / 4 + <constant>GL_MAX_TESS_EVALUATION_UNIFORM_COMPONENTS</constant>.
+                        See <citerefentry><refentrytitle>glUniform</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
             <varlistentry>
                 <term><constant>GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS</constant></term>
                 <listitem>
@@ -813,7 +1070,7 @@
                         can be used to access texture maps from the vertex shader and the fragment processor combined.
                         If both the vertex shader and the fragment processing stage access the same texture image
                         unit, then that counts as using two texture image units against this limit.
-                        The value must be at least 48.
+                        The value must be at least 80.
                         See <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -833,17 +1090,10 @@
                 <listitem>
                     <para>
                         <parameter>data</parameter> returns one value,
-                        the number of words for vertex shader uniform variables in all uniform
-                        blocks (including default). The value must be at least 1.
+                        the maximum number of words for vertex shader uniform variables in all uniform
+                        blocks (including default). The value must be at least 
+                        <constant>GL_MAX_VERTEX_UNIFORM_BLOCKS</constant> * <constant>GL_MAX_UNIFORM_BLOCK_SIZE</constant> / 4 + <constant>GL_MAX_VERTEX_UNIFORM_COMPONENTS.</constant>
                         See <citerefentry><refentrytitle>glUniform</refentrytitle></citerefentry>.
-                    </para>
-                </listitem>
-            </varlistentry>
-            <varlistentry>
-                <term><constant>GL_MAX_COMPUTE_ATOMIC_COUNTERS</constant></term>
-                <listitem>
-                    <para>
-                        <parameter>data</parameter> returns a single value, the maximum number of atomic counters available to compute shaders.
                     </para>
                 </listitem>
             </varlistentry>
@@ -852,6 +1102,26 @@
                 <listitem>
                     <para>
                         <parameter>data</parameter> returns a single value, the maximum number of atomic counter buffers that may be accessed by a compute shader.
+                        The value must be at least 8.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_COMPUTE_ATOMIC_COUNTERS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single value, the maximum number of atomic counters available to compute shaders.
+                        The value must be at least 8.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_COMPUTE_IMAGE_UNIFORMS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum number of image variables that may be accessed by a compute shader.
+                        The value must be at least 8.
                     </para>
                 </listitem>
             </varlistentry>
@@ -861,6 +1131,17 @@
                     <para>
                         <parameter>data</parameter> returns one value,
                         the maximum number of active shader storage blocks that may be accessed by a compute shader.
+                        The value must be at least 8.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_COMPUTE_SHARED_MEMORY_SIZE</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum total storage size of all variables declared as <emphasis>shared</emphasis> in all compute shaders linked into a single program object.
+                        The value must be at least 32768.
                     </para>
                 </listitem>
             </varlistentry>
@@ -938,6 +1219,15 @@
                         Use <constant>GL_PROXY_TEXTURE_CUBE_MAP</constant>
                         to determine if a texture is too large.
                         See <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_CULL_DISTANCES</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum number of application-defined culling distances. The value must be at least 8.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1029,10 +1319,29 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_MAX_FRAGMENT_ATOMIC_COUNTER_BUFFERS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single value, the maximum number of atomic counter buffers available to fragment shaders.
+                        The value must be at least 1.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_MAX_FRAGMENT_ATOMIC_COUNTERS</constant></term>
                 <listitem>
                     <para>
                         <parameter>data</parameter> returns a single value, the maximum number of atomic counters available to fragment shaders.
+                        The value must be at least 8.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_FRAGMENT_IMAGE_UNIFORMS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum number of image variables in fragment shaders, which must be at least 8.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1050,6 +1359,7 @@
                 <listitem>
                     <para>
                         <parameter>data</parameter> returns one value, the furthest positive offset for <citerefentry><refentrytitle>interpolateAtOffset</refentrytitle></citerefentry>.
+                        The value must be at least 0.5.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1059,6 +1369,7 @@
                     <para>
                         <parameter>data</parameter> returns one value,
                         the maximum number of active shader storage blocks that may be accessed by a fragment shader.
+                        The value must be at least 8.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1067,7 +1378,7 @@
                 <listitem>
                     <para>
                         <parameter>data</parameter> returns one value,
-                        the maximum number of uniform blocks per fragment shader.  The value must be at least 12.
+                        the maximum number of uniform blocks per fragment shader.  The value must be at least 14.
                         See <citerefentry><refentrytitle>glUniformBlockBinding</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -1102,7 +1413,7 @@
                     <para>
                         <parameter>data</parameter> returns one value,
                         the maximum height for a framebuffer that has no attachments, which must be at least 16384.
-                        See <!-- FIX: link to glFramebufferParameteri --> <function>glFramebufferParameter</function>.
+                        See <citerefentry><refentrytitle>glFramebufferParameter</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1112,7 +1423,7 @@
                     <para>
                         <parameter>data</parameter> returns one value,
                         the maximum number of layers for a framebuffer that has no attachments, which must be at least 2048.
-                        See <!-- FIX: link to glFramebufferParameteri --> <function>glFramebufferParameter</function>.
+                        See <citerefentry><refentrytitle>glFramebufferParameter</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1122,7 +1433,7 @@
                     <para>
                         <parameter>data</parameter> returns one value,
                         the maximum samples in a framebuffer that has no attachments, which must be at least 4.
-                        See <!-- FIX: link to glFramebufferParameteri --> <function>glFramebufferParameter</function>.
+                        See <citerefentry><refentrytitle>glFramebufferParameter</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1132,7 +1443,7 @@
                     <para>
                         <parameter>data</parameter> returns one value,
                         the maximum width for a framebuffer that has no attachments, which must be at least 16384.
-                        See <!-- FIX: link to glFramebufferParameteri --> <function>glFramebufferParameter</function>.
+                        See <citerefentry><refentrytitle>glFramebufferParameter</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1141,6 +1452,15 @@
                 <listitem>
                     <para>
                         <parameter>data</parameter> returns a single value, the maximum number of atomic counters available to geometry shaders.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_GEOMETRY_IMAGE_UNIFORMS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum number of image variables in geometry shaders, which must be at least 0.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1159,6 +1479,24 @@
                     <para>
                         <parameter>data</parameter> returns one value,
                         the maximum number of components of outputs written by a geometry shader, which must be at least 128.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_GEOMETRY_OUTPUT_VERTICES</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum number of output vertices a geometry shader can emit, which must be at least 256.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_GEOMETRY_INVOCATIONS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum number of geometry shader invocations, which must be at least 32.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1182,11 +1520,21 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum number of total components (all vertices) of active outputs that a geometry shader can emit, 
+                        which must be at least 1024.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_MAX_GEOMETRY_UNIFORM_BLOCKS</constant></term>
                 <listitem>
                     <para>
                         <parameter>data</parameter> returns one value,
-                        the maximum number of uniform blocks per geometry shader.  The value must be at least 12.
+                        the maximum number of uniform blocks per geometry shader.  The value must be at least 14.
                         See <citerefentry><refentrytitle>glUniformBlockBinding</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -1199,6 +1547,26 @@
                         the maximum number of individual floating-point, integer, or boolean values that can be held
                         in uniform variable storage for a geometry shader. The value must be at least 1024.
                         See <citerefentry><refentrytitle>glUniform</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_IMAGE_SAMPLES</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maxumim allowed samples for a texture level bound to an image unit.
+                        The value must be at least 0.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_IMAGE_UNITS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the number of units for image load/store/atomic. 
+                        The value must be at least 8.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1223,11 +1591,30 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_MAX_PATCH_VERTICES</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum patch size.
+                        The value must be at least 32.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_MAX_PROGRAM_TEXEL_OFFSET</constant></term>
                 <listitem>
                     <para>
                         <parameter>data</parameter> returns one value,
                         the maximum texel offset allowed in a texture lookup, which must be at least 7.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_PROGRAM_TEXTURE_GATHER_OFFSET</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum texel offset allowed for <citerefentry><refentrytitle>textureGather</refentrytitle></citerefentry>, which must be at least 7.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1282,6 +1669,15 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_MAX_SHADER_STORAGE_BLOCK_SIZE</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum size in basic machine units of a shader storage block. Must be at least <inlineequation><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:msup><mml:mn>2</mml:mn><mml:mn>27</mml:mn></mml:msup></mml:math></inlineequation>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_MAX_SHADER_STORAGE_BUFFER_BINDINGS</constant></term>
                 <listitem>
                     <para>
@@ -1291,10 +1687,65 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_MAX_SUBROUTINES</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum number of subroutines per shader stage, which must be at least 256.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_SUBROUTINE_UNIFORM_LOCATIONS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum number of subroutine uniform locations per stage, which must be at least 1024.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_TESS_CONTROL_ATOMIC_COUNTER_BUFFERS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single value, the maximum number of atomic counter buffers available to tessellation control shaders.
+                        The value must be at least 0.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_MAX_TESS_CONTROL_ATOMIC_COUNTERS</constant></term>
                 <listitem>
                     <para>
                         <parameter>data</parameter> returns a single value, the maximum number of atomic counters available to tessellation control shaders.
+                        The value must be at least 0.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_TESS_CONTROL_IMAGE_UNIFORMS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single value, the maximum number of image variables in tessellation control shaders.
+                        The value must be at least 0.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_TESS_CONTROL_INPUT_COMPONENTS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum number of per-vertex inputs for tessellation control shaders, which must be at least 128.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_TESS_CONTROL_OUTPUT_COMPONENTS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum number of components for per-vertex output written by a tessellation control shader, which must be at least 128.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1304,6 +1755,47 @@
                     <para>
                         <parameter>data</parameter> returns one value,
                         the maximum number of active shader storage blocks that may be accessed by a tessellation control shader.
+                        The value must be at least 0.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_TESS_CONTROL_TOTAL_OUTPUT_COMPONENTS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum number of components for per-vertex and per-patch output written by a tessellation control shader, which must be at least 4096.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_TESS_CONTROL_UNIFORM_BLOCKS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum number of uniform blocks for a tessellation control shader.
+                        The value must be at least 14.
+                        See <citerefentry><refentrytitle>glUniformBlockBinding</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_TESS_CONTROL_UNIFORM_COMPONENTS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum number of individual floating-point, integer, or boolean values that can be held
+                        in uniform variable storage for a tessellation control shader. The value must be at least 1024.
+                        See <citerefentry><refentrytitle>glUniform</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_TESS_EVALUATION_ATOMIC_COUNTER_BUFFERS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single value, the maximum number of atomic counter buffers available to tessellation evaluation shaders.
+                        The value must be at least 0.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1312,6 +1804,34 @@
                 <listitem>
                     <para>
                         <parameter>data</parameter> returns a single value, the maximum number of atomic counters available to tessellation evaluation shaders.
+                        The value must be at least 0.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_TESS_EVALUATION_IMAGE_UNIFORMS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single value, the maximum number of image variables in tessellation evaluation shaders.
+                        The value must be at least 0.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_TESS_EVALUATION_INPUT_COMPONENTS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum number of per-vertex inputs for tessellation evaluation shaders, which must be at least 128.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_TESS_EVALUATION_OUTPUT_COMPONENTS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum number of components for per-vertex output written by a tessellation evaluation shader, which must be at least 128.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1321,6 +1841,57 @@
                     <para>
                         <parameter>data</parameter> returns one value,
                         the maximum number of active shader storage blocks that may be accessed by a tessellation evaluation shader.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_TESS_EVALUATION_TEXTURE_IMAGE_UNITS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value, the maximum supported texture image units that
+                        can be used to access texture maps from the tessellation evaluation shader. The value may be at least 16.
+                        See <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_TESS_EVALUATION_UNIFORM_BLOCKS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum number of uniform blocks for a tessellation evaluation shader.
+                        The value must be at least 14.
+                        See <citerefentry><refentrytitle>glUniformBlockBinding</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_TESS_EVALUATION_UNIFORM_COMPONENTS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum number of individual floating-point, integer, or boolean values that can be held
+                        in uniform variable storage for a tessellation evaluation shader. The value must be at least 1024.
+                        See <citerefentry><refentrytitle>glUniform</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_TESS_GEN_LEVEL</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum level supported by tessellation primitive generator.
+                        The value must be at least 64.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_TESS_PATCH_COMPONENTS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum number of components for per-patch output written by a tessellation control shader, which must be at least 120.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1352,6 +1923,17 @@
                         <parameter>data</parameter> returns one value,
                         the maximum, absolute value of the texture level-of-detail bias.  The
                         value must be at least 2.0.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_TEXTURE_MAX_ANISOTROPY</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum degree of anisotropy for textures.
+                        The value must be at least 16.0.
+                        See <citerefentry><refentrytitle>glTexParameter</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1463,10 +2045,29 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_MAX_VERTEX_ATOMIC_COUNTER_BUFFERS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single value, the maximum number of atomic counter buffers available to vertex shaders.
+                        The value must be at least 0.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_MAX_VERTEX_ATOMIC_COUNTERS</constant></term>
                 <listitem>
                     <para>
                         <parameter>data</parameter> returns a single value, the maximum number of atomic counters available to vertex shaders.
+                        The value must be at least 0.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_VERTEX_ATTRIB_BINDINGS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single integer value containing the maximum number of vertex buffers that may be bound.
+                        The value must be at least 16.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1476,14 +2077,16 @@
                     <para>
                         <parameter>data</parameter> returns a single integer value containing the maximum offset that may be added to a vertex binding
                         offset.
+                        The value must be at least 2047.
                     </para>
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_MAX_VERTEX_ATTRIB_BINDINGS</constant></term>
+                <term><constant>GL_MAX_VERTEX_ATTRIB_STRIDE</constant></term>
                 <listitem>
                     <para>
-                        <parameter>data</parameter> returns a single integer value containing the maximum number of vertex buffers that may be bound.
+                        <parameter>data</parameter> returns a single integer value containing the maximum vertex attribute stride.
+                        The value must be at least 2048.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1495,6 +2098,15 @@
                         the maximum number of 4-component generic vertex attributes accessible to a vertex shader.
                         The value must be at least 16.
                         See <citerefentry><refentrytitle>glVertexAttrib</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_VERTEX_IMAGE_UNIFORMS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum number of image variables in vertex shaders, which must be at least 0.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1513,6 +2125,7 @@
                     <para>
                         <parameter>data</parameter> returns one value,
                         the maximum number of active shader storage blocks that may be accessed by a vertex shader.
+                        The value must be at least 0.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1531,7 +2144,7 @@
                 <listitem>
                     <para>
                         <parameter>data</parameter> returns one value,
-                        the maximum number of uniform blocks per vertex shader.  The value must be at least 12.
+                        the maximum number of uniform blocks per vertex shader.  The value must be at least 14.
                         See <citerefentry><refentrytitle>glUniformBlockBinding</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -1587,6 +2200,7 @@
                 <listitem>
                     <para>
                         <parameter>data</parameter> returns one value, the furthest negative offset for <citerefentry><refentrytitle>interpolateAtOffset</refentrytitle></citerefentry>.
+                        The values must be at most -0.5.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1611,11 +2225,41 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_MIN_PROGRAM_TEXTURE_GATHER_OFFSET</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the minimum texel offset allowed for <citerefentry><refentrytitle>textureGather</refentrytitle></citerefentry>, which must be at most -8.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MIN_SAMPLE_SHADING_VALUE</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the fraction of multisamples to use for sample shading.
+                        Initial value is 0.0.
+                        See <citerefentry><refentrytitle>glMinSampleShading</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_MINOR_VERSION</constant></term>
                 <listitem>
                     <para>
                         <parameter>data</parameter> returns one value,
                         the minor version number of the OpenGL API supported by the current context.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MULTISAMPLE</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single boolean value indicating whether multisample rasterization is enabled.
+                        Intitial value is <constant>GL_FALSE</constant>.
+                        See <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1660,12 +2304,76 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_NUM_SHADING_LANGUAGE_VERSIONS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the number of shading language versions supported by the implementation.
+                        See <citerefentry><refentrytitle>glGetString</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_NUM_SPIR_V_EXTENSIONS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the number of SPIR-V extensions supported by the implementation.
+                        See <citerefentry><refentrytitle>glGetString</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_PACK_ALIGNMENT</constant></term>
                 <listitem>
                     <para>
                         <parameter>data</parameter> returns one value,
                         the byte alignment used for writing pixel data to memory. The initial
                         value is 4.
+                        See <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_PACK_COMPRESSED_BLOCK_DEPTH</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the compressed block depth used for writing pixel data to memory.
+                        The initial value is 0.
+                        See <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_PACK_COMPRESSED_BLOCK_HEIGHT</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the compressed block height used for writing pixel data to memory.
+                        The initial value is 0.
+                        See <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_PACK_COMPRESSED_BLOCK_SIZE</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the compressed block size used for writing pixel data to memory.
+                        The initial value is 0.
+                        See <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_PACK_COMPRESSED_BLOCK_WIDTH</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the compressed block width used for writing pixel data to memory.
+                        The initial value is 0.
                         See <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -1748,6 +2456,45 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_PARAMETER_BUFFER_BINDING</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single value, the name of the buffer object
+                        currently bound to the target <constant>GL_PARAMETER_BUFFER</constant>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_PATCH_VERTICES</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single value, the number of vertices in an input patch.
+                        Initial value is 3.
+                        See <citerefentry><refentrytitle>glPatchParameter</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_PATCH_DEFAULT_OUTER_LEVEL</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a four values, the default outer tessellation level without tessellation control shader.
+                        The initial value is (1.0, 1.0, 1.0, 1.0).
+                        See <citerefentry><refentrytitle>glPatchParameter</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_PATCH_DEFAULT_INNER_LEVEL</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a two values, the default inner tessellation level without tessellation control shader.
+                        The initial value is (1.0, 1.0).
+                        See <citerefentry><refentrytitle>glPatchParameter</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_PIXEL_PACK_BUFFER_BINDING</constant></term>
                 <listitem>
                     <para>
@@ -1812,6 +2559,41 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_POINT_SPRITE_COORD_ORIGIN</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single value, the origin orientation for point sprites.
+                        The value is either <constant>GL_UPPER_LEFT</constant> or <constant>GL_LOWER_LEFT</constant>
+                        Initial value is <constant>GL_UPPER_LEFT</constant>.
+                        See <citerefentry><refentrytitle>glPointParameter</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_POLYGON_MODE</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value, the polygon rasterization mode.
+                        The value is either <constant>GL_FILL</constant>, <constant>GL_LINE</constant>, or <constant>GL_POINT</constant>.
+                        Initial value is <constant>GL_FILL</constant>.
+                        See <citerefentry><refentrytitle>glPolygonMode</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_POLYGON_OFFSET_CLAMP</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the maximum or minimum value for the polygon offset calculation.
+                        Negative values indicate a minimum depth offset while maximum values indicate a maximum depth offset.
+                        A value of zero means no clamping is done.
+                        The initial value is 0.
+                        See <citerefentry><refentrytitle>glPolygonOffsetClamp</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_POLYGON_OFFSET_FACTOR</constant></term>
                 <listitem>
                     <para>
@@ -1819,7 +2601,8 @@
                         the scaling factor used to determine the variable offset that is added
                         to the depth value of each fragment generated when a polygon is
                         rasterized. The initial value is 0.
-                        See <citerefentry><refentrytitle>glPolygonOffset</refentrytitle></citerefentry>.
+                        See <citerefentry><refentrytitle>glPolygonOffset</refentrytitle></citerefentry> and 
+                        <citerefentry><refentrytitle>glPolygonOffsetClamp</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1829,7 +2612,8 @@
                     <para>
                         <parameter>data</parameter> returns a single boolean value indicating whether polygon offset
                         is enabled for polygons in fill mode. The initial value is <constant>GL_FALSE</constant>.
-                        See <citerefentry><refentrytitle>glPolygonOffset</refentrytitle></citerefentry>.
+                        See <citerefentry><refentrytitle>glPolygonOffset</refentrytitle></citerefentry> and 
+                        <citerefentry><refentrytitle>glPolygonOffsetClamp</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1839,7 +2623,8 @@
                     <para>
                         <parameter>data</parameter> returns a single boolean value indicating whether polygon offset
                         is enabled for polygons in line mode. The initial value is <constant>GL_FALSE</constant>.
-                        See <citerefentry><refentrytitle>glPolygonOffset</refentrytitle></citerefentry>.
+                        See <citerefentry><refentrytitle>glPolygonOffset</refentrytitle></citerefentry> and 
+                        <citerefentry><refentrytitle>glPolygonOffsetClamp</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1849,7 +2634,8 @@
                     <para>
                         <parameter>data</parameter> returns a single boolean value indicating whether polygon offset
                         is enabled for polygons in point mode. The initial value is <constant>GL_FALSE</constant>.
-                        See <citerefentry><refentrytitle>glPolygonOffset</refentrytitle></citerefentry>.
+                        See <citerefentry><refentrytitle>glPolygonOffset</refentrytitle></citerefentry> and 
+                        <citerefentry><refentrytitle>glPolygonOffsetClamp</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1861,7 +2647,8 @@
                         This value is multiplied by an implementation-specific value and then
                         added to the depth value of each fragment
                         generated when a polygon is rasterized. The initial value is 0.
-                        See <citerefentry><refentrytitle>glPolygonOffset</refentrytitle></citerefentry>.
+                        See <citerefentry><refentrytitle>glPolygonOffset</refentrytitle></citerefentry> and
+                        <citerefentry><refentrytitle>glPolygonOffsetClamp</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1883,6 +2670,34 @@
                         a symbolic constant indicating the mode of the polygon antialiasing
                         hint. The initial value is <constant>GL_DONT_CARE</constant>.
                         See <citerefentry><refentrytitle>glHint</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_PRIMITIVE_RESTART</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one boolean value indicating whether primitive restart is enabled.
+                        The initial value is <constant>GL_FALSE</constant>.
+                        See <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_PRIMITIVE_RESTART_FIXED_INDEX</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one boolean value indicating whether primitive restart fixed index is enabled.
+                        The initial value is <constant>GL_FALSE</constant>.
+                        See <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_PRIMITIVE_RESTART_FOR_PATCHES_SUPPORTED</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one boolean value indicating whether primitive restart is supported for <constant>GL_PATCHES</constant>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1950,6 +2765,16 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_RASTERIZER_DISCARD</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single boolean value indicating whether primitives are discarded before rasterization.
+                        Initial value is <constant>GL_FALSE</constant>.
+                        See <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_READ_FRAMEBUFFER_BINDING</constant></term>
                 <listitem>
                     <para>
@@ -1994,6 +2819,24 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_SAMPLE_ALPHA_TO_COVERAGE</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single boolean values indicating if alpha to coverage is enabled.
+                        See <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_SAMPLE_ALPHA_TO_ONE</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single boolean values indicating if fragment output alpha should be replaced by the maximum representable alpha value.
+                        See <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_SAMPLE_BUFFERS</constant></term>
                 <listitem>
                     <para>
@@ -2004,11 +2847,23 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_SAMPLE_COVERAGE</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single boolean values indicating if <constant>GL_SAMPLE_COVERAGE_VALUE</constant>
+                        and <constant>GL_SAMPLE_COVERAGE_INVERT</constant> will be used to modify the coverage mask.
+                        Initial value is <constant>GL_FALSE</constant>.
+                        See <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_SAMPLE_COVERAGE_INVERT</constant></term>
                 <listitem>
                     <para>
                         <parameter>data</parameter> returns a single boolean value indicating if the temporary
                         coverage value should be inverted.
+                        Initial value is <constant>GL_FALSE</constant>.
                         See <citerefentry><refentrytitle>glSampleCoverage</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -2019,7 +2874,17 @@
                     <para>
                         <parameter>data</parameter> returns a single positive floating-point value indicating the
                         current sample coverage value.
+                        Initial value is 1.0.
                         See <citerefentry><refentrytitle>glSampleCoverage</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_SAMPLE_MASK</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns a single boolean value indicating whether <constant>GL_SAMPLE_MASK_VALUE</constant> is used.
+                        See <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -2029,6 +2894,15 @@
                     <para>
                         <parameter>params</parameter> returns one value indicating the current sample mask value.
                         See <citerefentry><refentrytitle>glSampleMaski</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_SAMPLE_SHADING</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns a single boolean value indicating whether sample shading is enabled.
+                        See <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -2083,6 +2957,16 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_SHADER_BINARY_FORMATS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> an array of <constant>GL_NUM_SHADER_BINARY_FORMATS</constant> values,
+                        indicating the shader binary formats supported by the implementation.
+                        As of OpenGL 4.6 <constant>GL_SHADER_BINARY_FORMAT_SPIR_V</constant> is always supported.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_SHADER_COMPILER</constant></term>
                 <listitem>
                     <para>
@@ -2114,7 +2998,7 @@
                 <listitem>
                     <para>
                         <parameter>data</parameter> returns a single value, the minimum required alignment
-                        for shader storage buffer sizes and offset.  The initial value is 1.
+                        for shader storage buffer sizes and offset. The value is guaranteed to be less than or equal to 256.
                         See <citerefentry><refentrytitle>glShaderStorageBlockBinding</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -2469,6 +3353,16 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_TEXTURE_BINDING_CUBE_MAP_ARRAY</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single value, the name of the texture
+                        currently bound to the target <constant>GL_TEXTURE_CUBE_MAP_ARRAY</constant>. The initial value is 0.
+                        See <citerefentry><refentrytitle>glBindTexture</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_TEXTURE_BINDING_RECTANGLE</constant></term>
                 <listitem>
                     <para>
@@ -2494,7 +3388,7 @@
                 <listitem>
                     <para>
                         <parameter>data</parameter> returns a single value, the minimum required alignment
-                        for texture buffer sizes and offset.  The initial value is 1.
+                        for texture buffer sizes and offset.  The value is guaranteed to be less than or equal to 256.
                         See <citerefentry><refentrytitle>glUniformBlockBinding</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -2509,12 +3403,43 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_TEXTURE_CUBE_MAP_SEAMLESS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single boolean value indicating whether seamless cubemap filtering is
+                        enabled. Initial value is <constant>GL_FALSE</constant>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_TIMESTAMP</constant></term>
                 <listitem>
                     <para>
                         <parameter>data</parameter> returns a single value, the 64-bit value of the current
                         GL time.
                         See <citerefentry><refentrytitle>glQueryCounter</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_TRANSFORM_FEEDBACK_BINDING</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single value, the name of the transform feedback object 
+                        currently bound to the target <constant>GL_TRANSFORM_FEEDBACK</constant>. If no transform feedback object
+                        is bound to this target, 0 is returned.
+                        See <citerefentry><refentrytitle>glBindTransformFeedback</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_TRANSFORM_FEEDBACK_BUFFER_ACTIVE</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single boolean value indicating if transform feedback is active.
+                        The initial value is <constant>GL_FALSE</constant>.
+                        See <citerefentry><refentrytitle>glBeginTransformFeedback</refentrytitle></citerefentry> and
+                        <citerefentry><refentrytitle>glEndTransformFeedback</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -2531,6 +3456,17 @@
                         bound to the indexed transform feedback attribute stream. The initial value is 0 for all targets.
                         See <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glBindBufferBase</refentrytitle></citerefentry>, and
                         <citerefentry><refentrytitle>glBindBufferRange</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_TRANSFORM_FEEDBACK_BUFFER_PAUSED</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns a single boolean value indicating if transform feedback is paused.
+                        The initial value is <constant>GL_FALSE</constant>.
+                        See <citerefentry><refentrytitle>glPauseTransformFeedback</refentrytitle></citerefentry> and
+                        <citerefentry><refentrytitle>glResumeTransformFeedback</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -2577,7 +3513,7 @@
                 <listitem>
                     <para>
                         <parameter>data</parameter> returns a single value, the minimum required alignment
-                        for uniform buffer sizes and offset.  The initial value is 1.
+                        for uniform buffer sizes and offset. The value is guaranteed to be less than or equal to 256.
                         See <citerefentry><refentrytitle>glUniformBlockBinding</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -2611,6 +3547,50 @@
                         <parameter>data</parameter> returns one value,
                         the byte alignment used for reading pixel data from memory. The initial
                         value is 4.
+                        See <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_UNPACK_COMPRESSED_BLOCK_DEPTH</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the compressed block depth used for reading pixel data from memory.
+                        The initial value is 0.
+                        See <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_UNPACK_COMPRESSED_BLOCK_HEIGHT</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the compressed block height used for reading pixel data from memory.
+                        The initial value is 0.
+                        See <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_UNPACK_COMPRESSED_BLOCK_SIZE</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the compressed block size used for reading pixel data from memory.
+                        The initial value is 0.
+                        See <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_UNPACK_COMPRESSED_BLOCK_WIDTH</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>data</parameter> returns one value,
+                        the compressed block width used for reading pixel data from memory.
+                        The initial value is 0.
                         See <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>.
                     </para>
                 </listitem>

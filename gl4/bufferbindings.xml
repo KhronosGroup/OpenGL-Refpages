@@ -39,6 +39,10 @@
                 <entry>Vertex array indices</entry>
             </row>
             <row>
+                <entry><constant>GL_PARAMETER_BUFFER</constant></entry>
+                <entry>Draw parameters</entry>
+            </row>
+            <row>
                 <entry><constant>GL_PIXEL_PACK_BUFFER</constant></entry>
                 <entry>Pixel read target</entry>
             </row>

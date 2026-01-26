@@ -1414,6 +1414,21 @@
                 </listitem>
             </varlistentry>
         </variablelist>
+        <para>
+        </para>
+        <variablelist>
+            <varlistentry>
+                <term><constant>GL_TEXTURE_MAX_ANISOTROPY</constant></term>
+                <listitem>
+                    <para>
+                        Sets the maximum degree of anisotropy parameter.
+                        If this value is set to a value greater than 1.0, nsiotropic texture filtering is used to filter the texture.
+                        Otherwise isotropic texture filtering is used.
+                        The initial value is 1.0.
+                    </para>
+                </listitem>
+            </varlistentry>
+        </variablelist>
     </refsect1>
 
   <refsect1 xml:id="notes">
