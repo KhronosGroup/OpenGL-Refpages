@@ -1,7 +1,0 @@
-<HTML>
-<HEAD>
-<TITLE>OpenGL SDK</TITLE>
-</HEAD>
-<BODY>
-</BODY>
-</HTML>
