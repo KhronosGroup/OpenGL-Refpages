@@ -72,7 +72,7 @@
             <listitem>
                 <para>
                     Specifies the width of the texture image.
-                    All implementations support 3D texture images that are at least 16 texels wide.
+                    All implementations support 3D texture images that are at least 2048 texels wide.
                 </para>
             </listitem>
         </varlistentry>
@@ -81,7 +81,7 @@
             <listitem>
                 <para>
                     Specifies the height of the texture image.
-                    All implementations support 3D texture images that are at least 16 texels
+                    All implementations support 3D texture images that are at least 2048 texels
                     high.
                 </para>
             </listitem>
@@ -91,7 +91,7 @@
             <listitem>
                 <para>
                     Specifies the depth of the texture image.
-                    All implementations support 3D texture images that are at least 16 texels
+                    All implementations support 3D texture images that are at least 2048 texels
                     deep.
                 </para>
             </listitem>
