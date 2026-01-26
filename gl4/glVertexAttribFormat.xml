@@ -167,7 +167,7 @@
         <term><parameter>relativeoffset</parameter></term>
 
         <listitem>
-          <para>The distance between elements within the buffer.</para>
+          <para>A byte offset of the first element relative to the start of the vertex buffer binding this attribute fetches from.</para>
         </listitem>
       </varlistentry>
     </variablelist>
@@ -343,7 +343,7 @@
   </refsect1>
     <refsect1 xml:id="versions"><title>Version Support</title>
         <informaltable>
-            <tgroup cols="13" align="left">
+            <tgroup cols="14" align="left">
                 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="apifunchead.xml" xpointer="xpointer(/*/*)"/>
                 <tbody>
                     <row>

@@ -8,7 +8,7 @@
     <li><a href="https://www.khronos.org/legal/">Legal Notices</a></li>
     <li><a href="https://www.khronos.org/legal/trademarks/">Trademark Usage</a></li>
     </ul>
-    <div class="copyright">&copy; The Khronos<sup>®</sup> Group Inc. 2022. All rights reserved. Hosting provided by <a href="https://khr.io/gitlabaffiliate" aria-label="Hosted by Digital Ocean">DigitalOcean</a></div>
+    <div class="copyright">&copy; The Khronos<sup>®</sup> Group Inc. 2022. All rights reserved.</div>
     <div class="trademark">Khronos® and Vulkan® are registered trademarks, and ANARI™, WebGL™, glTF™, NNEF™, OpenVX™, SPIR™, SPIR-V™, SYCL™, OpenVG™, and 3D Commerce™ are trademarks of The Khronos Group Inc. OpenXR™ is a trademark owned by The Khronos Group Inc. and is registered as a trademark in China, the European Union, Japan and the United Kingdom. OpenCL™, OpenGL® and the OpenGL ES™ and OpenGL SC™ logos are registered trademarks or trademarks used under license by Khronos. All other product names, trademarks, and/or company names are used solely for identification and belong to their respective owners.</div>
     </div>
 </div>

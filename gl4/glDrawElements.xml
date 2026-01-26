@@ -77,7 +77,8 @@
             <term><parameter>indices</parameter></term>
             <listitem>
                 <para>
-                    Specifies a pointer to the location where the indices are stored.
+                    Specifies a byte offset (cast to a pointer type) into the buffer bound to <constant>GL_ELEMENT_ARRAY_BUFFER</constant>
+                    to start reading indices from.
                 </para>
             </listitem>
         </varlistentry>
@@ -133,7 +134,7 @@
     </refsect1>
     <refsect1 xml:id="versions"><title>Version Support</title>
         <informaltable>
-            <tgroup cols="13" align="left">
+            <tgroup cols="14" align="left">
                 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="apifunchead.xml" xpointer="xpointer(/*/*)"/>
                 <tbody>
                     <row>

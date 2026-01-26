@@ -17,7 +17,7 @@ include_once("../../assets/static_pages/khr_page_top.php");
 
 <ul>
 <li> <p> <a href="es3/"> OpenGL ES 3.2 and OpenGL ES Shading Language 3.20 </a> </p> </li>
-<li> <p> <a href="gl4/"> OpenGL 4.5 and OpenGL Shading Language 4.50 </a></p> </li>
+<li> <p> <a href="gl4/"> OpenGL 4.6 and OpenGL Shading Language 4.60 </a></p> </li>
 </ul>
 
 <h2> Older API Versions </h2>
@@ -31,7 +31,7 @@ include_once("../../assets/static_pages/khr_page_top.php");
 <p> The OpenGL 2.1 pages are the only source of reference material for GLX,
     GLU, and the OpenGL Compatibility Profile. They may be retained for that
     reason, even though they are otherwise useless, or we may eventually
-    incorporate that material in the OpenGL 4.5 pages instead. </p>
+    incorporate that material in the OpenGL 4.6 pages instead. </p>
 
 <ul>
 <li> <p> <a href="es3.1/"> OpenGL ES 3.1 and OpenGL ES Shading Language 3.10 </a> </p> </li>
@@ -53,7 +53,7 @@ include_once("../../assets/static_pages/khr_page_top.php");
 
 <p> <a href="https://www.khronos.org/developers/reference-cards"> Quick
     Reference Cards</a> are available in several formats for OpenGL 3.3 -
-    4.5 and OpenGL ES 2.0 - 3.2. </p>
+    4.6 and OpenGL ES 2.0 - 3.2. </p>
 
 <p> Formal Specifications for the OpenGL and OpenGL ES APIs and Shading
     Languages are available from the <a
@@ -87,6 +87,9 @@ include_once("../../assets/static_pages/khr_page_top.php");
 <p> <a href="https://github.com/Eyescale/Equalizer">Equalizer</a> -
     Middleware to create and deploy parallel OpenGL-based applications. </p>
 
+<p> <a href="https://www.glfw.org/">GLFW</a> - A multi-platform library
+    for OpenGL, OpenGL ES, Vulkan, window and input. </p>
+
 <p> <a href="https://github.com/nigels-com/glew">GLEW</a> - The OpenGL
     Extension Wrangler Library. </p>
 
@@ -106,15 +109,19 @@ include_once("../../assets/static_pages/khr_page_top.php");
 
 <h2> Tools </h2>
 
-<p> <a href="https://github.com/GPUOpen-Tools/CodeXL"> CodeXL </a> - AMD
-    tool suite for GPU debugging, profiling, and shader analysis. </p>
+<p> <a href="https://renderdoc.org/"> RenderDoc </a> -
+    A free MIT licensed stand-alone graphics debugger. </p>
 
 <p> <a href="https://github.com/KhronosGroup/KTX"> KTX </a> - lightweight
     file format for OpenGL textures, and <tt> libktx </tt> library for
     reading and writing KTX files. </p>
 
+<p> <a href="https://github.com/Dav1dde/glad"> GLAD </a> -
+    Multi-Language Vulkan/OpenGL/GLES/EGL/GLX/WGL Loader-Generator based
+    on the official specs. </p>
+
 <p> <a href="https://github.com/dtrebilco/glintercept"> GLIntercept </a> -
-    OpenGL function call intercept & logging tool. </p>
+    OpenGL function call intercept &amp; logging tool. </p>
 
 <p> <a href="https://github.com/KhronosGroup/glslang"> GLSLang </a> - OpenGL
     Shading Language Reference Compiler. </p>
@@ -122,9 +129,11 @@ include_once("../../assets/static_pages/khr_page_top.php");
 <p> <a href="http://realtech-vr.com/admin/glview"> GLView </a> - OpenGL
     Extensions Viewer. </p>
 
-<p> <a href="https://developer.nvidia.com/gameworks-tools-overview"> NVIDIA
+<p> <a href="https://developer.nvidia.com/tools-overview"> NVIDIA
     Nsight Visual Studio</a> (and other developer tools). </p>
 
+<p> <a href="https://gpuopen.com/tools/"> AMD
+    Radeon GPU Profiler &amp; Analyzer</a> (and other developer tools). </p>
 
 <h2> Tutorials </h2>
 
@@ -133,7 +142,7 @@ include_once("../../assets/static_pages/khr_page_top.php");
     </p>
 
 
-<p> <small> Copyright 2017-2021 The Khronos Group, Inc.. This work is licensed
+<p> <small> Copyright 2017-2026 The Khronos Group, Inc.. This work is licensed
     under a <a href="http://creativecommons.org/licenses/by/4.0/">Creative
     Commons Attribution 4.0 International License</a>. </small> </p>
 

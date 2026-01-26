@@ -2,11 +2,12 @@
 <funchead xmlns="http://docbook.org/ns/docbook" version="5.0">
     <!-- Table header for OpenGL feature Version Support section. All these
          elements are included within a
-            <tgroup cols="13" align="left">
+            <tgroup cols="14" align="left">
          element, followed by per-variable <tbody> support rows.
          Similar but not identical to funchead.xml for GLSL pages. -->
     <colspec colwidth="1.1*" />
     <colspec colwidth="1*" align="center" colname="firstvers" />
+    <colspec colwidth="1*" align="center" />
     <colspec colwidth="1*" align="center" />
     <colspec colwidth="1*" align="center" />
     <colspec colwidth="1*" align="center" />
@@ -67,6 +68,9 @@
             </entry>
             <entry>
                 <emphasis role="bold">4.5</emphasis>
+            </entry>
+            <entry>
+                <emphasis role="bold">4.6</emphasis>
             </entry>
         </row>
     </thead>

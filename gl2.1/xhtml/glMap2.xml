@@ -19,7 +19,7 @@
                     to 
                     <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                         
-                        <mml:mover><mml:mi mathvariant="italic">u</mml:mi><mml:mo>̂</mml:mo></mml:mover>
+                        <mml:mover><mml:mi mathvariant="italic">u</mml:mi><mml:mo>^</mml:mo></mml:mover>
                     </mml:math>,
                     one of the two variables that are evaluated by the equations specified
                     by this command. Initially, <em class="parameter"><code>u1</code></em> is 0 and <em class="parameter"><code>u2</code></em> is 1.
@@ -75,7 +75,7 @@
                     to 
                     <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                         
-                        <mml:mover><mml:mi mathvariant="italic">v</mml:mi><mml:mo>̂</mml:mo></mml:mover>
+                        <mml:mover><mml:mi mathvariant="italic">v</mml:mi><mml:mo>^</mml:mo></mml:mover>
                     </mml:math>,
                     one of the two variables that are evaluated by the equations specified
                     by this command. Initially, <em class="parameter"><code>v1</code></em> is 0 and <em class="parameter"><code>v2</code></em> is 1.
@@ -158,8 +158,8 @@
                     <mml:mi mathvariant="italic">p</mml:mi>
                     <mml:mo>⁡</mml:mo>
                     <mml:mfenced open="(" close=")">
-                        <mml:mover><mml:mi mathvariant="italic">u</mml:mi><mml:mo>̂</mml:mo></mml:mover>
-                        <mml:mover><mml:mi mathvariant="italic">v</mml:mi><mml:mo>̂</mml:mo></mml:mover>
+                        <mml:mover><mml:mi mathvariant="italic">u</mml:mi><mml:mo>^</mml:mo></mml:mover>
+                        <mml:mover><mml:mi mathvariant="italic">v</mml:mi><mml:mo>^</mml:mo></mml:mover>
                     </mml:mfenced>
                 </mml:mrow>
             </mml:math>
@@ -172,8 +172,8 @@
                         <mml:mi mathvariant="italic">p</mml:mi>
                         <mml:mo>⁡</mml:mo>
                         <mml:mfenced open="(" close=")">
-                            <mml:mover><mml:mi mathvariant="italic">u</mml:mi><mml:mo>̂</mml:mo></mml:mover>
-                            <mml:mover><mml:mi mathvariant="italic">v</mml:mi><mml:mo>̂</mml:mo></mml:mover>
+                            <mml:mover><mml:mi mathvariant="italic">u</mml:mi><mml:mo>^</mml:mo></mml:mover>
+                            <mml:mover><mml:mi mathvariant="italic">v</mml:mi><mml:mo>^</mml:mo></mml:mover>
                         </mml:mfenced>
                     </mml:mrow>
                     <mml:mo>=</mml:mo>
@@ -208,7 +208,7 @@
                                     </mml:msup>
                                     <mml:mo>⁡</mml:mo>
                                     <mml:mfenced open="(" close=")">
-                                        <mml:mover><mml:mi mathvariant="italic">u</mml:mi><mml:mo>̂</mml:mo></mml:mover>
+                                        <mml:mover><mml:mi mathvariant="italic">u</mml:mi><mml:mo>^</mml:mo></mml:mover>
                                     </mml:mfenced>
                                 </mml:mrow>
                                 <mml:mo>⁢</mml:mo>
@@ -222,7 +222,7 @@
                                     </mml:msup>
                                     <mml:mo>⁡</mml:mo>
                                     <mml:mfenced open="(" close=")">
-                                        <mml:mover><mml:mi mathvariant="italic">v</mml:mi><mml:mo>̂</mml:mo></mml:mover>
+                                        <mml:mover><mml:mi mathvariant="italic">v</mml:mi><mml:mo>^</mml:mo></mml:mover>
                                     </mml:mfenced>
                                 </mml:mrow>
                                 <mml:mo>⁢</mml:mo>
@@ -256,7 +256,7 @@
                     </mml:msup>
                     <mml:mo>⁡</mml:mo>
                     <mml:mfenced open="(" close=")">
-                        <mml:mover><mml:mi mathvariant="italic">u</mml:mi><mml:mo>̂</mml:mo></mml:mover>
+                        <mml:mover><mml:mi mathvariant="italic">u</mml:mi><mml:mo>^</mml:mo></mml:mover>
                     </mml:mfenced>
                 </mml:mrow>
             </mml:math>
@@ -287,7 +287,7 @@
                         </mml:msup>
                         <mml:mo>⁡</mml:mo>
                         <mml:mfenced open="(" close=")">
-                            <mml:mover><mml:mi mathvariant="italic">u</mml:mi><mml:mo>̂</mml:mo></mml:mover>
+                            <mml:mover><mml:mi mathvariant="italic">u</mml:mi><mml:mo>^</mml:mo></mml:mover>
                         </mml:mfenced>
                     </mml:mrow>
                     <mml:mo>=</mml:mo>
@@ -306,7 +306,7 @@
                         </mml:mfenced>
                         <mml:mo>⁢</mml:mo>
                         <mml:msup><mml:mfenced open="" close="">
-                            <mml:mover><mml:mi mathvariant="italic">u</mml:mi><mml:mo>̂</mml:mo></mml:mover>
+                            <mml:mover><mml:mi mathvariant="italic">u</mml:mi><mml:mo>^</mml:mo></mml:mover>
                         </mml:mfenced>
                         <mml:mi mathvariant="italic">i</mml:mi>
                         </mml:msup>
@@ -316,7 +316,7 @@
                                 <mml:mrow>
                                     <mml:mn>1</mml:mn>
                                     <mml:mo>-</mml:mo>
-                                    <mml:mover><mml:mi mathvariant="italic">u</mml:mi><mml:mo>̂</mml:mo></mml:mover>
+                                    <mml:mover><mml:mi mathvariant="italic">u</mml:mi><mml:mo>^</mml:mo></mml:mover>
                                 </mml:mrow>
                             </mml:mfenced>
                             <mml:mfenced open="" close="">
@@ -345,7 +345,7 @@
                     </mml:msup>
                     <mml:mo>⁡</mml:mo>
                     <mml:mfenced open="(" close=")">
-                        <mml:mover><mml:mi mathvariant="italic">v</mml:mi><mml:mo>̂</mml:mo></mml:mover>
+                        <mml:mover><mml:mi mathvariant="italic">v</mml:mi><mml:mo>^</mml:mo></mml:mover>
                     </mml:mfenced>
                 </mml:mrow>
             </mml:math>
@@ -376,7 +376,7 @@
                         </mml:msup>
                         <mml:mo>⁡</mml:mo>
                         <mml:mfenced open="(" close=")">
-                            <mml:mover><mml:mi mathvariant="italic">v</mml:mi><mml:mo>̂</mml:mo></mml:mover>
+                            <mml:mover><mml:mi mathvariant="italic">v</mml:mi><mml:mo>^</mml:mo></mml:mover>
                         </mml:mfenced>
                     </mml:mrow>
                     <mml:mo>=</mml:mo>
@@ -395,7 +395,7 @@
                         </mml:mfenced>
                         <mml:mo>⁢</mml:mo>
                         <mml:msup><mml:mfenced open="" close="">
-                            <mml:mover><mml:mi mathvariant="italic">v</mml:mi><mml:mo>̂</mml:mo></mml:mover>
+                            <mml:mover><mml:mi mathvariant="italic">v</mml:mi><mml:mo>^</mml:mo></mml:mover>
                         </mml:mfenced>
                         <mml:mi mathvariant="italic">j</mml:mi>
                         </mml:msup>
@@ -405,7 +405,7 @@
                                 <mml:mrow>
                                     <mml:mn>1</mml:mn>
                                     <mml:mo>-</mml:mo>
-                                    <mml:mover><mml:mi mathvariant="italic">v</mml:mi><mml:mo>̂</mml:mo></mml:mover>
+                                    <mml:mover><mml:mi mathvariant="italic">v</mml:mi><mml:mo>^</mml:mo></mml:mover>
                                 </mml:mrow>
                             </mml:mfenced>
                             <mml:mfenced open="" close="">
@@ -466,19 +466,19 @@
             the bivariate Bernstein polynomials are evaluated using 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
-                <mml:mover><mml:mi mathvariant="italic">u</mml:mi><mml:mo>̂</mml:mo></mml:mover>
+                <mml:mover><mml:mi mathvariant="italic">u</mml:mi><mml:mo>^</mml:mo></mml:mover>
             </mml:math>
             and 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
-                <mml:mover><mml:mi mathvariant="italic">v</mml:mi><mml:mo>̂</mml:mo></mml:mover>
+                <mml:mover><mml:mi mathvariant="italic">v</mml:mi><mml:mo>^</mml:mo></mml:mover>
             </mml:math>,
             where
         </p><p>
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mrow>
-                    <mml:mover><mml:mi mathvariant="italic">u</mml:mi><mml:mo>̂</mml:mo></mml:mover>
+                    <mml:mover><mml:mi mathvariant="italic">u</mml:mi><mml:mo>^</mml:mo></mml:mover>
                     <mml:mo>=</mml:mo>
                     <mml:mfrac>
                         <mml:mfenced open="" close="">
@@ -502,7 +502,7 @@
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mrow>
-                    <mml:mover><mml:mi mathvariant="italic">v</mml:mi><mml:mo>̂</mml:mo></mml:mover>
+                    <mml:mover><mml:mi mathvariant="italic">v</mml:mi><mml:mo>^</mml:mo></mml:mover>
                     <mml:mo>=</mml:mo>
                     <mml:mfrac>
                         <mml:mfenced open="" close="">

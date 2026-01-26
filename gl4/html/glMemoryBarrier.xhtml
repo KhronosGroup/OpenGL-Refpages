@@ -80,7 +80,7 @@
                     <code class="constant">GL_SHADER_STORAGE_BARRIER_BIT</code>.
                 </p>
               <p>
-                    For <code class="function">glMemoryBarrier</code>, must be a
+                    For <code class="function">glMemoryBarrierByRegion</code>, must be a
                     bitwise combination of any of
                     <code class="constant">GL_ATOMIC_COUNTER_BARRIER_BIT</code>, or
                     <code class="constant">GL_FRAMEBUFFER_BARRIER_BIT</code>,
@@ -294,8 +294,11 @@
             </dt>
             <dd>
               <p>
-                        Accesses to atomic counters after the
-                        barrier will reflect writes prior to the barrier.
+                        Memory accesses using shader atomic counter built-in functions issued after the 
+                        barrier will reflect data written by shaders prior to the barrier. 
+                        Additionally, atomic counter function invocations after 
+                        the barrier will not execute until all memory accesses 
+                        initiated prior to the barrier complete.
                     </p>
             </dd>
             <dt>
@@ -305,8 +308,11 @@
             </dt>
             <dd>
               <p>
-                        Accesses to shader storage blocks after the
-                        barrier will reflect writes prior to the barrier.
+                        Memory accesses using shader buffer variables issued 
+                        after the barrier will reflect data written by shaders prior to the barrier.
+                        Additionally, assignments to and atomic operations performed
+                        on shader buffer variables after the barrier will not execute until all memory
+                        accesses initiated prior to the barrier complete.
                     </p>
             </dd>
             <dt>
@@ -542,6 +548,7 @@
               <col style="text-align: center; "/>
               <col style="text-align: center; "/>
               <col style="text-align: center; "/>
+              <col style="text-align: center; "/>
               <col style="text-align: center; " class="lastvers"/>
             </colgroup>
             <thead>
@@ -549,7 +556,7 @@
                 <th style="text-align: left; border-right: 2px solid ; ">
                 
             </th>
-                <th style="text-align: center; border-bottom: 2px solid ; " colspan="12">
+                <th style="text-align: center; border-bottom: 2px solid ; " colspan="13">
                 <span class="bold"><strong>OpenGL Version</strong></span>
             </th>
               </tr>
@@ -590,8 +597,11 @@
                 <th style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">
                 <span class="bold"><strong>4.4</strong></span>
             </th>
-                <th style="text-align: center; border-bottom: 2px solid ; ">
+                <th style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">
                 <span class="bold"><strong>4.5</strong></span>
+            </th>
+                <th style="text-align: center; border-bottom: 2px solid ; ">
+                <span class="bold"><strong>4.6</strong></span>
             </th>
               </tr>
             </thead>
@@ -608,6 +618,7 @@
                 <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
                 <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
                 <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">✔</td>
                 <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">✔</td>
                 <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">✔</td>
                 <td style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">✔</td>
@@ -628,6 +639,7 @@
                 <td style="text-align: center; border-right: 2px solid ; ">-</td>
                 <td style="text-align: center; border-right: 2px solid ; ">-</td>
                 <td style="text-align: center; border-right: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; ">✔</td>
                 <td style="text-align: center; ">✔</td>
               </tr>
             </tbody>

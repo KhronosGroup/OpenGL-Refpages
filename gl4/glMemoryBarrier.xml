@@ -55,7 +55,7 @@
                     <constant>GL_SHADER_STORAGE_BARRIER_BIT</constant>.
                 </para>
                 <para>
-                    For <function>glMemoryBarrier</function>, must be a
+                    For <function>glMemoryBarrierByRegion</function>, must be a
                     bitwise combination of any of
                     <constant>GL_ATOMIC_COUNTER_BARRIER_BIT</constant>, or
                     <constant>GL_FRAMEBUFFER_BARRIER_BIT</constant>,
@@ -239,8 +239,11 @@
                     <term><constant>GL_ATOMIC_COUNTER_BARRIER_BIT</constant></term>
                     <listitem>
                     <para>
-                        Accesses to atomic counters after the
-                        barrier will reflect writes prior to the barrier.
+                        Memory accesses using shader atomic counter built-in functions issued after the 
+                        barrier will reflect data written by shaders prior to the barrier. 
+                        Additionally, atomic counter function invocations after 
+                        the barrier will not execute until all memory accesses 
+                        initiated prior to the barrier complete.
                     </para>
                     </listitem>
                 </varlistentry>
@@ -248,8 +251,11 @@
                     <term><constant>GL_SHADER_STORAGE_BARRIER_BIT</constant></term>
                     <listitem>
                     <para>
-                        Accesses to shader storage blocks after the
-                        barrier will reflect writes prior to the barrier.
+                        Memory accesses using shader buffer variables issued 
+                        after the barrier will reflect data written by shaders prior to the barrier.
+                        Additionally, assignments to and atomic operations performed
+                        on shader buffer variables after the barrier will not execute until all memory
+                        accesses initiated prior to the barrier complete.
                     </para>
                     </listitem>
                 </varlistentry>
@@ -444,7 +450,7 @@
     </refsect1>
     <refsect1 xml:id="versions"><title>Version Support</title>
         <informaltable>
-            <tgroup cols="13" align="left">
+            <tgroup cols="14" align="left">
                 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="apifunchead.xml" xpointer="xpointer(/*/*)"/>
                 <tbody>
                     <row>

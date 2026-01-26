@@ -81,7 +81,8 @@
             </dt>
             <dd>
               <p>
-                    Specifies the address of a structure containing the draw parameters.
+                    Specifies a byte offset (cast to a pointer type) into the buffer bound to <code class="constant">GL_DRAW_INDIRECT_BUFFER</code>
+                    to start reading indirect draw parameters from.
                 </p>
             </dd>
           </dl>
@@ -115,7 +116,8 @@
             If a buffer is bound to the <code class="constant">GL_DRAW_INDIRECT_BUFFER</code> binding at the time
             of a call to <code class="function">glDrawArraysIndirect</code>, <em class="parameter"><code>indirect</code></em>
             is interpreted as an offset, in basic machine units, into that buffer and the parameter
-            data is read from the buffer rather than from client memory.
+            data is read from the buffer. If no buffer is bound to the
+            <code class="constant">GL_ELEMENT_ARRAY_BUFFER</code> binding, an error will be generated.
         </p>
         <p>
             In contrast to <a class="citerefentry" href="glDrawArraysInstancedBaseInstance.xhtml"><span class="citerefentry"><span class="refentrytitle">glDrawArraysInstancedBaseInstance</span></span></a>,
@@ -172,6 +174,7 @@
               <col style="text-align: center; "/>
               <col style="text-align: center; "/>
               <col style="text-align: center; "/>
+              <col style="text-align: center; "/>
               <col style="text-align: center; " class="lastvers"/>
             </colgroup>
             <thead>
@@ -179,7 +182,7 @@
                 <th style="text-align: left; border-right: 2px solid ; ">
                 
             </th>
-                <th style="text-align: center; border-bottom: 2px solid ; " colspan="12">
+                <th style="text-align: center; border-bottom: 2px solid ; " colspan="13">
                 <span class="bold"><strong>OpenGL Version</strong></span>
             </th>
               </tr>
@@ -220,8 +223,11 @@
                 <th style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">
                 <span class="bold"><strong>4.4</strong></span>
             </th>
-                <th style="text-align: center; border-bottom: 2px solid ; ">
+                <th style="text-align: center; border-right: 2px solid ; border-bottom: 2px solid ; ">
                 <span class="bold"><strong>4.5</strong></span>
+            </th>
+                <th style="text-align: center; border-bottom: 2px solid ; ">
+                <span class="bold"><strong>4.6</strong></span>
             </th>
               </tr>
             </thead>
@@ -236,6 +242,7 @@
                 <td style="text-align: center; border-right: 2px solid ; ">-</td>
                 <td style="text-align: center; border-right: 2px solid ; ">-</td>
                 <td style="text-align: center; border-right: 2px solid ; ">-</td>
+                <td style="text-align: center; border-right: 2px solid ; ">✔</td>
                 <td style="text-align: center; border-right: 2px solid ; ">✔</td>
                 <td style="text-align: center; border-right: 2px solid ; ">✔</td>
                 <td style="text-align: center; border-right: 2px solid ; ">✔</td>

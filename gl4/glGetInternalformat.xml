@@ -237,7 +237,7 @@
             to indicate that the specified internal format supports mipmaps and to <constant>GL_FALSE</constant> otherwise.
         </para>
         <para>
-            If <parameter>pname</parameter> is <constant>GL_GENERATE_MIPMAP</constant> or <constant>GL_AUTO_GENERATE_MIPMAP</constant> then <parameter>params</parameter>
+            If <parameter>pname</parameter> is <constant>GL_MANUAL_GENERATE_MIPMAP</constant> or <constant>GL_AUTO_GENERATE_MIPMAP</constant> then <parameter>params</parameter>
             is indicates the level of support for manual or automatic mipmap generation for the specified internal format, respectively. Returned values
             may be one of <constant>GL_FULL_SUPPORT</constant>, <constant>GL_CAVEAT_SUPPORT</constant> and <constant>GL_NONE</constant> to indicate
             either full support, limited support or no support at all.
@@ -467,7 +467,7 @@
     </refsect1>
     <refsect1 xml:id="versions"><title>Version Support</title>
         <informaltable>
-            <tgroup cols="13" align="left">
+            <tgroup cols="14" align="left">
                 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="apifunchead.xml" xpointer="xpointer(/*/*)"/>
                 <tbody>
                     <row>

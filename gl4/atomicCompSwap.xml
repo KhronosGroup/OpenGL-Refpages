@@ -22,8 +22,8 @@
             <funcprototype>
                 <funcdef>int <function>atomicCompSwap</function></funcdef>
                 <paramdef>inout int <parameter>mem</parameter></paramdef>
-                <paramdef>uint <parameter>compare</parameter></paramdef>
-                <paramdef>uint <parameter>data</parameter></paramdef>
+                <paramdef>int <parameter>compare</parameter></paramdef>
+                <paramdef>int <parameter>data</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>uint <function>atomicCompSwap</function></funcdef>
@@ -74,7 +74,7 @@
     </refsect1>
     <refsect1 xml:id="versions"><title>Version Support</title>
         <informaltable>
-            <tgroup cols="13" align="left">
+            <tgroup cols="14" align="left">
                 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="funchead.xml" xpointer="xpointer(/*/*)"/>
                 <tbody>
                     <row>
