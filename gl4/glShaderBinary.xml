@@ -82,9 +82,9 @@
         </para>
         <para>
             The binary image contained in <parameter>binary</parameter> will be decoded according to the extension
-            specification defining the specified <parameter>binaryFormat</parameter> token. OpenGL
-            does not define any specific binary formats, but it does provide a mechanism to obtain token
-            vaues for such formats provided by such extensions.
+            specification defining the specified <parameter>binaryFormat</parameter> token. OpenGL 4.6
+            defines the <constant>GL_SHADER_BINARY_FORMAT_SPIR_V</constant> format, it also provide a mechanism to obtain token
+            vaues for formats provided by extensions.
         </para>
         <para>
             Depending on the types of the shader objects in <parameter>shaders</parameter>, <function>glShaderBinary</function>
