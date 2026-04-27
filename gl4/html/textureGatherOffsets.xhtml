@@ -78,7 +78,7 @@
             </tr>
             <tr>
               <td> </td>
-              <td>vec3 <var class="pdparam">P</var>, </td>
+              <td>vec2 <var class="pdparam">P</var>, </td>
             </tr>
             <tr>
               <td> </td>
@@ -227,9 +227,9 @@
         <p>
             <code class="function">textureGatherOffsets</code> operates identically to <a class="citerefentry" href="textureGatherOffset.xhtml"><span class="citerefentry"><span class="refentrytitle">textureGatherOffset</span></span></a>,
             except that <em class="parameter"><code>offsets</code></em> is used to determine the location of the four texels to sample. Each of the four texels is obtained
-            by applying the offset in <em class="parameter"><code>offsets</code></em> as a (u, v) coordinate offset to <em class="parameter"><code>P</code></em>, identifying the four-texel
+            by applying the corresponding offset in <em class="parameter"><code>offsets</code></em> as a (u, v) coordinate offset to <em class="parameter"><code>P</code></em>, identifying the four-texel
             <code class="constant">GL_LINEAR</code> footprint, and then selecting the texel
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:msub><mml:mi>i</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:msub><mml:mi>i</mml:mi><mml:mn>0</mml:mn></mml:msub></mml:math>
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:msub><mml:mi>i</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:msub><mml:mi>j</mml:mi><mml:mn>0</mml:mn></mml:msub></mml:math>
             of that footprint. The specified values in <em class="parameter"><code>offsets</code></em> must be set with constant integral expressions.
         </p>
       </div>
