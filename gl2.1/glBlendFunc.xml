@@ -1199,12 +1199,12 @@
             supported by your implementation.
         </para>
         <para>
-            <constant>GL_SRC_COLOR</constant> and <constant>GL_ONE_MINUS_SRC_COLOR</constant> are valid only for
-            <parameter>sfactor</parameter> if the GL version is 1.4 or greater.
+            <constant>GL_SRC_COLOR</constant> and <constant>GL_ONE_MINUS_SRC_COLOR</constant> are valid for
+            <parameter>sfactor</parameter> only if the GL version is 1.4 or greater.
         </para>
         <para>
-            <constant>GL_DST_COLOR</constant> and <constant>GL_ONE_MINUS_DST_COLOR</constant> are valid only for
-            <parameter>dfactor</parameter> if the GL version is 1.4 or greater.
+            <constant>GL_DST_COLOR</constant> and <constant>GL_ONE_MINUS_DST_COLOR</constant> are valid for
+            <parameter>dfactor</parameter> only if the GL version is 1.4 or greater.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
